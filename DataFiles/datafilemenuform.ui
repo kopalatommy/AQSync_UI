@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DataFileMenuForm</class>
+ <widget class="QWidget" name="DataFileMenuForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>480</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>480</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QPushButton" name="Cancel">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>300</y>
+     <width>450</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Calibri</family>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Cancel</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>:/buttons/dataMenu_cancel.jpg</normaloff>:/buttons/dataMenu_cancel.jpg</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>450</width>
+     <height>50</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="SelectCurrent">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>90</y>
+     <width>450</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Calibri</family>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Select Current</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>:/buttons/dataMenu_selectCurrentFile.jpg</normaloff>:/buttons/dataMenu_selectCurrentFile.jpg</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>450</width>
+     <height>50</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Browse">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>230</y>
+     <width>450</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Calibri</family>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Browse</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>:/buttons/dataMenu_browse.jpg</normaloff>:/buttons/dataMenu_browse.jpg</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>450</width>
+     <height>50</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="SelectAll">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>160</y>
+     <width>450</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Calibri</family>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Select All</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>:/buttons/dataMenu_selectAllFiles.jpg</normaloff>:/buttons/dataMenu_selectAllFiles.jpg</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>450</width>
+     <height>50</height>
+    </size>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

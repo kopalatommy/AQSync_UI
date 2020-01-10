@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SettingsForm</class>
+ <widget class="QWidget" name="SettingsForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QPushButton" name="closeButton">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>10</y>
+     <width>70</width>
+     <height>70</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Back</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>20</y>
+     <width>801</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Settings Page</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="modbusButton">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>330</y>
+     <width>175</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Modbus</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="staticIPButton">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>90</y>
+     <width>175</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>StaticIP</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="avgButton">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>90</y>
+     <width>175</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Avg</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="modeButton">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>150</y>
+     <width>175</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Mode</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="adaptiveFilterButton">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>210</y>
+     <width>175</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Adaptive Filter</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="noCalButton">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>150</y>
+     <width>175</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>NO Cal Factors</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="no2CalButton">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>210</y>
+     <width>175</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>NO2 Cal Factors</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="flowCalButton">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>270</y>
+     <width>175</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Flow Cal Factors</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="bcCalButton">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>270</y>
+     <width>175</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>BC Cal Factors</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pmCalFactors">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>90</y>
+     <width>175</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>PM Cal Factors</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="aboutButton">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>270</y>
+     <width>175</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>About</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="systemSettingsButton">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>210</y>
+     <width>175</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>System Settings</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="moveLeftButton">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>90</y>
+     <width>70</width>
+     <height>380</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;-</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="moveRightButton">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>90</y>
+     <width>70</width>
+     <height>380</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>-&gt;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="dataFilesButton">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>150</y>
+     <width>175</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Data Files</string>
+   </property>
+  </widget>
+  <zorder>label</zorder>
+  <zorder>closeButton</zorder>
+  <zorder>modbusButton</zorder>
+  <zorder>staticIPButton</zorder>
+  <zorder>avgButton</zorder>
+  <zorder>modeButton</zorder>
+  <zorder>adaptiveFilterButton</zorder>
+  <zorder>noCalButton</zorder>
+  <zorder>no2CalButton</zorder>
+  <zorder>flowCalButton</zorder>
+  <zorder>bcCalButton</zorder>
+  <zorder>pmCalFactors</zorder>
+  <zorder>aboutButton</zorder>
+  <zorder>systemSettingsButton</zorder>
+  <zorder>moveLeftButton</zorder>
+  <zorder>moveRightButton</zorder>
+  <zorder>dataFilesButton</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
