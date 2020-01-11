@@ -420,6 +420,7 @@ void ModbusMaster::ParseDataLineRegisters(QList<short> lst){
 }
 
 void ModbusMaster::ReadMultipleRegisters(int startAddress, int length){
+    qDebug() << "Master is requesting multiple registers starting at " << startAddress << " for " << length;
     QByteArray request;
     union{
         short val;

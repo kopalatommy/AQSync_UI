@@ -166,10 +166,11 @@ QByteArray ModbusSlave::ReadMultipleRegisters(QByteArray data){
     byteArray.bytes[0] = data.at(9);
     startAddress = byteArray.val;
 
-    qDebug() << "Slave is reading " << toRead << " registers";
     byteArray.bytes[1] = data[10];
     byteArray.bytes[0] = data[11];
     toRead = byteArray.val;
+
+     qDebug() << "Slave is reading registers starting at " << startAddress << " for " << toRead;
 
     toReturn.append(static_cast<char>(toRead * 2));
     toReturn.append(dataTable->PackageRegisters(startAddress, toRead));
