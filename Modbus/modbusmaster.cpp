@@ -439,7 +439,7 @@ void ModbusMaster::ReadMultipleRegisters(int startAddress, int length){
     //Target ID
     request.append(static_cast<char>(targetID));
     //Function code
-    request.append(READ_MULTIPLE_REG_FUNC);
+    request.append(static_cast<int>(READ_MULTIPLE_REG_FUNC));
     //Address
     byteArray.val = static_cast<short>(startAddress);
     request.append(byteArray.bytes[0]);

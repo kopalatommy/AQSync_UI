@@ -1,8 +1,7 @@
 #include "modbushandler.h"
 
-ModbusHandler::ModbusHandler()
-{
-
+ModbusHandler::ModbusHandler(){
+    connect(&tcpServer, &QTcpServer::newConnection, this, &ModbusHandler::NewConnection);
 }
 
 ModbusHandler * ModbusHandler::instance = nullptr;
