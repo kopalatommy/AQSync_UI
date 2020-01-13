@@ -46,10 +46,11 @@ void ModbusMaster::ParseData(QByteArray data){
                     requestedSettings = false;
                 }
             }else if(requestedSettings){
-                qDebug() << "Master is reading settingss";
+                qDebug() << "Master is reading settings: " << data.count();
                 requestedSettings = false;
                 QList<short> rebuilt;
                 RebuildRegisters(data.remove(0,9), rebuilt);
+                qDebug() << "Finished rebuilding: " << rebuilt.count();
                 ParseSettingRegisters(rebuilt);
                 WriteSingleCoil(NEW_SETTINGS_COIL, false);
             }else if(requestedDataLine){
@@ -330,6 +331,8 @@ void ModbusMaster::ParseDataLineRegisters(QList<short> lst){
         short bytes[2];
     }byteArray;
     byteArray.val = 0;
+
+    qDebug() << "Lst count: " << lst.count();
 
     AQSyncData * data = AQSyncData::GetInstance();
 
