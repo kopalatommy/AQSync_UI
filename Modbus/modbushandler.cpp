@@ -48,7 +48,7 @@ void ModbusHandler::ConnectToSlave(QString IPAddress, unsigned short targetPort,
         connect(masterSocket, &QTcpSocket::disconnected, this, &ModbusHandler::OnMasterDisconnect);
 
         targetID = static_cast<char>(unitID);
-        master = new ModbusMaster(targetID, dataTable, IPAddress, static_cast<unsigned short>(targetPort));
+        master = new ModbusMaster(targetID, dataTable, IPAddress);
         connect(master, &ModbusMaster::FinishedRequest, this, &ModbusHandler::WriteAsMaster);
         master->moveToThread(&masterThread);
         masterThread.start();
@@ -75,14 +75,14 @@ void ModbusHandler::SetMasterValues(QString targetIP, unsigned short targetPort,
             connect(masterSocket, &QTcpSocket::disconnected, this, &ModbusHandler::OnMasterDisconnect);
 
             targetID = _targetID;
-            master = new ModbusMaster(_targetID, dataTable, targetIP, targetPort);
+            master = new ModbusMaster(_targetID, dataTable, targetIP);
             connect(master, &ModbusMaster::FinishedRequest, this, &ModbusHandler::WriteAsMaster);
             master->moveToThread(&masterThread);
             masterThread.start();
-        }else if(targetPort != master->GetTargetPort()){
+        }else if(targetPort != serverPort){
             masterSocket->disconnectFromHost();
             masterSocket->connectToHost(targetIP, serverPort);
-            master->UpdateTargetPort(targetPort);
+            serverPort = targetPort;
         }else{
             targetID = _targetID;
             master->UpdateTargetID(_targetID);

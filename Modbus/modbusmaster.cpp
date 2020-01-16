@@ -1,21 +1,17 @@
 #include "modbusmaster.h"
 
-ModbusMaster::ModbusMaster(int targetID, ModbusDataTable * data, QString targetIP, unsigned short _targetPort){
+ModbusMaster::ModbusMaster(int targetID, ModbusDataTable * data, QString targetIP){
     this->targetID = targetID;
     dataTable = data;
     targetIPAddress = targetIP;
-    targetPort = _targetPort;
 }
 
-void ModbusMaster::UpdateInfo(char targetID, unsigned short targetPort){
+/*void ModbusMaster::UpdateInfo(char targetID, unsigned short targetPort){
     this->targetID = targetID;
     this->targetPort = targetPort;
-}
+}*/
 void ModbusMaster::UpdateTargetID(char targetID){
     this->targetID = targetID;
-}
-void ModbusMaster::UpdateTargetPort(unsigned short targetPort){
-    this->targetPort = targetPort;
 }
 
 void ModbusMaster::ParseData(QByteArray data){
@@ -698,8 +694,4 @@ void ModbusMaster::BuildSettingsBytes(QList<char> & lst){
 
 QString ModbusMaster::GetTargetIP(){
     return targetIPAddress;
-}
-
-unsigned short ModbusMaster::GetTargetPort(){
-    return targetPort;
 }

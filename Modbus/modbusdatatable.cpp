@@ -118,7 +118,7 @@ QByteArray ModbusDataTable::PackageCoils(int startAddress, int length) {
         for (int i = 0; i < length; i++) {
             added = false;
             if (coils[i + startAddress]) SetBit(&toAdd, bitIndex);
-            if (i + startAddress == 5) qDebug() << "New setting: " << coils[i + startAddress];
+            //if (i + startAddress == 5) qDebug() << "New setting: " << coils[i + startAddress];
             bitIndex++;
             if (bitIndex >= 8) {
                 bitIndex = 0;

@@ -13,16 +13,14 @@ class ModbusMaster : public QObject
 {
     Q_OBJECT
 public:
-    ModbusMaster(int targetID, ModbusDataTable * data, QString targetIP, unsigned short targetPort);
-    void UpdateInfo(char targetID, unsigned short targetPort);
+    ModbusMaster(int targetID, ModbusDataTable * data, QString targetIP);
+    //void UpdateInfo(char targetID, unsigned short targetPort);
     void UpdateTargetID(char targetID);
-    void UpdateTargetPort(unsigned short targetPort);
 
     void RequestDataLine();
     void RequestSettings();
 
     QString GetTargetIP();
-    unsigned short GetTargetPort();
 
 public slots:
     void ReadCoils(int startAddress, int _numberOfCoils);
@@ -56,7 +54,6 @@ signals:
 
 private:
     int targetID = 0;
-    unsigned short targetPort = 0;
     QString targetIPAddress = "";
 
     ModbusDataTable * dataTable = nullptr;
