@@ -243,7 +243,7 @@ QByteArray ModbusSlave::WriteSingleRegister(QByteArray data){
     AQSyncSettings * settings = AQSyncSettings::GetInstance();
     //AQSyncData * d = AQSyncData::GetInstance();
 
-    switch (startAddress) {
+    /*switch (startAddress) {
     case AVG_TIME_MARKER: settings->SetAvgTime(static_cast<unsigned char>(dataTable->GetShort(AVG_TIME_REGISTER))); break;
     case MODE_REGISTER: settings->SetMode(static_cast<unsigned char>(dataTable->GetShort(MODE_REGISTER))); break;
     case ADAPTIVE_SHORT_REGISTER: settings->SetAdShort(static_cast<unsigned char>(dataTable->GetShort(ADAPTIVE_SHORT_REGISTER))); break;
@@ -265,7 +265,7 @@ QByteArray ModbusSlave::WriteSingleRegister(QByteArray data){
     case FLOW_SLOPE_REGISTER + 1: settings->SetFlowSlope(dataTable->GetFloat(FLOW_SLOPE_REGISTER)); break;
     case FLOW_ZERO_REGISTER + 1: settings->SetFlowZero(dataTable->GetFloat(FLOW_ZERO_REGISTER)); break;
     default: break;
-    }
+    }*/
     emit ReceivedNewSettings();
 
     return data;
@@ -410,7 +410,7 @@ void ModbusSlave::ParseWriteSettings(QList<short> lst){
         qDebug() << "Modbus slave is changing avg time to " << QString::number(lst[0]) << " from " << settings->GetAvgTime();
         settings->SetAvgTime(static_cast<unsigned char>(lst[0]));
         qDebug() << "Need to add write command";
-        dataTable->SetRegister(AVG_TIME_MARKER, lst[0]);
+        //dataTable->SetRegister(AVG_TIME_MARKER, lst[0]);
     }
 
     if(settings->GetMode() != lst[1]){
@@ -418,7 +418,7 @@ void ModbusSlave::ParseWriteSettings(QList<short> lst){
         qDebug() << "Modbus slave is changing mode to " << QString::number(lst[1]) << " from " << settings->GetMode();
         settings->SetMode(static_cast<unsigned char>(lst[1]));
         qDebug() << "Need to add write command";
-        dataTable->SetRegister(MODE_REGISTER, lst[1]);
+        //dataTable->SetRegister(MODE_REGISTER, lst[1]);
     }
 
     if(settings->GetAdShort() != lst[2]){
@@ -426,7 +426,7 @@ void ModbusSlave::ParseWriteSettings(QList<short> lst){
         qDebug() << "Modbus slave is changing ad short to " << QString::number(lst[2]) << " from " << settings->GetAdShort();
         settings->SetAdShort(static_cast<unsigned char>(lst[2]));
         qDebug() << "Need to add write command";
-        dataTable->SetRegister(ADAPTIVE_SHORT_REGISTER, lst[2]);
+        //dataTable->SetRegister(ADAPTIVE_SHORT_REGISTER, lst[2]);
     }
 
     if(settings->GetAdLong() != lst[3]){
@@ -434,7 +434,7 @@ void ModbusSlave::ParseWriteSettings(QList<short> lst){
         qDebug() << "Modbus slave is changing ad long to " << QString::number(lst[3]) << " from " << settings->GetAdLong();
         settings->SetAdLong(static_cast<unsigned char>(lst[3]));
         qDebug() << "Need to add write command";
-        dataTable->SetRegister(ADAPTIVE_LONG_REGISTER, lst[3]);
+        //dataTable->SetRegister(ADAPTIVE_LONG_REGISTER, lst[3]);
     }
 
     if(settings->GetAdDiff() != lst[4]){
@@ -442,7 +442,7 @@ void ModbusSlave::ParseWriteSettings(QList<short> lst){
         qDebug() << "Modbus slave is changing ad diff to " << QString::number(lst[4]) << " from " << settings->GetAdDiff();
         settings->SetAdDiff(static_cast<unsigned char>(lst[4]));
         qDebug() << "Need to add write command";
-        dataTable->SetRegister(ADAPTIVE_DIFF_REGISTER, lst[4]);
+        //dataTable->SetRegister(ADAPTIVE_DIFF_REGISTER, lst[4]);
     }
 
     if(settings->GetAdPer() != lst[5]){
@@ -450,7 +450,7 @@ void ModbusSlave::ParseWriteSettings(QList<short> lst){
         qDebug() << "Modbus slave is changing ad per to " << QString::number(lst[5]) << " from " << settings->GetAdPer();
         settings->SetAdPer(static_cast<unsigned char>(lst[5]));
         qDebug() << "Need to add write command";
-        dataTable->SetRegister(ADAPTIVE_PER_REGISTER, lst[5]);
+        //dataTable->SetRegister(ADAPTIVE_PER_REGISTER, lst[5]);
     }
 
     byteArray.bytes[0] = lst[6];
@@ -460,7 +460,7 @@ void ModbusSlave::ParseWriteSettings(QList<short> lst){
         qDebug() << "Modbus slave is changing NO slope to " << byteArray.f << " from " << settings->GetNOSlope();
         settings->SetNOSlope(byteArray.f);
         qDebug() << "Need to add write command";
-        dataTable->SetRegisters(NO_SLOPE_REGISTER, 2, lst[6], lst[7]);
+        //dataTable->SetRegisters(NO_SLOPE_REGISTER, 2, lst[6], lst[7]);
     }
 
     byteArray.bytes[0] = lst[8];
@@ -470,7 +470,7 @@ void ModbusSlave::ParseWriteSettings(QList<short> lst){
         qDebug() << "Modbus slave is changing NO zero to " << byteArray.f << " from " << settings->GetNOZero();
         settings->SetNOZero(byteArray.f);
         qDebug() << "Need to add write command";
-        dataTable->SetRegisters(NO_ZERO_REGISTER, 2, lst[8], lst[9]);
+        //dataTable->SetRegisters(NO_ZERO_REGISTER, 2, lst[8], lst[9]);
     }
 
     byteArray.bytes[0] = lst[10];
@@ -480,7 +480,7 @@ void ModbusSlave::ParseWriteSettings(QList<short> lst){
         qDebug() << "Modbus slave is changing NO2 slope to " << byteArray.f << " from " << settings->GetNO2Slope();
         settings->SetNO2Slope(byteArray.f);
         qDebug() << "Need to add write command";
-        dataTable->SetRegisters(NO2_SLOPE_MARKER, 2, lst[10], lst[11]);
+        //dataTable->SetRegisters(NO2_SLOPE_MARKER, 2, lst[10], lst[11]);
     }
 
     byteArray.bytes[0] = lst[12];
@@ -490,7 +490,7 @@ void ModbusSlave::ParseWriteSettings(QList<short> lst){
         qDebug() << "Modbus slave is changing no2 zero to " << byteArray.f << " from " << settings->GetNO2Zero();
         settings->SetNO2Zero(byteArray.f);
         qDebug() << "Need to add write command";
-        dataTable->SetRegisters(NO2_ZERO_MARKER, 2, lst[12], lst[13]);
+        //dataTable->SetRegisters(NO2_ZERO_MARKER, 2, lst[12], lst[13]);
     }
 
     byteArray.bytes[0] = lst[14];
@@ -500,7 +500,7 @@ void ModbusSlave::ParseWriteSettings(QList<short> lst){
         qDebug() << "Modbus slave is changing ozone flow slope to " << byteArray.f << " from " << settings->GetOzoneFlowSlope();
         settings->SetOzoneFlowSlope(byteArray.f);
         qDebug() << "Need to add write command";
-        dataTable->SetRegisters(OZONE_FLOW_SLOPE_REGISTER, 2, lst[14], lst[15]);
+        //dataTable->SetRegisters(OZONE_FLOW_SLOPE_REGISTER, 2, lst[14], lst[15]);
     }
 
     byteArray.bytes[0] = lst[16];
@@ -510,7 +510,7 @@ void ModbusSlave::ParseWriteSettings(QList<short> lst){
         qDebug() << "Modbus slave is changing cell flow slope to " << byteArray.f << " from " << settings->GetCellFlowSlope();
         settings->SetCellFlowSlope(byteArray.f);
         qDebug() << "Need to add write command";
-        dataTable->SetRegisters(CELL_FLOW_SLOPE_REGISTER, 2, lst[16], lst[17]);
+        //dataTable->SetRegisters(CELL_FLOW_SLOPE_REGISTER, 2, lst[16], lst[17]);
     }
 
     byteArray.bytes[0] = lst[18];
@@ -520,7 +520,7 @@ void ModbusSlave::ParseWriteSettings(QList<short> lst){
         qDebug() << "Modbus slave is chaning mass ext 405 to " << byteArray.f << " from " << settings->GetMassExt405();
         settings->SetMassExt405(byteArray.f);
         qDebug() << "Need to add write command";
-        dataTable->SetRegisters(MASS_EXT_405_REGISTER, 2, lst[18], lst[19]);
+        //dataTable->SetRegisters(MASS_EXT_405_REGISTER, 2, lst[18], lst[19]);
     }
 
     byteArray.bytes[0] = lst[20];
@@ -530,7 +530,7 @@ void ModbusSlave::ParseWriteSettings(QList<short> lst){
         qDebug() << "Modbus slave is changing pm slope to " << byteArray.f << " from " << settings->GetPMSlope();
         settings->SetPMSlope(byteArray.f);
         qDebug() << "Need to add write command";
-        dataTable->SetRegisters(PM_SLOPE_REGISTER, 2, lst[20], lst[21]);
+        //dataTable->SetRegisters(PM_SLOPE_REGISTER, 2, lst[20], lst[21]);
     }
 
     byteArray.bytes[0] = lst[22];
@@ -540,7 +540,7 @@ void ModbusSlave::ParseWriteSettings(QList<short> lst){
         qDebug() << "Modbus slave is changing pm zero to " << byteArray.f << " from " << settings->GetPMZero();
         settings->SetPMZero(byteArray.f);
         qDebug() << "Need to add write command";
-        dataTable->SetRegisters(PM_ZERO_MARKER, 2, lst[22], lst[23]);
+        //dataTable->SetRegisters(PM_ZERO_MARKER, 2, lst[22], lst[23]);
     }
 
     byteArray.bytes[0] = lst[24];
@@ -550,7 +550,7 @@ void ModbusSlave::ParseWriteSettings(QList<short> lst){
         qDebug() << "Modbus slave is changing mass ext 880 to " << byteArray.f << " from " << settings->GetMassExt880();
         settings->SetMassExt880(byteArray.f);
         qDebug() << "Need to add write command";
-        dataTable->SetRegisters(MASS_EXT_880_REGISTER, 2, lst[24], lst[25]);
+        //dataTable->SetRegisters(MASS_EXT_880_REGISTER, 2, lst[24], lst[25]);
     }
 
     byteArray.bytes[0] = lst[26];
@@ -560,7 +560,7 @@ void ModbusSlave::ParseWriteSettings(QList<short> lst){
         qDebug() << "Modbus slave is changing bc slope to " << byteArray.f << " from " << settings->GetBCSlope();
         settings->SetBCSlope(byteArray.f);
         qDebug() << "Need to add write command";
-        dataTable->SetRegisters(BC_SLOPE_REGISTER, 2, lst[26], lst[27]);
+        //dataTable->SetRegisters(BC_SLOPE_REGISTER, 2, lst[26], lst[27]);
     }
 
     byteArray.bytes[0] = lst[28];
@@ -570,7 +570,7 @@ void ModbusSlave::ParseWriteSettings(QList<short> lst){
         qDebug() << "Modbus slave is changing bc zero to " << byteArray.f << " from " << settings->GetBCZero();
         settings->SetBCZero(byteArray.f);
         qDebug() << "Need to add write command";
-        dataTable->SetRegisters(BC_ZERO_MARKER, 2, lst[28], lst[29]);
+        //dataTable->SetRegisters(BC_ZERO_MARKER, 2, lst[28], lst[29]);
     }
 
     byteArray.bytes[0] = lst[30];
@@ -580,7 +580,7 @@ void ModbusSlave::ParseWriteSettings(QList<short> lst){
         qDebug() << "Modbus slave is changing flow slope to " << byteArray.f << " from " << settings->GetFlowSlope();
         settings->SetFlowSlope(byteArray.f);
         qDebug() << "Need to add write command";
-        dataTable->SetRegisters(FLOW_SLOPE_REGISTER, 2, lst[30], lst[31]);
+        //dataTable->SetRegisters(FLOW_SLOPE_REGISTER, 2, lst[30], lst[31]);
     }
 
     byteArray.bytes[0] = lst[32];
@@ -590,7 +590,7 @@ void ModbusSlave::ParseWriteSettings(QList<short> lst){
         qDebug() << "Modbus slave is changing flow zero to " << byteArray.f << " from " << settings->GetFlowZero();
         settings->SetFlowZero(byteArray.f);
         qDebug() << "Need to add write command";
-        dataTable->SetRegisters(FLOW_ZERO_MARKER, 2, lst[32], lst[33]);
+        //dataTable->SetRegisters(FLOW_ZERO_MARKER, 2, lst[32], lst[33]);
     }
 
     if(newValue) emit ReceivedNewSettings();

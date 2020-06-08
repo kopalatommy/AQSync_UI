@@ -25,8 +25,8 @@ DEFINES += QT_DEPRECATED_WARNINGS
 CONFIG += c++11
 
 SOURCES += \
+        Communication/bcpserialhandler.cpp \
         Communication/communicationhandler.cpp \
-        Communication/serialparsedata.cpp \
         DataFiles/datafilemenuform.cpp \
         DataFiles/filebrowserform.cpp \
         Graphing/graphform.cpp \
@@ -61,8 +61,8 @@ SOURCES += \
         utilities.cpp
 
 HEADERS += \
+        Communication/bcpserialhandler.h \
         Communication/communicationhandler.h \
-        Communication/serialparsedata.h \
         DataFiles/datafilemenuform.h \
         DataFiles/filebrowserform.h \
         Graphing/graphform.h \

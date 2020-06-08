@@ -58,13 +58,13 @@ void NO2CalForm::on_saveButton_clicked(){
     if(fabs(static_cast<double>(settings->GetNO2Slope() - slope)) > 0.001){
         newValue = true;
         settings->SetNO2Slope(slope);
-        ModbusHandler::GetInstance()->SetFloatRegisters(NO2_SLOPE_REGISTER, slope);
+        //ModbusHandler::GetInstance()->SetFloatRegisters(NO2_SLOPE_REGISTER, slope);
     }
 
     if(fabs(static_cast<double>(settings->GetNO2Zero() - zero)) > 0.001){
         newValue = true;
         settings->SetNO2Zero(zero);
-        ModbusHandler::GetInstance()->SetFloatRegisters(NO2_ZERO_REGISTER, zero);
+        //ModbusHandler::GetInstance()->SetFloatRegisters(NO2_ZERO_REGISTER, zero);
     }
 
     if(newValue){

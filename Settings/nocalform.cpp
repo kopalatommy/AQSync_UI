@@ -58,13 +58,13 @@ void NOCalForm::on_saveButton_clicked(){
     if(fabs(static_cast<double>(slope - settings->GetNOSlope())) > 0.001){
         newValue = true;
         settings->SetNOSlope(slope);
-        ModbusHandler::GetInstance()->SetFloatRegisters(NO_SLOPE_REGISTER, slope);
+        //ModbusHandler::GetInstance()->SetFloatRegisters(NO_SLOPE_REGISTER, slope);
     }
 
     if(fabs(static_cast<double>(zero - settings->GetNOZero())) > 0.001){
         newValue = true;
         settings->SetNOZero(zero);
-        ModbusHandler::GetInstance()->SetFloatRegisters(NO_ZERO_REGISTER, zero);
+        //ModbusHandler::GetInstance()->SetFloatRegisters(NO_ZERO_REGISTER, zero);
     }
 
     if(newValue){

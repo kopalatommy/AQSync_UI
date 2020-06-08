@@ -197,7 +197,7 @@ void AQSyncSettings::WriteSettings(){
     if(!file.exists()) file.setFileName("AQSyncSettings.txt");
 
     if(file.open(QIODevice::WriteOnly)){
-        file.write(QString(AVG_TIME_MARKER).append(QString::number(avgTime)).append("\n").toStdString().c_str());
+        /*file.write(QString(AVG_TIME_MARKER).append(QString::number(avgTime)).append("\n").toStdString().c_str());
         file.write(QString(MODE_MARKER).append(QString::number(mode)).append("\n").toStdString().c_str());
         file.write(QString(AD_SHORT_MARKER).append(QString::number(adShort)).append("\n").toStdString().c_str());
         file.write(QString(AD_LONG_MARKER).append(QString::number(adLong)).append("\n").toStdString().c_str());
@@ -216,7 +216,7 @@ void AQSyncSettings::WriteSettings(){
         file.write(QString(BC_SLOPE_MARKER).append(QString::number(static_cast<double>(bcSlope))).append("\n").toStdString().c_str());
         file.write(QString(BC_ZERO_MARKER).append(QString::number(static_cast<double>(bcZero))).append("\n").toStdString().c_str());
         file.write(QString(FLOW_SLOPE_MARKER).append(QString::number(static_cast<double>(flowSlope))).append("\n").toStdString().c_str());
-        file.write(QString(FLOW_ZERO_MARKER).append(QString::number(static_cast<double>(flowZero))).append("\n").toStdString().c_str());
+        file.write(QString(FLOW_ZERO_MARKER).append(QString::number(static_cast<double>(flowZero))).append("\n").toStdString().c_str());*/
     }
 }
 
@@ -224,7 +224,7 @@ void AQSyncSettings::ReadSettings(){
     QFile file("/home/2b/AQSyncSettings.txt");
     if(!file.exists()) file.setFileName("AQSyncSettings.txt");
 
-    if(file.open(QIODevice::ReadOnly)){
+    /*if(file.open(QIODevice::ReadOnly)){
         while (!file.atEnd()) {
             char * line = new char[25];
             memset(line, 0, 25);
@@ -316,7 +316,7 @@ void AQSyncSettings::ReadSettings(){
                 qDebug() << "Read in bad setting marker: " << QString(temp.at(0));
             }
         }
-    }
+    }*/
 }
 
 int AQSyncSettings::GetBuildNumber(){

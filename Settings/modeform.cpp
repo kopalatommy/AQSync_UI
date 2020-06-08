@@ -32,7 +32,7 @@ void ModeForm::on_saveButton_clicked(){
         msg->setText("Setting avg setting to " + QString::number(val));
 
         AQSyncSettings::GetInstance()->SetMode(static_cast<unsigned char>(val));
-        ModbusHandler::GetInstance()->SetRegister(MODE_REGISTER, static_cast<short>(val));
+        //ModbusHandler::GetInstance()->SetRegister(MODE_REGISTER, static_cast<short>(val));
     }else{
         msg->setText("Received invalid value");
     }

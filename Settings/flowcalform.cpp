@@ -60,25 +60,25 @@ void FlowCalForm::on_saveButton_clicked(){
     if(fabs(static_cast<double>(settings->GetFlowSlope() - slope)) > 0.001){
         newValue = true;
         settings->SetFlowSlope(slope);
-        ModbusHandler::GetInstance()->SetFloatRegisters(FLOW_SLOPE_REGISTER, slope);
+        //ModbusHandler::GetInstance()->SetFloatRegisters(FLOW_SLOPE_REGISTER, slope);
     }
 
     if(fabs(static_cast<double>(settings->GetFlowZero() - zero)) > 0.001){
         newValue = true;
         settings->SetFlowZero(zero);
-        ModbusHandler::GetInstance()->SetFloatRegisters(FLOW_ZERO_REGISTER, zero);
+        //ModbusHandler::GetInstance()->SetFloatRegisters(FLOW_ZERO_REGISTER, zero);
     }
 
     if(fabs(static_cast<double>(settings->GetCellFlowSlope() - cell)) > 0.001){
         newValue = true;
         settings->SetCellFlowSlope(cell);
-        ModbusHandler::GetInstance()->SetFloatRegisters(CELL_FLOW_SLOPE_REGISTER, cell);
+        //ModbusHandler::GetInstance()->SetFloatRegisters(CELL_FLOW_SLOPE_REGISTER, cell);
     }
 
     if(fabs(static_cast<double>(settings->GetOzoneFlowSlope() - ozone)) > 0.001){
         newValue = true;
         settings->SetOzoneFlowSlope(ozone);
-        ModbusHandler::GetInstance()->SetFloatRegisters(OZONE_FLOW_SLOPE_REGISTER, ozone);
+        //ModbusHandler::GetInstance()->SetFloatRegisters(OZONE_FLOW_SLOPE_REGISTER, ozone);
     }
 
     if(newValue){

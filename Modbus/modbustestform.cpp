@@ -23,7 +23,7 @@ void ModbusTestForm::UpdateUI(){
     AQSyncSettings * settings = AQSyncSettings::GetInstance();
     ModbusDataTable * dataTable = ModbusHandler::GetInstance()->GetDataTable();
 
-    ui->label->setText("Avg Time: " + QString::number(settings->GetAvgTime()) + " : " + QString::number(dataTable->GetShort(AVG_TIME_REGISTER)));
+    /*ui->label->setText("Avg Time: " + QString::number(settings->GetAvgTime()) + " : " + QString::number(dataTable->GetShort(AVG_TIME_REGISTER)));
     ui->label_2->setText("Mode: " + QString::number(settings->GetMode()) + " : " + QString::number(dataTable->GetShort(MODE_REGISTER)));
     ui->label_3->setText("Ad short: " + QString::number(settings->GetAdShort()) + " : " + QString::number(dataTable->GetShort(ADAPTIVE_SHORT_REGISTER)));
     ui->label_4->setText("Ad long: " + QString::number(settings->GetAdLong()) + " : " + QString::number(dataTable->GetShort(ADAPTIVE_LONG_REGISTER)));
@@ -66,7 +66,7 @@ void ModbusTestForm::UpdateUI(){
     ui->label_38->setText("Mode: " + QString::number(data->GetMode()) + " : " + QString::number(dataTable->GetShort(DATA_MODE_REGISTER)));
 
     ui->label_40->setText("New Settings Coil: " + QString(dataTable->ReadCoil(NEW_SETTINGS_COIL) ? "True" : "False"));
-    ui->label_41->setText("New Line Coil: " + QString(dataTable->ReadCoil(NEW_LINE_COIL) ? "True" : "False"));
+    ui->label_41->setText("New Line Coil: " + QString(dataTable->ReadCoil(NEW_LINE_COIL) ? "True" : "False"));*/
 }
 
 void ModbusTestForm::on_refreshButton_clicked(){

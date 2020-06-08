@@ -11,7 +11,7 @@ ModbusDataTable::ModbusDataTable(int numCoils, int numInputs, int numRegisters) 
 void ModbusDataTable::LoadSettingRegisters(){
     AQSyncSettings * settings = AQSyncSettings::GetInstance();
 
-    SetRegister(AVG_TIME_REGISTER, settings->GetAvgTime());
+    /*SetRegister(AVG_TIME_REGISTER, settings->GetAvgTime());
     SetRegister(MODE_REGISTER, settings->GetMode());
     SetRegister(ADAPTIVE_SHORT_REGISTER, settings->GetAdShort());
     SetRegister(ADAPTIVE_LONG_REGISTER, settings->GetAdLong());
@@ -30,7 +30,7 @@ void ModbusDataTable::LoadSettingRegisters(){
     SetFloat(BC_SLOPE_REGISTER, settings->GetBCSlope());
     SetFloat(BC_ZERO_REGISTER, settings->GetBCZero());
     SetFloat(FLOW_SLOPE_REGISTER, settings->GetFlowSlope());
-    SetFloat(FLOW_ZERO_REGISTER, settings->GetFlowZero());
+    SetFloat(FLOW_ZERO_REGISTER, settings->GetFlowZero());*/
 }
 
 void ModbusDataTable::SetFloat(int address, float val){

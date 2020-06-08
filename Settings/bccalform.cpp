@@ -59,19 +59,19 @@ void BCCalForm::on_saveButton_clicked(){
     if(fabs(static_cast<double>(slope - settings->GetBCSlope())) > 0.001){
         newValue = true;
         settings->SetBCSlope(slope);
-        ModbusHandler::GetInstance()->SetFloatRegisters(BC_SLOPE_REGISTER, slope);
+        //ModbusHandler::GetInstance()->SetFloatRegisters(BC_SLOPE_REGISTER, slope);
     }
 
     if(fabs(static_cast<double>(zero - settings->GetBCZero())) > 0.001){
         newValue = true;
         settings->SetBCZero(zero);
-        ModbusHandler::GetInstance()->SetFloatRegisters(BC_ZERO_REGISTER, zero);
+        //ModbusHandler::GetInstance()->SetFloatRegisters(BC_ZERO_REGISTER, zero);
     }
 
     if(fabs(static_cast<double>(massExt - settings->GetMassExt880())) > 0.001){
         newValue = true;
         settings->SetMassExt880(massExt);
-        ModbusHandler::GetInstance()->SetFloatRegisters(MASS_EXT_880_REGISTER, massExt);
+        //ModbusHandler::GetInstance()->SetFloatRegisters(MASS_EXT_880_REGISTER, massExt);
     }
 
     if(newValue){

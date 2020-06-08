@@ -59,19 +59,19 @@ void PMCalForm::on_saveButton_clicked(){
     if(fabs(static_cast<double>(slope - settings->GetPMSlope())) > 0.001){
         newValue = true;
         settings->SetPMSlope(slope);
-        ModbusHandler::GetInstance()->SetFloatRegisters(PM_SLOPE_REGISTER, slope);
+        //ModbusHandler::GetInstance()->SetFloatRegisters(PM_SLOPE_REGISTER, slope);
     }
 
     if(fabs(static_cast<double>(zero - settings->GetPMZero())) > 0.001){
         newValue = true;
         settings->SetPMZero(zero);
-        ModbusHandler::GetInstance()->SetFloatRegisters(PM_ZERO_REGISTER, zero);
+        //ModbusHandler::GetInstance()->SetFloatRegisters(PM_ZERO_REGISTER, zero);
     }
 
     if(fabs(static_cast<double>(massExt - settings->GetMassExt405())) > 0.001){
         newValue = true;
         settings->SetMassExt405(massExt);
-        ModbusHandler::GetInstance()->SetFloatRegisters(MASS_EXT_405_REGISTER, massExt);
+        //ModbusHandler::GetInstance()->SetFloatRegisters(MASS_EXT_405_REGISTER, massExt);
     }
 
     if(newValue){

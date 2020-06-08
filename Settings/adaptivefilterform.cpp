@@ -86,25 +86,25 @@ void AdaptiveFilterForm::on_saveButton_clicked(){
     if(settings->GetAdShort() != shortLength){
         valueChanged = true;
         settings->SetAdShort(shortLength);
-        ModbusHandler::GetInstance()->SetRegister(ADAPTIVE_SHORT_REGISTER, shortLength);
+        //ModbusHandler::GetInstance()->SetRegister(ADAPTIVE_SHORT_REGISTER, shortLength);
     }
 
     if(settings->GetAdLong() != longLength){
         valueChanged = true;
         settings->SetAdLong(longLength);
-        ModbusHandler::GetInstance()->SetRegister(ADAPTIVE_LONG_REGISTER, longLength);
+        //ModbusHandler::GetInstance()->SetRegister(ADAPTIVE_LONG_REGISTER, longLength);
     }
 
     if(settings->GetAdDiff() != difference){
         valueChanged = true;
         settings->SetAdDiff(difference);
-        ModbusHandler::GetInstance()->SetRegister(ADAPTIVE_DIFF_REGISTER, difference);
+        //ModbusHandler::GetInstance()->SetRegister(ADAPTIVE_DIFF_REGISTER, difference);
     }
 
     if(settings->GetAdPer() != percent){
         valueChanged = true;
         settings->SetAdPer(percent);
-        ModbusHandler::GetInstance()->SetRegister(ADAPTIVE_PER_REGISTER, percent);
+        //ModbusHandler::GetInstance()->SetRegister(ADAPTIVE_PER_REGISTER, percent);
     }
 
     if(valueChanged){
