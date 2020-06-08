@@ -38,6 +38,7 @@ SOURCES += \
         Modbus/modbusslave.cpp \
         Modbus/modbustestform.cpp \
         Modbus/staticipform.cpp \
+        Settings/405Settings/adaptivefilter405form.cpp \
         Settings/aboutform.cpp \
         Settings/adaptivefilterform.cpp \
         Settings/avgsettingform.cpp \
@@ -74,6 +75,7 @@ HEADERS += \
         Modbus/modbusslave.h \
         Modbus/modbustestform.h \
         Modbus/staticipform.h \
+        Settings/405Settings/adaptivefilter405form.h \
         Settings/aboutform.h \
         Settings/adaptivefilterform.h \
         Settings/avgsettingform.h \
@@ -102,6 +104,7 @@ FORMS += \
         Modbus/modbusform.ui \
         Modbus/modbustestform.ui \
         Modbus/staticipform.ui \
+        Settings/405Settings/adaptivefilter405form.ui \
         Settings/aboutform.ui \
         Settings/adaptivefilterform.ui \
         Settings/avgsettingform.ui \
