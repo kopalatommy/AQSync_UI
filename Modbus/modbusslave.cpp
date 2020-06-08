@@ -45,6 +45,10 @@ void ModbusSlave::ParseData(QByteArray data, QTcpSocket * socket){
             qDebug() << "Slave is writing multiple registers";
             emit WriteData(WriteMultipleRegisters(data), socket);
             return;
+        case TRIGGER_OUTPUT_FUNC:
+            qDebug() << "Slave is triggering output";
+            emit WriteData(TriggerOutput(data), socket);
+            return;
         default:
             qDebug() << "Slave has received bad function code: " << QString::number(data.at(7));
         }
@@ -590,4 +594,31 @@ void ModbusSlave::ParseWriteSettings(QList<short> lst){
     }
 
     if(newValue) emit ReceivedNewSettings();
+}
+
+QByteArray ModbusSlave::TriggerOutput(QByteArray data){
+    QByteArray toReturn;
+    //Function ID
+    toReturn.append(data.at(0));
+    toReturn.append(data.at(1));
+    //Protocol / unused space
+    toReturn.append(data.at(2));
+    toReturn.append(data.at(3));
+    //Length
+    toReturn.append(data.at(4));
+    toReturn.append(data.at(5));
+    //Slave Address
+    toReturn.append(data.at(6));
+    //Function code
+    toReturn.append(data.at(7));
+    //Address bytes
+    toReturn.append(data.at(8));
+    toReturn.append(data.at(9));
+    //Length bytes
+    toReturn.append(data.at(10));
+    toReturn.append(data.at(11));
+
+    emit TriggerOutputFunction(data.at(8));
+
+    return toReturn;
 }

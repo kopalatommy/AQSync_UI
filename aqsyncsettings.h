@@ -4,49 +4,125 @@
 #include <QDebug>
 #include <QFile>
 
-#define AVG_TIME_MARKER 'A'
-#define MODE_MARKER 'B'
-#define AD_SHORT_MARKER 'C'
-#define AD_LONG_MARKER 'D'
-#define AD_DIFF_MARKER 'E'
-#define AD_PER_MARKER 'F'
-#define NO_SLOPE_MARKER 'G'
-#define NO_ZERO_MARKER 'H'
-#define NO2_SLOPE_MARKER 'I'
-#define NO2_ZERO_MARKER 'J'
-#define OZONE_FLOW_SLOPE_MARKER 'K'
-#define CELL_FLOW_SLOPE_MARKER 'L'
-#define MASS_EXT_405_MARKER 'M'
-#define PM_SLOPE_MARKER 'N'
-#define PM_ZERO_MARKER 'O'
-#define MASS_EXT_880_MARKER 'P'
-#define BC_SLOPE_MARKER 'Q'
-#define BC_ZERO_MARKER 'R'
-#define FLOW_SLOPE_MARKER 'S'
-#define FLOW_ZERO_MARKER 'T'
-#define DATE_MARKER 'U'
-#define TIME_MARKER 'V'
+//BCP Settings
+//Serial
+#define BCP_ZERO_PERIOD_MARKER 'A'
+#define BCP_ZERO_FREQUENCY_MARKER 'B'
+#define BCP_DATE_MARKER 'C'
+#define BCP_TIME_MARKER 'D'
+#define BCP_ADAPTIVE_SHORT_MARKER 'E'
+#define BCP_ADAPTIVE_LONG_MARKER 'F'
+#define BCP_ADAPTIVE_DIFFERENCT_MARKER 'G'
+#define BCP_ADAPTIVE_PERCENT_MARKER 'H'
+#define BCP_BIT_MASK_MARKER 'I'
+#define BCP_ANALOG_405_MARKER 'K'
+#define BCP_ANALOG_880_MARKER 'L'
+#define BCP_PM_MASS_EXT_MARKER 'M'
+#define BCP_PM_SLOPE_MARKER 'N'
+#define BCP_PM_ZERO_MARKER 'O'
+#define BCP_BC_MASS_EXT_MARKER 'P'
+#define BCP_SLOPE_MARKER 'Q'
+#define BCP_ZERO_MARKER 'R'
+#define BCP_FLOW_SLOPE_MARKER 'S'
+#define BCP_FLOW_ZERO_MARKER 'T'
+#define BCP_FLOW_COFF_MARKER 'U'
+//Modbus
+    //Char
+#define BCP_ZERO_PERIOD_REGISTER 0
+    //short
+#define BCP_ZERO_FREQUENCY_REGISTER 1
+    //char[6]
+#define BCP_DATE_REGISTER 2
+    //char[6]
+#define BCP_TIME_REGISTER 8
+    //char
+#define BCP_ADAPTIVE_SHORT_REGISTER 14
+    //char
+#define BCP_ADAPTIVE_LONG_REGISTER 15
+    //char
+#define BCP_ADAPTIVE_DIFFERENCT_REGISTER 16
+    //char
+#define BCP_ADAPTIVE_PERCENT_REGISTER 17
+    //char
+#define BCP_BIT_MASK_REGISTER 18
+    //short
+#define BCP_ANALOG_405_REGISTER 19
+    //short
+#define BCP_ANALOG_880_REGISTER 20
+    //float
+#define BCP_PM_MASS_EXT_REGISTER 21
+    //float
+#define BCP_PM_SLOPE_REGISTER 23
+    //float
+#define BCP_PM_ZERO_REGISTER 24
+    //float
+#define BCP_BC_MASS_EXT_REGISTER 26
+    //float
+#define BCP_SLOPE_REISTER 28
+    //float
+#define BCP_ZERO_REGISTER 30
+    //float
+#define BCP_FLOW_SLOPE_REGISTER 32
+    //float
+#define BCP_FLOW_ZERO_REISER 34
+    //float
+#define BCP_FLOW_COFF_REGISTER 36
 
-#define AVG_TIME_REGISTER 0
-#define MODE_REGISTER 1
-#define ADAPTIVE_SHORT_REGISTER 2
-#define ADAPTIVE_LONG_REGISTER 3
-#define ADAPTIVE_DIFF_REGISTER 4
-#define ADAPTIVE_PER_REGISTER 5
-#define NO_SLOPE_REGISTER 6
-#define NO_ZERO_REGISTER 8
-#define NO2_SLOPE_REGISTER 10
-#define NO2_ZERO_REGISTER 12
-#define OZONE_FLOW_SLOPE_REGISTER 14
-#define CELL_FLOW_SLOPE_REGISTER 16
-#define MASS_EXT_405_REGISTER 18
-#define PM_SLOPE_REGISTER 20
-#define PM_ZERO_REGISTER 22
-#define MASS_EXT_880_REGISTER 24
-#define BC_SLOPE_REGISTER 26
-#define BC_ZERO_REGISTER 28
-#define FLOW_SLOPE_REGISTER 30
-#define FLOW_ZERO_REGISTER 32
+//405
+#define AVG_TIME_405_MARKER 'A'
+#define BIT_MASK_405_MARKER 'B'
+#define ADAPTIVE_SHORT_405_405_MARKER 'C'
+#define ADAPTIVE_LONG_405_MARKER 'D'
+#define ADAPTIVE_DIFFERENCE_405_MARKER 'E'
+#define ADAPTIVE_PERCENT_405_MARKER 'F'
+#define NO_SLOPE_405_MARKER 'G'
+#define NO_ZERO_405_MARKER 'H'
+#define NO_ANALOG_405_MARKER 'I'
+#define NO2_SLOPE_405_MARKER 'J'
+#define NO2_ZERO_405_MARKER 'K'
+#define NO2_ANALOG_405_MARKER 'L'
+#define OZONE_FLOW_SLOPE_405_MARKER 'M'
+#define CELL_FLOW_SLOPE_405_MARKER 'N'
+#define MODE_405_MARKER 'O'
+#define DATE_405_MARKER 'P'
+#define TIME_405_MARKER 'Q'
+//Modbus
+    //char
+#define AVG_TIME_405_REGISTER 38
+    //char
+#define BIT_MASK_405_REGISTER 39
+    //char
+#define ADAPTIVE_SHORT_405_REGISTER 40
+    //char
+#define ADAPTIVE_LONG_405_REGISTER 41
+    //char
+#define ADAPTIVE_DIFFERENCE_405_REGISTER 42
+    //char
+#define ADAPTIVE_PERCENT_405_REGISTER 43
+    //float
+#define NO_SLOPE_405_REGISTER 44
+    //float
+#define NO_ZERO_405_REGISTER 46
+    //short
+#define NO_ANALOG_405_REGISTER 48
+    //short
+#define NO2_SLOPE_405_REGISTER 49
+    //float
+#define NO2_ZERO_405_REGISTER 51
+    //float
+#define NO2_ANALOG_405_REGISTER 53
+    //float
+#define OZONE_FLOW_SLOPE_405_REGISTER 55
+    //float
+#define CELL_FLOW_SLOPE_405_REGISTER 57
+    //char
+#define MODE_405_REGISTER 58
+    //char[6]
+#define DATE_405_REGISTER 59
+    //char
+#define TIME_405_REGISTER 65
+
+//PAM
 
 #define BUILD_NUMBER 1
 

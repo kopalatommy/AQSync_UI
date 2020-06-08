@@ -199,6 +199,7 @@ void ModbusHandler::NewConnection(){
         slaveThread.start();
 
         connect(slave, &ModbusSlave::WriteData, this, &ModbusHandler::WriteNewSlaveData);
+        connect(slave, &ModbusSlave::TriggerOutputFunction, this, &ModbusHandler::TriggerOutputFunction);
     }
 }
 

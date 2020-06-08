@@ -85,6 +85,8 @@ signals:
     void NewDataLine();
     void NewSettings();
 
+    void TriggerOutputFunction(int val);
+
 private:
     static ModbusHandler * instance;
     ModbusHandler();

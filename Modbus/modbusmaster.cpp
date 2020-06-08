@@ -616,6 +616,7 @@ void ModbusMaster::WriteMultipleWholeRegisters(int address, QList<short> values)
         short val;
         char bytes[2];
     }byteArray;
+    byteArray.val = 0;
 
     //Function ID
     byteArray.val = functionID;
@@ -682,6 +683,7 @@ void ModbusMaster::BuildSettingsBytes(QList<char> & lst){
         int16_t val;
         char bytes[2];
     }byteArray;
+    byteArray.val = 0;
 
     for(int i = 0; i < 48; i++){
         byteArray.val = dataTable->ReadRegister(i);

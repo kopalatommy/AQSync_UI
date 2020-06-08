@@ -15,9 +15,14 @@
 #define WRITE_SINGLE_REGISTER 0x06
 #define WRITE_MULTIPLE_COILS 0x0F
 #define WRITE_MULTIPLE_REG_FUNC 0x10
+#define TRIGGER_OUTPUT_FUNC 0x11
 
 #define NEW_LINE_COIL 0
 #define NEW_SETTINGS_COIL 1
+
+#define OUTPUT_NO 0
+#define OUTPUT_OZONE 1
+#define OUTPUT_N2O 2
 
 class ModbusDataTable : public QObject
 {

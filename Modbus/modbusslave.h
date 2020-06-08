@@ -22,6 +22,8 @@ public slots:
 signals:
     void ReceivedNewSettings();
 
+    void TriggerOutputFunction(int val);
+
     void WriteData(QByteArray data, QTcpSocket * socket);
 
 private:
@@ -36,6 +38,7 @@ private:
     QByteArray WriteSingleCoil(QByteArray data);
     QByteArray WriteSingleRegister(QByteArray data);
     QByteArray WriteMultipleCoils(QByteArray data);
+    QByteArray TriggerOutput(QByteArray data);
 
     void RebuildRegisters(QByteArray arr, QList<int16_t> & lst);
 
