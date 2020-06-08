@@ -38,7 +38,6 @@ SOURCES += \
         Modbus/modbusslave.cpp \
         Modbus/modbustestform.cpp \
         Modbus/staticipform.cpp \
-        Settings/405Settings/adaptivefilter405form.cpp \
         Settings/aboutform.cpp \
         Settings/adaptivefilterform.cpp \
         Settings/avgsettingform.cpp \
@@ -59,7 +58,15 @@ SOURCES += \
         Communication/serialhandler.cpp \
         numberpadform.cpp \
         paramtersform.cpp \
-        utilities.cpp
+        utilities.cpp \
+    Settings/405Settings/settings405.cpp \
+    Settings/405Settings/adaptivefilter405form.cpp \
+    Settings/405Settings/nocalibration405form.cpp \
+    Settings/405Settings/flowcalibration405form.cpp \
+    Settings/405Settings/mode405form.cpp \
+    Settings/405Settings/no2calibration405form.cpp \
+    Settings/405Settings/datafilemenu405form.cpp \
+    Settings/405Settings/datafile405form.cpp
 
 HEADERS += \
         Communication/bcpserialhandler.h \
@@ -75,7 +82,6 @@ HEADERS += \
         Modbus/modbusslave.h \
         Modbus/modbustestform.h \
         Modbus/staticipform.h \
-        Settings/405Settings/adaptivefilter405form.h \
         Settings/aboutform.h \
         Settings/adaptivefilterform.h \
         Settings/avgsettingform.h \
@@ -95,7 +101,15 @@ HEADERS += \
         Communication/serialhandler.h \
         numberpadform.h \
         paramtersform.h \
-        utilities.h
+        utilities.h \
+    Settings/405Settings/settings405.h \
+    Settings/405Settings/adaptivefilter405form.h \
+    Settings/405Settings/nocalibration405form.h \
+    Settings/405Settings/flowcalibration405form.h \
+    Settings/405Settings/mode405form.h \
+    Settings/405Settings/no2calibration405form.h \
+    Settings/405Settings/datafilemenu405form.h \
+    Settings/405Settings/datafile405form.h
 
 FORMS += \
         DataFiles/datafilemenuform.ui \
@@ -119,9 +133,23 @@ FORMS += \
         Settings/systemsettingsform.ui \
         mainwindow.ui \
         numberpadform.ui \
-        paramtersform.ui
+        paramtersform.ui \
+    Settings/405Settings/settings405.ui \
+    Settings/405Settings/nocalibration405form.ui \
+    Settings/405Settings/flowcalibration405form.ui \
+    Settings/405Settings/mode405form.ui \
+    Settings/405Settings/no2calibration405form.ui \
+    Settings/405Settings/datafilemenu405form.ui \
+    Settings/405Settings/datafile405form.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+DISTFILES += \
+    Buttons/settings_Home_button.qml \
+    Buttons/settings_Home_Button.jpg
+
+RESOURCES += \
+    resources.qrc

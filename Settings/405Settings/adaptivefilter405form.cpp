@@ -1,14 +1,14 @@
 #include "adaptivefilter405form.h"
 #include "ui_adaptivefilter405form.h"
 
-AdaptiveFilter405Form::AdaptiveFilter405Form(QWidget *parent) :
-    QWidget(parent),
-    ui(new Ui::AdaptiveFilter405Form)
+adaptivefilter405form::adaptivefilter405form(QWidget *parent) :
+    QDialog(parent),
+    ui(new Ui::adaptivefilter405form)
 {
     ui->setupUi(this);
 }
 
-AdaptiveFilter405Form::~AdaptiveFilter405Form()
+adaptivefilter405form::~adaptivefilter405form()
 {
     delete ui;
 }

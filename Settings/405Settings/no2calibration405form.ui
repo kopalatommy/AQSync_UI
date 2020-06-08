@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>adaptivefilter405form</class>
- <widget class="QDialog" name="adaptivefilter405form">
+ <class>no2calibration405form</class>
+ <widget class="QDialog" name="no2calibration405form">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -13,32 +13,10 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QLabel" name="AdaptiveFilter">
-   <property name="geometry">
-    <rect>
-     <x>110</x>
-     <y>20</y>
-     <width>481</width>
-     <height>81</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Calibri</family>
-     <pointsize>30</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>Adaptive Filter</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
   <widget class="QPushButton" name="Home">
    <property name="geometry">
     <rect>
-     <x>670</x>
+     <x>680</x>
      <y>10</y>
      <width>100</width>
      <height>100</height>
@@ -55,6 +33,47 @@
     <size>
      <width>100</width>
      <height>100</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="NOCalibration">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>20</y>
+     <width>301</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>30</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>NO2 Calibration</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="save">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>400</y>
+     <width>120</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../../Buttons/button_save.jpg</normaloff>../../Buttons/button_save.jpg</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>120</width>
+     <height>60</height>
     </size>
    </property>
   </widget>
@@ -84,7 +103,7 @@
   <widget class="QPushButton" name="Right">
    <property name="geometry">
     <rect>
-     <x>670</x>
+     <x>680</x>
      <y>120</y>
      <width>100</width>
      <height>340</height>
@@ -104,79 +123,43 @@
     </size>
    </property>
   </widget>
-  <widget class="QPushButton" name="shortMask">
+  <widget class="QPushButton" name="slopeMask">
    <property name="geometry">
     <rect>
-     <x>154</x>
-     <y>140</y>
-     <width>211</width>
-     <height>111</height>
+     <x>140</x>
+     <y>130</y>
+     <width>521</width>
+     <height>71</height>
     </rect>
    </property>
    <property name="text">
     <string>PushButton</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="percentMask">
+  <widget class="QPushButton" name="slopeMask_2">
    <property name="geometry">
     <rect>
-     <x>150</x>
-     <y>280</y>
-     <width>211</width>
-     <height>111</height>
+     <x>140</x>
+     <y>220</y>
+     <width>521</width>
+     <height>71</height>
     </rect>
    </property>
    <property name="text">
     <string>PushButton</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="longMask">
+  <widget class="QPushButton" name="slopeMask_3">
    <property name="geometry">
     <rect>
-     <x>430</x>
-     <y>140</y>
-     <width>211</width>
-     <height>111</height>
+     <x>140</x>
+     <y>300</y>
+     <width>521</width>
+     <height>71</height>
     </rect>
    </property>
    <property name="text">
     <string>PushButton</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="differenceMask">
-   <property name="geometry">
-    <rect>
-     <x>430</x>
-     <y>280</y>
-     <width>211</width>
-     <height>111</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>PushButton</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="pushButton">
-   <property name="geometry">
-    <rect>
-     <x>330</x>
-     <y>410</y>
-     <width>120</width>
-     <height>60</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="icon">
-    <iconset>
-     <normaloff>../../Buttons/button_save.jpg</normaloff>../../Buttons/button_save.jpg</iconset>
-   </property>
-   <property name="iconSize">
-    <size>
-     <width>120</width>
-     <height>60</height>
-    </size>
    </property>
   </widget>
  </widget>

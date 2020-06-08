@@ -1,22 +1,22 @@
 #ifndef ADAPTIVEFILTER405FORM_H
 #define ADAPTIVEFILTER405FORM_H
 
-#include <QWidget>
+#include <QDialog>
 
 namespace Ui {
-class AdaptiveFilter405Form;
+class adaptivefilter405form;
 }
 
-class AdaptiveFilter405Form : public QWidget
+class adaptivefilter405form : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit AdaptiveFilter405Form(QWidget *parent = nullptr);
-    ~AdaptiveFilter405Form();
+    explicit adaptivefilter405form(QWidget *parent = 0);
+    ~adaptivefilter405form();
 
 private:
-    Ui::AdaptiveFilter405Form *ui;
+    Ui::adaptivefilter405form *ui;
 };
 
 #endif // ADAPTIVEFILTER405FORM_H
