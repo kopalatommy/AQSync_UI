@@ -66,7 +66,14 @@ SOURCES += \
     Settings/405Settings/mode405form.cpp \
     Settings/405Settings/no2calibration405form.cpp \
     Settings/405Settings/datafilemenu405form.cpp \
-    Settings/405Settings/datafile405form.cpp
+    Settings/405Settings/datafile405form.cpp \
+    Settings/405Settings/dataselection405form.cpp \
+    Settings/BCPSettings/bcpsettings.cpp \
+    Settings/BCPSettings/flowcalibrationbcpform.cpp \
+    Settings/BCPSettings/adaptivefilterbcpform.cpp \
+    Settings/BCPSettings/calibration880nm.cpp \
+    Settings/BCPSettings/autozerobcp.cpp \
+    Settings/405Settings/parameters405form.cpp
 
 HEADERS += \
         Communication/bcpserialhandler.h \
@@ -109,7 +116,14 @@ HEADERS += \
     Settings/405Settings/mode405form.h \
     Settings/405Settings/no2calibration405form.h \
     Settings/405Settings/datafilemenu405form.h \
-    Settings/405Settings/datafile405form.h
+    Settings/405Settings/datafile405form.h \
+    Settings/405Settings/dataselection405form.h \
+    Settings/BCPSettings/bcpsettings.h \
+    Settings/BCPSettings/flowcalibrationbcpform.h \
+    Settings/BCPSettings/adaptivefilterbcpform.h \
+    Settings/BCPSettings/calibration880nm.h \
+    Settings/BCPSettings/autozerobcp.h \
+    Settings/405Settings/parameters405form.h
 
 FORMS += \
         DataFiles/datafilemenuform.ui \
@@ -140,7 +154,14 @@ FORMS += \
     Settings/405Settings/mode405form.ui \
     Settings/405Settings/no2calibration405form.ui \
     Settings/405Settings/datafilemenu405form.ui \
-    Settings/405Settings/datafile405form.ui
+    Settings/405Settings/datafile405form.ui \
+    Settings/405Settings/dataselection405form.ui \
+    Settings/BCPSettings/bcpsettings.ui \
+    Settings/BCPSettings/flowcalibrationbcpform.ui \
+    Settings/BCPSettings/adaptivefilterbcpform.ui \
+    Settings/BCPSettings/calibration880nm.ui \
+    Settings/BCPSettings/autozerobcp.ui \
+    Settings/405Settings/parameters405form.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -149,7 +170,8 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 DISTFILES += \
     Buttons/settings_Home_button.qml \
-    Buttons/settings_Home_Button.jpg
+    Buttons/settings_Home_Button.jpg \
+    Settings/BlackCarbonSettings
 
 RESOURCES += \
     resources.qrc

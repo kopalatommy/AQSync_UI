@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>NOCalibration405form</class>
- <widget class="QDialog" name="NOCalibration405form">
+ <class>adaptivefilterBCPform</class>
+ <widget class="QDialog" name="adaptivefilterBCPform">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -16,8 +16,8 @@
   <widget class="QPushButton" name="Left">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>130</y>
+     <x>20</x>
+     <y>120</y>
      <width>100</width>
      <height>340</height>
     </rect>
@@ -36,10 +36,58 @@
     </size>
    </property>
   </widget>
+  <widget class="QLabel" name="AdaptiveFilter">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>20</y>
+     <width>481</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Calibri</family>
+     <pointsize>30</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Adaptive Filter</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="shortMask">
+   <property name="geometry">
+    <rect>
+     <x>154</x>
+     <y>140</y>
+     <width>211</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>PushButton</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="differenceMask">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>280</y>
+     <width>211</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>PushButton</string>
+   </property>
+  </widget>
   <widget class="QPushButton" name="Right">
    <property name="geometry">
     <rect>
-     <x>690</x>
+     <x>670</x>
      <y>120</y>
      <width>100</width>
      <height>340</height>
@@ -59,10 +107,36 @@
     </size>
    </property>
   </widget>
+  <widget class="QPushButton" name="percentMask">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>280</y>
+     <width>211</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>PushButton</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="longMask">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>140</y>
+     <width>211</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>PushButton</string>
+   </property>
+  </widget>
   <widget class="QPushButton" name="Home">
    <property name="geometry">
     <rect>
-     <x>690</x>
+     <x>670</x>
      <y>10</y>
      <width>100</width>
      <height>100</height>
@@ -82,10 +156,10 @@
     </size>
    </property>
   </widget>
-  <widget class="QPushButton" name="save">
+  <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>350</x>
+     <x>330</x>
      <y>410</y>
      <width>120</width>
      <height>60</height>
@@ -103,63 +177,6 @@
      <width>120</width>
      <height>60</height>
     </size>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="analogMask">
-   <property name="geometry">
-    <rect>
-     <x>150</x>
-     <y>320</y>
-     <width>521</width>
-     <height>71</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>PushButton</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="NOCalibration">
-   <property name="geometry">
-    <rect>
-     <x>260</x>
-     <y>20</y>
-     <width>351</width>
-     <height>71</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>30</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>NO Calibration</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="zeroMask">
-   <property name="geometry">
-    <rect>
-     <x>150</x>
-     <y>220</y>
-     <width>521</width>
-     <height>71</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>PushButton</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="slopeMask">
-   <property name="geometry">
-    <rect>
-     <x>150</x>
-     <y>130</y>
-     <width>521</width>
-     <height>71</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>PushButton</string>
    </property>
   </widget>
  </widget>
