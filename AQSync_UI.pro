@@ -29,8 +29,11 @@ SOURCES += \
         Communication/communicationhandler.cpp \
         DataFiles/datafilemenuform.cpp \
         DataFiles/filebrowserform.cpp \
+    DataHandlers/bcpdata.cpp \
+    DataHandlers/settingshandler.cpp \
         Graphing/graphform.cpp \
         Graphing/qcustomplot.cpp \
+    Helpers/utilities.cpp \
         Modbus/modbusdatatable.cpp \
         Modbus/modbusform.cpp \
         Modbus/modbushandler.cpp \
@@ -51,8 +54,6 @@ SOURCES += \
         Settings/settingformshandler.cpp \
         Settings/settingsform.cpp \
         Settings/systemsettingsform.cpp \
-        aqsyncdata.cpp \
-        aqsyncsettings.cpp \
         main.cpp \
         mainwindow.cpp \
         Communication/serialhandler.cpp \
@@ -78,10 +79,14 @@ SOURCES += \
 HEADERS += \
         Communication/bcpserialhandler.h \
         Communication/communicationhandler.h \
+    Communication/syncstatus.h \
         DataFiles/datafilemenuform.h \
         DataFiles/filebrowserform.h \
+    DataHandlers/bcpdata.h \
+    DataHandlers/settingshandler.h \
         Graphing/graphform.h \
         Graphing/qcustomplot.h \
+    Helpers/utilities.h \
         Modbus/modbusdatatable.h \
         Modbus/modbusform.h \
         Modbus/modbushandler.h \
@@ -102,8 +107,6 @@ HEADERS += \
         Settings/settingformshandler.h \
         Settings/settingsform.h \
         Settings/systemsettingsform.h \
-        aqsyncdata.h \
-        aqsyncsettings.h \
         mainwindow.h \
         Communication/serialhandler.h \
         numberpadform.h \
