@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'avgsettingform.ui'
 **
-** Created by: Qt User Interface Compiler version 5.5.1
+** Created by: Qt User Interface Compiler version 5.12.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -10,11 +10,8 @@
 #define UI_AVGSETTINGFORM_H
 
 #include <QtCore/QVariant>
-#include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QComboBox>
-#include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QWidget>
@@ -34,33 +31,38 @@ public:
     void setupUi(QWidget *AvgSettingForm)
     {
         if (AvgSettingForm->objectName().isEmpty())
-            AvgSettingForm->setObjectName(QStringLiteral("AvgSettingForm"));
+            AvgSettingForm->setObjectName(QString::fromUtf8("AvgSettingForm"));
         AvgSettingForm->resize(800, 480);
         closeButton = new QPushButton(AvgSettingForm);
-        closeButton->setObjectName(QStringLiteral("closeButton"));
+        closeButton->setObjectName(QString::fromUtf8("closeButton"));
         closeButton->setGeometry(QRect(720, 10, 70, 70));
         QFont font;
         font.setPointSize(15);
         closeButton->setFont(font);
         moveLeftButton = new QPushButton(AvgSettingForm);
-        moveLeftButton->setObjectName(QStringLiteral("moveLeftButton"));
+        moveLeftButton->setObjectName(QString::fromUtf8("moveLeftButton"));
         moveLeftButton->setGeometry(QRect(10, 90, 70, 380));
         moveRightButton = new QPushButton(AvgSettingForm);
-        moveRightButton->setObjectName(QStringLiteral("moveRightButton"));
+        moveRightButton->setObjectName(QString::fromUtf8("moveRightButton"));
         moveRightButton->setGeometry(QRect(720, 90, 70, 380));
         label = new QLabel(AvgSettingForm);
-        label->setObjectName(QStringLiteral("label"));
+        label->setObjectName(QString::fromUtf8("label"));
         label->setGeometry(QRect(10, 0, 781, 71));
         QFont font1;
         font1.setPointSize(30);
         label->setFont(font1);
         label->setAlignment(Qt::AlignCenter);
         comboBox = new QComboBox(AvgSettingForm);
-        comboBox->setObjectName(QStringLiteral("comboBox"));
+        comboBox->addItem(QString());
+        comboBox->addItem(QString());
+        comboBox->addItem(QString());
+        comboBox->addItem(QString());
+        comboBox->addItem(QString());
+        comboBox->setObjectName(QString::fromUtf8("comboBox"));
         comboBox->setGeometry(QRect(270, 200, 231, 51));
         comboBox->setFont(font);
         saveButton = new QPushButton(AvgSettingForm);
-        saveButton->setObjectName(QStringLiteral("saveButton"));
+        saveButton->setObjectName(QString::fromUtf8("saveButton"));
         saveButton->setGeometry(QRect(330, 280, 93, 28));
         label->raise();
         closeButton->raise();
@@ -76,20 +78,18 @@ public:
 
     void retranslateUi(QWidget *AvgSettingForm)
     {
-        AvgSettingForm->setWindowTitle(QApplication::translate("AvgSettingForm", "Form", 0));
-        closeButton->setText(QApplication::translate("AvgSettingForm", "Back", 0));
-        moveLeftButton->setText(QApplication::translate("AvgSettingForm", "<-", 0));
-        moveRightButton->setText(QApplication::translate("AvgSettingForm", "->", 0));
-        label->setText(QApplication::translate("AvgSettingForm", "Average Setting", 0));
-        comboBox->clear();
-        comboBox->insertItems(0, QStringList()
-         << QApplication::translate("AvgSettingForm", "Average Settings", 0)
-         << QApplication::translate("AvgSettingForm", "10 seconds", 0)
-         << QApplication::translate("AvgSettingForm", "1 minute", 0)
-         << QApplication::translate("AvgSettingForm", "5 minutes", 0)
-         << QApplication::translate("AvgSettingForm", "1 hour", 0)
-        );
-        saveButton->setText(QApplication::translate("AvgSettingForm", "Save", 0));
+        AvgSettingForm->setWindowTitle(QApplication::translate("AvgSettingForm", "Form", nullptr));
+        closeButton->setText(QApplication::translate("AvgSettingForm", "Back", nullptr));
+        moveLeftButton->setText(QApplication::translate("AvgSettingForm", "<-", nullptr));
+        moveRightButton->setText(QApplication::translate("AvgSettingForm", "->", nullptr));
+        label->setText(QApplication::translate("AvgSettingForm", "Average Setting", nullptr));
+        comboBox->setItemText(0, QApplication::translate("AvgSettingForm", "Average Settings", nullptr));
+        comboBox->setItemText(1, QApplication::translate("AvgSettingForm", "10 seconds", nullptr));
+        comboBox->setItemText(2, QApplication::translate("AvgSettingForm", "1 minute", nullptr));
+        comboBox->setItemText(3, QApplication::translate("AvgSettingForm", "5 minutes", nullptr));
+        comboBox->setItemText(4, QApplication::translate("AvgSettingForm", "1 hour", nullptr));
+
+        saveButton->setText(QApplication::translate("AvgSettingForm", "Save", nullptr));
     } // retranslateUi
 
 };

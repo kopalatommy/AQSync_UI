@@ -31,6 +31,23 @@ public:
 signals:
     void ParsedDataLine();
 
+    void NewAvgTime();
+    void NewDateSetting();
+    void NewTimeStting();
+
+    void NewAdFilterSettingsBCP();
+    void NewAutoZeroSettingBCP();
+    void New880CalSettingsBCP();
+    void New405CalSettingsBCP();
+    void NewFlowCalSettingsBCP();
+    void NewTPCorrSettingsBCP();
+
+    void NewAdFilterSettings405();
+    void NewModeSettings405();
+    void NewNOCalSetting405();
+    void NewNo2CalSettings405();
+    void NewFlowCalSettings405();
+
 private slots:
     void OnMessageTimerTimeout();
     void OnAckTimeout(QByteArray message);

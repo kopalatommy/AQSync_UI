@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'flowcalform.ui'
 **
-** Created by: Qt User Interface Compiler version 5.5.1
+** Created by: Qt User Interface Compiler version 5.12.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -10,10 +10,7 @@
 #define UI_FLOWCALFORM_H
 
 #include <QtCore/QVariant>
-#include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QButtonGroup>
-#include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QWidget>
@@ -40,66 +37,66 @@ public:
     void setupUi(QWidget *FlowCalForm)
     {
         if (FlowCalForm->objectName().isEmpty())
-            FlowCalForm->setObjectName(QStringLiteral("FlowCalForm"));
+            FlowCalForm->setObjectName(QString::fromUtf8("FlowCalForm"));
         FlowCalForm->resize(800, 480);
         FlowCalForm->setMinimumSize(QSize(800, 480));
         FlowCalForm->setMaximumSize(QSize(800, 480));
         slope = new QLabel(FlowCalForm);
-        slope->setObjectName(QStringLiteral("slope"));
+        slope->setObjectName(QString::fromUtf8("slope"));
         slope->setGeometry(QRect(150, 90, 481, 41));
         QFont font;
-        font.setFamily(QStringLiteral("Calibri"));
+        font.setFamily(QString::fromUtf8("Calibri"));
         font.setPointSize(15);
         slope->setFont(font);
         slope->setAlignment(Qt::AlignCenter);
         closeButton = new QPushButton(FlowCalForm);
-        closeButton->setObjectName(QStringLiteral("closeButton"));
+        closeButton->setObjectName(QString::fromUtf8("closeButton"));
         closeButton->setGeometry(QRect(720, 10, 70, 70));
         QFont font1;
         font1.setPointSize(15);
         closeButton->setFont(font1);
         saveButton = new QPushButton(FlowCalForm);
-        saveButton->setObjectName(QStringLiteral("saveButton"));
+        saveButton->setObjectName(QString::fromUtf8("saveButton"));
         saveButton->setGeometry(QRect(370, 320, 93, 28));
         label = new QLabel(FlowCalForm);
-        label->setObjectName(QStringLiteral("label"));
+        label->setObjectName(QString::fromUtf8("label"));
         label->setGeometry(QRect(10, 0, 781, 71));
         QFont font2;
         font2.setPointSize(30);
         label->setFont(font2);
         label->setAlignment(Qt::AlignCenter);
         zeroMask = new QPushButton(FlowCalForm);
-        zeroMask->setObjectName(QStringLiteral("zeroMask"));
+        zeroMask->setObjectName(QString::fromUtf8("zeroMask"));
         zeroMask->setGeometry(QRect(210, 130, 361, 51));
         moveLeftButton = new QPushButton(FlowCalForm);
-        moveLeftButton->setObjectName(QStringLiteral("moveLeftButton"));
+        moveLeftButton->setObjectName(QString::fromUtf8("moveLeftButton"));
         moveLeftButton->setGeometry(QRect(10, 90, 70, 380));
         slopeMask = new QPushButton(FlowCalForm);
-        slopeMask->setObjectName(QStringLiteral("slopeMask"));
+        slopeMask->setObjectName(QString::fromUtf8("slopeMask"));
         slopeMask->setGeometry(QRect(210, 80, 361, 51));
         moveRightButton = new QPushButton(FlowCalForm);
-        moveRightButton->setObjectName(QStringLiteral("moveRightButton"));
+        moveRightButton->setObjectName(QString::fromUtf8("moveRightButton"));
         moveRightButton->setGeometry(QRect(720, 90, 70, 380));
         zero = new QLabel(FlowCalForm);
-        zero->setObjectName(QStringLiteral("zero"));
+        zero->setObjectName(QString::fromUtf8("zero"));
         zero->setGeometry(QRect(150, 130, 481, 41));
         zero->setFont(font1);
         zero->setAlignment(Qt::AlignCenter);
         cellFlowMask = new QPushButton(FlowCalForm);
-        cellFlowMask->setObjectName(QStringLiteral("cellFlowMask"));
+        cellFlowMask->setObjectName(QString::fromUtf8("cellFlowMask"));
         cellFlowMask->setGeometry(QRect(210, 180, 361, 51));
         cellFlow = new QLabel(FlowCalForm);
-        cellFlow->setObjectName(QStringLiteral("cellFlow"));
+        cellFlow->setObjectName(QString::fromUtf8("cellFlow"));
         cellFlow->setGeometry(QRect(150, 190, 481, 41));
         cellFlow->setFont(font);
         cellFlow->setAlignment(Qt::AlignCenter);
         ozoneFlow = new QLabel(FlowCalForm);
-        ozoneFlow->setObjectName(QStringLiteral("ozoneFlow"));
+        ozoneFlow->setObjectName(QString::fromUtf8("ozoneFlow"));
         ozoneFlow->setGeometry(QRect(150, 230, 481, 41));
         ozoneFlow->setFont(font1);
         ozoneFlow->setAlignment(Qt::AlignCenter);
         ozoneFlowMask = new QPushButton(FlowCalForm);
-        ozoneFlowMask->setObjectName(QStringLiteral("ozoneFlowMask"));
+        ozoneFlowMask->setObjectName(QString::fromUtf8("ozoneFlowMask"));
         ozoneFlowMask->setGeometry(QRect(210, 230, 361, 51));
         cellFlow->raise();
         zero->raise();
@@ -122,19 +119,19 @@ public:
 
     void retranslateUi(QWidget *FlowCalForm)
     {
-        FlowCalForm->setWindowTitle(QApplication::translate("FlowCalForm", "Form", 0));
-        slope->setText(QApplication::translate("FlowCalForm", "Slope: 0", 0));
-        closeButton->setText(QApplication::translate("FlowCalForm", "Back", 0));
-        saveButton->setText(QApplication::translate("FlowCalForm", "Save", 0));
-        label->setText(QApplication::translate("FlowCalForm", "Flow Calibration Factors", 0));
+        FlowCalForm->setWindowTitle(QApplication::translate("FlowCalForm", "Form", nullptr));
+        slope->setText(QApplication::translate("FlowCalForm", "Slope: 0", nullptr));
+        closeButton->setText(QApplication::translate("FlowCalForm", "Back", nullptr));
+        saveButton->setText(QApplication::translate("FlowCalForm", "Save", nullptr));
+        label->setText(QApplication::translate("FlowCalForm", "Flow Calibration Factors", nullptr));
         zeroMask->setText(QString());
-        moveLeftButton->setText(QApplication::translate("FlowCalForm", "<-", 0));
+        moveLeftButton->setText(QApplication::translate("FlowCalForm", "<-", nullptr));
         slopeMask->setText(QString());
-        moveRightButton->setText(QApplication::translate("FlowCalForm", "->", 0));
-        zero->setText(QApplication::translate("FlowCalForm", "Zero: 0", 0));
+        moveRightButton->setText(QApplication::translate("FlowCalForm", "->", nullptr));
+        zero->setText(QApplication::translate("FlowCalForm", "Zero: 0", nullptr));
         cellFlowMask->setText(QString());
-        cellFlow->setText(QApplication::translate("FlowCalForm", "Cell Flow Slope: 0", 0));
-        ozoneFlow->setText(QApplication::translate("FlowCalForm", "Zero: 0", 0));
+        cellFlow->setText(QApplication::translate("FlowCalForm", "Cell Flow Slope: 0", nullptr));
+        ozoneFlow->setText(QApplication::translate("FlowCalForm", "Zero: 0", nullptr));
         ozoneFlowMask->setText(QString());
     } // retranslateUi
 

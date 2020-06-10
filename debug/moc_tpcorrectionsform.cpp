@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'tpcorrectionsform.h'
 **
-** Created by: The Qt Meta Object Compiler version 67 (Qt 5.5.1)
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.12.3)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
@@ -12,12 +12,14 @@
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'tpcorrectionsform.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.5.1. It"
+#error "This file was generated using the moc from 5.12.3. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
 
 QT_BEGIN_MOC_NAMESPACE
+QT_WARNING_PUSH
+QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_tpcorrectionsform_t {
     QByteArrayData data[5];
     char stringdata0[89];
@@ -45,7 +47,7 @@ QT_MOC_LITERAL(4, 65, 23) // "on_pushButton_3_clicked"
 static const uint qt_meta_data_tpcorrectionsform[] = {
 
  // content:
-       7,       // revision
+       8,       // revision
        0,       // classname
        0,    0, // classinfo
        3,   14, // methods
@@ -71,7 +73,7 @@ static const uint qt_meta_data_tpcorrectionsform[] = {
 void tpcorrectionsform::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        tpcorrectionsform *_t = static_cast<tpcorrectionsform *>(_o);
+        auto *_t = static_cast<tpcorrectionsform *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->on_pushButton_clicked(); break;
@@ -83,10 +85,14 @@ void tpcorrectionsform::qt_static_metacall(QObject *_o, QMetaObject::Call _c, in
     Q_UNUSED(_a);
 }
 
-const QMetaObject tpcorrectionsform::staticMetaObject = {
-    { &QDialog::staticMetaObject, qt_meta_stringdata_tpcorrectionsform.data,
-      qt_meta_data_tpcorrectionsform,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
-};
+QT_INIT_METAOBJECT const QMetaObject tpcorrectionsform::staticMetaObject = { {
+    &QDialog::staticMetaObject,
+    qt_meta_stringdata_tpcorrectionsform.data,
+    qt_meta_data_tpcorrectionsform,
+    qt_static_metacall,
+    nullptr,
+    nullptr
+} };
 
 
 const QMetaObject *tpcorrectionsform::metaObject() const
@@ -96,9 +102,9 @@ const QMetaObject *tpcorrectionsform::metaObject() const
 
 void *tpcorrectionsform::qt_metacast(const char *_clname)
 {
-    if (!_clname) return Q_NULLPTR;
+    if (!_clname) return nullptr;
     if (!strcmp(_clname, qt_meta_stringdata_tpcorrectionsform.stringdata0))
-        return static_cast<void*>(const_cast< tpcorrectionsform*>(this));
+        return static_cast<void*>(this);
     return QDialog::qt_metacast(_clname);
 }
 
@@ -118,4 +124,5 @@ int tpcorrectionsform::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     }
     return _id;
 }
+QT_WARNING_POP
 QT_END_MOC_NAMESPACE

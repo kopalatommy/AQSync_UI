@@ -72,5 +72,5 @@ void BCPSettings::on_Home_Button_clicked()
 
 void BCPSettings::on_NextRight_clicked()
 {
- //  SettingFormsHandler::MoveRight();
+//  SettingFormsHandler::MoveRight();
 }

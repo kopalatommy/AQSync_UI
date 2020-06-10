@@ -152,6 +152,8 @@ void BCPSerialHandler::ParseData(QByteArray data)
         {
             StartSync();
         }
+        
+        emit NewD
         break;
 
     case TIME_MARKER_BCP:

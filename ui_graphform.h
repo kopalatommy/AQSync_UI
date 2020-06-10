@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'graphform.ui'
 **
-** Created by: Qt User Interface Compiler version 5.5.1
+** Created by: Qt User Interface Compiler version 5.12.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -10,10 +10,8 @@
 #define UI_GRAPHFORM_H
 
 #include <QtCore/QVariant>
-#include <QtWidgets/QAction>
+#include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QButtonGroup>
-#include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QWidget>
@@ -55,108 +53,108 @@ public:
     void setupUi(QWidget *GraphForm)
     {
         if (GraphForm->objectName().isEmpty())
-            GraphForm->setObjectName(QStringLiteral("GraphForm"));
+            GraphForm->setObjectName(QString::fromUtf8("GraphForm"));
         GraphForm->resize(800, 480);
         zoomIn = new QPushButton(GraphForm);
-        zoomIn->setObjectName(QStringLiteral("zoomIn"));
+        zoomIn->setObjectName(QString::fromUtf8("zoomIn"));
         zoomIn->setGeometry(QRect(325, 410, 60, 60));
         zoomIn->setIconSize(QSize(60, 60));
         Left = new QPushButton(GraphForm);
-        Left->setObjectName(QStringLiteral("Left"));
+        Left->setObjectName(QString::fromUtf8("Left"));
         Left->setGeometry(QRect(780, 220, 21, 21));
         QIcon icon;
-        icon.addFile(QStringLiteral(":/buttons/GraphLeft.jpg"), QSize(), QIcon::Normal, QIcon::Off);
+        icon.addFile(QString::fromUtf8(":/buttons/GraphLeft.jpg"), QSize(), QIcon::Normal, QIcon::Off);
         Left->setIcon(icon);
         Settings = new QPushButton(GraphForm);
-        Settings->setObjectName(QStringLiteral("Settings"));
+        Settings->setObjectName(QString::fromUtf8("Settings"));
         Settings->setGeometry(QRect(225, 410, 60, 60));
         Settings->setIconSize(QSize(60, 60));
         Up = new QPushButton(GraphForm);
-        Up->setObjectName(QStringLiteral("Up"));
+        Up->setObjectName(QString::fromUtf8("Up"));
         Up->setGeometry(QRect(400, 450, 21, 21));
         QIcon icon1;
-        icon1.addFile(QStringLiteral(":/buttons/GrpahUp.jpg"), QSize(), QIcon::Normal, QIcon::Off);
+        icon1.addFile(QString::fromUtf8(":/buttons/GrpahUp.jpg"), QSize(), QIcon::Normal, QIcon::Off);
         Up->setIcon(icon1);
         BothOpen = new QWidget(GraphForm);
-        BothOpen->setObjectName(QStringLiteral("BothOpen"));
+        BothOpen->setObjectName(QString::fromUtf8("BothOpen"));
         BothOpen->setGeometry(QRect(10, 10, 671, 371));
         Gasses = new QPushButton(GraphForm);
-        Gasses->setObjectName(QStringLiteral("Gasses"));
+        Gasses->setObjectName(QString::fromUtf8("Gasses"));
         Gasses->setGeometry(QRect(125, 410, 60, 60));
         Gasses->setIconSize(QSize(60, 60));
         Down = new QPushButton(GraphForm);
-        Down->setObjectName(QStringLiteral("Down"));
+        Down->setObjectName(QString::fromUtf8("Down"));
         Down->setGeometry(QRect(400, 375, 21, 21));
         QIcon icon2;
-        icon2.addFile(QStringLiteral(":/buttons/GraphDown.jpg"), QSize(), QIcon::Normal, QIcon::Off);
+        icon2.addFile(QString::fromUtf8(":/buttons/GraphDown.jpg"), QSize(), QIcon::Normal, QIcon::Off);
         Down->setIcon(icon2);
         Right = new QPushButton(GraphForm);
-        Right->setObjectName(QStringLiteral("Right"));
+        Right->setObjectName(QString::fromUtf8("Right"));
         Right->setGeometry(QRect(675, 220, 21, 21));
         QIcon icon3;
-        icon3.addFile(QStringLiteral(":/buttons/GraphRight.jpg"), QSize(), QIcon::Normal, QIcon::Off);
+        icon3.addFile(QString::fromUtf8(":/buttons/GraphRight.jpg"), QSize(), QIcon::Normal, QIcon::Off);
         Right->setIcon(icon3);
         home = new QPushButton(GraphForm);
-        home->setObjectName(QStringLiteral("home"));
+        home->setObjectName(QString::fromUtf8("home"));
         home->setGeometry(QRect(35, 410, 60, 60));
         home->setIconSize(QSize(60, 60));
         zoomOut = new QPushButton(GraphForm);
-        zoomOut->setObjectName(QStringLiteral("zoomOut"));
+        zoomOut->setObjectName(QString::fromUtf8("zoomOut"));
         zoomOut->setGeometry(QRect(425, 410, 60, 60));
         zoomOut->setIconSize(QSize(60, 60));
         label = new QLabel(GraphForm);
-        label->setObjectName(QStringLiteral("label"));
+        label->setObjectName(QString::fromUtf8("label"));
         label->setGeometry(QRect(700, 0, 101, 31));
         label_2 = new QLabel(GraphForm);
-        label_2->setObjectName(QStringLiteral("label_2"));
+        label_2->setObjectName(QString::fromUtf8("label_2"));
         label_2->setGeometry(QRect(700, 30, 101, 31));
         label_3 = new QLabel(GraphForm);
-        label_3->setObjectName(QStringLiteral("label_3"));
+        label_3->setObjectName(QString::fromUtf8("label_3"));
         label_3->setGeometry(QRect(700, 60, 101, 31));
         label_4 = new QLabel(GraphForm);
-        label_4->setObjectName(QStringLiteral("label_4"));
+        label_4->setObjectName(QString::fromUtf8("label_4"));
         label_4->setGeometry(QRect(700, 90, 101, 31));
         label_5 = new QLabel(GraphForm);
-        label_5->setObjectName(QStringLiteral("label_5"));
+        label_5->setObjectName(QString::fromUtf8("label_5"));
         label_5->setGeometry(QRect(700, 120, 101, 31));
         label_6 = new QLabel(GraphForm);
-        label_6->setObjectName(QStringLiteral("label_6"));
+        label_6->setObjectName(QString::fromUtf8("label_6"));
         label_6->setGeometry(QRect(700, 150, 101, 31));
         label_7 = new QLabel(GraphForm);
-        label_7->setObjectName(QStringLiteral("label_7"));
+        label_7->setObjectName(QString::fromUtf8("label_7"));
         label_7->setGeometry(QRect(700, 180, 101, 31));
         label_8 = new QLabel(GraphForm);
-        label_8->setObjectName(QStringLiteral("label_8"));
+        label_8->setObjectName(QString::fromUtf8("label_8"));
         label_8->setGeometry(QRect(700, 210, 101, 31));
         label_9 = new QLabel(GraphForm);
-        label_9->setObjectName(QStringLiteral("label_9"));
+        label_9->setObjectName(QString::fromUtf8("label_9"));
         label_9->setGeometry(QRect(700, 240, 101, 31));
         label_10 = new QLabel(GraphForm);
-        label_10->setObjectName(QStringLiteral("label_10"));
+        label_10->setObjectName(QString::fromUtf8("label_10"));
         label_10->setGeometry(QRect(700, 270, 101, 31));
         label_11 = new QLabel(GraphForm);
-        label_11->setObjectName(QStringLiteral("label_11"));
+        label_11->setObjectName(QString::fromUtf8("label_11"));
         label_11->setGeometry(QRect(700, 300, 101, 31));
         label_12 = new QLabel(GraphForm);
-        label_12->setObjectName(QStringLiteral("label_12"));
+        label_12->setObjectName(QString::fromUtf8("label_12"));
         label_12->setGeometry(QRect(700, 330, 101, 31));
         label_13 = new QLabel(GraphForm);
-        label_13->setObjectName(QStringLiteral("label_13"));
+        label_13->setObjectName(QString::fromUtf8("label_13"));
         label_13->setGeometry(QRect(700, 360, 101, 31));
         label_14 = new QLabel(GraphForm);
-        label_14->setObjectName(QStringLiteral("label_14"));
+        label_14->setObjectName(QString::fromUtf8("label_14"));
         label_14->setGeometry(QRect(700, 390, 101, 31));
         label_15 = new QLabel(GraphForm);
-        label_15->setObjectName(QStringLiteral("label_15"));
+        label_15->setObjectName(QString::fromUtf8("label_15"));
         label_15->setGeometry(QRect(700, 420, 101, 31));
         bottomOpen = new QWidget(GraphForm);
-        bottomOpen->setObjectName(QStringLiteral("bottomOpen"));
+        bottomOpen->setObjectName(QString::fromUtf8("bottomOpen"));
         bottomOpen->setGeometry(QRect(10, 10, 781, 371));
         bothClosed = new QWidget(GraphForm);
-        bothClosed->setObjectName(QStringLiteral("bothClosed"));
+        bothClosed->setObjectName(QString::fromUtf8("bothClosed"));
         bothClosed->setGeometry(QRect(10, 0, 781, 471));
         legendOpen = new QWidget(GraphForm);
-        legendOpen->setObjectName(QStringLiteral("legendOpen"));
+        legendOpen->setObjectName(QString::fromUtf8("legendOpen"));
         legendOpen->setGeometry(QRect(20, 10, 661, 461));
         label_8->raise();
         bottomOpen->raise();
@@ -194,31 +192,31 @@ public:
 
     void retranslateUi(QWidget *GraphForm)
     {
-        GraphForm->setWindowTitle(QApplication::translate("GraphForm", "Form", 0));
-        zoomIn->setText(QApplication::translate("GraphForm", "Zoom In", 0));
+        GraphForm->setWindowTitle(QApplication::translate("GraphForm", "Form", nullptr));
+        zoomIn->setText(QApplication::translate("GraphForm", "Zoom In", nullptr));
         Left->setText(QString());
-        Settings->setText(QApplication::translate("GraphForm", "Range", 0));
+        Settings->setText(QApplication::translate("GraphForm", "Range", nullptr));
         Up->setText(QString());
-        Gasses->setText(QApplication::translate("GraphForm", "Select", 0));
+        Gasses->setText(QApplication::translate("GraphForm", "Select", nullptr));
         Down->setText(QString());
         Right->setText(QString());
-        home->setText(QApplication::translate("GraphForm", "Home", 0));
-        zoomOut->setText(QApplication::translate("GraphForm", "Zoom Out", 0));
-        label->setText(QApplication::translate("GraphForm", "Value 1", 0));
-        label_2->setText(QApplication::translate("GraphForm", "Value 2", 0));
-        label_3->setText(QApplication::translate("GraphForm", "Value 3", 0));
-        label_4->setText(QApplication::translate("GraphForm", "Value 4", 0));
-        label_5->setText(QApplication::translate("GraphForm", "Value 5", 0));
-        label_6->setText(QApplication::translate("GraphForm", "Value 6", 0));
-        label_7->setText(QApplication::translate("GraphForm", "Value 7", 0));
-        label_8->setText(QApplication::translate("GraphForm", "Value 8", 0));
-        label_9->setText(QApplication::translate("GraphForm", "Value 9", 0));
-        label_10->setText(QApplication::translate("GraphForm", "Value 10", 0));
-        label_11->setText(QApplication::translate("GraphForm", "Value 11", 0));
-        label_12->setText(QApplication::translate("GraphForm", "Value 12", 0));
-        label_13->setText(QApplication::translate("GraphForm", "Value 13", 0));
-        label_14->setText(QApplication::translate("GraphForm", "Value 14", 0));
-        label_15->setText(QApplication::translate("GraphForm", "Value 15", 0));
+        home->setText(QApplication::translate("GraphForm", "Home", nullptr));
+        zoomOut->setText(QApplication::translate("GraphForm", "Zoom Out", nullptr));
+        label->setText(QApplication::translate("GraphForm", "Value 1", nullptr));
+        label_2->setText(QApplication::translate("GraphForm", "Value 2", nullptr));
+        label_3->setText(QApplication::translate("GraphForm", "Value 3", nullptr));
+        label_4->setText(QApplication::translate("GraphForm", "Value 4", nullptr));
+        label_5->setText(QApplication::translate("GraphForm", "Value 5", nullptr));
+        label_6->setText(QApplication::translate("GraphForm", "Value 6", nullptr));
+        label_7->setText(QApplication::translate("GraphForm", "Value 7", nullptr));
+        label_8->setText(QApplication::translate("GraphForm", "Value 8", nullptr));
+        label_9->setText(QApplication::translate("GraphForm", "Value 9", nullptr));
+        label_10->setText(QApplication::translate("GraphForm", "Value 10", nullptr));
+        label_11->setText(QApplication::translate("GraphForm", "Value 11", nullptr));
+        label_12->setText(QApplication::translate("GraphForm", "Value 12", nullptr));
+        label_13->setText(QApplication::translate("GraphForm", "Value 13", nullptr));
+        label_14->setText(QApplication::translate("GraphForm", "Value 14", nullptr));
+        label_15->setText(QApplication::translate("GraphForm", "Value 15", nullptr));
     } // retranslateUi
 
 };

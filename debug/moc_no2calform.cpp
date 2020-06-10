@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'no2calform.h'
 **
-** Created by: The Qt Meta Object Compiler version 67 (Qt 5.5.1)
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.12.3)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
@@ -12,12 +12,14 @@
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'no2calform.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.5.1. It"
+#error "This file was generated using the moc from 5.12.3. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
 
 QT_BEGIN_MOC_NAMESPACE
+QT_WARNING_PUSH
+QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_NO2CalForm_t {
     QByteArrayData data[16];
     char stringdata0[226];
@@ -61,7 +63,7 @@ QT_MOC_LITERAL(15, 221, 4) // "code"
 static const uint qt_meta_data_NO2CalForm[] = {
 
  // content:
-       7,       // revision
+       8,       // revision
        0,       // classname
        0,    0, // classinfo
       12,   14, // methods
@@ -109,7 +111,7 @@ static const uint qt_meta_data_NO2CalForm[] = {
 void NO2CalForm::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        NO2CalForm *_t = static_cast<NO2CalForm *>(_o);
+        auto *_t = static_cast<NO2CalForm *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->CloseForms(); break;
@@ -128,32 +130,38 @@ void NO2CalForm::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
         int *result = reinterpret_cast<int *>(_a[0]);
-        void **func = reinterpret_cast<void **>(_a[1]);
         {
-            typedef void (NO2CalForm::*_t)();
-            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&NO2CalForm::CloseForms)) {
+            using _t = void (NO2CalForm::*)();
+            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&NO2CalForm::CloseForms)) {
                 *result = 0;
+                return;
             }
         }
         {
-            typedef void (NO2CalForm::*_t)();
-            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&NO2CalForm::MoveLeft)) {
+            using _t = void (NO2CalForm::*)();
+            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&NO2CalForm::MoveLeft)) {
                 *result = 1;
+                return;
             }
         }
         {
-            typedef void (NO2CalForm::*_t)();
-            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&NO2CalForm::MoveRight)) {
+            using _t = void (NO2CalForm::*)();
+            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&NO2CalForm::MoveRight)) {
                 *result = 2;
+                return;
             }
         }
     }
 }
 
-const QMetaObject NO2CalForm::staticMetaObject = {
-    { &QWidget::staticMetaObject, qt_meta_stringdata_NO2CalForm.data,
-      qt_meta_data_NO2CalForm,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
-};
+QT_INIT_METAOBJECT const QMetaObject NO2CalForm::staticMetaObject = { {
+    &QWidget::staticMetaObject,
+    qt_meta_stringdata_NO2CalForm.data,
+    qt_meta_data_NO2CalForm,
+    qt_static_metacall,
+    nullptr,
+    nullptr
+} };
 
 
 const QMetaObject *NO2CalForm::metaObject() const
@@ -163,9 +171,9 @@ const QMetaObject *NO2CalForm::metaObject() const
 
 void *NO2CalForm::qt_metacast(const char *_clname)
 {
-    if (!_clname) return Q_NULLPTR;
+    if (!_clname) return nullptr;
     if (!strcmp(_clname, qt_meta_stringdata_NO2CalForm.stringdata0))
-        return static_cast<void*>(const_cast< NO2CalForm*>(this));
+        return static_cast<void*>(this);
     return QWidget::qt_metacast(_clname);
 }
 
@@ -189,18 +197,19 @@ int NO2CalForm::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 // SIGNAL 0
 void NO2CalForm::CloseForms()
 {
-    QMetaObject::activate(this, &staticMetaObject, 0, Q_NULLPTR);
+    QMetaObject::activate(this, &staticMetaObject, 0, nullptr);
 }
 
 // SIGNAL 1
 void NO2CalForm::MoveLeft()
 {
-    QMetaObject::activate(this, &staticMetaObject, 1, Q_NULLPTR);
+    QMetaObject::activate(this, &staticMetaObject, 1, nullptr);
 }
 
 // SIGNAL 2
 void NO2CalForm::MoveRight()
 {
-    QMetaObject::activate(this, &staticMetaObject, 2, Q_NULLPTR);
+    QMetaObject::activate(this, &staticMetaObject, 2, nullptr);
 }
+QT_WARNING_POP
 QT_END_MOC_NAMESPACE
