@@ -6,6 +6,8 @@ settings405::settings405(QWidget *parent) :
     ui(new Ui::settings405)
 {
     ui->setupUi(this);
+
+    qDebug() << "Created 405 settings";
 }
 
 settings405::~settings405()
@@ -21,4 +23,9 @@ void settings405::on_AdaptiveFilter_clicked()
     adaptivefilter405form adaptivefilter;
     adaptivefilter.setModal(true);
     adaptivefilter.exec();
+}
+
+void settings405::on_Mode_2_clicked()
+{
+    qDebug() << "Mode 2 clicked";
 }

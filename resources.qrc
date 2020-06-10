@@ -1,1 +1,33 @@
-<RCC/>
+<RCC>
+    <qresource prefix="/">
+        <file>Buttons/405nmCalibration.jpg</file>
+        <file>Buttons/Adaptive_Filter_Setting.jpg</file>
+        <file>Buttons/AutoZero.jpg</file>
+        <file>Buttons/Browse.jpg</file>
+        <file>Buttons/button_back.jpg</file>
+        <file>Buttons/button_check-for-update.jpg</file>
+        <file>Buttons/button_data-file-menu.jpg</file>
+        <file>Buttons/button_delete.jpg</file>
+        <file>Buttons/button_flow-calibration.jpg</file>
+        <file>Buttons/button_home.jpg</file>
+        <file>Buttons/button_mode.jpg</file>
+        <file>Buttons/button_nm-calibration.jpg</file>
+        <file>Buttons/button_no2-calibration.jpg</file>
+        <file>Buttons/button_no-calibration.jpg</file>
+        <file>Buttons/button_no-filter.jpg</file>
+        <file>Buttons/button_refresh.jpg</file>
+        <file>Buttons/button_save.jpg</file>
+        <file>Buttons/button_save-to-usb (1).jpg</file>
+        <file>Buttons/button_select-file.jpg</file>
+        <file>Buttons/button_static-ip.jpg</file>
+        <file>Buttons/button_t-p-correction.jpg</file>
+        <file>Buttons/Cancel.jpg</file>
+        <file>Buttons/CleanLogsButton.jpg</file>
+        <file>Buttons/Left_Carrot.jpg</file>
+        <file>Buttons/Right_Carrot.jpg</file>
+        <file>Buttons/Select_All_Files.jpg</file>
+        <file>Buttons/select_current_file.jpg</file>
+        <file>Buttons/smallLeft.jpg</file>
+        <file>Buttons/smalllRight.jpg</file>
+    </qresource>
+</RCC>

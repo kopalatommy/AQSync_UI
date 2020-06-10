@@ -13,9 +13,12 @@ class settings405 : public QDialog
     Q_OBJECT
 
 public:
-    explicit settings405(QWidget *parent = 0);
+    explicit settings405(QWidget *parent = nullptr);
     void on_AdaptiveFilter_clicked();
     ~settings405();
+
+private slots:
+    void on_Mode_2_clicked();
 
 private:
     Ui::settings405 *ui;
