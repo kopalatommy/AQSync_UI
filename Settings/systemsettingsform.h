@@ -8,9 +8,6 @@
 #include <QFile>
 #include <QDir>
 
-#include "aqsyncsettings.h"
-#include "aqsyncdata.h"
-
 #define CREATE_EVERY_DAY_MARKER 'A'
 
 namespace Ui {

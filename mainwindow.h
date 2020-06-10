@@ -3,9 +3,8 @@
 
 #include <QMainWindow>
 
-#include "Communication/communicationhandler.h"
-#include "aqsyncsettings.h"
-#include "aqsyncdata.h"
+#include "Communication/serialhandler405.h"
+#include "Communication/bcpserialhandler.h"
 #include "Modbus/modbustestform.h"
 #include "Settings/settingformshandler.h"
 #include "paramtersform.h"

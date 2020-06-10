@@ -25,7 +25,7 @@ void ModeForm::on_moveLeftButton_clicked(){
 }
 
 void ModeForm::on_saveButton_clicked(){
-    int val = ui->comboBox->currentIndex();
+    /*int val = ui->comboBox->currentIndex();
     QMessageBox * msg = new QMessageBox();
 
     if(val > 0 && val < 5){
@@ -39,7 +39,7 @@ void ModeForm::on_saveButton_clicked(){
 
     connect(msg, &QMessageBox::finished, this, &ModeForm::OnMessageBoxFinished);
     msg->setStandardButtons(QMessageBox::StandardButton::Ok);
-    msg->show();
+    msg->show();*/
 }
 void ModeForm::OnMessageBoxFinished(int code){
     qDebug() << "Message box exited with: " << code;
@@ -48,5 +48,5 @@ void ModeForm::OnMessageBoxFinished(int code){
 
 void ModeForm::showEvent(QShowEvent *event){
     QWidget::showEvent(event);
-    ui->comboBox->setCurrentIndex(AQSyncSettings::GetInstance()->GetMode());
+    //ui->comboBox->setCurrentIndex(AQSyncSettings::GetInstance()->GetMode());
 }

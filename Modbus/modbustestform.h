@@ -6,8 +6,6 @@
 #include <QTimer>
 
 #include "modbushandler.h"
-#include "aqsyncdata.h"
-#include "aqsyncsettings.h"
 
 namespace Ui {
 class ModbusTestForm;

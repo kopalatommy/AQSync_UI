@@ -4,8 +4,6 @@
 #include <QWidget>
 #include <QDebug>
 
-#include "aqsyncsettings.h"
-
 namespace Ui {
 class AboutForm;
 }

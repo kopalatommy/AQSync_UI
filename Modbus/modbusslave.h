@@ -6,8 +6,6 @@
 #include <QtNetwork>
 
 #include "modbusdatatable.h"
-#include "aqsyncdata.h"
-#include "aqsyncsettings.h"
 
 class ModbusSlave : public QObject
 {

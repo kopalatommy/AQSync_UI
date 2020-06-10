@@ -5,7 +5,6 @@
 #include <QDebug>
 #include <QMessageBox>
 
-#include "aqsyncsettings.h"
 #include "Modbus/modbushandler.h"
 
 namespace Ui {

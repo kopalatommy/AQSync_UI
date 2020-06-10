@@ -52,7 +52,7 @@ void NOCalForm::NewZero(float val){
 }
 
 void NOCalForm::on_saveButton_clicked(){
-    bool newValue = false;
+    /*bool newValue = false;
     AQSyncSettings * settings = AQSyncSettings::GetInstance();
 
     if(fabs(static_cast<double>(slope - settings->GetNOSlope())) > 0.001){
@@ -73,7 +73,7 @@ void NOCalForm::on_saveButton_clicked(){
         msg->setText("Applying new NO cal factors");
         msg->setStandardButtons(QMessageBox::StandardButton::Ok);
         msg->show();
-    }
+    }*/
 }
 void NOCalForm::OnMessageBoxFinished(int code){
     qDebug() << "Message box exited with: " << code;
@@ -94,12 +94,12 @@ void NOCalForm::UpdateUI(){
 void NOCalForm::showEvent(QShowEvent *event){
     QWidget::showEvent(event);
 
-    if(!ignoreGrab){
+    /*if(!ignoreGrab){
         AQSyncSettings * settings = AQSyncSettings::GetInstance();
         slope = settings->GetNOSlope();
         zero = settings->GetNOZero();
     }
     ignoreGrab = false;
 
-    UpdateUI();
+    UpdateUI();*/
 }

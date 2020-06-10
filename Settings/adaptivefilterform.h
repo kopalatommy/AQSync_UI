@@ -6,7 +6,6 @@
 #include <QMessageBox>
 
 #include "numberpadform.h"
-#include "aqsyncsettings.h"
 #include "Modbus/modbushandler.h"
 
 namespace Ui {

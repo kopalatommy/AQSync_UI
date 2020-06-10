@@ -240,7 +240,6 @@ QByteArray ModbusSlave::WriteSingleRegister(QByteArray data){
 
     dataTable->SetRegister(startAddress, byteArray.val);
 
-    AQSyncSettings * settings = AQSyncSettings::GetInstance();
     //AQSyncData * d = AQSyncData::GetInstance();
 
     /*switch (startAddress) {
@@ -403,7 +402,7 @@ void ModbusSlave::ParseWriteSettings(QList<short> lst){
     }byteArray;
     byteArray.f = 0;
 
-    AQSyncSettings * settings = AQSyncSettings::GetInstance();
+    /*AQSyncSettings * settings = AQSyncSettings::GetInstance();
 
     if(settings->GetAvgTime() != lst[0]){
         newValue = true;
@@ -593,7 +592,7 @@ void ModbusSlave::ParseWriteSettings(QList<short> lst){
         //dataTable->SetRegisters(FLOW_ZERO_MARKER, 2, lst[32], lst[33]);
     }
 
-    if(newValue) emit ReceivedNewSettings();
+    if(newValue) emit ReceivedNewSettings();*/
 }
 
 QByteArray ModbusSlave::TriggerOutput(QByteArray data){

@@ -1,5 +1,5 @@
-#ifndef BCPSERIALHANDLER_H
-#define BCPSERIALHANDLER_H
+#ifndef SERIALHANDLER405_H
+#define SERIALHANDLER405_H
 
 #include <QObject>
 #include <QDebug>
@@ -9,20 +9,19 @@
 #include <QFile>
 
 #include "DataHandlers/settingshandler.h"
-#include "DataHandlers/bcpdata.h"
+#include "DataHandlers/datahandler405.h"
 #include "utilities.h"
 #include "syncstatus.h"
 
-#define PORT_NAME "ttyUSB0"
+//#define PORT_NAME "ttyUSB1"
+#define PORT_NAME "COM5"
 #define BAUD_RATE 19200
 
-class BCPSerialHandler : public QObject
+class SerialHandler405 : public QObject
 {
     Q_OBJECT
 public:
-    static BCPSerialHandler * GetInstance();
-
-    void SendMessage(QByteArray message);
+    static SerialHandler405 * GetInstance();
 
     void SendSetting(char marker, unsigned char val);
     void SendSetting(char marker, int val);
@@ -38,8 +37,8 @@ private slots:
     void ReadyRead();
 
 private:
-    static BCPSerialHandler * instance;
-    BCPSerialHandler();
+    static SerialHandler405 * instance;
+    SerialHandler405();
 
     QSerialPort serialPort;
     QTimer messageTimer;
@@ -52,13 +51,14 @@ private:
     bool receivedDate = false;
     bool receivedTime = false;
 
+    void SendMessage(QByteArray message);
     QByteArray PackageMessage(QByteArray message);
 
     void SetUpSerialPort();
-    void StartSync();
     void StartWritingMessages();
     void ParseData(QByteArray data);
     void ParseLog(QByteArray data);
+    void StartSync();
 };
 
-#endif // BCPSERIALHANDLER_H
+#endif // SERIALHANDLER405_H

@@ -25,7 +25,7 @@ void AvgSettingForm::on_moveLeftButton_clicked(){
 }
 
 void AvgSettingForm::on_saveButton_clicked(){
-    int val = ui->comboBox->currentIndex();
+    /*int val = ui->comboBox->currentIndex();
     QMessageBox * msg = new QMessageBox();
 
     if(val > 0 && val < 5){
@@ -38,7 +38,7 @@ void AvgSettingForm::on_saveButton_clicked(){
     }
     connect(msg, &QMessageBox::finished, this, &AvgSettingForm::OnMessageBoxFinish);
     msg->setStandardButtons(QMessageBox::StandardButton::Ok);
-    msg->show();
+    msg->show();*/
 }
 void AvgSettingForm::OnMessageBoxFinish(int code){
     qDebug() << "Message box exited with: " << code;
@@ -48,5 +48,5 @@ void AvgSettingForm::OnMessageBoxFinish(int code){
 void AvgSettingForm::showEvent(QShowEvent *event){
     QWidget::showEvent(event);
 
-    ui->comboBox->setCurrentIndex(AQSyncSettings::GetInstance()->GetAvgTime());
+    //ui->comboBox->setCurrentIndex(AQSyncSettings::GetInstance()->GetAvgTime());
 }

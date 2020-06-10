@@ -4,7 +4,7 @@
 #include <QtSerialPort>
 #include <QDebug>
 
-#include "aqsyncsettings.h"
+//#include "aqsyncsettings.h"
 
 class SerialHandler : public QObject
 {

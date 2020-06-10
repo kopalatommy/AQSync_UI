@@ -5,7 +5,6 @@
 #include <QMessageBox>
 #include <QDebug>
 
-#include "aqsyncsettings.h"
 #include "numberpadform.h"
 #include "Modbus/modbushandler.h"
 

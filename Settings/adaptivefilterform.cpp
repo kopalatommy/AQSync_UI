@@ -81,7 +81,7 @@ void AdaptiveFilterForm::NewDiff(unsigned char val){
 void AdaptiveFilterForm::on_saveButton_clicked(){
     bool valueChanged = false;
 
-    AQSyncSettings * settings = AQSyncSettings::GetInstance();
+    /*AQSyncSettings * settings = AQSyncSettings::GetInstance();
 
     if(settings->GetAdShort() != shortLength){
         valueChanged = true;
@@ -114,7 +114,7 @@ void AdaptiveFilterForm::on_saveButton_clicked(){
         connect(msg, &QMessageBox::finished, this, &AdaptiveFilterForm::OnMessageBoxExit);
         //Use show over exec to prevent blocking
         msg->show();
-    }
+    }*/
 }
 
 void AdaptiveFilterForm::OnMessageBoxExit(int code){
@@ -141,7 +141,7 @@ void AdaptiveFilterForm::UpdateUI(){
 void AdaptiveFilterForm::showEvent(QShowEvent *event){
     QWidget::showEvent(event);
 
-    AQSyncSettings * settings = AQSyncSettings::GetInstance();
+    /*AQSyncSettings * settings = AQSyncSettings::GetInstance();
 
     if(!ignoreGrab){
         shortLength = settings->GetAdShort();
@@ -151,5 +151,5 @@ void AdaptiveFilterForm::showEvent(QShowEvent *event){
     }
     ignoreGrab = false;
 
-    UpdateUI();
+    UpdateUI();*/
 }

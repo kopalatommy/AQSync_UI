@@ -53,7 +53,7 @@ void PMCalForm::NewZero(float val){
 }
 
 void PMCalForm::on_saveButton_clicked(){
-    bool newValue = false;
+    /*bool newValue = false;
     AQSyncSettings * settings = AQSyncSettings::GetInstance();
 
     if(fabs(static_cast<double>(slope - settings->GetPMSlope())) > 0.001){
@@ -80,7 +80,7 @@ void PMCalForm::on_saveButton_clicked(){
         msg->setStandardButtons(QMessageBox::StandardButton::Ok);
         connect(msg, &QMessageBox::finished, this, &PMCalForm::OnMessageBoxFinished);
         msg->show();
-    }
+    }*/
 }
 
 void PMCalForm::OnMessageBoxFinished(int code){
@@ -106,7 +106,7 @@ void PMCalForm::UpdateUI(){
 void PMCalForm::showEvent(QShowEvent *event){
     QWidget::showEvent(event);
 
-    if(!ignoreGrab){
+    /*if(!ignoreGrab){
         AQSyncSettings * settings = AQSyncSettings::GetInstance();
         slope = settings->GetPMSlope();
         zero = settings->GetPMZero();
@@ -114,7 +114,7 @@ void PMCalForm::showEvent(QShowEvent *event){
     }
     ignoreGrab = false;
 
-    UpdateUI();
+    UpdateUI();*/
 }
 
 void PMCalForm::on_massExtMask_clicked(){

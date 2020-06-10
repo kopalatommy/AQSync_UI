@@ -7,13 +7,12 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
 
+    SettingFormsHandler::GenerateForms();
+
     ModbusHandler::GetInstance();
 
-    CommunicationHandler::GetInstance();
-    AQSyncSettings::GetInstance();
-    AQSyncData::GetInstance();
-
-    SettingFormsHandler::GenerateForms();
+    BCPSerialHandler::GetInstance();
+    SerialHandler405::GetInstance();
 
     connect(&updateTimer, &QTimer::timeout, this, &MainWindow::UpdateUI);
     updateTimer.start(250);
@@ -40,7 +39,7 @@ void MainWindow::on_modbusTestButton_clicked(){
 }
 
 void MainWindow::UpdateUI(){
-    AQSyncData * data = AQSyncData::GetInstance();
+    /*AQSyncData * data = AQSyncData::GetInstance();
     char arr[15] = {0, };
 
     sprintf(arr, "%1.1f", static_cast<double>(data->GetBlackCarbon()));
@@ -103,7 +102,7 @@ void MainWindow::UpdateUI(){
         ui->loggingLabel->setText(QString("Warming up\n").append(arr));
     }else{
         ui->loggingLabel->setText("Logging");
-    }
+    }*/
 }
 
 void MainWindow::FinishedWarmingUp(){
