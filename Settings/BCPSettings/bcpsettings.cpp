@@ -52,8 +52,10 @@ void BCPSettings::on_cali405_clicked()
 
 void BCPSettings::on_TP_clicked()
 {
+
     SettingFormsHandler::JumpToIndex(13);
     close();
+
 }
 
 void BCPSettings::on_NextLeft_clicked()
@@ -65,6 +67,10 @@ void BCPSettings::on_NextLeft_clicked()
 
 void BCPSettings::on_Home_Button_clicked()
 {
-    SettingFormsHandler::JumpToIndex(20);
     close();
+}
+
+void BCPSettings::on_NextRight_clicked()
+{
+ //  SettingFormsHandler::MoveRight();
 }

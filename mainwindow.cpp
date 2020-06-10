@@ -26,10 +26,10 @@ MainWindow::~MainWindow(){
 
 void MainWindow::on_settingsButton_clicked(){
     //SettingFormsHandler::ShowInitial();
-    settings405 setting;
-    setting.setModal(true);
-    setting.exec();
-
+    //settings405 setting;
+    //setting.setModal(true);
+    //setting.exec();
+    SettingFormsHandler::ShowInitial();
 }
 
 void MainWindow::on_parametersButton_clicked(){

@@ -34,6 +34,8 @@ private slots:
 
     void on_Home_Button_clicked();
 
+    void on_NextRight_clicked();
+
 private:
     Ui::BCPSettings *ui;
 };
