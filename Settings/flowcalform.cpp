@@ -55,7 +55,7 @@ void FlowCalForm::NewZero(float val){
 
 void FlowCalForm::on_saveButton_clicked(){
     bool newValue = false;
-    AQSyncSettings * settings = AQSyncSettings::GetInstance();
+    /*AQSyncSettings * settings = AQSyncSettings::GetInstance();
 
     if(fabs(static_cast<double>(settings->GetFlowSlope() - slope)) > 0.001){
         newValue = true;
@@ -87,7 +87,7 @@ void FlowCalForm::on_saveButton_clicked(){
         msg->setText("Applying new flow cal factors");
         msg->setStandardButtons(QMessageBox::StandardButton::Ok);
         msg->show();
-    }
+    }*/
 }
 
 void FlowCalForm::OnMessageBoxFinished(int code){
@@ -117,7 +117,7 @@ void FlowCalForm::UpdateUI(){
 void FlowCalForm::showEvent(QShowEvent *event){
     QWidget::showEvent(event);
 
-    if(!ignoreGrab){
+    /*if(!ignoreGrab){
         AQSyncSettings * settings = AQSyncSettings::GetInstance();
         slope = settings->GetFlowSlope();
         zero = settings->GetFlowZero();
@@ -126,7 +126,7 @@ void FlowCalForm::showEvent(QShowEvent *event){
     }
     ignoreGrab = false;
 
-    UpdateUI();
+    UpdateUI();*/
 }
 
 void FlowCalForm::on_cellFlowMask_clicked(){

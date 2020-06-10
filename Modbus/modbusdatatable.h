@@ -4,9 +4,6 @@
 #include <QObject>
 #include <QDebug>
 
-#include "aqsyncsettings.h"
-#include "aqsyncdata.h"
-
 #define READ_COILS 0x01
 #define READ_DISCRETE_INPUTS 0x02
 #define READ_MULTIPLE_REG_FUNC 0x03

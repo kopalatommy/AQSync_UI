@@ -53,7 +53,7 @@ void NO2CalForm::NewZero(float val){
 
 void NO2CalForm::on_saveButton_clicked(){
     bool newValue = false;
-    AQSyncSettings * settings = AQSyncSettings::GetInstance();
+    /*AQSyncSettings * settings = AQSyncSettings::GetInstance();
 
     if(fabs(static_cast<double>(settings->GetNO2Slope() - slope)) > 0.001){
         newValue = true;
@@ -73,7 +73,7 @@ void NO2CalForm::on_saveButton_clicked(){
         msg->setText("Applying new NO2 cal factors");
         msg->setStandardButtons(QMessageBox::StandardButton::Ok);
         msg->show();
-    }
+    }*/
 }
 void NO2CalForm::OnMessageBoxExited(int code){
     qDebug() << "Message box exited with: " << code;
@@ -94,12 +94,12 @@ void NO2CalForm::UpdateUI(){
 void NO2CalForm::showEvent(QShowEvent *event){
     QWidget::showEvent(event);
 
-    if(!ignoreGrab){
+    /*if(!ignoreGrab){
         AQSyncSettings * settings = AQSyncSettings::GetInstance();
         slope = settings->GetNO2Slope();
         zero = settings->GetNO2Zero();
     }
     ignoreGrab = false;
 
-    UpdateUI();
+    UpdateUI();*/
 }

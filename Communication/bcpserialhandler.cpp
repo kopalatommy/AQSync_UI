@@ -5,6 +5,16 @@ BCPSerialHandler::BCPSerialHandler()
     SetUpSerialPort();
 }
 
+BCPSerialHandler * BCPSerialHandler::instance = nullptr;
+BCPSerialHandler * BCPSerialHandler::GetInstance()
+{
+    if(instance == nullptr)
+    {
+        instance = new BCPSerialHandler();
+    }
+    return instance;
+}
+
 void BCPSerialHandler::SetUpSerialPort()
 {
     serialPort.setPortName(PORT_NAME);
@@ -107,7 +117,7 @@ void BCPSerialHandler::ParseData(QByteArray data)
             }
             break;
 
-        //Debug message
+    //Debug message
     case '*':
         qDebug() << "BCP received debug message: " << data;
         break;

@@ -6,7 +6,6 @@
 #include <QMessageBox>
 
 #include "Modbus/modbushandler.h"
-#include "aqsyncsettings.h"
 
 namespace Ui {
 class AvgSettingForm;

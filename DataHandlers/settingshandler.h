@@ -150,6 +150,9 @@ public:
     float GetFlowZero_bcp();
     void SetFlowZero_bcp(float val);
 
+    char GetDateFormat();
+    void SetDateFormat(char val);
+
 private:
     static SettingsHandler * instance;
     SettingsHandler();
@@ -195,6 +198,9 @@ private:
     float ozoneFlowSlope_405 = 0;
     float cellFlowSlope_405 = 0;
     unsigned char mode_405 = 0;
+
+    //System settings
+    char dateFormat = 0;
 
     //Modbus Settings
 

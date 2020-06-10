@@ -343,6 +343,15 @@ void SettingsHandler::SetFlowZero_bcp(float val)
     WriteBCPSettings();
 }
 
+char SettingsHandler::GetDateFormat()
+{
+    return dateFormat;
+}
+void SettingsHandler::SetDateFormat(char val)
+{
+    dateFormat = val;
+}
+
 void SettingsHandler::ReadAllSettings()
 {
     Read405Settings();

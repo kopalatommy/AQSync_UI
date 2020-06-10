@@ -6,8 +6,6 @@
 
 #include "utilities.h"
 #include "modbusdatatable.h"
-#include "aqsyncdata.h"
-#include "aqsyncsettings.h"
 
 class ModbusMaster : public QObject
 {

@@ -7,7 +7,6 @@
 
 #include "numberpadform.h"
 #include "Modbus/modbushandler.h"
-#include "aqsyncsettings.h"
 
 namespace Ui {
 class NO2CalForm;

@@ -116,7 +116,7 @@ void ModbusMaster::ReadCoils(int address, int numCoils){
     itemsToRead = numCoils;
 }
 void ModbusMaster::ParseReadCoils(QByteArray data){
-    char tempC = 0;
+    /*char tempC = 0;
     int byteIndex = 0;
     int bitIndex = 0;
 
@@ -143,7 +143,7 @@ void ModbusMaster::ParseReadCoils(QByteArray data){
             byteIndex++;
             bitIndex = 0;
         }
-    }
+    }*/
 }
 
 void ModbusMaster::ReadDiscreteInputs(int address, int length){
@@ -211,7 +211,7 @@ void ModbusMaster::ReadInputRegisters(int address, int length){
     emit FinishedRequest(request);
 }
 void ModbusMaster::ParseReadInputs(QByteArray data){
-    char tempC = 0;
+    /*char tempC = 0;
     int byteIndex = 0;
     int bitIndex = 0;
 
@@ -228,7 +228,7 @@ void ModbusMaster::ParseReadInputs(QByteArray data){
             bitIndex = 0;
             byteIndex++;
         }
-    }
+    }*/
 }
 
 void ModbusMaster::RequestSettings(){
@@ -245,7 +245,7 @@ void ModbusMaster::ParseSettingRegisters(QList<short> lst){
     }byteArray;
     byteArray.val = 0;
 
-    AQSyncSettings * settings = AQSyncSettings::GetInstance();
+    /*AQSyncSettings * settings = AQSyncSettings::GetInstance();
 
     settings->SetAvgTime(static_cast<unsigned char>(lst[0]));
     settings->SetMode(static_cast<unsigned char>(lst[1]));
@@ -310,7 +310,7 @@ void ModbusMaster::ParseSettingRegisters(QList<short> lst){
     byteArray.bytes[1] = lst[33];
     settings->SetFlowZero(byteArray.val);
 
-    emit ReceivedNewSettings();
+    emit ReceivedNewSettings();*/
 }
 
 void ModbusMaster::RequestDataLine(){
@@ -330,7 +330,7 @@ void ModbusMaster::ParseDataLineRegisters(QList<short> lst){
 
     qDebug() << "Lst count: " << lst.count();
 
-    AQSyncData * data = AQSyncData::GetInstance();
+    /*AQSyncData * data = AQSyncData::GetInstance();
 
     byteArray.bytes[0] = lst[0];
     byteArray.bytes[1] = lst[1];
@@ -415,7 +415,7 @@ void ModbusMaster::ParseDataLineRegisters(QList<short> lst){
 
     data->SetMode(lst[43]);
 
-    emit ReceivedNewDataLine();
+    emit ReceivedNewDataLine();*/
 }
 
 void ModbusMaster::ReadMultipleRegisters(int startAddress, int length){
@@ -493,7 +493,7 @@ void ModbusMaster::ParseWriteSingleCoil(QByteArray data){
 }
 
 void ModbusMaster::WriteMultipleCoils(int address, QList<char> values){
-    QByteArray request;
+    /*QByteArray request;
     union{
         short val;
         char bytes[2];
@@ -538,7 +538,7 @@ void ModbusMaster::WriteMultipleCoils(int address, QList<char> values){
     }
     if(!added)request.append(val);
 
-    emit FinishedRequest(request);
+    emit FinishedRequest(request);*/
 }
 void ModbusMaster::ParseWriteMultipleCoils(QByteArray data){
     qDebug() << "Master wrote multiple coils: " << data;

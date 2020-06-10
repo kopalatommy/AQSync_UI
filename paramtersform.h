@@ -4,8 +4,6 @@
 #include <QWidget>
 #include <QDebug>
 
-#include "aqsyncdata.h"
-
 namespace Ui {
 class ParamtersForm;
 }

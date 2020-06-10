@@ -7,7 +7,7 @@ ParamtersForm::ParamtersForm(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    connect(AQSyncData::GetInstance(), &AQSyncData::FinshedReadingLine, this, &ParamtersForm::UpdateUI);
+    //connect(AQSyncData::GetInstance(), &AQSyncData::FinshedReadingLine, this, &ParamtersForm::UpdateUI);
 }
 
 ParamtersForm::~ParamtersForm(){
@@ -15,8 +15,8 @@ ParamtersForm::~ParamtersForm(){
 }
 
 void ParamtersForm::UpdateUI(){
-    if(viewing == true){
-        char arr[15] = {0, };
+    /*if(viewing == true){
+        /*char arr[15] = {0, };
         AQSyncData * data = AQSyncData::GetInstance();
 
         ui->logNumber->setText("Log Number: " + QString::number(data->GetLogNumber()));
@@ -85,7 +85,7 @@ void ParamtersForm::UpdateUI(){
         ui->time->setText("Time: " + QString(data->GetTime()));
 
         ui->mode->setText("Mode: " + QString::number(data->GetMode()));
-    }
+    }*/
 }
 
 void ParamtersForm::showEvent(QShowEvent *event){

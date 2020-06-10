@@ -11,6 +11,8 @@ public:
     static void SetBit(void * val, int bitIndex);
     static void ClearBit(void * val, int bitIndex);
 
+    static void ConvertCharTo(unsigned char & val);
+    static void ConvertCharBack(unsigned char & val);
     static void ConvertLongTo(long & val);
     static void ConvertLongBack(long & val);
     static void ConvertIntTo(int & val);

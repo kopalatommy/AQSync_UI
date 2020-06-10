@@ -19,8 +19,6 @@ ModbusTestForm::~ModbusTestForm(){
 void ModbusTestForm::UpdateUI(){
     if(!displaying) return;
 
-    AQSyncData * data = AQSyncData::GetInstance();
-    AQSyncSettings * settings = AQSyncSettings::GetInstance();
     ModbusDataTable * dataTable = ModbusHandler::GetInstance()->GetDataTable();
 
     /*ui->label->setText("Avg Time: " + QString::number(settings->GetAvgTime()) + " : " + QString::number(dataTable->GetShort(AVG_TIME_REGISTER)));

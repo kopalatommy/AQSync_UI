@@ -5,6 +5,16 @@ BCPData::BCPData()
 
 }
 
+BCPData * BCPData::instance = nullptr;
+BCPData * BCPData::GetInstance()
+{
+    if(instance == nullptr)
+    {
+        instance = new BCPData();
+    }
+    return instance;
+}
+
 long BCPData::GetLogNumber()
 {
     return logNumber;

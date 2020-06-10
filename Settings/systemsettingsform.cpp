@@ -70,7 +70,7 @@ void SystemSettingsForm::GetRemoteVer(){
     process->start("/home/2b/GetRemoteVer");
 }
 void SystemSettingsForm::OnGetRemoteVerExit(int code){
-    QProcess * process = reinterpret_cast<QProcess *>(sender());
+    /*QProcess * process = reinterpret_cast<QProcess *>(sender());
 
     if(code == 0){
         QString allInput = process->readAll();
@@ -121,7 +121,7 @@ void SystemSettingsForm::OnGetRemoteVerExit(int code){
             }
         }
     }
-    process->deleteLater();
+    process->deleteLater();*/
 }
 
 void SystemSettingsForm::OnUpdateExit(int code){
@@ -177,7 +177,7 @@ void SystemSettingsForm::ReadSettingsFile(){
         }
     }
 
-    AQSyncData::GetInstance()->SetCreateNewFileEveryDay(createFileEveryDay);
+    //AQSyncData::GetInstance()->SetCreateNewFileEveryDay(createFileEveryDay);
 }
 
 void SystemSettingsForm::WriteSettingsFile(){

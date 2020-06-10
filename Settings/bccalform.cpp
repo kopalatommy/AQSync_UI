@@ -53,7 +53,7 @@ void BCCalForm::NewZero(float val){
 }
 
 void BCCalForm::on_saveButton_clicked(){
-    AQSyncSettings * settings = AQSyncSettings::GetInstance();
+    /*AQSyncSettings * settings = AQSyncSettings::GetInstance();
     bool newValue = false;
 
     if(fabs(static_cast<double>(slope - settings->GetBCSlope())) > 0.001){
@@ -80,7 +80,7 @@ void BCCalForm::on_saveButton_clicked(){
         msg->setText("Applying new BC cal factors");
         msg->setStandardButtons(QMessageBox::StandardButton::Ok);
         msg->show();
-    }
+    }*/
 }
 
 void BCCalForm::OnMessageBoxExit(int code){
@@ -106,7 +106,7 @@ void BCCalForm::UpdateUI(){
 void BCCalForm::showEvent(QShowEvent *event){
     QWidget::showEvent(event);
 
-    if(!ignoreGrab){
+    /*if(!ignoreGrab){
         AQSyncSettings * settings = AQSyncSettings::GetInstance();
         slope = settings->GetBCSlope();
         zero = settings->GetBCZero();
@@ -114,7 +114,7 @@ void BCCalForm::showEvent(QShowEvent *event){
     }
     ignoreGrab = false;
 
-    UpdateUI();
+    UpdateUI();*/
 }
 
 void BCCalForm::on_massExtMask_clicked(){

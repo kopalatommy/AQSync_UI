@@ -27,13 +27,14 @@ CONFIG += c++11
 SOURCES += \
         Communication/bcpserialhandler.cpp \
         Communication/communicationhandler.cpp \
+    Communication/serialhandler405.cpp \
         DataFiles/datafilemenuform.cpp \
         DataFiles/filebrowserform.cpp \
     DataHandlers/bcpdata.cpp \
+    DataHandlers/datahandler405.cpp \
     DataHandlers/settingshandler.cpp \
         Graphing/graphform.cpp \
         Graphing/qcustomplot.cpp \
-    Helpers/utilities.cpp \
         Modbus/modbusdatatable.cpp \
         Modbus/modbusform.cpp \
         Modbus/modbushandler.cpp \
@@ -81,14 +82,15 @@ SOURCES += \
 HEADERS += \
         Communication/bcpserialhandler.h \
         Communication/communicationhandler.h \
+    Communication/serialhandler405.h \
     Communication/syncstatus.h \
         DataFiles/datafilemenuform.h \
         DataFiles/filebrowserform.h \
     DataHandlers/bcpdata.h \
+    DataHandlers/datahandler405.h \
     DataHandlers/settingshandler.h \
         Graphing/graphform.h \
         Graphing/qcustomplot.h \
-    Helpers/utilities.h \
         Modbus/modbusdatatable.h \
         Modbus/modbusform.h \
         Modbus/modbushandler.h \

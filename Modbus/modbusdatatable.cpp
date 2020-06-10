@@ -9,7 +9,7 @@ ModbusDataTable::ModbusDataTable(int numCoils, int numInputs, int numRegisters) 
 }
 
 void ModbusDataTable::LoadSettingRegisters(){
-    AQSyncSettings * settings = AQSyncSettings::GetInstance();
+    //AQSyncSettings * settings = AQSyncSettings::GetInstance();
 
     /*SetRegister(AVG_TIME_REGISTER, settings->GetAvgTime());
     SetRegister(MODE_REGISTER, settings->GetMode());

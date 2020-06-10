@@ -7,7 +7,7 @@ AboutForm::AboutForm(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    ui->buildLabel->setText("Build number: " + QString::number(AQSyncSettings::GetInstance()->GetBuildNumber()));
+    //ui->buildLabel->setText("Build number: " + QString::number(AQSyncSettings::GetInstance()->GetBuildNumber()));
 }
 
 AboutForm::~AboutForm(){
