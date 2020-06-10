@@ -26,8 +26,8 @@
     <string/>
    </property>
    <property name="icon">
-    <iconset>
-     <normaloff>../../Buttons/select_current_file.jpg</normaloff>../../Buttons/select_current_file.jpg</iconset>
+    <iconset resource="../../resources.qrc">
+     <normaloff>:/Buttons/select_current_file.jpg</normaloff>:/Buttons/select_current_file.jpg</iconset>
    </property>
    <property name="iconSize">
     <size>
@@ -49,8 +49,8 @@
     <string/>
    </property>
    <property name="icon">
-    <iconset>
-     <normaloff>../../Buttons/Select_All_Files.jpg</normaloff>../../Buttons/Select_All_Files.jpg</iconset>
+    <iconset resource="../../resources.qrc">
+     <normaloff>:/Buttons/Select_All_Files.jpg</normaloff>:/Buttons/Select_All_Files.jpg</iconset>
    </property>
    <property name="iconSize">
     <size>
@@ -72,8 +72,8 @@
     <string/>
    </property>
    <property name="icon">
-    <iconset>
-     <normaloff>../../Buttons/Browse.jpg</normaloff>../../Buttons/Browse.jpg</iconset>
+    <iconset resource="../../resources.qrc">
+     <normaloff>:/Buttons/Browse.jpg</normaloff>:/Buttons/Browse.jpg</iconset>
    </property>
    <property name="iconSize">
     <size>
@@ -95,8 +95,8 @@
     <string/>
    </property>
    <property name="icon">
-    <iconset>
-     <normaloff>../../Buttons/Cancel.jpg</normaloff>../../Buttons/Cancel.jpg</iconset>
+    <iconset resource="../../resources.qrc">
+     <normaloff>:/Buttons/Cancel.jpg</normaloff>:/Buttons/Cancel.jpg</iconset>
    </property>
    <property name="iconSize">
     <size>
@@ -118,8 +118,8 @@
     <string/>
    </property>
    <property name="icon">
-    <iconset>
-     <normaloff>../../Buttons/button_home.jpg</normaloff>../../Buttons/button_home.jpg</iconset>
+    <iconset resource="../../resources.qrc">
+     <normaloff>:/Buttons/button_home.jpg</normaloff>:/Buttons/button_home.jpg</iconset>
    </property>
    <property name="iconSize">
     <size>
@@ -129,6 +129,8 @@
    </property>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="../../resources.qrc"/>
+ </resources>
  <connections/>
 </ui>

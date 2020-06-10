@@ -29,5 +29,10 @@
         <file>Buttons/select_current_file.jpg</file>
         <file>Buttons/smallLeft.jpg</file>
         <file>Buttons/smalllRight.jpg</file>
+        <file>Buttons/button_parameters.jpg</file>
+        <file>Buttons/bigger_settings.jpg</file>
+        <file>Buttons/button_graphs.jpg</file>
+        <file>Buttons/parameters.jpg</file>
+        <file>Buttons/button_modbus-test.jpg</file>
     </qresource>
 </RCC>

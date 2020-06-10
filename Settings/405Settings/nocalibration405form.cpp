@@ -1,5 +1,8 @@
 #include "nocalibration405form.h"
 #include "ui_nocalibration405form.h"
+#include "mode405form.h"
+#include "no2calibration405form.h"
+#include "settings405.h"
 
 NOCalibration405form::NOCalibration405form(QWidget *parent) :
     QDialog(parent),
@@ -11,4 +14,25 @@ NOCalibration405form::NOCalibration405form(QWidget *parent) :
 NOCalibration405form::~NOCalibration405form()
 {
     delete ui;
+}
+
+void NOCalibration405form::on_Left_clicked()
+{
+    Mode405form left;
+    left.setModal(true);
+    left.exec();
+}
+
+void NOCalibration405form::on_Right_clicked()
+{
+    no2calibration405form NO2cali;
+    NO2cali.setModal(true);
+    NO2cali.exec();
+}
+
+void NOCalibration405form::on_Home_clicked()
+{
+    settings405 back;
+    back.setModal(true);
+    back.exec();
 }

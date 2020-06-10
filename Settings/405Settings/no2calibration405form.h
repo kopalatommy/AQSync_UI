@@ -15,6 +15,13 @@ public:
     explicit no2calibration405form(QWidget *parent = 0);
     ~no2calibration405form();
 
+private slots:
+    void on_Left_clicked();
+
+    void on_Right_clicked();
+
+    void on_Home_clicked();
+
 private:
     Ui::no2calibration405form *ui;
 };

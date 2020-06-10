@@ -49,7 +49,17 @@
      </rect>
     </property>
     <property name="text">
-     <string>Graph</string>
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="resources.qrc">
+      <normaloff>:/Buttons/button_graphs.jpg</normaloff>:/Buttons/button_graphs.jpg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>190</width>
+      <height>70</height>
+     </size>
     </property>
    </widget>
    <widget class="QPushButton" name="parametersButton">
@@ -62,7 +72,17 @@
      </rect>
     </property>
     <property name="text">
-     <string>Parameters</string>
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="resources.qrc">
+      <normaloff>:/Buttons/parameters.jpg</normaloff>:/Buttons/parameters.jpg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>190</width>
+      <height>70</height>
+     </size>
     </property>
    </widget>
    <widget class="QPushButton" name="settingsButton">
@@ -75,21 +95,40 @@
      </rect>
     </property>
     <property name="text">
-     <string>Settings</string>
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="resources.qrc">
+      <normaloff>:/Buttons/bigger_settings.jpg</normaloff>:/Buttons/bigger_settings.jpg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>190</width>
+      <height>70</height>
+     </size>
     </property>
    </widget>
    <widget class="QPushButton" name="modbusTestButton">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>320</y>
-      <width>93</width>
-      <height>51</height>
+      <x>20</x>
+      <y>280</y>
+      <width>100</width>
+      <height>100</height>
      </rect>
     </property>
     <property name="text">
-     <string>Modbus
-Test</string>
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="resources.qrc">
+      <normaloff>:/Buttons/button_modbus-test.jpg</normaloff>:/Buttons/button_modbus-test.jpg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>100</width>
+      <height>100</height>
+     </size>
     </property>
    </widget>
    <widget class="QLabel" name="dateTimeLabel">
@@ -340,6 +379,8 @@ Test</string>
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources/>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
  <connections/>
 </ui>

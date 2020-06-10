@@ -26,8 +26,8 @@
     <string/>
    </property>
    <property name="icon">
-    <iconset>
-     <normaloff>../../Buttons/Right_Carrot.jpg</normaloff>../../Buttons/Right_Carrot.jpg</iconset>
+    <iconset resource="../../resources.qrc">
+     <normaloff>:/Buttons/Right_Carrot.jpg</normaloff>:/Buttons/Right_Carrot.jpg</iconset>
    </property>
    <property name="iconSize">
     <size>
@@ -72,7 +72,7 @@
     <string>PM Device</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="NO2Calibration">
+  <widget class="QPushButton" name="cali405">
    <property name="geometry">
     <rect>
      <x>460</x>
@@ -85,8 +85,8 @@
     <string/>
    </property>
    <property name="icon">
-    <iconset>
-     <normaloff>../../Buttons/405nmCalibration.jpg</normaloff>../../Buttons/405nmCalibration.jpg</iconset>
+    <iconset resource="../../resources.qrc">
+     <normaloff>:/Buttons/405nmCalibration.jpg</normaloff>:/Buttons/405nmCalibration.jpg</iconset>
    </property>
    <property name="iconSize">
     <size>
@@ -108,8 +108,8 @@
     <string/>
    </property>
    <property name="icon">
-    <iconset>
-     <normaloff>../../Buttons/Left_Carrot.jpg</normaloff>../../Buttons/Left_Carrot.jpg</iconset>
+    <iconset resource="../../resources.qrc">
+     <normaloff>:/Buttons/Left_Carrot.jpg</normaloff>:/Buttons/Left_Carrot.jpg</iconset>
    </property>
    <property name="iconSize">
     <size>
@@ -131,8 +131,8 @@
     <string/>
    </property>
    <property name="icon">
-    <iconset>
-     <normaloff>../../Buttons/button_flow-calibration.jpg</normaloff>../../Buttons/button_flow-calibration.jpg</iconset>
+    <iconset resource="../../resources.qrc">
+     <normaloff>:/Buttons/button_flow-calibration.jpg</normaloff>:/Buttons/button_flow-calibration.jpg</iconset>
    </property>
    <property name="iconSize">
     <size>
@@ -154,8 +154,8 @@
     <string/>
    </property>
    <property name="icon">
-    <iconset>
-     <normaloff>../../Buttons/Adaptive_Filter_Setting.jpg</normaloff>../../Buttons/Adaptive_Filter_Setting.jpg</iconset>
+    <iconset resource="../../resources.qrc">
+     <normaloff>:/Buttons/Adaptive_Filter_Setting.jpg</normaloff>:/Buttons/Adaptive_Filter_Setting.jpg</iconset>
    </property>
    <property name="iconSize">
     <size>
@@ -164,7 +164,7 @@
     </size>
    </property>
   </widget>
-  <widget class="QPushButton" name="Mode_2">
+  <widget class="QPushButton" name="Auto_Zero">
    <property name="geometry">
     <rect>
      <x>460</x>
@@ -177,8 +177,8 @@
     <string/>
    </property>
    <property name="icon">
-    <iconset>
-     <normaloff>../../Buttons/AutoZero.jpg</normaloff>../../Buttons/AutoZero.jpg</iconset>
+    <iconset resource="../../resources.qrc">
+     <normaloff>:/Buttons/AutoZero.jpg</normaloff>:/Buttons/AutoZero.jpg</iconset>
    </property>
    <property name="iconSize">
     <size>
@@ -187,7 +187,7 @@
     </size>
    </property>
   </widget>
-  <widget class="QPushButton" name="NOCalibration">
+  <widget class="QPushButton" name="cali880">
    <property name="geometry">
     <rect>
      <x>180</x>
@@ -200,8 +200,8 @@
     <string/>
    </property>
    <property name="icon">
-    <iconset>
-     <normaloff>../../Buttons/button_nm-calibration.jpg</normaloff>../../Buttons/button_nm-calibration.jpg</iconset>
+    <iconset resource="../../resources.qrc">
+     <normaloff>:/Buttons/button_nm-calibration.jpg</normaloff>:/Buttons/button_nm-calibration.jpg</iconset>
    </property>
    <property name="iconSize">
     <size>
@@ -246,7 +246,7 @@
     <string>BCP Settings</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="dataFileMenu">
+  <widget class="QPushButton" name="TP">
    <property name="geometry">
     <rect>
      <x>460</x>
@@ -259,8 +259,8 @@
     <string/>
    </property>
    <property name="icon">
-    <iconset>
-     <normaloff>../../Buttons/button_t-p-correction.jpg</normaloff>../../Buttons/button_t-p-correction.jpg</iconset>
+    <iconset resource="../../resources.qrc">
+     <normaloff>:/Buttons/button_t-p-correction.jpg</normaloff>:/Buttons/button_t-p-correction.jpg</iconset>
    </property>
    <property name="iconSize">
     <size>
@@ -282,8 +282,8 @@
     <string/>
    </property>
    <property name="icon">
-    <iconset>
-     <normaloff>../../Buttons/button_home.jpg</normaloff>../../Buttons/button_home.jpg</iconset>
+    <iconset resource="../../resources.qrc">
+     <normaloff>:/Buttons/button_home.jpg</normaloff>:/Buttons/button_home.jpg</iconset>
    </property>
    <property name="iconSize">
     <size>
@@ -293,6 +293,8 @@
    </property>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="../../resources.qrc"/>
+ </resources>
  <connections/>
 </ui>

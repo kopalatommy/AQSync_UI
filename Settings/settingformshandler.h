@@ -5,7 +5,7 @@
 #include <QDebug>
 #include <QWidget>
 
-#include "settingsform.h"
+/*#include "settingsform.h"
 #include "avgsettingform.h"
 #include "modeform.h"
 #include "adaptivefilterform.h"
@@ -18,7 +18,7 @@
 #include "Modbus/staticipform.h"
 #include "datafilesform.h"
 #include "systemsettingsform.h"
-#include "aboutform.h"
+#include "aboutform.h"*/
 
 class SettingFormsHandler : public QObject
 {
@@ -27,6 +27,7 @@ public:
 
     static void ShowInitial();
     static void GenerateForms();
+    static QList<QWidget*> * GetSettingsList();
 
 public slots:
     static void MoveLeft();

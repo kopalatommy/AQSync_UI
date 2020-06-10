@@ -9,7 +9,7 @@ int main(int argc, char *argv[])
 
     qDebug() << "Started application";
 
-    settings405 w;
+    MainWindow w;
     w.show();
 
     return a.exec();

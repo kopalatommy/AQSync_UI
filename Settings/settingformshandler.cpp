@@ -13,7 +13,7 @@ SettingFormsHandler * SettingFormsHandler::instance = nullptr;
 int SettingFormsHandler::currentForm = 0;
 QList<QWidget *> SettingFormsHandler::forms;
 void SettingFormsHandler::GenerateForms(){
-    instance = new SettingFormsHandler();
+    /*instance = new SettingFormsHandler();
 
     SettingsForm * settings = new SettingsForm();
     connect(settings, &SettingsForm::MoveLeft, instance, &SettingFormsHandler::MoveLeft);
@@ -98,7 +98,7 @@ void SettingFormsHandler::GenerateForms(){
     connect(about, &AboutForm::MoveLeft, instance, &SettingFormsHandler::MoveLeft);
     connect(about, &AboutForm::MoveRight, instance, &SettingFormsHandler::MoveRight);
     connect(about, &AboutForm::CloseForms, instance, &SettingFormsHandler::CloseForms);
-    forms.append(about);
+    forms.append(about);*/
 }
 
 void SettingFormsHandler::ShowInitial(){
@@ -132,4 +132,9 @@ void SettingFormsHandler::JumpToIndex(int index){
         currentForm = index;
         forms[currentForm]->show();
     }
+}
+
+QList<QWidget*> * SettingFormsHandler::GetSettingsList()
+{
+    return &forms;
 }

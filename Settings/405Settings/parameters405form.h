@@ -15,6 +15,13 @@ public:
     explicit parameters405form(QWidget *parent = 0);
     ~parameters405form();
 
+private slots:
+    void on_right_clicked();
+
+    void on_pushButton_clicked();
+
+    void on_pushButton_2_clicked();
+
 private:
     Ui::parameters405form *ui;
 };

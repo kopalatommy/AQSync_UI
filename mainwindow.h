@@ -8,6 +8,11 @@
 #include "Modbus/modbustestform.h"
 #include "Settings/settingformshandler.h"
 #include "paramtersform.h"
+#include "Settings/405Settings/settings405.h"
+
+//Settings pages
+#include "Settings/405Settings/settings405.h"
+#include "Settings/BCPSettings/bcpsettings.h"
 
 namespace Ui {
 class MainWindow;
@@ -37,7 +42,7 @@ private slots:
 private:
     Ui::MainWindow *ui;
 
-    ModbusForm modbusForm;
+    //ModbusForm modbusForm;
     ModbusTestForm modbusTestForm;
     ParamtersForm parameters;
 
@@ -45,6 +50,8 @@ private:
 
     bool startingUp = true;
     int uiIndex = 0;
+
+    void CreateSettingPages();
 };
 
 #endif // MAINWINDOW_H

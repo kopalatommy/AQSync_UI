@@ -15,6 +15,13 @@ public:
     explicit Calibration880nm(QWidget *parent = 0);
     ~Calibration880nm();
 
+private slots:
+    void on_Left_clicked();
+
+    void on_Right_clicked();
+
+    void on_Home_clicked();
+
 private:
     Ui::Calibration880nm *ui;
 };

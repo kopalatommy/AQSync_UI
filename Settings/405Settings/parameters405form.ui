@@ -13,29 +13,6 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QPushButton" name="left">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>10</y>
-     <width>100</width>
-     <height>100</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="icon">
-    <iconset>
-     <normaloff>../../Buttons/smallRight.jpg</normaloff>../../Buttons/smallRight.jpg</iconset>
-   </property>
-   <property name="iconSize">
-    <size>
-     <width>100</width>
-     <height>100</height>
-    </size>
-   </property>
-  </widget>
   <widget class="QPushButton" name="right">
    <property name="geometry">
     <rect>
@@ -49,8 +26,8 @@
     <string/>
    </property>
    <property name="icon">
-    <iconset>
-     <normaloff>../../Buttons/smalllRight.jpg</normaloff>../../Buttons/smalllRight.jpg</iconset>
+    <iconset resource="../../resources.qrc">
+     <normaloff>:/Buttons/button_back.jpg</normaloff>:/Buttons/button_back.jpg</iconset>
    </property>
    <property name="iconSize">
     <size>
@@ -779,7 +756,55 @@
     <string>Time</string>
    </property>
   </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>100</width>
+     <height>100</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../../resources.qrc">
+     <normaloff>:/Buttons/smallLeft.jpg</normaloff>:/Buttons/smallLeft.jpg</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>100</width>
+     <height>100</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>10</y>
+     <width>100</width>
+     <height>100</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../../resources.qrc">
+     <normaloff>:/Buttons/smalllRight.jpg</normaloff>:/Buttons/smalllRight.jpg</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>100</width>
+     <height>100</height>
+    </size>
+   </property>
+  </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="../../resources.qrc"/>
+ </resources>
  <connections/>
 </ui>

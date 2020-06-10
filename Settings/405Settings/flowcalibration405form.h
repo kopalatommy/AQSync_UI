@@ -15,6 +15,13 @@ public:
     explicit flowcalibration405form(QWidget *parent = 0);
     ~flowcalibration405form();
 
+private slots:
+    void on_Left_clicked();
+
+    void on_Right_clicked();
+
+    void on_Home_clicked();
+
 private:
     Ui::flowcalibration405form *ui;
 };

@@ -15,6 +15,13 @@ public:
     explicit flowcalibrationBCPform(QWidget *parent = 0);
     ~flowcalibrationBCPform();
 
+private slots:
+    void on_Left_clicked();
+
+    void on_Right_clicked();
+
+    void on_Home_clicked();
+
 private:
     Ui::flowcalibrationBCPform *ui;
 };

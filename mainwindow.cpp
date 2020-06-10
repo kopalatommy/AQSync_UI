@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
@@ -15,6 +16,8 @@ MainWindow::MainWindow(QWidget *parent) :
 
     connect(&updateTimer, &QTimer::timeout, this, &MainWindow::UpdateUI);
     updateTimer.start(250);
+
+    CreateSettingPages();
 }
 
 MainWindow::~MainWindow(){
@@ -22,7 +25,11 @@ MainWindow::~MainWindow(){
 }
 
 void MainWindow::on_settingsButton_clicked(){
-    SettingFormsHandler::ShowInitial();
+    //SettingFormsHandler::ShowInitial();
+    settings405 setting;
+    setting.setModal(true);
+    setting.exec();
+
 }
 
 void MainWindow::on_parametersButton_clicked(){
@@ -106,4 +113,12 @@ void MainWindow::UpdateUI(){
 
 void MainWindow::FinishedWarmingUp(){
     startingUp = false;
+}
+
+void MainWindow::CreateSettingPages()
+{
+    QList<QWidget*> * settings = SettingFormsHandler::GetSettingsList();
+
+    settings->append(new settings405);
+    settings->append(new BCPSettings);
 }

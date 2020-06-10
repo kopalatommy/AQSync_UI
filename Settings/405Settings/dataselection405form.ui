@@ -44,8 +44,8 @@
     <string/>
    </property>
    <property name="icon">
-    <iconset>
-     <normaloff>../../Buttons/button_back.jpg</normaloff>../../Buttons/button_back.jpg</iconset>
+    <iconset resource="../../resources.qrc">
+     <normaloff>:/Buttons/button_back.jpg</normaloff>:/Buttons/button_back.jpg</iconset>
    </property>
    <property name="iconSize">
     <size>
@@ -67,8 +67,8 @@
     <string/>
    </property>
    <property name="icon">
-    <iconset>
-     <normaloff>../../Buttons/button_save.jpg</normaloff>../../Buttons/button_save.jpg</iconset>
+    <iconset resource="../../resources.qrc">
+     <normaloff>:/Buttons/button_save.jpg</normaloff>:/Buttons/button_save.jpg</iconset>
    </property>
    <property name="iconSize">
     <size>
@@ -186,6 +186,8 @@
    </property>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="../../resources.qrc"/>
+ </resources>
  <connections/>
 </ui>

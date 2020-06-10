@@ -26,8 +26,8 @@
     <string/>
    </property>
    <property name="icon">
-    <iconset>
-     <normaloff>../../Buttons/button_home.jpg</normaloff>../../Buttons/button_home.jpg</iconset>
+    <iconset resource="../../resources.qrc">
+     <normaloff>:/Buttons/button_home.jpg</normaloff>:/Buttons/button_home.jpg</iconset>
    </property>
    <property name="iconSize">
     <size>
@@ -67,8 +67,8 @@
     <string/>
    </property>
    <property name="icon">
-    <iconset>
-     <normaloff>../../Buttons/Left_Carrot.jpg</normaloff>../../Buttons/Left_Carrot.jpg</iconset>
+    <iconset resource="../../resources.qrc">
+     <normaloff>:/Buttons/Left_Carrot.jpg</normaloff>:/Buttons/Left_Carrot.jpg</iconset>
    </property>
    <property name="iconSize">
     <size>
@@ -108,8 +108,8 @@
     <string/>
    </property>
    <property name="icon">
-    <iconset>
-     <normaloff>../../Buttons/button_mode.jpg</normaloff>../../Buttons/button_mode.jpg</iconset>
+    <iconset resource="../../resources.qrc">
+     <normaloff>:/Buttons/button_mode.jpg</normaloff>:/Buttons/button_mode.jpg</iconset>
    </property>
    <property name="iconSize">
     <size>
@@ -131,8 +131,8 @@
     <string/>
    </property>
    <property name="icon">
-    <iconset>
-     <normaloff>../../Buttons/Right_Carrot.jpg</normaloff>../../Buttons/Right_Carrot.jpg</iconset>
+    <iconset resource="../../resources.qrc">
+     <normaloff>:/Buttons/Right_Carrot.jpg</normaloff>:/Buttons/Right_Carrot.jpg</iconset>
    </property>
    <property name="iconSize">
     <size>
@@ -190,8 +190,8 @@
     <string/>
    </property>
    <property name="icon">
-    <iconset>
-     <normaloff>../../Buttons/button_flow-calibration.jpg</normaloff>../../Buttons/button_flow-calibration.jpg</iconset>
+    <iconset resource="../../resources.qrc">
+     <normaloff>:/Buttons/button_flow-calibration.jpg</normaloff>:/Buttons/button_flow-calibration.jpg</iconset>
    </property>
    <property name="iconSize">
     <size>
@@ -231,8 +231,8 @@
     <string/>
    </property>
    <property name="icon">
-    <iconset>
-     <normaloff>../../Buttons/button_no2-calibration.jpg</normaloff>../../Buttons/button_no2-calibration.jpg</iconset>
+    <iconset resource="../../resources.qrc">
+     <normaloff>:/Buttons/button_no2-calibration.jpg</normaloff>:/Buttons/button_no2-calibration.jpg</iconset>
    </property>
    <property name="iconSize">
     <size>
@@ -241,30 +241,7 @@
     </size>
    </property>
   </widget>
-  <widget class="QPushButton" name="AdaptiveFilter">
-   <property name="geometry">
-    <rect>
-     <x>180</x>
-     <y>110</y>
-     <width>150</width>
-     <height>90</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="icon">
-    <iconset>
-     <normaloff>../../Buttons/Adaptive_Filter_Setting.jpg</normaloff>../../Buttons/Adaptive_Filter_Setting.jpg</iconset>
-   </property>
-   <property name="iconSize">
-    <size>
-     <width>150</width>
-     <height>90</height>
-    </size>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="dataFileMenu">
+  <widget class="QPushButton" name="Parameters">
    <property name="geometry">
     <rect>
      <x>460</x>
@@ -277,8 +254,8 @@
     <string/>
    </property>
    <property name="icon">
-    <iconset>
-     <normaloff>../../Buttons/button_data-file-menu.jpg</normaloff>../../Buttons/button_data-file-menu.jpg</iconset>
+    <iconset resource="../../resources.qrc">
+     <normaloff>:/Buttons/button_parameters.jpg</normaloff>:/Buttons/button_parameters.jpg</iconset>
    </property>
    <property name="iconSize">
     <size>
@@ -300,8 +277,31 @@
     <string/>
    </property>
    <property name="icon">
-    <iconset>
-     <normaloff>../../Buttons/button_no-calibration.jpg</normaloff>../../Buttons/button_no-calibration.jpg</iconset>
+    <iconset resource="../../resources.qrc">
+     <normaloff>:/Buttons/button_no-calibration.jpg</normaloff>:/Buttons/button_no-calibration.jpg</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>150</width>
+     <height>90</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="AdaptiveFilter">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>110</y>
+     <width>150</width>
+     <height>90</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../../resources.qrc">
+     <normaloff>:/Buttons/Adaptive_Filter_Setting.jpg</normaloff>:/Buttons/Adaptive_Filter_Setting.jpg</iconset>
    </property>
    <property name="iconSize">
     <size>
@@ -321,10 +321,12 @@
   <zorder>FlowCalibration</zorder>
   <zorder>PMDevice</zorder>
   <zorder>NO2Calibration</zorder>
-  <zorder>AdaptiveFilter</zorder>
-  <zorder>dataFileMenu</zorder>
+  <zorder>Parameters</zorder>
   <zorder>NOCalibration</zorder>
+  <zorder>AdaptiveFilter</zorder>
  </widget>
- <resources/>
+ <resources>
+  <include location="../../resources.qrc"/>
+ </resources>
  <connections/>
 </ui>

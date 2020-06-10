@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'qcustomplot.h'
 **
-** Created by: The Qt Meta Object Compiler version 67 (Qt 5.12.3)
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.5.1)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
@@ -14,14 +14,12 @@
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'qcustomplot.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.12.3. It"
+#error "This file was generated using the moc from 5.5.1. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
 
 QT_BEGIN_MOC_NAMESPACE
-QT_WARNING_PUSH
-QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_QCPScatterStyle_t {
     QByteArrayData data[20];
     char stringdata0[209];
@@ -67,7 +65,7 @@ QT_MOC_LITERAL(19, 200, 8) // "ssCustom"
 static const uint qt_meta_data_QCPScatterStyle[] = {
 
  // content:
-       8,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
        0,    0, // methods
@@ -77,8 +75,8 @@ static const uint qt_meta_data_QCPScatterStyle[] = {
        4,       // flags
        0,       // signalCount
 
- // enums: name, alias, flags, count, data
-       1,    1, 0x0,   18,   19,
+ // enums: name, flags, count, data
+       1, 0x0,   18,   18,
 
  // enum data: key, value
        2, uint(QCPScatterStyle::ssNone),
@@ -103,14 +101,10 @@ static const uint qt_meta_data_QCPScatterStyle[] = {
        0        // eod
 };
 
-QT_INIT_METAOBJECT const QMetaObject QCPScatterStyle::staticMetaObject = { {
-    nullptr,
-    qt_meta_stringdata_QCPScatterStyle.data,
-    qt_meta_data_QCPScatterStyle,
-    nullptr,
-    nullptr,
-    nullptr
-} };
+const QMetaObject QCPScatterStyle::staticMetaObject = {
+    { Q_NULLPTR, qt_meta_stringdata_QCPScatterStyle.data,
+      qt_meta_data_QCPScatterStyle,  Q_NULLPTR, Q_NULLPTR, Q_NULLPTR}
+};
 
 struct qt_meta_stringdata_QCPPainter_t {
     QByteArrayData data[7];
@@ -141,7 +135,7 @@ QT_MOC_LITERAL(6, 72, 12) // "PainterModes"
 static const uint qt_meta_data_QCPPainter[] = {
 
  // content:
-       8,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
        0,    0, // methods
@@ -151,9 +145,9 @@ static const uint qt_meta_data_QCPPainter[] = {
        4,       // flags
        0,       // signalCount
 
- // enums: name, alias, flags, count, data
-       1,    1, 0x1,    4,   24,
-       6,    1, 0x1,    4,   32,
+ // enums: name, flags, count, data
+       1, 0x1,    4,   22,
+       6, 0x1,    4,   30,
 
  // enum data: key, value
        2, uint(QCPPainter::pmDefault),
@@ -168,14 +162,10 @@ static const uint qt_meta_data_QCPPainter[] = {
        0        // eod
 };
 
-QT_INIT_METAOBJECT const QMetaObject QCPPainter::staticMetaObject = { {
-    &QPainter::staticMetaObject,
-    qt_meta_stringdata_QCPPainter.data,
-    qt_meta_data_QCPPainter,
-    nullptr,
-    nullptr,
-    nullptr
-} };
+const QMetaObject QCPPainter::staticMetaObject = {
+    { &QPainter::staticMetaObject, qt_meta_stringdata_QCPPainter.data,
+      qt_meta_data_QCPPainter,  Q_NULLPTR, Q_NULLPTR, Q_NULLPTR}
+};
 
 struct qt_meta_stringdata_QCPLayer_t {
     QByteArrayData data[8];
@@ -207,7 +197,7 @@ QT_MOC_LITERAL(7, 74, 7) // "visible"
 static const uint qt_meta_data_QCPLayer[] = {
 
  // content:
-       8,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
        0,    0, // methods
@@ -241,7 +231,7 @@ void QCPLayer::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, vo
 
 #ifndef QT_NO_PROPERTIES
     else if (_c == QMetaObject::ReadProperty) {
-        auto *_t = static_cast<QCPLayer *>(_o);
+        QCPLayer *_t = static_cast<QCPLayer *>(_o);
         Q_UNUSED(_t)
         void *_v = _a[0];
         switch (_id) {
@@ -253,7 +243,7 @@ void QCPLayer::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, vo
         default: break;
         }
     } else if (_c == QMetaObject::WriteProperty) {
-        auto *_t = static_cast<QCPLayer *>(_o);
+        QCPLayer *_t = static_cast<QCPLayer *>(_o);
         Q_UNUSED(_t)
         void *_v = _a[0];
         switch (_id) {
@@ -266,14 +256,10 @@ void QCPLayer::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, vo
     Q_UNUSED(_o);
 }
 
-QT_INIT_METAOBJECT const QMetaObject QCPLayer::staticMetaObject = { {
-    &QObject::staticMetaObject,
-    qt_meta_stringdata_QCPLayer.data,
-    qt_meta_data_QCPLayer,
-    qt_static_metacall,
-    nullptr,
-    nullptr
-} };
+const QMetaObject QCPLayer::staticMetaObject = {
+    { &QObject::staticMetaObject, qt_meta_stringdata_QCPLayer.data,
+      qt_meta_data_QCPLayer,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
+};
 
 
 const QMetaObject *QCPLayer::metaObject() const
@@ -283,9 +269,9 @@ const QMetaObject *QCPLayer::metaObject() const
 
 void *QCPLayer::qt_metacast(const char *_clname)
 {
-    if (!_clname) return nullptr;
+    if (!_clname) return Q_NULLPTR;
     if (!strcmp(_clname, qt_meta_stringdata_QCPLayer.stringdata0))
-        return static_cast<void*>(this);
+        return static_cast<void*>(const_cast< QCPLayer*>(this));
     return QObject::qt_metacast(_clname);
 }
 
@@ -350,7 +336,7 @@ QT_MOC_LITERAL(12, 123, 11) // "antialiased"
 static const uint qt_meta_data_QCPLayerable[] = {
 
  // content:
-       8,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
        2,   14, // methods
@@ -392,12 +378,12 @@ static const uint qt_meta_data_QCPLayerable[] = {
 void QCPLayerable::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        auto *_t = static_cast<QCPLayerable *>(_o);
+        QCPLayerable *_t = static_cast<QCPLayerable *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->layerChanged((*reinterpret_cast< QCPLayer*(*)>(_a[1]))); break;
         case 1: { bool _r = _t->setLayer((*reinterpret_cast< QCPLayer*(*)>(_a[1])));
-            if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = std::move(_r); }  break;
+            if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = _r; }  break;
         default: ;
         }
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
@@ -420,11 +406,11 @@ void QCPLayerable::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
         int *result = reinterpret_cast<int *>(_a[0]);
+        void **func = reinterpret_cast<void **>(_a[1]);
         {
-            using _t = void (QCPLayerable::*)(QCPLayer * );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&QCPLayerable::layerChanged)) {
+            typedef void (QCPLayerable::*_t)(QCPLayer * );
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&QCPLayerable::layerChanged)) {
                 *result = 0;
-                return;
             }
         }
     } else if (_c == QMetaObject::RegisterPropertyMetaType) {
@@ -441,7 +427,7 @@ void QCPLayerable::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id
 
 #ifndef QT_NO_PROPERTIES
     else if (_c == QMetaObject::ReadProperty) {
-        auto *_t = static_cast<QCPLayerable *>(_o);
+        QCPLayerable *_t = static_cast<QCPLayerable *>(_o);
         Q_UNUSED(_t)
         void *_v = _a[0];
         switch (_id) {
@@ -453,7 +439,7 @@ void QCPLayerable::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id
         default: break;
         }
     } else if (_c == QMetaObject::WriteProperty) {
-        auto *_t = static_cast<QCPLayerable *>(_o);
+        QCPLayerable *_t = static_cast<QCPLayerable *>(_o);
         Q_UNUSED(_t)
         void *_v = _a[0];
         switch (_id) {
@@ -467,14 +453,10 @@ void QCPLayerable::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id
 #endif // QT_NO_PROPERTIES
 }
 
-QT_INIT_METAOBJECT const QMetaObject QCPLayerable::staticMetaObject = { {
-    &QObject::staticMetaObject,
-    qt_meta_stringdata_QCPLayerable.data,
-    qt_meta_data_QCPLayerable,
-    qt_static_metacall,
-    nullptr,
-    nullptr
-} };
+const QMetaObject QCPLayerable::staticMetaObject = {
+    { &QObject::staticMetaObject, qt_meta_stringdata_QCPLayerable.data,
+      qt_meta_data_QCPLayerable,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
+};
 
 
 const QMetaObject *QCPLayerable::metaObject() const
@@ -484,9 +466,9 @@ const QMetaObject *QCPLayerable::metaObject() const
 
 void *QCPLayerable::qt_metacast(const char *_clname)
 {
-    if (!_clname) return nullptr;
+    if (!_clname) return Q_NULLPTR;
     if (!strcmp(_clname, qt_meta_stringdata_QCPLayerable.stringdata0))
-        return static_cast<void*>(this);
+        return static_cast<void*>(const_cast< QCPLayerable*>(this));
     return QObject::qt_metacast(_clname);
 }
 
@@ -527,7 +509,7 @@ int QCPLayerable::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 // SIGNAL 0
 void QCPLayerable::layerChanged(QCPLayer * _t1)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    void *_a[] = { Q_NULLPTR, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
     QMetaObject::activate(this, &staticMetaObject, 0, _a);
 }
 struct qt_meta_stringdata_QCPMarginGroup_t {
@@ -551,7 +533,7 @@ QT_MOC_LITERAL(0, 0, 14) // "QCPMarginGroup"
 static const uint qt_meta_data_QCPMarginGroup[] = {
 
  // content:
-       8,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
        0,    0, // methods
@@ -572,14 +554,10 @@ void QCPMarginGroup::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
     Q_UNUSED(_a);
 }
 
-QT_INIT_METAOBJECT const QMetaObject QCPMarginGroup::staticMetaObject = { {
-    &QObject::staticMetaObject,
-    qt_meta_stringdata_QCPMarginGroup.data,
-    qt_meta_data_QCPMarginGroup,
-    qt_static_metacall,
-    nullptr,
-    nullptr
-} };
+const QMetaObject QCPMarginGroup::staticMetaObject = {
+    { &QObject::staticMetaObject, qt_meta_stringdata_QCPMarginGroup.data,
+      qt_meta_data_QCPMarginGroup,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
+};
 
 
 const QMetaObject *QCPMarginGroup::metaObject() const
@@ -589,15 +567,17 @@ const QMetaObject *QCPMarginGroup::metaObject() const
 
 void *QCPMarginGroup::qt_metacast(const char *_clname)
 {
-    if (!_clname) return nullptr;
+    if (!_clname) return Q_NULLPTR;
     if (!strcmp(_clname, qt_meta_stringdata_QCPMarginGroup.stringdata0))
-        return static_cast<void*>(this);
+        return static_cast<void*>(const_cast< QCPMarginGroup*>(this));
     return QObject::qt_metacast(_clname);
 }
 
 int QCPMarginGroup::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
     _id = QObject::qt_metacall(_c, _id, _a);
+    if (_id < 0)
+        return _id;
     return _id;
 }
 struct qt_meta_stringdata_QCPLayoutElement_t {
@@ -638,7 +618,7 @@ QT_MOC_LITERAL(13, 142, 8) // "upLayout"
 static const uint qt_meta_data_QCPLayoutElement[] = {
 
  // content:
-       8,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
        0,    0, // methods
@@ -657,8 +637,8 @@ static const uint qt_meta_data_QCPLayoutElement[] = {
        8, QMetaType::QSize, 0x00095103,
        9, QMetaType::QSize, 0x00095103,
 
- // enums: name, alias, flags, count, data
-      10,   10, 0x0,    3,   40,
+ // enums: name, flags, count, data
+      10, 0x0,    3,   39,
 
  // enum data: key, value
       11, uint(QCPLayoutElement::upPreparation),
@@ -680,7 +660,7 @@ void QCPLayoutElement::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int
 
 #ifndef QT_NO_PROPERTIES
     else if (_c == QMetaObject::ReadProperty) {
-        auto *_t = static_cast<QCPLayoutElement *>(_o);
+        QCPLayoutElement *_t = static_cast<QCPLayoutElement *>(_o);
         Q_UNUSED(_t)
         void *_v = _a[0];
         switch (_id) {
@@ -694,7 +674,7 @@ void QCPLayoutElement::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int
         default: break;
         }
     } else if (_c == QMetaObject::WriteProperty) {
-        auto *_t = static_cast<QCPLayoutElement *>(_o);
+        QCPLayoutElement *_t = static_cast<QCPLayoutElement *>(_o);
         Q_UNUSED(_t)
         void *_v = _a[0];
         switch (_id) {
@@ -711,14 +691,10 @@ void QCPLayoutElement::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int
     Q_UNUSED(_o);
 }
 
-QT_INIT_METAOBJECT const QMetaObject QCPLayoutElement::staticMetaObject = { {
-    &QCPLayerable::staticMetaObject,
-    qt_meta_stringdata_QCPLayoutElement.data,
-    qt_meta_data_QCPLayoutElement,
-    qt_static_metacall,
-    nullptr,
-    nullptr
-} };
+const QMetaObject QCPLayoutElement::staticMetaObject = {
+    { &QCPLayerable::staticMetaObject, qt_meta_stringdata_QCPLayoutElement.data,
+      qt_meta_data_QCPLayoutElement,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
+};
 
 
 const QMetaObject *QCPLayoutElement::metaObject() const
@@ -728,9 +704,9 @@ const QMetaObject *QCPLayoutElement::metaObject() const
 
 void *QCPLayoutElement::qt_metacast(const char *_clname)
 {
-    if (!_clname) return nullptr;
+    if (!_clname) return Q_NULLPTR;
     if (!strcmp(_clname, qt_meta_stringdata_QCPLayoutElement.stringdata0))
-        return static_cast<void*>(this);
+        return static_cast<void*>(const_cast< QCPLayoutElement*>(this));
     return QCPLayerable::qt_metacast(_clname);
 }
 
@@ -780,7 +756,7 @@ QT_MOC_LITERAL(0, 0, 9) // "QCPLayout"
 static const uint qt_meta_data_QCPLayout[] = {
 
  // content:
-       8,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
        0,    0, // methods
@@ -801,14 +777,10 @@ void QCPLayout::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, v
     Q_UNUSED(_a);
 }
 
-QT_INIT_METAOBJECT const QMetaObject QCPLayout::staticMetaObject = { {
-    &QCPLayoutElement::staticMetaObject,
-    qt_meta_stringdata_QCPLayout.data,
-    qt_meta_data_QCPLayout,
-    qt_static_metacall,
-    nullptr,
-    nullptr
-} };
+const QMetaObject QCPLayout::staticMetaObject = {
+    { &QCPLayoutElement::staticMetaObject, qt_meta_stringdata_QCPLayout.data,
+      qt_meta_data_QCPLayout,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
+};
 
 
 const QMetaObject *QCPLayout::metaObject() const
@@ -818,15 +790,17 @@ const QMetaObject *QCPLayout::metaObject() const
 
 void *QCPLayout::qt_metacast(const char *_clname)
 {
-    if (!_clname) return nullptr;
+    if (!_clname) return Q_NULLPTR;
     if (!strcmp(_clname, qt_meta_stringdata_QCPLayout.stringdata0))
-        return static_cast<void*>(this);
+        return static_cast<void*>(const_cast< QCPLayout*>(this));
     return QCPLayoutElement::qt_metacast(_clname);
 }
 
 int QCPLayout::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
     _id = QCPLayoutElement::qt_metacall(_c, _id, _a);
+    if (_id < 0)
+        return _id;
     return _id;
 }
 struct qt_meta_stringdata_QCPLayoutGrid_t {
@@ -860,7 +834,7 @@ QT_MOC_LITERAL(7, 102, 10) // "rowSpacing"
 static const uint qt_meta_data_QCPLayoutGrid[] = {
 
  // content:
-       8,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
        0,    0, // methods
@@ -894,7 +868,7 @@ void QCPLayoutGrid::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
 
 #ifndef QT_NO_PROPERTIES
     else if (_c == QMetaObject::ReadProperty) {
-        auto *_t = static_cast<QCPLayoutGrid *>(_o);
+        QCPLayoutGrid *_t = static_cast<QCPLayoutGrid *>(_o);
         Q_UNUSED(_t)
         void *_v = _a[0];
         switch (_id) {
@@ -907,7 +881,7 @@ void QCPLayoutGrid::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
         default: break;
         }
     } else if (_c == QMetaObject::WriteProperty) {
-        auto *_t = static_cast<QCPLayoutGrid *>(_o);
+        QCPLayoutGrid *_t = static_cast<QCPLayoutGrid *>(_o);
         Q_UNUSED(_t)
         void *_v = _a[0];
         switch (_id) {
@@ -923,14 +897,10 @@ void QCPLayoutGrid::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
     Q_UNUSED(_o);
 }
 
-QT_INIT_METAOBJECT const QMetaObject QCPLayoutGrid::staticMetaObject = { {
-    &QCPLayout::staticMetaObject,
-    qt_meta_stringdata_QCPLayoutGrid.data,
-    qt_meta_data_QCPLayoutGrid,
-    qt_static_metacall,
-    nullptr,
-    nullptr
-} };
+const QMetaObject QCPLayoutGrid::staticMetaObject = {
+    { &QCPLayout::staticMetaObject, qt_meta_stringdata_QCPLayoutGrid.data,
+      qt_meta_data_QCPLayoutGrid,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
+};
 
 
 const QMetaObject *QCPLayoutGrid::metaObject() const
@@ -940,9 +910,9 @@ const QMetaObject *QCPLayoutGrid::metaObject() const
 
 void *QCPLayoutGrid::qt_metacast(const char *_clname)
 {
-    if (!_clname) return nullptr;
+    if (!_clname) return Q_NULLPTR;
     if (!strcmp(_clname, qt_meta_stringdata_QCPLayoutGrid.stringdata0))
-        return static_cast<void*>(this);
+        return static_cast<void*>(const_cast< QCPLayoutGrid*>(this));
     return QCPLayout::qt_metacast(_clname);
 }
 
@@ -992,7 +962,7 @@ QT_MOC_LITERAL(0, 0, 14) // "QCPLayoutInset"
 static const uint qt_meta_data_QCPLayoutInset[] = {
 
  // content:
-       8,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
        0,    0, // methods
@@ -1013,14 +983,10 @@ void QCPLayoutInset::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
     Q_UNUSED(_a);
 }
 
-QT_INIT_METAOBJECT const QMetaObject QCPLayoutInset::staticMetaObject = { {
-    &QCPLayout::staticMetaObject,
-    qt_meta_stringdata_QCPLayoutInset.data,
-    qt_meta_data_QCPLayoutInset,
-    qt_static_metacall,
-    nullptr,
-    nullptr
-} };
+const QMetaObject QCPLayoutInset::staticMetaObject = {
+    { &QCPLayout::staticMetaObject, qt_meta_stringdata_QCPLayoutInset.data,
+      qt_meta_data_QCPLayoutInset,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
+};
 
 
 const QMetaObject *QCPLayoutInset::metaObject() const
@@ -1030,15 +996,17 @@ const QMetaObject *QCPLayoutInset::metaObject() const
 
 void *QCPLayoutInset::qt_metacast(const char *_clname)
 {
-    if (!_clname) return nullptr;
+    if (!_clname) return Q_NULLPTR;
     if (!strcmp(_clname, qt_meta_stringdata_QCPLayoutInset.stringdata0))
-        return static_cast<void*>(this);
+        return static_cast<void*>(const_cast< QCPLayoutInset*>(this));
     return QCPLayout::qt_metacast(_clname);
 }
 
 int QCPLayoutInset::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
     _id = QCPLayout::qt_metacall(_c, _id, _a);
+    if (_id < 0)
+        return _id;
     return _id;
 }
 struct qt_meta_stringdata_QCPLineEnding_t {
@@ -1076,7 +1044,7 @@ QT_MOC_LITERAL(11, 112, 11) // "esSkewedBar"
 static const uint qt_meta_data_QCPLineEnding[] = {
 
  // content:
-       8,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
        0,    0, // methods
@@ -1086,8 +1054,8 @@ static const uint qt_meta_data_QCPLineEnding[] = {
        4,       // flags
        0,       // signalCount
 
- // enums: name, alias, flags, count, data
-       1,    1, 0x0,   10,   19,
+ // enums: name, flags, count, data
+       1, 0x0,   10,   18,
 
  // enum data: key, value
        2, uint(QCPLineEnding::esNone),
@@ -1104,14 +1072,10 @@ static const uint qt_meta_data_QCPLineEnding[] = {
        0        // eod
 };
 
-QT_INIT_METAOBJECT const QMetaObject QCPLineEnding::staticMetaObject = { {
-    nullptr,
-    qt_meta_stringdata_QCPLineEnding.data,
-    qt_meta_data_QCPLineEnding,
-    nullptr,
-    nullptr,
-    nullptr
-} };
+const QMetaObject QCPLineEnding::staticMetaObject = {
+    { Q_NULLPTR, qt_meta_stringdata_QCPLineEnding.data,
+      qt_meta_data_QCPLineEnding,  Q_NULLPTR, Q_NULLPTR, Q_NULLPTR}
+};
 
 struct qt_meta_stringdata_QCPGrid_t {
     QByteArrayData data[7];
@@ -1142,7 +1106,7 @@ QT_MOC_LITERAL(6, 77, 11) // "zeroLinePen"
 static const uint qt_meta_data_QCPGrid[] = {
 
  // content:
-       8,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
        0,    0, // methods
@@ -1168,7 +1132,7 @@ void QCPGrid::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, voi
 
 #ifndef QT_NO_PROPERTIES
     if (_c == QMetaObject::ReadProperty) {
-        auto *_t = static_cast<QCPGrid *>(_o);
+        QCPGrid *_t = static_cast<QCPGrid *>(_o);
         Q_UNUSED(_t)
         void *_v = _a[0];
         switch (_id) {
@@ -1181,7 +1145,7 @@ void QCPGrid::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, voi
         default: break;
         }
     } else if (_c == QMetaObject::WriteProperty) {
-        auto *_t = static_cast<QCPGrid *>(_o);
+        QCPGrid *_t = static_cast<QCPGrid *>(_o);
         Q_UNUSED(_t)
         void *_v = _a[0];
         switch (_id) {
@@ -1202,14 +1166,10 @@ void QCPGrid::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, voi
     Q_UNUSED(_a);
 }
 
-QT_INIT_METAOBJECT const QMetaObject QCPGrid::staticMetaObject = { {
-    &QCPLayerable::staticMetaObject,
-    qt_meta_stringdata_QCPGrid.data,
-    qt_meta_data_QCPGrid,
-    qt_static_metacall,
-    nullptr,
-    nullptr
-} };
+const QMetaObject QCPGrid::staticMetaObject = {
+    { &QCPLayerable::staticMetaObject, qt_meta_stringdata_QCPGrid.data,
+      qt_meta_data_QCPGrid,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
+};
 
 
 const QMetaObject *QCPGrid::metaObject() const
@@ -1219,9 +1179,9 @@ const QMetaObject *QCPGrid::metaObject() const
 
 void *QCPGrid::qt_metacast(const char *_clname)
 {
-    if (!_clname) return nullptr;
+    if (!_clname) return Q_NULLPTR;
     if (!strcmp(_clname, qt_meta_stringdata_QCPGrid.stringdata0))
-        return static_cast<void*>(this);
+        return static_cast<void*>(const_cast< QCPGrid*>(this));
     return QCPLayerable::qt_metacast(_clname);
 }
 
@@ -1399,7 +1359,7 @@ QT_MOC_LITERAL(96, 1184, 11) // "spAxisLabel"
 static const uint qt_meta_data_QCPAxis[] = {
 
  // content:
-       8,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
       10,   14, // methods
@@ -1545,14 +1505,14 @@ static const uint qt_meta_data_QCPAxis[] = {
        0,
        0,
 
- // enums: name, alias, flags, count, data
-      23,   23, 0x1,    4,  337,
-      85,   23, 0x1,    4,  345,
-      38,   38, 0x0,    2,  353,
-      43,   43, 0x0,    2,  357,
-      26,   26, 0x0,    2,  361,
-      92,   92, 0x1,    4,  365,
-      68,   92, 0x1,    4,  373,
+ // enums: name, flags, count, data
+      23, 0x1,    4,  330,
+      85, 0x1,    4,  338,
+      38, 0x0,    2,  346,
+      43, 0x0,    2,  350,
+      26, 0x0,    2,  354,
+      92, 0x1,    4,  358,
+      68, 0x1,    4,  366,
 
  // enum data: key, value
       81, uint(QCPAxis::atLeft),
@@ -1584,7 +1544,7 @@ static const uint qt_meta_data_QCPAxis[] = {
 void QCPAxis::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        auto *_t = static_cast<QCPAxis *>(_o);
+        QCPAxis *_t = static_cast<QCPAxis *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->ticksRequest(); break;
@@ -1601,46 +1561,41 @@ void QCPAxis::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, voi
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
         int *result = reinterpret_cast<int *>(_a[0]);
+        void **func = reinterpret_cast<void **>(_a[1]);
         {
-            using _t = void (QCPAxis::*)();
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&QCPAxis::ticksRequest)) {
+            typedef void (QCPAxis::*_t)();
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&QCPAxis::ticksRequest)) {
                 *result = 0;
-                return;
             }
         }
         {
-            using _t = void (QCPAxis::*)(const QCPRange & );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&QCPAxis::rangeChanged)) {
+            typedef void (QCPAxis::*_t)(const QCPRange & );
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&QCPAxis::rangeChanged)) {
                 *result = 1;
-                return;
             }
         }
         {
-            using _t = void (QCPAxis::*)(const QCPRange & , const QCPRange & );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&QCPAxis::rangeChanged)) {
+            typedef void (QCPAxis::*_t)(const QCPRange & , const QCPRange & );
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&QCPAxis::rangeChanged)) {
                 *result = 2;
-                return;
             }
         }
         {
-            using _t = void (QCPAxis::*)(QCPAxis::ScaleType );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&QCPAxis::scaleTypeChanged)) {
+            typedef void (QCPAxis::*_t)(QCPAxis::ScaleType );
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&QCPAxis::scaleTypeChanged)) {
                 *result = 3;
-                return;
             }
         }
         {
-            using _t = void (QCPAxis::*)(const QCPAxis::SelectableParts & );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&QCPAxis::selectionChanged)) {
+            typedef void (QCPAxis::*_t)(const QCPAxis::SelectableParts & );
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&QCPAxis::selectionChanged)) {
                 *result = 4;
-                return;
             }
         }
         {
-            using _t = void (QCPAxis::*)(const QCPAxis::SelectableParts & );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&QCPAxis::selectableChanged)) {
+            typedef void (QCPAxis::*_t)(const QCPAxis::SelectableParts & );
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&QCPAxis::selectableChanged)) {
                 *result = 5;
-                return;
             }
         }
     } else if (_c == QMetaObject::RegisterPropertyMetaType) {
@@ -1659,7 +1614,7 @@ void QCPAxis::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, voi
 
 #ifndef QT_NO_PROPERTIES
     else if (_c == QMetaObject::ReadProperty) {
-        auto *_t = static_cast<QCPAxis *>(_o);
+        QCPAxis *_t = static_cast<QCPAxis *>(_o);
         Q_UNUSED(_t)
         void *_v = _a[0];
         switch (_id) {
@@ -1718,7 +1673,7 @@ void QCPAxis::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, voi
         default: break;
         }
     } else if (_c == QMetaObject::WriteProperty) {
-        auto *_t = static_cast<QCPAxis *>(_o);
+        QCPAxis *_t = static_cast<QCPAxis *>(_o);
         Q_UNUSED(_t)
         void *_v = _a[0];
         switch (_id) {
@@ -1778,14 +1733,10 @@ void QCPAxis::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, voi
 #endif // QT_NO_PROPERTIES
 }
 
-QT_INIT_METAOBJECT const QMetaObject QCPAxis::staticMetaObject = { {
-    &QCPLayerable::staticMetaObject,
-    qt_meta_stringdata_QCPAxis.data,
-    qt_meta_data_QCPAxis,
-    qt_static_metacall,
-    nullptr,
-    nullptr
-} };
+const QMetaObject QCPAxis::staticMetaObject = {
+    { &QCPLayerable::staticMetaObject, qt_meta_stringdata_QCPAxis.data,
+      qt_meta_data_QCPAxis,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
+};
 
 
 const QMetaObject *QCPAxis::metaObject() const
@@ -1795,9 +1746,9 @@ const QMetaObject *QCPAxis::metaObject() const
 
 void *QCPAxis::qt_metacast(const char *_clname)
 {
-    if (!_clname) return nullptr;
+    if (!_clname) return Q_NULLPTR;
     if (!strcmp(_clname, qt_meta_stringdata_QCPAxis.stringdata0))
-        return static_cast<void*>(this);
+        return static_cast<void*>(const_cast< QCPAxis*>(this));
     return QCPLayerable::qt_metacast(_clname);
 }
 
@@ -1838,41 +1789,41 @@ int QCPAxis::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 // SIGNAL 0
 void QCPAxis::ticksRequest()
 {
-    QMetaObject::activate(this, &staticMetaObject, 0, nullptr);
+    QMetaObject::activate(this, &staticMetaObject, 0, Q_NULLPTR);
 }
 
 // SIGNAL 1
 void QCPAxis::rangeChanged(const QCPRange & _t1)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    void *_a[] = { Q_NULLPTR, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
     QMetaObject::activate(this, &staticMetaObject, 1, _a);
 }
 
 // SIGNAL 2
 void QCPAxis::rangeChanged(const QCPRange & _t1, const QCPRange & _t2)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)), const_cast<void*>(reinterpret_cast<const void*>(&_t2)) };
+    void *_a[] = { Q_NULLPTR, const_cast<void*>(reinterpret_cast<const void*>(&_t1)), const_cast<void*>(reinterpret_cast<const void*>(&_t2)) };
     QMetaObject::activate(this, &staticMetaObject, 2, _a);
 }
 
 // SIGNAL 3
 void QCPAxis::scaleTypeChanged(QCPAxis::ScaleType _t1)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    void *_a[] = { Q_NULLPTR, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
     QMetaObject::activate(this, &staticMetaObject, 3, _a);
 }
 
 // SIGNAL 4
 void QCPAxis::selectionChanged(const QCPAxis::SelectableParts & _t1)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    void *_a[] = { Q_NULLPTR, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
     QMetaObject::activate(this, &staticMetaObject, 4, _a);
 }
 
 // SIGNAL 5
 void QCPAxis::selectableChanged(const QCPAxis::SelectableParts & _t1)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    void *_a[] = { Q_NULLPTR, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
     QMetaObject::activate(this, &staticMetaObject, 5, _a);
 }
 struct qt_meta_stringdata_QCPAbstractPlottable_t {
@@ -1920,7 +1871,7 @@ QT_MOC_LITERAL(18, 218, 9) // "valueAxis"
 static const uint qt_meta_data_QCPAbstractPlottable[] = {
 
  // content:
-       8,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
        4,   14, // methods
@@ -1980,7 +1931,7 @@ static const uint qt_meta_data_QCPAbstractPlottable[] = {
 void QCPAbstractPlottable::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        auto *_t = static_cast<QCPAbstractPlottable *>(_o);
+        QCPAbstractPlottable *_t = static_cast<QCPAbstractPlottable *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->selectionChanged((*reinterpret_cast< bool(*)>(_a[1]))); break;
@@ -1991,18 +1942,17 @@ void QCPAbstractPlottable::qt_static_metacall(QObject *_o, QMetaObject::Call _c,
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
         int *result = reinterpret_cast<int *>(_a[0]);
+        void **func = reinterpret_cast<void **>(_a[1]);
         {
-            using _t = void (QCPAbstractPlottable::*)(bool );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&QCPAbstractPlottable::selectionChanged)) {
+            typedef void (QCPAbstractPlottable::*_t)(bool );
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&QCPAbstractPlottable::selectionChanged)) {
                 *result = 0;
-                return;
             }
         }
         {
-            using _t = void (QCPAbstractPlottable::*)(bool );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&QCPAbstractPlottable::selectableChanged)) {
+            typedef void (QCPAbstractPlottable::*_t)(bool );
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&QCPAbstractPlottable::selectableChanged)) {
                 *result = 1;
-                return;
             }
         }
     } else if (_c == QMetaObject::RegisterPropertyMetaType) {
@@ -2016,7 +1966,7 @@ void QCPAbstractPlottable::qt_static_metacall(QObject *_o, QMetaObject::Call _c,
 
 #ifndef QT_NO_PROPERTIES
     else if (_c == QMetaObject::ReadProperty) {
-        auto *_t = static_cast<QCPAbstractPlottable *>(_o);
+        QCPAbstractPlottable *_t = static_cast<QCPAbstractPlottable *>(_o);
         Q_UNUSED(_t)
         void *_v = _a[0];
         switch (_id) {
@@ -2035,7 +1985,7 @@ void QCPAbstractPlottable::qt_static_metacall(QObject *_o, QMetaObject::Call _c,
         default: break;
         }
     } else if (_c == QMetaObject::WriteProperty) {
-        auto *_t = static_cast<QCPAbstractPlottable *>(_o);
+        QCPAbstractPlottable *_t = static_cast<QCPAbstractPlottable *>(_o);
         Q_UNUSED(_t)
         void *_v = _a[0];
         switch (_id) {
@@ -2058,14 +2008,10 @@ void QCPAbstractPlottable::qt_static_metacall(QObject *_o, QMetaObject::Call _c,
 #endif // QT_NO_PROPERTIES
 }
 
-QT_INIT_METAOBJECT const QMetaObject QCPAbstractPlottable::staticMetaObject = { {
-    &QCPLayerable::staticMetaObject,
-    qt_meta_stringdata_QCPAbstractPlottable.data,
-    qt_meta_data_QCPAbstractPlottable,
-    qt_static_metacall,
-    nullptr,
-    nullptr
-} };
+const QMetaObject QCPAbstractPlottable::staticMetaObject = {
+    { &QCPLayerable::staticMetaObject, qt_meta_stringdata_QCPAbstractPlottable.data,
+      qt_meta_data_QCPAbstractPlottable,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
+};
 
 
 const QMetaObject *QCPAbstractPlottable::metaObject() const
@@ -2075,9 +2021,9 @@ const QMetaObject *QCPAbstractPlottable::metaObject() const
 
 void *QCPAbstractPlottable::qt_metacast(const char *_clname)
 {
-    if (!_clname) return nullptr;
+    if (!_clname) return Q_NULLPTR;
     if (!strcmp(_clname, qt_meta_stringdata_QCPAbstractPlottable.stringdata0))
-        return static_cast<void*>(this);
+        return static_cast<void*>(const_cast< QCPAbstractPlottable*>(this));
     return QCPLayerable::qt_metacast(_clname);
 }
 
@@ -2118,14 +2064,14 @@ int QCPAbstractPlottable::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 // SIGNAL 0
 void QCPAbstractPlottable::selectionChanged(bool _t1)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    void *_a[] = { Q_NULLPTR, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
     QMetaObject::activate(this, &staticMetaObject, 0, _a);
 }
 
 // SIGNAL 1
 void QCPAbstractPlottable::selectableChanged(bool _t1)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    void *_a[] = { Q_NULLPTR, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
     QMetaObject::activate(this, &staticMetaObject, 1, _a);
 }
 struct qt_meta_stringdata_QCPAbstractItem_t {
@@ -2162,7 +2108,7 @@ QT_MOC_LITERAL(10, 126, 12) // "QCPAxisRect*"
 static const uint qt_meta_data_QCPAbstractItem[] = {
 
  // content:
-       8,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
        4,   14, // methods
@@ -2206,7 +2152,7 @@ static const uint qt_meta_data_QCPAbstractItem[] = {
 void QCPAbstractItem::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        auto *_t = static_cast<QCPAbstractItem *>(_o);
+        QCPAbstractItem *_t = static_cast<QCPAbstractItem *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->selectionChanged((*reinterpret_cast< bool(*)>(_a[1]))); break;
@@ -2217,18 +2163,17 @@ void QCPAbstractItem::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int 
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
         int *result = reinterpret_cast<int *>(_a[0]);
+        void **func = reinterpret_cast<void **>(_a[1]);
         {
-            using _t = void (QCPAbstractItem::*)(bool );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&QCPAbstractItem::selectionChanged)) {
+            typedef void (QCPAbstractItem::*_t)(bool );
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&QCPAbstractItem::selectionChanged)) {
                 *result = 0;
-                return;
             }
         }
         {
-            using _t = void (QCPAbstractItem::*)(bool );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&QCPAbstractItem::selectableChanged)) {
+            typedef void (QCPAbstractItem::*_t)(bool );
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&QCPAbstractItem::selectableChanged)) {
                 *result = 1;
-                return;
             }
         }
     } else if (_c == QMetaObject::RegisterPropertyMetaType) {
@@ -2241,7 +2186,7 @@ void QCPAbstractItem::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int 
 
 #ifndef QT_NO_PROPERTIES
     else if (_c == QMetaObject::ReadProperty) {
-        auto *_t = static_cast<QCPAbstractItem *>(_o);
+        QCPAbstractItem *_t = static_cast<QCPAbstractItem *>(_o);
         Q_UNUSED(_t)
         void *_v = _a[0];
         switch (_id) {
@@ -2252,7 +2197,7 @@ void QCPAbstractItem::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int 
         default: break;
         }
     } else if (_c == QMetaObject::WriteProperty) {
-        auto *_t = static_cast<QCPAbstractItem *>(_o);
+        QCPAbstractItem *_t = static_cast<QCPAbstractItem *>(_o);
         Q_UNUSED(_t)
         void *_v = _a[0];
         switch (_id) {
@@ -2267,14 +2212,10 @@ void QCPAbstractItem::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int 
 #endif // QT_NO_PROPERTIES
 }
 
-QT_INIT_METAOBJECT const QMetaObject QCPAbstractItem::staticMetaObject = { {
-    &QCPLayerable::staticMetaObject,
-    qt_meta_stringdata_QCPAbstractItem.data,
-    qt_meta_data_QCPAbstractItem,
-    qt_static_metacall,
-    nullptr,
-    nullptr
-} };
+const QMetaObject QCPAbstractItem::staticMetaObject = {
+    { &QCPLayerable::staticMetaObject, qt_meta_stringdata_QCPAbstractItem.data,
+      qt_meta_data_QCPAbstractItem,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
+};
 
 
 const QMetaObject *QCPAbstractItem::metaObject() const
@@ -2284,9 +2225,9 @@ const QMetaObject *QCPAbstractItem::metaObject() const
 
 void *QCPAbstractItem::qt_metacast(const char *_clname)
 {
-    if (!_clname) return nullptr;
+    if (!_clname) return Q_NULLPTR;
     if (!strcmp(_clname, qt_meta_stringdata_QCPAbstractItem.stringdata0))
-        return static_cast<void*>(this);
+        return static_cast<void*>(const_cast< QCPAbstractItem*>(this));
     return QCPLayerable::qt_metacast(_clname);
 }
 
@@ -2327,14 +2268,14 @@ int QCPAbstractItem::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 // SIGNAL 0
 void QCPAbstractItem::selectionChanged(bool _t1)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    void *_a[] = { Q_NULLPTR, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
     QMetaObject::activate(this, &staticMetaObject, 0, _a);
 }
 
 // SIGNAL 1
 void QCPAbstractItem::selectableChanged(bool _t1)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    void *_a[] = { Q_NULLPTR, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
     QMetaObject::activate(this, &staticMetaObject, 1, _a);
 }
 struct qt_meta_stringdata_QCustomPlot_t {
@@ -2434,7 +2375,7 @@ QT_MOC_LITERAL(56, 792, 8) // "limAbove"
 static const uint qt_meta_data_QCustomPlot[] = {
 
  // content:
-       8,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
       23,   14, // methods
@@ -2509,8 +2450,8 @@ static const uint qt_meta_data_QCustomPlot[] = {
       51, QMetaType::Bool, 0x00095103,
       52, 0x80000000 | 53, 0x0009510b,
 
- // enums: name, alias, flags, count, data
-      54,   54, 0x0,    2,  246,
+ // enums: name, flags, count, data
+      54, 0x0,    2,  245,
 
  // enum data: key, value
       55, uint(QCustomPlot::limBelow),
@@ -2522,7 +2463,7 @@ static const uint qt_meta_data_QCustomPlot[] = {
 void QCustomPlot::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        auto *_t = static_cast<QCustomPlot *>(_o);
+        QCustomPlot *_t = static_cast<QCustomPlot *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->mouseDoubleClick((*reinterpret_cast< QMouseEvent*(*)>(_a[1]))); break;
@@ -2634,130 +2575,113 @@ void QCustomPlot::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
         int *result = reinterpret_cast<int *>(_a[0]);
+        void **func = reinterpret_cast<void **>(_a[1]);
         {
-            using _t = void (QCustomPlot::*)(QMouseEvent * );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&QCustomPlot::mouseDoubleClick)) {
+            typedef void (QCustomPlot::*_t)(QMouseEvent * );
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&QCustomPlot::mouseDoubleClick)) {
                 *result = 0;
-                return;
             }
         }
         {
-            using _t = void (QCustomPlot::*)(QMouseEvent * );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&QCustomPlot::mousePress)) {
+            typedef void (QCustomPlot::*_t)(QMouseEvent * );
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&QCustomPlot::mousePress)) {
                 *result = 1;
-                return;
             }
         }
         {
-            using _t = void (QCustomPlot::*)(QMouseEvent * );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&QCustomPlot::mouseMove)) {
+            typedef void (QCustomPlot::*_t)(QMouseEvent * );
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&QCustomPlot::mouseMove)) {
                 *result = 2;
-                return;
             }
         }
         {
-            using _t = void (QCustomPlot::*)(QMouseEvent * );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&QCustomPlot::mouseRelease)) {
+            typedef void (QCustomPlot::*_t)(QMouseEvent * );
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&QCustomPlot::mouseRelease)) {
                 *result = 3;
-                return;
             }
         }
         {
-            using _t = void (QCustomPlot::*)(QWheelEvent * );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&QCustomPlot::mouseWheel)) {
+            typedef void (QCustomPlot::*_t)(QWheelEvent * );
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&QCustomPlot::mouseWheel)) {
                 *result = 4;
-                return;
             }
         }
         {
-            using _t = void (QCustomPlot::*)(QCPAbstractPlottable * , QMouseEvent * );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&QCustomPlot::plottableClick)) {
+            typedef void (QCustomPlot::*_t)(QCPAbstractPlottable * , QMouseEvent * );
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&QCustomPlot::plottableClick)) {
                 *result = 5;
-                return;
             }
         }
         {
-            using _t = void (QCustomPlot::*)(QCPAbstractPlottable * , QMouseEvent * );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&QCustomPlot::plottableDoubleClick)) {
+            typedef void (QCustomPlot::*_t)(QCPAbstractPlottable * , QMouseEvent * );
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&QCustomPlot::plottableDoubleClick)) {
                 *result = 6;
-                return;
             }
         }
         {
-            using _t = void (QCustomPlot::*)(QCPAbstractItem * , QMouseEvent * );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&QCustomPlot::itemClick)) {
+            typedef void (QCustomPlot::*_t)(QCPAbstractItem * , QMouseEvent * );
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&QCustomPlot::itemClick)) {
                 *result = 7;
-                return;
             }
         }
         {
-            using _t = void (QCustomPlot::*)(QCPAbstractItem * , QMouseEvent * );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&QCustomPlot::itemDoubleClick)) {
+            typedef void (QCustomPlot::*_t)(QCPAbstractItem * , QMouseEvent * );
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&QCustomPlot::itemDoubleClick)) {
                 *result = 8;
-                return;
             }
         }
         {
-            using _t = void (QCustomPlot::*)(QCPAxis * , QCPAxis::SelectablePart , QMouseEvent * );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&QCustomPlot::axisClick)) {
+            typedef void (QCustomPlot::*_t)(QCPAxis * , QCPAxis::SelectablePart , QMouseEvent * );
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&QCustomPlot::axisClick)) {
                 *result = 9;
-                return;
             }
         }
         {
-            using _t = void (QCustomPlot::*)(QCPAxis * , QCPAxis::SelectablePart , QMouseEvent * );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&QCustomPlot::axisDoubleClick)) {
+            typedef void (QCustomPlot::*_t)(QCPAxis * , QCPAxis::SelectablePart , QMouseEvent * );
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&QCustomPlot::axisDoubleClick)) {
                 *result = 10;
-                return;
             }
         }
         {
-            using _t = void (QCustomPlot::*)(QCPLegend * , QCPAbstractLegendItem * , QMouseEvent * );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&QCustomPlot::legendClick)) {
+            typedef void (QCustomPlot::*_t)(QCPLegend * , QCPAbstractLegendItem * , QMouseEvent * );
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&QCustomPlot::legendClick)) {
                 *result = 11;
-                return;
             }
         }
         {
-            using _t = void (QCustomPlot::*)(QCPLegend * , QCPAbstractLegendItem * , QMouseEvent * );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&QCustomPlot::legendDoubleClick)) {
+            typedef void (QCustomPlot::*_t)(QCPLegend * , QCPAbstractLegendItem * , QMouseEvent * );
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&QCustomPlot::legendDoubleClick)) {
                 *result = 12;
-                return;
             }
         }
         {
-            using _t = void (QCustomPlot::*)(QMouseEvent * , QCPPlotTitle * );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&QCustomPlot::titleClick)) {
+            typedef void (QCustomPlot::*_t)(QMouseEvent * , QCPPlotTitle * );
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&QCustomPlot::titleClick)) {
                 *result = 13;
-                return;
             }
         }
         {
-            using _t = void (QCustomPlot::*)(QMouseEvent * , QCPPlotTitle * );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&QCustomPlot::titleDoubleClick)) {
+            typedef void (QCustomPlot::*_t)(QMouseEvent * , QCPPlotTitle * );
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&QCustomPlot::titleDoubleClick)) {
                 *result = 14;
-                return;
             }
         }
         {
-            using _t = void (QCustomPlot::*)();
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&QCustomPlot::selectionChangedByUser)) {
+            typedef void (QCustomPlot::*_t)();
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&QCustomPlot::selectionChangedByUser)) {
                 *result = 15;
-                return;
             }
         }
         {
-            using _t = void (QCustomPlot::*)();
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&QCustomPlot::beforeReplot)) {
+            typedef void (QCustomPlot::*_t)();
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&QCustomPlot::beforeReplot)) {
                 *result = 16;
-                return;
             }
         }
         {
-            using _t = void (QCustomPlot::*)();
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&QCustomPlot::afterReplot)) {
+            typedef void (QCustomPlot::*_t)();
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&QCustomPlot::afterReplot)) {
                 *result = 17;
-                return;
             }
         }
     } else if (_c == QMetaObject::RegisterPropertyMetaType) {
@@ -2770,7 +2694,7 @@ void QCustomPlot::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
 
 #ifndef QT_NO_PROPERTIES
     else if (_c == QMetaObject::ReadProperty) {
-        auto *_t = static_cast<QCustomPlot *>(_o);
+        QCustomPlot *_t = static_cast<QCustomPlot *>(_o);
         Q_UNUSED(_t)
         void *_v = _a[0];
         switch (_id) {
@@ -2786,7 +2710,7 @@ void QCustomPlot::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
         default: break;
         }
     } else if (_c == QMetaObject::WriteProperty) {
-        auto *_t = static_cast<QCustomPlot *>(_o);
+        QCustomPlot *_t = static_cast<QCustomPlot *>(_o);
         Q_UNUSED(_t)
         void *_v = _a[0];
         switch (_id) {
@@ -2805,14 +2729,10 @@ void QCustomPlot::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
 #endif // QT_NO_PROPERTIES
 }
 
-QT_INIT_METAOBJECT const QMetaObject QCustomPlot::staticMetaObject = { {
-    &QWidget::staticMetaObject,
-    qt_meta_stringdata_QCustomPlot.data,
-    qt_meta_data_QCustomPlot,
-    qt_static_metacall,
-    nullptr,
-    nullptr
-} };
+const QMetaObject QCustomPlot::staticMetaObject = {
+    { &QWidget::staticMetaObject, qt_meta_stringdata_QCustomPlot.data,
+      qt_meta_data_QCustomPlot,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
+};
 
 
 const QMetaObject *QCustomPlot::metaObject() const
@@ -2822,9 +2742,9 @@ const QMetaObject *QCustomPlot::metaObject() const
 
 void *QCustomPlot::qt_metacast(const char *_clname)
 {
-    if (!_clname) return nullptr;
+    if (!_clname) return Q_NULLPTR;
     if (!strcmp(_clname, qt_meta_stringdata_QCustomPlot.stringdata0))
-        return static_cast<void*>(this);
+        return static_cast<void*>(const_cast< QCustomPlot*>(this));
     return QWidget::qt_metacast(_clname);
 }
 
@@ -2865,124 +2785,124 @@ int QCustomPlot::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 // SIGNAL 0
 void QCustomPlot::mouseDoubleClick(QMouseEvent * _t1)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    void *_a[] = { Q_NULLPTR, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
     QMetaObject::activate(this, &staticMetaObject, 0, _a);
 }
 
 // SIGNAL 1
 void QCustomPlot::mousePress(QMouseEvent * _t1)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    void *_a[] = { Q_NULLPTR, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
     QMetaObject::activate(this, &staticMetaObject, 1, _a);
 }
 
 // SIGNAL 2
 void QCustomPlot::mouseMove(QMouseEvent * _t1)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    void *_a[] = { Q_NULLPTR, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
     QMetaObject::activate(this, &staticMetaObject, 2, _a);
 }
 
 // SIGNAL 3
 void QCustomPlot::mouseRelease(QMouseEvent * _t1)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    void *_a[] = { Q_NULLPTR, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
     QMetaObject::activate(this, &staticMetaObject, 3, _a);
 }
 
 // SIGNAL 4
 void QCustomPlot::mouseWheel(QWheelEvent * _t1)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    void *_a[] = { Q_NULLPTR, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
     QMetaObject::activate(this, &staticMetaObject, 4, _a);
 }
 
 // SIGNAL 5
 void QCustomPlot::plottableClick(QCPAbstractPlottable * _t1, QMouseEvent * _t2)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)), const_cast<void*>(reinterpret_cast<const void*>(&_t2)) };
+    void *_a[] = { Q_NULLPTR, const_cast<void*>(reinterpret_cast<const void*>(&_t1)), const_cast<void*>(reinterpret_cast<const void*>(&_t2)) };
     QMetaObject::activate(this, &staticMetaObject, 5, _a);
 }
 
 // SIGNAL 6
 void QCustomPlot::plottableDoubleClick(QCPAbstractPlottable * _t1, QMouseEvent * _t2)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)), const_cast<void*>(reinterpret_cast<const void*>(&_t2)) };
+    void *_a[] = { Q_NULLPTR, const_cast<void*>(reinterpret_cast<const void*>(&_t1)), const_cast<void*>(reinterpret_cast<const void*>(&_t2)) };
     QMetaObject::activate(this, &staticMetaObject, 6, _a);
 }
 
 // SIGNAL 7
 void QCustomPlot::itemClick(QCPAbstractItem * _t1, QMouseEvent * _t2)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)), const_cast<void*>(reinterpret_cast<const void*>(&_t2)) };
+    void *_a[] = { Q_NULLPTR, const_cast<void*>(reinterpret_cast<const void*>(&_t1)), const_cast<void*>(reinterpret_cast<const void*>(&_t2)) };
     QMetaObject::activate(this, &staticMetaObject, 7, _a);
 }
 
 // SIGNAL 8
 void QCustomPlot::itemDoubleClick(QCPAbstractItem * _t1, QMouseEvent * _t2)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)), const_cast<void*>(reinterpret_cast<const void*>(&_t2)) };
+    void *_a[] = { Q_NULLPTR, const_cast<void*>(reinterpret_cast<const void*>(&_t1)), const_cast<void*>(reinterpret_cast<const void*>(&_t2)) };
     QMetaObject::activate(this, &staticMetaObject, 8, _a);
 }
 
 // SIGNAL 9
 void QCustomPlot::axisClick(QCPAxis * _t1, QCPAxis::SelectablePart _t2, QMouseEvent * _t3)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)), const_cast<void*>(reinterpret_cast<const void*>(&_t2)), const_cast<void*>(reinterpret_cast<const void*>(&_t3)) };
+    void *_a[] = { Q_NULLPTR, const_cast<void*>(reinterpret_cast<const void*>(&_t1)), const_cast<void*>(reinterpret_cast<const void*>(&_t2)), const_cast<void*>(reinterpret_cast<const void*>(&_t3)) };
     QMetaObject::activate(this, &staticMetaObject, 9, _a);
 }
 
 // SIGNAL 10
 void QCustomPlot::axisDoubleClick(QCPAxis * _t1, QCPAxis::SelectablePart _t2, QMouseEvent * _t3)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)), const_cast<void*>(reinterpret_cast<const void*>(&_t2)), const_cast<void*>(reinterpret_cast<const void*>(&_t3)) };
+    void *_a[] = { Q_NULLPTR, const_cast<void*>(reinterpret_cast<const void*>(&_t1)), const_cast<void*>(reinterpret_cast<const void*>(&_t2)), const_cast<void*>(reinterpret_cast<const void*>(&_t3)) };
     QMetaObject::activate(this, &staticMetaObject, 10, _a);
 }
 
 // SIGNAL 11
 void QCustomPlot::legendClick(QCPLegend * _t1, QCPAbstractLegendItem * _t2, QMouseEvent * _t3)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)), const_cast<void*>(reinterpret_cast<const void*>(&_t2)), const_cast<void*>(reinterpret_cast<const void*>(&_t3)) };
+    void *_a[] = { Q_NULLPTR, const_cast<void*>(reinterpret_cast<const void*>(&_t1)), const_cast<void*>(reinterpret_cast<const void*>(&_t2)), const_cast<void*>(reinterpret_cast<const void*>(&_t3)) };
     QMetaObject::activate(this, &staticMetaObject, 11, _a);
 }
 
 // SIGNAL 12
 void QCustomPlot::legendDoubleClick(QCPLegend * _t1, QCPAbstractLegendItem * _t2, QMouseEvent * _t3)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)), const_cast<void*>(reinterpret_cast<const void*>(&_t2)), const_cast<void*>(reinterpret_cast<const void*>(&_t3)) };
+    void *_a[] = { Q_NULLPTR, const_cast<void*>(reinterpret_cast<const void*>(&_t1)), const_cast<void*>(reinterpret_cast<const void*>(&_t2)), const_cast<void*>(reinterpret_cast<const void*>(&_t3)) };
     QMetaObject::activate(this, &staticMetaObject, 12, _a);
 }
 
 // SIGNAL 13
 void QCustomPlot::titleClick(QMouseEvent * _t1, QCPPlotTitle * _t2)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)), const_cast<void*>(reinterpret_cast<const void*>(&_t2)) };
+    void *_a[] = { Q_NULLPTR, const_cast<void*>(reinterpret_cast<const void*>(&_t1)), const_cast<void*>(reinterpret_cast<const void*>(&_t2)) };
     QMetaObject::activate(this, &staticMetaObject, 13, _a);
 }
 
 // SIGNAL 14
 void QCustomPlot::titleDoubleClick(QMouseEvent * _t1, QCPPlotTitle * _t2)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)), const_cast<void*>(reinterpret_cast<const void*>(&_t2)) };
+    void *_a[] = { Q_NULLPTR, const_cast<void*>(reinterpret_cast<const void*>(&_t1)), const_cast<void*>(reinterpret_cast<const void*>(&_t2)) };
     QMetaObject::activate(this, &staticMetaObject, 14, _a);
 }
 
 // SIGNAL 15
 void QCustomPlot::selectionChangedByUser()
 {
-    QMetaObject::activate(this, &staticMetaObject, 15, nullptr);
+    QMetaObject::activate(this, &staticMetaObject, 15, Q_NULLPTR);
 }
 
 // SIGNAL 16
 void QCustomPlot::beforeReplot()
 {
-    QMetaObject::activate(this, &staticMetaObject, 16, nullptr);
+    QMetaObject::activate(this, &staticMetaObject, 16, Q_NULLPTR);
 }
 
 // SIGNAL 17
 void QCustomPlot::afterReplot()
 {
-    QMetaObject::activate(this, &staticMetaObject, 17, nullptr);
+    QMetaObject::activate(this, &staticMetaObject, 17, Q_NULLPTR);
 }
 struct qt_meta_stringdata_QCPColorGradient_t {
     QByteArrayData data[17];
@@ -3025,7 +2945,7 @@ QT_MOC_LITERAL(16, 157, 6) // "gpHues"
 static const uint qt_meta_data_QCPColorGradient[] = {
 
  // content:
-       8,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
        0,    0, // methods
@@ -3035,9 +2955,9 @@ static const uint qt_meta_data_QCPColorGradient[] = {
        4,       // flags
        0,       // signalCount
 
- // enums: name, alias, flags, count, data
-       1,    1, 0x0,    2,   24,
-       4,    4, 0x0,   12,   28,
+ // enums: name, flags, count, data
+       1, 0x0,    2,   22,
+       4, 0x0,   12,   26,
 
  // enum data: key, value
        2, uint(QCPColorGradient::ciRGB),
@@ -3058,14 +2978,10 @@ static const uint qt_meta_data_QCPColorGradient[] = {
        0        // eod
 };
 
-QT_INIT_METAOBJECT const QMetaObject QCPColorGradient::staticMetaObject = { {
-    nullptr,
-    qt_meta_stringdata_QCPColorGradient.data,
-    qt_meta_data_QCPColorGradient,
-    nullptr,
-    nullptr,
-    nullptr
-} };
+const QMetaObject QCPColorGradient::staticMetaObject = {
+    { Q_NULLPTR, qt_meta_stringdata_QCPColorGradient.data,
+      qt_meta_data_QCPColorGradient,  Q_NULLPTR, Q_NULLPTR, Q_NULLPTR}
+};
 
 struct qt_meta_stringdata_QCPAxisRect_t {
     QByteArrayData data[8];
@@ -3097,7 +3013,7 @@ QT_MOC_LITERAL(7, 108, 9) // "rangeZoom"
 static const uint qt_meta_data_QCPAxisRect[] = {
 
  // content:
-       8,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
        0,    0, // methods
@@ -3122,7 +3038,7 @@ void QCPAxisRect::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
 
 #ifndef QT_NO_PROPERTIES
     if (_c == QMetaObject::ReadProperty) {
-        auto *_t = static_cast<QCPAxisRect *>(_o);
+        QCPAxisRect *_t = static_cast<QCPAxisRect *>(_o);
         Q_UNUSED(_t)
         void *_v = _a[0];
         switch (_id) {
@@ -3134,7 +3050,7 @@ void QCPAxisRect::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
         default: break;
         }
     } else if (_c == QMetaObject::WriteProperty) {
-        auto *_t = static_cast<QCPAxisRect *>(_o);
+        QCPAxisRect *_t = static_cast<QCPAxisRect *>(_o);
         Q_UNUSED(_t)
         void *_v = _a[0];
         switch (_id) {
@@ -3154,14 +3070,10 @@ void QCPAxisRect::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
     Q_UNUSED(_a);
 }
 
-QT_INIT_METAOBJECT const QMetaObject QCPAxisRect::staticMetaObject = { {
-    &QCPLayoutElement::staticMetaObject,
-    qt_meta_stringdata_QCPAxisRect.data,
-    qt_meta_data_QCPAxisRect,
-    qt_static_metacall,
-    nullptr,
-    nullptr
-} };
+const QMetaObject QCPAxisRect::staticMetaObject = {
+    { &QCPLayoutElement::staticMetaObject, qt_meta_stringdata_QCPAxisRect.data,
+      qt_meta_data_QCPAxisRect,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
+};
 
 
 const QMetaObject *QCPAxisRect::metaObject() const
@@ -3171,9 +3083,9 @@ const QMetaObject *QCPAxisRect::metaObject() const
 
 void *QCPAxisRect::qt_metacast(const char *_clname)
 {
-    if (!_clname) return nullptr;
+    if (!_clname) return Q_NULLPTR;
     if (!strcmp(_clname, qt_meta_stringdata_QCPAxisRect.stringdata0))
-        return static_cast<void*>(this);
+        return static_cast<void*>(const_cast< QCPAxisRect*>(this));
     return QCPLayoutElement::qt_metacast(_clname);
 }
 
@@ -3240,7 +3152,7 @@ QT_MOC_LITERAL(13, 156, 17) // "selectedTextColor"
 static const uint qt_meta_data_QCPAbstractLegendItem[] = {
 
  // content:
-       8,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
        4,   14, // methods
@@ -3290,7 +3202,7 @@ static const uint qt_meta_data_QCPAbstractLegendItem[] = {
 void QCPAbstractLegendItem::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        auto *_t = static_cast<QCPAbstractLegendItem *>(_o);
+        QCPAbstractLegendItem *_t = static_cast<QCPAbstractLegendItem *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->selectionChanged((*reinterpret_cast< bool(*)>(_a[1]))); break;
@@ -3301,18 +3213,17 @@ void QCPAbstractLegendItem::qt_static_metacall(QObject *_o, QMetaObject::Call _c
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
         int *result = reinterpret_cast<int *>(_a[0]);
+        void **func = reinterpret_cast<void **>(_a[1]);
         {
-            using _t = void (QCPAbstractLegendItem::*)(bool );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&QCPAbstractLegendItem::selectionChanged)) {
+            typedef void (QCPAbstractLegendItem::*_t)(bool );
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&QCPAbstractLegendItem::selectionChanged)) {
                 *result = 0;
-                return;
             }
         }
         {
-            using _t = void (QCPAbstractLegendItem::*)(bool );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&QCPAbstractLegendItem::selectableChanged)) {
+            typedef void (QCPAbstractLegendItem::*_t)(bool );
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&QCPAbstractLegendItem::selectableChanged)) {
                 *result = 1;
-                return;
             }
         }
     } else if (_c == QMetaObject::RegisterPropertyMetaType) {
@@ -3325,7 +3236,7 @@ void QCPAbstractLegendItem::qt_static_metacall(QObject *_o, QMetaObject::Call _c
 
 #ifndef QT_NO_PROPERTIES
     else if (_c == QMetaObject::ReadProperty) {
-        auto *_t = static_cast<QCPAbstractLegendItem *>(_o);
+        QCPAbstractLegendItem *_t = static_cast<QCPAbstractLegendItem *>(_o);
         Q_UNUSED(_t)
         void *_v = _a[0];
         switch (_id) {
@@ -3339,7 +3250,7 @@ void QCPAbstractLegendItem::qt_static_metacall(QObject *_o, QMetaObject::Call _c
         default: break;
         }
     } else if (_c == QMetaObject::WriteProperty) {
-        auto *_t = static_cast<QCPAbstractLegendItem *>(_o);
+        QCPAbstractLegendItem *_t = static_cast<QCPAbstractLegendItem *>(_o);
         Q_UNUSED(_t)
         void *_v = _a[0];
         switch (_id) {
@@ -3356,14 +3267,10 @@ void QCPAbstractLegendItem::qt_static_metacall(QObject *_o, QMetaObject::Call _c
 #endif // QT_NO_PROPERTIES
 }
 
-QT_INIT_METAOBJECT const QMetaObject QCPAbstractLegendItem::staticMetaObject = { {
-    &QCPLayoutElement::staticMetaObject,
-    qt_meta_stringdata_QCPAbstractLegendItem.data,
-    qt_meta_data_QCPAbstractLegendItem,
-    qt_static_metacall,
-    nullptr,
-    nullptr
-} };
+const QMetaObject QCPAbstractLegendItem::staticMetaObject = {
+    { &QCPLayoutElement::staticMetaObject, qt_meta_stringdata_QCPAbstractLegendItem.data,
+      qt_meta_data_QCPAbstractLegendItem,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
+};
 
 
 const QMetaObject *QCPAbstractLegendItem::metaObject() const
@@ -3373,9 +3280,9 @@ const QMetaObject *QCPAbstractLegendItem::metaObject() const
 
 void *QCPAbstractLegendItem::qt_metacast(const char *_clname)
 {
-    if (!_clname) return nullptr;
+    if (!_clname) return Q_NULLPTR;
     if (!strcmp(_clname, qt_meta_stringdata_QCPAbstractLegendItem.stringdata0))
-        return static_cast<void*>(this);
+        return static_cast<void*>(const_cast< QCPAbstractLegendItem*>(this));
     return QCPLayoutElement::qt_metacast(_clname);
 }
 
@@ -3416,14 +3323,14 @@ int QCPAbstractLegendItem::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 // SIGNAL 0
 void QCPAbstractLegendItem::selectionChanged(bool _t1)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    void *_a[] = { Q_NULLPTR, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
     QMetaObject::activate(this, &staticMetaObject, 0, _a);
 }
 
 // SIGNAL 1
 void QCPAbstractLegendItem::selectableChanged(bool _t1)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    void *_a[] = { Q_NULLPTR, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
     QMetaObject::activate(this, &staticMetaObject, 1, _a);
 }
 struct qt_meta_stringdata_QCPPlottableLegendItem_t {
@@ -3447,7 +3354,7 @@ QT_MOC_LITERAL(0, 0, 22) // "QCPPlottableLegendItem"
 static const uint qt_meta_data_QCPPlottableLegendItem[] = {
 
  // content:
-       8,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
        0,    0, // methods
@@ -3468,14 +3375,10 @@ void QCPPlottableLegendItem::qt_static_metacall(QObject *_o, QMetaObject::Call _
     Q_UNUSED(_a);
 }
 
-QT_INIT_METAOBJECT const QMetaObject QCPPlottableLegendItem::staticMetaObject = { {
-    &QCPAbstractLegendItem::staticMetaObject,
-    qt_meta_stringdata_QCPPlottableLegendItem.data,
-    qt_meta_data_QCPPlottableLegendItem,
-    qt_static_metacall,
-    nullptr,
-    nullptr
-} };
+const QMetaObject QCPPlottableLegendItem::staticMetaObject = {
+    { &QCPAbstractLegendItem::staticMetaObject, qt_meta_stringdata_QCPPlottableLegendItem.data,
+      qt_meta_data_QCPPlottableLegendItem,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
+};
 
 
 const QMetaObject *QCPPlottableLegendItem::metaObject() const
@@ -3485,15 +3388,17 @@ const QMetaObject *QCPPlottableLegendItem::metaObject() const
 
 void *QCPPlottableLegendItem::qt_metacast(const char *_clname)
 {
-    if (!_clname) return nullptr;
+    if (!_clname) return Q_NULLPTR;
     if (!strcmp(_clname, qt_meta_stringdata_QCPPlottableLegendItem.stringdata0))
-        return static_cast<void*>(this);
+        return static_cast<void*>(const_cast< QCPPlottableLegendItem*>(this));
     return QCPAbstractLegendItem::qt_metacast(_clname);
 }
 
 int QCPPlottableLegendItem::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
     _id = QCPAbstractLegendItem::qt_metacall(_c, _id, _a);
+    if (_id < 0)
+        return _id;
     return _id;
 }
 struct qt_meta_stringdata_QCPLegend_t {
@@ -3553,7 +3458,7 @@ QT_MOC_LITERAL(26, 350, 7) // "spItems"
 static const uint qt_meta_data_QCPLegend[] = {
 
  // content:
-       8,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
        4,   14, // methods
@@ -3611,9 +3516,9 @@ static const uint qt_meta_data_QCPLegend[] = {
        0,
        0,
 
- // enums: name, alias, flags, count, data
-      23,   23, 0x1,    3,  112,
-       7,   23, 0x1,    3,  118,
+ // enums: name, flags, count, data
+      23, 0x1,    3,  110,
+       7, 0x1,    3,  116,
 
  // enum data: key, value
       24, uint(QCPLegend::spNone),
@@ -3629,7 +3534,7 @@ static const uint qt_meta_data_QCPLegend[] = {
 void QCPLegend::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        auto *_t = static_cast<QCPLegend *>(_o);
+        QCPLegend *_t = static_cast<QCPLegend *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->selectionChanged((*reinterpret_cast< QCPLegend::SelectableParts(*)>(_a[1]))); break;
@@ -3640,24 +3545,23 @@ void QCPLegend::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, v
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
         int *result = reinterpret_cast<int *>(_a[0]);
+        void **func = reinterpret_cast<void **>(_a[1]);
         {
-            using _t = void (QCPLegend::*)(QCPLegend::SelectableParts );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&QCPLegend::selectionChanged)) {
+            typedef void (QCPLegend::*_t)(QCPLegend::SelectableParts );
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&QCPLegend::selectionChanged)) {
                 *result = 0;
-                return;
             }
         }
         {
-            using _t = void (QCPLegend::*)(QCPLegend::SelectableParts );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&QCPLegend::selectableChanged)) {
+            typedef void (QCPLegend::*_t)(QCPLegend::SelectableParts );
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&QCPLegend::selectableChanged)) {
                 *result = 1;
-                return;
             }
         }
     }
 #ifndef QT_NO_PROPERTIES
     else if (_c == QMetaObject::ReadProperty) {
-        auto *_t = static_cast<QCPLegend *>(_o);
+        QCPLegend *_t = static_cast<QCPLegend *>(_o);
         Q_UNUSED(_t)
         void *_v = _a[0];
         switch (_id) {
@@ -3678,7 +3582,7 @@ void QCPLegend::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, v
         default: break;
         }
     } else if (_c == QMetaObject::WriteProperty) {
-        auto *_t = static_cast<QCPLegend *>(_o);
+        QCPLegend *_t = static_cast<QCPLegend *>(_o);
         Q_UNUSED(_t)
         void *_v = _a[0];
         switch (_id) {
@@ -3703,14 +3607,10 @@ void QCPLegend::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, v
 #endif // QT_NO_PROPERTIES
 }
 
-QT_INIT_METAOBJECT const QMetaObject QCPLegend::staticMetaObject = { {
-    &QCPLayoutGrid::staticMetaObject,
-    qt_meta_stringdata_QCPLegend.data,
-    qt_meta_data_QCPLegend,
-    qt_static_metacall,
-    nullptr,
-    nullptr
-} };
+const QMetaObject QCPLegend::staticMetaObject = {
+    { &QCPLayoutGrid::staticMetaObject, qt_meta_stringdata_QCPLegend.data,
+      qt_meta_data_QCPLegend,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
+};
 
 
 const QMetaObject *QCPLegend::metaObject() const
@@ -3720,9 +3620,9 @@ const QMetaObject *QCPLegend::metaObject() const
 
 void *QCPLegend::qt_metacast(const char *_clname)
 {
-    if (!_clname) return nullptr;
+    if (!_clname) return Q_NULLPTR;
     if (!strcmp(_clname, qt_meta_stringdata_QCPLegend.stringdata0))
-        return static_cast<void*>(this);
+        return static_cast<void*>(const_cast< QCPLegend*>(this));
     return QCPLayoutGrid::qt_metacast(_clname);
 }
 
@@ -3763,14 +3663,14 @@ int QCPLegend::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 // SIGNAL 0
 void QCPLegend::selectionChanged(QCPLegend::SelectableParts _t1)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    void *_a[] = { Q_NULLPTR, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
     QMetaObject::activate(this, &staticMetaObject, 0, _a);
 }
 
 // SIGNAL 1
 void QCPLegend::selectableChanged(QCPLegend::SelectableParts _t1)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    void *_a[] = { Q_NULLPTR, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
     QMetaObject::activate(this, &staticMetaObject, 1, _a);
 }
 struct qt_meta_stringdata_QCPPlotTitle_t {
@@ -3809,7 +3709,7 @@ QT_MOC_LITERAL(12, 128, 17) // "selectedTextColor"
 static const uint qt_meta_data_QCPPlotTitle[] = {
 
  // content:
-       8,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
        4,   14, // methods
@@ -3859,7 +3759,7 @@ static const uint qt_meta_data_QCPPlotTitle[] = {
 void QCPPlotTitle::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        auto *_t = static_cast<QCPPlotTitle *>(_o);
+        QCPPlotTitle *_t = static_cast<QCPPlotTitle *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->selectionChanged((*reinterpret_cast< bool(*)>(_a[1]))); break;
@@ -3870,24 +3770,23 @@ void QCPPlotTitle::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
         int *result = reinterpret_cast<int *>(_a[0]);
+        void **func = reinterpret_cast<void **>(_a[1]);
         {
-            using _t = void (QCPPlotTitle::*)(bool );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&QCPPlotTitle::selectionChanged)) {
+            typedef void (QCPPlotTitle::*_t)(bool );
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&QCPPlotTitle::selectionChanged)) {
                 *result = 0;
-                return;
             }
         }
         {
-            using _t = void (QCPPlotTitle::*)(bool );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&QCPPlotTitle::selectableChanged)) {
+            typedef void (QCPPlotTitle::*_t)(bool );
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&QCPPlotTitle::selectableChanged)) {
                 *result = 1;
-                return;
             }
         }
     }
 #ifndef QT_NO_PROPERTIES
     else if (_c == QMetaObject::ReadProperty) {
-        auto *_t = static_cast<QCPPlotTitle *>(_o);
+        QCPPlotTitle *_t = static_cast<QCPPlotTitle *>(_o);
         Q_UNUSED(_t)
         void *_v = _a[0];
         switch (_id) {
@@ -3901,7 +3800,7 @@ void QCPPlotTitle::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id
         default: break;
         }
     } else if (_c == QMetaObject::WriteProperty) {
-        auto *_t = static_cast<QCPPlotTitle *>(_o);
+        QCPPlotTitle *_t = static_cast<QCPPlotTitle *>(_o);
         Q_UNUSED(_t)
         void *_v = _a[0];
         switch (_id) {
@@ -3919,14 +3818,10 @@ void QCPPlotTitle::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id
 #endif // QT_NO_PROPERTIES
 }
 
-QT_INIT_METAOBJECT const QMetaObject QCPPlotTitle::staticMetaObject = { {
-    &QCPLayoutElement::staticMetaObject,
-    qt_meta_stringdata_QCPPlotTitle.data,
-    qt_meta_data_QCPPlotTitle,
-    qt_static_metacall,
-    nullptr,
-    nullptr
-} };
+const QMetaObject QCPPlotTitle::staticMetaObject = {
+    { &QCPLayoutElement::staticMetaObject, qt_meta_stringdata_QCPPlotTitle.data,
+      qt_meta_data_QCPPlotTitle,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
+};
 
 
 const QMetaObject *QCPPlotTitle::metaObject() const
@@ -3936,9 +3831,9 @@ const QMetaObject *QCPPlotTitle::metaObject() const
 
 void *QCPPlotTitle::qt_metacast(const char *_clname)
 {
-    if (!_clname) return nullptr;
+    if (!_clname) return Q_NULLPTR;
     if (!strcmp(_clname, qt_meta_stringdata_QCPPlotTitle.stringdata0))
-        return static_cast<void*>(this);
+        return static_cast<void*>(const_cast< QCPPlotTitle*>(this));
     return QCPLayoutElement::qt_metacast(_clname);
 }
 
@@ -3979,14 +3874,14 @@ int QCPPlotTitle::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 // SIGNAL 0
 void QCPPlotTitle::selectionChanged(bool _t1)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    void *_a[] = { Q_NULLPTR, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
     QMetaObject::activate(this, &staticMetaObject, 0, _a);
 }
 
 // SIGNAL 1
 void QCPPlotTitle::selectableChanged(bool _t1)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    void *_a[] = { Q_NULLPTR, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
     QMetaObject::activate(this, &staticMetaObject, 1, _a);
 }
 struct qt_meta_stringdata_QCPColorScaleAxisRectPrivate_t {
@@ -4019,7 +3914,7 @@ QT_MOC_LITERAL(6, 112, 15) // "selectableParts"
 static const uint qt_meta_data_QCPColorScaleAxisRectPrivate[] = {
 
  // content:
-       8,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
        2,   14, // methods
@@ -4043,7 +3938,7 @@ static const uint qt_meta_data_QCPColorScaleAxisRectPrivate[] = {
 void QCPColorScaleAxisRectPrivate::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        auto *_t = static_cast<QCPColorScaleAxisRectPrivate *>(_o);
+        QCPColorScaleAxisRectPrivate *_t = static_cast<QCPColorScaleAxisRectPrivate *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->axisSelectionChanged((*reinterpret_cast< QCPAxis::SelectableParts(*)>(_a[1]))); break;
@@ -4053,14 +3948,10 @@ void QCPColorScaleAxisRectPrivate::qt_static_metacall(QObject *_o, QMetaObject::
     }
 }
 
-QT_INIT_METAOBJECT const QMetaObject QCPColorScaleAxisRectPrivate::staticMetaObject = { {
-    &QCPAxisRect::staticMetaObject,
-    qt_meta_stringdata_QCPColorScaleAxisRectPrivate.data,
-    qt_meta_data_QCPColorScaleAxisRectPrivate,
-    qt_static_metacall,
-    nullptr,
-    nullptr
-} };
+const QMetaObject QCPColorScaleAxisRectPrivate::staticMetaObject = {
+    { &QCPAxisRect::staticMetaObject, qt_meta_stringdata_QCPColorScaleAxisRectPrivate.data,
+      qt_meta_data_QCPColorScaleAxisRectPrivate,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
+};
 
 
 const QMetaObject *QCPColorScaleAxisRectPrivate::metaObject() const
@@ -4070,9 +3961,9 @@ const QMetaObject *QCPColorScaleAxisRectPrivate::metaObject() const
 
 void *QCPColorScaleAxisRectPrivate::qt_metacast(const char *_clname)
 {
-    if (!_clname) return nullptr;
+    if (!_clname) return Q_NULLPTR;
     if (!strcmp(_clname, qt_meta_stringdata_QCPColorScaleAxisRectPrivate.stringdata0))
-        return static_cast<void*>(this);
+        return static_cast<void*>(const_cast< QCPColorScaleAxisRectPrivate*>(this));
     return QCPAxisRect::qt_metacast(_clname);
 }
 
@@ -4142,7 +4033,7 @@ QT_MOC_LITERAL(22, 268, 9) // "rangeZoom"
 static const uint qt_meta_data_QCPColorScale[] = {
 
  // content:
-       8,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
        6,   14, // methods
@@ -4198,7 +4089,7 @@ static const uint qt_meta_data_QCPColorScale[] = {
 void QCPColorScale::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        auto *_t = static_cast<QCPColorScale *>(_o);
+        QCPColorScale *_t = static_cast<QCPColorScale *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->dataRangeChanged((*reinterpret_cast< QCPRange(*)>(_a[1]))); break;
@@ -4211,31 +4102,29 @@ void QCPColorScale::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
         int *result = reinterpret_cast<int *>(_a[0]);
+        void **func = reinterpret_cast<void **>(_a[1]);
         {
-            using _t = void (QCPColorScale::*)(QCPRange );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&QCPColorScale::dataRangeChanged)) {
+            typedef void (QCPColorScale::*_t)(QCPRange );
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&QCPColorScale::dataRangeChanged)) {
                 *result = 0;
-                return;
             }
         }
         {
-            using _t = void (QCPColorScale::*)(QCPAxis::ScaleType );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&QCPColorScale::dataScaleTypeChanged)) {
+            typedef void (QCPColorScale::*_t)(QCPAxis::ScaleType );
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&QCPColorScale::dataScaleTypeChanged)) {
                 *result = 1;
-                return;
             }
         }
         {
-            using _t = void (QCPColorScale::*)(QCPColorGradient );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&QCPColorScale::gradientChanged)) {
+            typedef void (QCPColorScale::*_t)(QCPColorGradient );
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&QCPColorScale::gradientChanged)) {
                 *result = 2;
-                return;
             }
         }
     }
 #ifndef QT_NO_PROPERTIES
     else if (_c == QMetaObject::ReadProperty) {
-        auto *_t = static_cast<QCPColorScale *>(_o);
+        QCPColorScale *_t = static_cast<QCPColorScale *>(_o);
         Q_UNUSED(_t)
         void *_v = _a[0];
         switch (_id) {
@@ -4250,7 +4139,7 @@ void QCPColorScale::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
         default: break;
         }
     } else if (_c == QMetaObject::WriteProperty) {
-        auto *_t = static_cast<QCPColorScale *>(_o);
+        QCPColorScale *_t = static_cast<QCPColorScale *>(_o);
         Q_UNUSED(_t)
         void *_v = _a[0];
         switch (_id) {
@@ -4271,17 +4160,13 @@ void QCPColorScale::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
 
 static const QMetaObject * const qt_meta_extradata_QCPColorScale[] = {
         &QCPAxis::staticMetaObject,
-    nullptr
+    Q_NULLPTR
 };
 
-QT_INIT_METAOBJECT const QMetaObject QCPColorScale::staticMetaObject = { {
-    &QCPLayoutElement::staticMetaObject,
-    qt_meta_stringdata_QCPColorScale.data,
-    qt_meta_data_QCPColorScale,
-    qt_static_metacall,
-    qt_meta_extradata_QCPColorScale,
-    nullptr
-} };
+const QMetaObject QCPColorScale::staticMetaObject = {
+    { &QCPLayoutElement::staticMetaObject, qt_meta_stringdata_QCPColorScale.data,
+      qt_meta_data_QCPColorScale,  qt_static_metacall, qt_meta_extradata_QCPColorScale, Q_NULLPTR}
+};
 
 
 const QMetaObject *QCPColorScale::metaObject() const
@@ -4291,9 +4176,9 @@ const QMetaObject *QCPColorScale::metaObject() const
 
 void *QCPColorScale::qt_metacast(const char *_clname)
 {
-    if (!_clname) return nullptr;
+    if (!_clname) return Q_NULLPTR;
     if (!strcmp(_clname, qt_meta_stringdata_QCPColorScale.stringdata0))
-        return static_cast<void*>(this);
+        return static_cast<void*>(const_cast< QCPColorScale*>(this));
     return QCPLayoutElement::qt_metacast(_clname);
 }
 
@@ -4334,21 +4219,21 @@ int QCPColorScale::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 // SIGNAL 0
 void QCPColorScale::dataRangeChanged(QCPRange _t1)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    void *_a[] = { Q_NULLPTR, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
     QMetaObject::activate(this, &staticMetaObject, 0, _a);
 }
 
 // SIGNAL 1
 void QCPColorScale::dataScaleTypeChanged(QCPAxis::ScaleType _t1)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    void *_a[] = { Q_NULLPTR, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
     QMetaObject::activate(this, &staticMetaObject, 1, _a);
 }
 
 // SIGNAL 2
 void QCPColorScale::gradientChanged(QCPColorGradient _t1)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    void *_a[] = { Q_NULLPTR, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
     QMetaObject::activate(this, &staticMetaObject, 2, _a);
 }
 struct qt_meta_stringdata_QCPGraph_t {
@@ -4400,7 +4285,7 @@ QT_MOC_LITERAL(22, 244, 6) // "etBoth"
 static const uint qt_meta_data_QCPGraph[] = {
 
  // content:
-       8,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
        0,    0, // methods
@@ -4420,9 +4305,9 @@ static const uint qt_meta_data_QCPGraph[] = {
       10, 0x80000000 | 11, 0x0009510b,
       12, QMetaType::Bool, 0x00095103,
 
- // enums: name, alias, flags, count, data
-       2,    2, 0x0,    6,   48,
-       6,    6, 0x0,    4,   60,
+ // enums: name, flags, count, data
+       2, 0x0,    6,   46,
+       6, 0x0,    4,   58,
 
  // enum data: key, value
       13, uint(QCPGraph::lsNone),
@@ -4451,7 +4336,7 @@ void QCPGraph::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, vo
 
 #ifndef QT_NO_PROPERTIES
     else if (_c == QMetaObject::ReadProperty) {
-        auto *_t = static_cast<QCPGraph *>(_o);
+        QCPGraph *_t = static_cast<QCPGraph *>(_o);
         Q_UNUSED(_t)
         void *_v = _a[0];
         switch (_id) {
@@ -4466,7 +4351,7 @@ void QCPGraph::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, vo
         default: break;
         }
     } else if (_c == QMetaObject::WriteProperty) {
-        auto *_t = static_cast<QCPGraph *>(_o);
+        QCPGraph *_t = static_cast<QCPGraph *>(_o);
         Q_UNUSED(_t)
         void *_v = _a[0];
         switch (_id) {
@@ -4486,14 +4371,10 @@ void QCPGraph::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, vo
     Q_UNUSED(_o);
 }
 
-QT_INIT_METAOBJECT const QMetaObject QCPGraph::staticMetaObject = { {
-    &QCPAbstractPlottable::staticMetaObject,
-    qt_meta_stringdata_QCPGraph.data,
-    qt_meta_data_QCPGraph,
-    qt_static_metacall,
-    nullptr,
-    nullptr
-} };
+const QMetaObject QCPGraph::staticMetaObject = {
+    { &QCPAbstractPlottable::staticMetaObject, qt_meta_stringdata_QCPGraph.data,
+      qt_meta_data_QCPGraph,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
+};
 
 
 const QMetaObject *QCPGraph::metaObject() const
@@ -4503,9 +4384,9 @@ const QMetaObject *QCPGraph::metaObject() const
 
 void *QCPGraph::qt_metacast(const char *_clname)
 {
-    if (!_clname) return nullptr;
+    if (!_clname) return Q_NULLPTR;
     if (!strcmp(_clname, qt_meta_stringdata_QCPGraph.stringdata0))
-        return static_cast<void*>(this);
+        return static_cast<void*>(const_cast< QCPGraph*>(this));
     return QCPAbstractPlottable::qt_metacast(_clname);
 }
 
@@ -4560,7 +4441,7 @@ QT_MOC_LITERAL(4, 48, 9) // "LineStyle"
 static const uint qt_meta_data_QCPCurve[] = {
 
  // content:
-       8,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
        0,    0, // methods
@@ -4582,7 +4463,7 @@ void QCPCurve::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, vo
 
 #ifndef QT_NO_PROPERTIES
     if (_c == QMetaObject::ReadProperty) {
-        auto *_t = static_cast<QCPCurve *>(_o);
+        QCPCurve *_t = static_cast<QCPCurve *>(_o);
         Q_UNUSED(_t)
         void *_v = _a[0];
         switch (_id) {
@@ -4591,7 +4472,7 @@ void QCPCurve::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, vo
         default: break;
         }
     } else if (_c == QMetaObject::WriteProperty) {
-        auto *_t = static_cast<QCPCurve *>(_o);
+        QCPCurve *_t = static_cast<QCPCurve *>(_o);
         Q_UNUSED(_t)
         void *_v = _a[0];
         switch (_id) {
@@ -4608,14 +4489,10 @@ void QCPCurve::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, vo
     Q_UNUSED(_a);
 }
 
-QT_INIT_METAOBJECT const QMetaObject QCPCurve::staticMetaObject = { {
-    &QCPAbstractPlottable::staticMetaObject,
-    qt_meta_stringdata_QCPCurve.data,
-    qt_meta_data_QCPCurve,
-    qt_static_metacall,
-    nullptr,
-    nullptr
-} };
+const QMetaObject QCPCurve::staticMetaObject = {
+    { &QCPAbstractPlottable::staticMetaObject, qt_meta_stringdata_QCPCurve.data,
+      qt_meta_data_QCPCurve,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
+};
 
 
 const QMetaObject *QCPCurve::metaObject() const
@@ -4625,9 +4502,9 @@ const QMetaObject *QCPCurve::metaObject() const
 
 void *QCPCurve::qt_metacast(const char *_clname)
 {
-    if (!_clname) return nullptr;
+    if (!_clname) return Q_NULLPTR;
     if (!strcmp(_clname, qt_meta_stringdata_QCPCurve.stringdata0))
-        return static_cast<void*>(this);
+        return static_cast<void*>(const_cast< QCPCurve*>(this));
     return QCPAbstractPlottable::qt_metacast(_clname);
 }
 
@@ -4681,7 +4558,7 @@ QT_MOC_LITERAL(3, 37, 7) // "spacing"
 static const uint qt_meta_data_QCPBarsGroup[] = {
 
  // content:
-       8,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
        0,    0, // methods
@@ -4703,7 +4580,7 @@ void QCPBarsGroup::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id
 
 #ifndef QT_NO_PROPERTIES
     if (_c == QMetaObject::ReadProperty) {
-        auto *_t = static_cast<QCPBarsGroup *>(_o);
+        QCPBarsGroup *_t = static_cast<QCPBarsGroup *>(_o);
         Q_UNUSED(_t)
         void *_v = _a[0];
         switch (_id) {
@@ -4712,7 +4589,7 @@ void QCPBarsGroup::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id
         default: break;
         }
     } else if (_c == QMetaObject::WriteProperty) {
-        auto *_t = static_cast<QCPBarsGroup *>(_o);
+        QCPBarsGroup *_t = static_cast<QCPBarsGroup *>(_o);
         Q_UNUSED(_t)
         void *_v = _a[0];
         switch (_id) {
@@ -4729,14 +4606,10 @@ void QCPBarsGroup::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id
     Q_UNUSED(_a);
 }
 
-QT_INIT_METAOBJECT const QMetaObject QCPBarsGroup::staticMetaObject = { {
-    &QObject::staticMetaObject,
-    qt_meta_stringdata_QCPBarsGroup.data,
-    qt_meta_data_QCPBarsGroup,
-    qt_static_metacall,
-    nullptr,
-    nullptr
-} };
+const QMetaObject QCPBarsGroup::staticMetaObject = {
+    { &QObject::staticMetaObject, qt_meta_stringdata_QCPBarsGroup.data,
+      qt_meta_data_QCPBarsGroup,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
+};
 
 
 const QMetaObject *QCPBarsGroup::metaObject() const
@@ -4746,9 +4619,9 @@ const QMetaObject *QCPBarsGroup::metaObject() const
 
 void *QCPBarsGroup::qt_metacast(const char *_clname)
 {
-    if (!_clname) return nullptr;
+    if (!_clname) return Q_NULLPTR;
     if (!strcmp(_clname, qt_meta_stringdata_QCPBarsGroup.stringdata0))
-        return static_cast<void*>(this);
+        return static_cast<void*>(const_cast< QCPBarsGroup*>(this));
     return QObject::qt_metacast(_clname);
 }
 
@@ -4813,7 +4686,7 @@ QT_MOC_LITERAL(12, 122, 12) // "wtPlotCoords"
 static const uint qt_meta_data_QCPBars[] = {
 
  // content:
-       8,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
        0,    0, // methods
@@ -4831,8 +4704,8 @@ static const uint qt_meta_data_QCPBars[] = {
        7, 0x80000000 | 8, 0x00095009,
        9, 0x80000000 | 8, 0x00095009,
 
- // enums: name, alias, flags, count, data
-       3,    3, 0x0,    3,   37,
+ // enums: name, flags, count, data
+       3, 0x0,    3,   36,
 
  // enum data: key, value
       10, uint(QCPBars::wtAbsolute),
@@ -4857,7 +4730,7 @@ void QCPBars::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, voi
 
 #ifndef QT_NO_PROPERTIES
     else if (_c == QMetaObject::ReadProperty) {
-        auto *_t = static_cast<QCPBars *>(_o);
+        QCPBars *_t = static_cast<QCPBars *>(_o);
         Q_UNUSED(_t)
         void *_v = _a[0];
         switch (_id) {
@@ -4870,7 +4743,7 @@ void QCPBars::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, voi
         default: break;
         }
     } else if (_c == QMetaObject::WriteProperty) {
-        auto *_t = static_cast<QCPBars *>(_o);
+        QCPBars *_t = static_cast<QCPBars *>(_o);
         Q_UNUSED(_t)
         void *_v = _a[0];
         switch (_id) {
@@ -4886,14 +4759,10 @@ void QCPBars::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, voi
     Q_UNUSED(_o);
 }
 
-QT_INIT_METAOBJECT const QMetaObject QCPBars::staticMetaObject = { {
-    &QCPAbstractPlottable::staticMetaObject,
-    qt_meta_stringdata_QCPBars.data,
-    qt_meta_data_QCPBars,
-    qt_static_metacall,
-    nullptr,
-    nullptr
-} };
+const QMetaObject QCPBars::staticMetaObject = {
+    { &QCPAbstractPlottable::staticMetaObject, qt_meta_stringdata_QCPBars.data,
+      qt_meta_data_QCPBars,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
+};
 
 
 const QMetaObject *QCPBars::metaObject() const
@@ -4903,9 +4772,9 @@ const QMetaObject *QCPBars::metaObject() const
 
 void *QCPBars::qt_metacast(const char *_clname)
 {
-    if (!_clname) return nullptr;
+    if (!_clname) return Q_NULLPTR;
     if (!strcmp(_clname, qt_meta_stringdata_QCPBars.stringdata0))
-        return static_cast<void*>(this);
+        return static_cast<void*>(const_cast< QCPBars*>(this));
     return QCPAbstractPlottable::qt_metacast(_clname);
 }
 
@@ -4974,7 +4843,7 @@ QT_MOC_LITERAL(15, 165, 15) // "QCPScatterStyle"
 static const uint qt_meta_data_QCPStatisticalBox[] = {
 
  // content:
-       8,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
        0,    0, // methods
@@ -5014,7 +4883,7 @@ void QCPStatisticalBox::qt_static_metacall(QObject *_o, QMetaObject::Call _c, in
 
 #ifndef QT_NO_PROPERTIES
     else if (_c == QMetaObject::ReadProperty) {
-        auto *_t = static_cast<QCPStatisticalBox *>(_o);
+        QCPStatisticalBox *_t = static_cast<QCPStatisticalBox *>(_o);
         Q_UNUSED(_t)
         void *_v = _a[0];
         switch (_id) {
@@ -5034,7 +4903,7 @@ void QCPStatisticalBox::qt_static_metacall(QObject *_o, QMetaObject::Call _c, in
         default: break;
         }
     } else if (_c == QMetaObject::WriteProperty) {
-        auto *_t = static_cast<QCPStatisticalBox *>(_o);
+        QCPStatisticalBox *_t = static_cast<QCPStatisticalBox *>(_o);
         Q_UNUSED(_t)
         void *_v = _a[0];
         switch (_id) {
@@ -5059,14 +4928,10 @@ void QCPStatisticalBox::qt_static_metacall(QObject *_o, QMetaObject::Call _c, in
     Q_UNUSED(_o);
 }
 
-QT_INIT_METAOBJECT const QMetaObject QCPStatisticalBox::staticMetaObject = { {
-    &QCPAbstractPlottable::staticMetaObject,
-    qt_meta_stringdata_QCPStatisticalBox.data,
-    qt_meta_data_QCPStatisticalBox,
-    qt_static_metacall,
-    nullptr,
-    nullptr
-} };
+const QMetaObject QCPStatisticalBox::staticMetaObject = {
+    { &QCPAbstractPlottable::staticMetaObject, qt_meta_stringdata_QCPStatisticalBox.data,
+      qt_meta_data_QCPStatisticalBox,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
+};
 
 
 const QMetaObject *QCPStatisticalBox::metaObject() const
@@ -5076,9 +4941,9 @@ const QMetaObject *QCPStatisticalBox::metaObject() const
 
 void *QCPStatisticalBox::qt_metacast(const char *_clname)
 {
-    if (!_clname) return nullptr;
+    if (!_clname) return Q_NULLPTR;
     if (!strcmp(_clname, qt_meta_stringdata_QCPStatisticalBox.stringdata0))
-        return static_cast<void*>(this);
+        return static_cast<void*>(const_cast< QCPStatisticalBox*>(this));
     return QCPAbstractPlottable::qt_metacast(_clname);
 }
 
@@ -5161,7 +5026,7 @@ QT_MOC_LITERAL(24, 319, 14) // "QCPColorScale*"
 static const uint qt_meta_data_QCPColorMap[] = {
 
  // content:
-       8,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
        9,   14, // methods
@@ -5219,7 +5084,7 @@ static const uint qt_meta_data_QCPColorMap[] = {
 void QCPColorMap::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        auto *_t = static_cast<QCPColorMap *>(_o);
+        QCPColorMap *_t = static_cast<QCPColorMap *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->dataRangeChanged((*reinterpret_cast< QCPRange(*)>(_a[1]))); break;
@@ -5235,25 +5100,23 @@ void QCPColorMap::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
         int *result = reinterpret_cast<int *>(_a[0]);
+        void **func = reinterpret_cast<void **>(_a[1]);
         {
-            using _t = void (QCPColorMap::*)(QCPRange );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&QCPColorMap::dataRangeChanged)) {
+            typedef void (QCPColorMap::*_t)(QCPRange );
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&QCPColorMap::dataRangeChanged)) {
                 *result = 0;
-                return;
             }
         }
         {
-            using _t = void (QCPColorMap::*)(QCPAxis::ScaleType );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&QCPColorMap::dataScaleTypeChanged)) {
+            typedef void (QCPColorMap::*_t)(QCPAxis::ScaleType );
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&QCPColorMap::dataScaleTypeChanged)) {
                 *result = 1;
-                return;
             }
         }
         {
-            using _t = void (QCPColorMap::*)(QCPColorGradient );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&QCPColorMap::gradientChanged)) {
+            typedef void (QCPColorMap::*_t)(QCPColorGradient );
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&QCPColorMap::gradientChanged)) {
                 *result = 2;
-                return;
             }
         }
     } else if (_c == QMetaObject::RegisterPropertyMetaType) {
@@ -5266,7 +5129,7 @@ void QCPColorMap::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
 
 #ifndef QT_NO_PROPERTIES
     else if (_c == QMetaObject::ReadProperty) {
-        auto *_t = static_cast<QCPColorMap *>(_o);
+        QCPColorMap *_t = static_cast<QCPColorMap *>(_o);
         Q_UNUSED(_t)
         void *_v = _a[0];
         switch (_id) {
@@ -5279,7 +5142,7 @@ void QCPColorMap::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
         default: break;
         }
     } else if (_c == QMetaObject::WriteProperty) {
-        auto *_t = static_cast<QCPColorMap *>(_o);
+        QCPColorMap *_t = static_cast<QCPColorMap *>(_o);
         Q_UNUSED(_t)
         void *_v = _a[0];
         switch (_id) {
@@ -5298,17 +5161,13 @@ void QCPColorMap::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
 
 static const QMetaObject * const qt_meta_extradata_QCPColorMap[] = {
         &QCPAxis::staticMetaObject,
-    nullptr
+    Q_NULLPTR
 };
 
-QT_INIT_METAOBJECT const QMetaObject QCPColorMap::staticMetaObject = { {
-    &QCPAbstractPlottable::staticMetaObject,
-    qt_meta_stringdata_QCPColorMap.data,
-    qt_meta_data_QCPColorMap,
-    qt_static_metacall,
-    qt_meta_extradata_QCPColorMap,
-    nullptr
-} };
+const QMetaObject QCPColorMap::staticMetaObject = {
+    { &QCPAbstractPlottable::staticMetaObject, qt_meta_stringdata_QCPColorMap.data,
+      qt_meta_data_QCPColorMap,  qt_static_metacall, qt_meta_extradata_QCPColorMap, Q_NULLPTR}
+};
 
 
 const QMetaObject *QCPColorMap::metaObject() const
@@ -5318,9 +5177,9 @@ const QMetaObject *QCPColorMap::metaObject() const
 
 void *QCPColorMap::qt_metacast(const char *_clname)
 {
-    if (!_clname) return nullptr;
+    if (!_clname) return Q_NULLPTR;
     if (!strcmp(_clname, qt_meta_stringdata_QCPColorMap.stringdata0))
-        return static_cast<void*>(this);
+        return static_cast<void*>(const_cast< QCPColorMap*>(this));
     return QCPAbstractPlottable::qt_metacast(_clname);
 }
 
@@ -5361,21 +5220,21 @@ int QCPColorMap::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 // SIGNAL 0
 void QCPColorMap::dataRangeChanged(QCPRange _t1)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    void *_a[] = { Q_NULLPTR, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
     QMetaObject::activate(this, &staticMetaObject, 0, _a);
 }
 
 // SIGNAL 1
 void QCPColorMap::dataScaleTypeChanged(QCPAxis::ScaleType _t1)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    void *_a[] = { Q_NULLPTR, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
     QMetaObject::activate(this, &staticMetaObject, 1, _a);
 }
 
 // SIGNAL 2
 void QCPColorMap::gradientChanged(QCPColorGradient _t1)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    void *_a[] = { Q_NULLPTR, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
     QMetaObject::activate(this, &staticMetaObject, 2, _a);
 }
 struct qt_meta_stringdata_QCPFinancial_t {
@@ -5412,7 +5271,7 @@ QT_MOC_LITERAL(10, 111, 13) // "csCandlestick"
 static const uint qt_meta_data_QCPFinancial[] = {
 
  // content:
-       8,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
        0,    0, // methods
@@ -5431,8 +5290,8 @@ static const uint qt_meta_data_QCPFinancial[] = {
        7, QMetaType::QPen, 0x00095103,
        8, QMetaType::QPen, 0x00095103,
 
- // enums: name, alias, flags, count, data
-       2,    2, 0x0,    2,   40,
+ // enums: name, flags, count, data
+       2, 0x0,    2,   39,
 
  // enum data: key, value
        9, uint(QCPFinancial::csOhlc),
@@ -5446,7 +5305,7 @@ void QCPFinancial::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id
 
 #ifndef QT_NO_PROPERTIES
     if (_c == QMetaObject::ReadProperty) {
-        auto *_t = static_cast<QCPFinancial *>(_o);
+        QCPFinancial *_t = static_cast<QCPFinancial *>(_o);
         Q_UNUSED(_t)
         void *_v = _a[0];
         switch (_id) {
@@ -5460,7 +5319,7 @@ void QCPFinancial::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id
         default: break;
         }
     } else if (_c == QMetaObject::WriteProperty) {
-        auto *_t = static_cast<QCPFinancial *>(_o);
+        QCPFinancial *_t = static_cast<QCPFinancial *>(_o);
         Q_UNUSED(_t)
         void *_v = _a[0];
         switch (_id) {
@@ -5482,14 +5341,10 @@ void QCPFinancial::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id
     Q_UNUSED(_a);
 }
 
-QT_INIT_METAOBJECT const QMetaObject QCPFinancial::staticMetaObject = { {
-    &QCPAbstractPlottable::staticMetaObject,
-    qt_meta_stringdata_QCPFinancial.data,
-    qt_meta_data_QCPFinancial,
-    qt_static_metacall,
-    nullptr,
-    nullptr
-} };
+const QMetaObject QCPFinancial::staticMetaObject = {
+    { &QCPAbstractPlottable::staticMetaObject, qt_meta_stringdata_QCPFinancial.data,
+      qt_meta_data_QCPFinancial,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
+};
 
 
 const QMetaObject *QCPFinancial::metaObject() const
@@ -5499,9 +5354,9 @@ const QMetaObject *QCPFinancial::metaObject() const
 
 void *QCPFinancial::qt_metacast(const char *_clname)
 {
-    if (!_clname) return nullptr;
+    if (!_clname) return Q_NULLPTR;
     if (!strcmp(_clname, qt_meta_stringdata_QCPFinancial.stringdata0))
-        return static_cast<void*>(this);
+        return static_cast<void*>(const_cast< QCPFinancial*>(this));
     return QCPAbstractPlottable::qt_metacast(_clname);
 }
 
@@ -5553,7 +5408,7 @@ QT_MOC_LITERAL(2, 24, 11) // "selectedPen"
 static const uint qt_meta_data_QCPItemStraightLine[] = {
 
  // content:
-       8,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
        0,    0, // methods
@@ -5575,7 +5430,7 @@ void QCPItemStraightLine::qt_static_metacall(QObject *_o, QMetaObject::Call _c, 
 
 #ifndef QT_NO_PROPERTIES
     if (_c == QMetaObject::ReadProperty) {
-        auto *_t = static_cast<QCPItemStraightLine *>(_o);
+        QCPItemStraightLine *_t = static_cast<QCPItemStraightLine *>(_o);
         Q_UNUSED(_t)
         void *_v = _a[0];
         switch (_id) {
@@ -5584,7 +5439,7 @@ void QCPItemStraightLine::qt_static_metacall(QObject *_o, QMetaObject::Call _c, 
         default: break;
         }
     } else if (_c == QMetaObject::WriteProperty) {
-        auto *_t = static_cast<QCPItemStraightLine *>(_o);
+        QCPItemStraightLine *_t = static_cast<QCPItemStraightLine *>(_o);
         Q_UNUSED(_t)
         void *_v = _a[0];
         switch (_id) {
@@ -5601,14 +5456,10 @@ void QCPItemStraightLine::qt_static_metacall(QObject *_o, QMetaObject::Call _c, 
     Q_UNUSED(_a);
 }
 
-QT_INIT_METAOBJECT const QMetaObject QCPItemStraightLine::staticMetaObject = { {
-    &QCPAbstractItem::staticMetaObject,
-    qt_meta_stringdata_QCPItemStraightLine.data,
-    qt_meta_data_QCPItemStraightLine,
-    qt_static_metacall,
-    nullptr,
-    nullptr
-} };
+const QMetaObject QCPItemStraightLine::staticMetaObject = {
+    { &QCPAbstractItem::staticMetaObject, qt_meta_stringdata_QCPItemStraightLine.data,
+      qt_meta_data_QCPItemStraightLine,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
+};
 
 
 const QMetaObject *QCPItemStraightLine::metaObject() const
@@ -5618,9 +5469,9 @@ const QMetaObject *QCPItemStraightLine::metaObject() const
 
 void *QCPItemStraightLine::qt_metacast(const char *_clname)
 {
-    if (!_clname) return nullptr;
+    if (!_clname) return Q_NULLPTR;
     if (!strcmp(_clname, qt_meta_stringdata_QCPItemStraightLine.stringdata0))
-        return static_cast<void*>(this);
+        return static_cast<void*>(const_cast< QCPItemStraightLine*>(this));
     return QCPAbstractItem::qt_metacast(_clname);
 }
 
@@ -5676,7 +5527,7 @@ QT_MOC_LITERAL(5, 47, 4) // "tail"
 static const uint qt_meta_data_QCPItemLine[] = {
 
  // content:
-       8,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
        0,    0, // methods
@@ -5700,7 +5551,7 @@ void QCPItemLine::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
 
 #ifndef QT_NO_PROPERTIES
     if (_c == QMetaObject::ReadProperty) {
-        auto *_t = static_cast<QCPItemLine *>(_o);
+        QCPItemLine *_t = static_cast<QCPItemLine *>(_o);
         Q_UNUSED(_t)
         void *_v = _a[0];
         switch (_id) {
@@ -5711,7 +5562,7 @@ void QCPItemLine::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
         default: break;
         }
     } else if (_c == QMetaObject::WriteProperty) {
-        auto *_t = static_cast<QCPItemLine *>(_o);
+        QCPItemLine *_t = static_cast<QCPItemLine *>(_o);
         Q_UNUSED(_t)
         void *_v = _a[0];
         switch (_id) {
@@ -5730,14 +5581,10 @@ void QCPItemLine::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
     Q_UNUSED(_a);
 }
 
-QT_INIT_METAOBJECT const QMetaObject QCPItemLine::staticMetaObject = { {
-    &QCPAbstractItem::staticMetaObject,
-    qt_meta_stringdata_QCPItemLine.data,
-    qt_meta_data_QCPItemLine,
-    qt_static_metacall,
-    nullptr,
-    nullptr
-} };
+const QMetaObject QCPItemLine::staticMetaObject = {
+    { &QCPAbstractItem::staticMetaObject, qt_meta_stringdata_QCPItemLine.data,
+      qt_meta_data_QCPItemLine,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
+};
 
 
 const QMetaObject *QCPItemLine::metaObject() const
@@ -5747,9 +5594,9 @@ const QMetaObject *QCPItemLine::metaObject() const
 
 void *QCPItemLine::qt_metacast(const char *_clname)
 {
-    if (!_clname) return nullptr;
+    if (!_clname) return Q_NULLPTR;
     if (!strcmp(_clname, qt_meta_stringdata_QCPItemLine.stringdata0))
-        return static_cast<void*>(this);
+        return static_cast<void*>(const_cast< QCPItemLine*>(this));
     return QCPAbstractItem::qt_metacast(_clname);
 }
 
@@ -5805,7 +5652,7 @@ QT_MOC_LITERAL(5, 48, 4) // "tail"
 static const uint qt_meta_data_QCPItemCurve[] = {
 
  // content:
-       8,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
        0,    0, // methods
@@ -5829,7 +5676,7 @@ void QCPItemCurve::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id
 
 #ifndef QT_NO_PROPERTIES
     if (_c == QMetaObject::ReadProperty) {
-        auto *_t = static_cast<QCPItemCurve *>(_o);
+        QCPItemCurve *_t = static_cast<QCPItemCurve *>(_o);
         Q_UNUSED(_t)
         void *_v = _a[0];
         switch (_id) {
@@ -5840,7 +5687,7 @@ void QCPItemCurve::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id
         default: break;
         }
     } else if (_c == QMetaObject::WriteProperty) {
-        auto *_t = static_cast<QCPItemCurve *>(_o);
+        QCPItemCurve *_t = static_cast<QCPItemCurve *>(_o);
         Q_UNUSED(_t)
         void *_v = _a[0];
         switch (_id) {
@@ -5859,14 +5706,10 @@ void QCPItemCurve::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id
     Q_UNUSED(_a);
 }
 
-QT_INIT_METAOBJECT const QMetaObject QCPItemCurve::staticMetaObject = { {
-    &QCPAbstractItem::staticMetaObject,
-    qt_meta_stringdata_QCPItemCurve.data,
-    qt_meta_data_QCPItemCurve,
-    qt_static_metacall,
-    nullptr,
-    nullptr
-} };
+const QMetaObject QCPItemCurve::staticMetaObject = {
+    { &QCPAbstractItem::staticMetaObject, qt_meta_stringdata_QCPItemCurve.data,
+      qt_meta_data_QCPItemCurve,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
+};
 
 
 const QMetaObject *QCPItemCurve::metaObject() const
@@ -5876,9 +5719,9 @@ const QMetaObject *QCPItemCurve::metaObject() const
 
 void *QCPItemCurve::qt_metacast(const char *_clname)
 {
-    if (!_clname) return nullptr;
+    if (!_clname) return Q_NULLPTR;
     if (!strcmp(_clname, qt_meta_stringdata_QCPItemCurve.stringdata0))
-        return static_cast<void*>(this);
+        return static_cast<void*>(const_cast< QCPItemCurve*>(this));
     return QCPAbstractItem::qt_metacast(_clname);
 }
 
@@ -5933,7 +5776,7 @@ QT_MOC_LITERAL(4, 34, 13) // "selectedBrush"
 static const uint qt_meta_data_QCPItemRect[] = {
 
  // content:
-       8,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
        0,    0, // methods
@@ -5957,7 +5800,7 @@ void QCPItemRect::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
 
 #ifndef QT_NO_PROPERTIES
     if (_c == QMetaObject::ReadProperty) {
-        auto *_t = static_cast<QCPItemRect *>(_o);
+        QCPItemRect *_t = static_cast<QCPItemRect *>(_o);
         Q_UNUSED(_t)
         void *_v = _a[0];
         switch (_id) {
@@ -5968,7 +5811,7 @@ void QCPItemRect::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
         default: break;
         }
     } else if (_c == QMetaObject::WriteProperty) {
-        auto *_t = static_cast<QCPItemRect *>(_o);
+        QCPItemRect *_t = static_cast<QCPItemRect *>(_o);
         Q_UNUSED(_t)
         void *_v = _a[0];
         switch (_id) {
@@ -5987,14 +5830,10 @@ void QCPItemRect::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
     Q_UNUSED(_a);
 }
 
-QT_INIT_METAOBJECT const QMetaObject QCPItemRect::staticMetaObject = { {
-    &QCPAbstractItem::staticMetaObject,
-    qt_meta_stringdata_QCPItemRect.data,
-    qt_meta_data_QCPItemRect,
-    qt_static_metacall,
-    nullptr,
-    nullptr
-} };
+const QMetaObject QCPItemRect::staticMetaObject = {
+    { &QCPAbstractItem::staticMetaObject, qt_meta_stringdata_QCPItemRect.data,
+      qt_meta_data_QCPItemRect,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
+};
 
 
 const QMetaObject *QCPItemRect::metaObject() const
@@ -6004,9 +5843,9 @@ const QMetaObject *QCPItemRect::metaObject() const
 
 void *QCPItemRect::qt_metacast(const char *_clname)
 {
-    if (!_clname) return nullptr;
+    if (!_clname) return Q_NULLPTR;
     if (!strcmp(_clname, qt_meta_stringdata_QCPItemRect.stringdata0))
-        return static_cast<void*>(this);
+        return static_cast<void*>(const_cast< QCPItemRect*>(this));
     return QCPAbstractItem::qt_metacast(_clname);
 }
 
@@ -6075,7 +5914,7 @@ QT_MOC_LITERAL(15, 154, 8) // "QMargins"
 static const uint qt_meta_data_QCPItemText[] = {
 
  // content:
-       8,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
        0,    0, // methods
@@ -6108,7 +5947,7 @@ void QCPItemText::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
 
 #ifndef QT_NO_PROPERTIES
     if (_c == QMetaObject::ReadProperty) {
-        auto *_t = static_cast<QCPItemText *>(_o);
+        QCPItemText *_t = static_cast<QCPItemText *>(_o);
         Q_UNUSED(_t)
         void *_v = _a[0];
         switch (_id) {
@@ -6128,7 +5967,7 @@ void QCPItemText::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
         default: break;
         }
     } else if (_c == QMetaObject::WriteProperty) {
-        auto *_t = static_cast<QCPItemText *>(_o);
+        QCPItemText *_t = static_cast<QCPItemText *>(_o);
         Q_UNUSED(_t)
         void *_v = _a[0];
         switch (_id) {
@@ -6156,14 +5995,10 @@ void QCPItemText::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
     Q_UNUSED(_a);
 }
 
-QT_INIT_METAOBJECT const QMetaObject QCPItemText::staticMetaObject = { {
-    &QCPAbstractItem::staticMetaObject,
-    qt_meta_stringdata_QCPItemText.data,
-    qt_meta_data_QCPItemText,
-    qt_static_metacall,
-    nullptr,
-    nullptr
-} };
+const QMetaObject QCPItemText::staticMetaObject = {
+    { &QCPAbstractItem::staticMetaObject, qt_meta_stringdata_QCPItemText.data,
+      qt_meta_data_QCPItemText,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
+};
 
 
 const QMetaObject *QCPItemText::metaObject() const
@@ -6173,9 +6008,9 @@ const QMetaObject *QCPItemText::metaObject() const
 
 void *QCPItemText::qt_metacast(const char *_clname)
 {
-    if (!_clname) return nullptr;
+    if (!_clname) return Q_NULLPTR;
     if (!strcmp(_clname, qt_meta_stringdata_QCPItemText.stringdata0))
-        return static_cast<void*>(this);
+        return static_cast<void*>(const_cast< QCPItemText*>(this));
     return QCPAbstractItem::qt_metacast(_clname);
 }
 
@@ -6230,7 +6065,7 @@ QT_MOC_LITERAL(4, 37, 13) // "selectedBrush"
 static const uint qt_meta_data_QCPItemEllipse[] = {
 
  // content:
-       8,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
        0,    0, // methods
@@ -6254,7 +6089,7 @@ void QCPItemEllipse::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
 
 #ifndef QT_NO_PROPERTIES
     if (_c == QMetaObject::ReadProperty) {
-        auto *_t = static_cast<QCPItemEllipse *>(_o);
+        QCPItemEllipse *_t = static_cast<QCPItemEllipse *>(_o);
         Q_UNUSED(_t)
         void *_v = _a[0];
         switch (_id) {
@@ -6265,7 +6100,7 @@ void QCPItemEllipse::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
         default: break;
         }
     } else if (_c == QMetaObject::WriteProperty) {
-        auto *_t = static_cast<QCPItemEllipse *>(_o);
+        QCPItemEllipse *_t = static_cast<QCPItemEllipse *>(_o);
         Q_UNUSED(_t)
         void *_v = _a[0];
         switch (_id) {
@@ -6284,14 +6119,10 @@ void QCPItemEllipse::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
     Q_UNUSED(_a);
 }
 
-QT_INIT_METAOBJECT const QMetaObject QCPItemEllipse::staticMetaObject = { {
-    &QCPAbstractItem::staticMetaObject,
-    qt_meta_stringdata_QCPItemEllipse.data,
-    qt_meta_data_QCPItemEllipse,
-    qt_static_metacall,
-    nullptr,
-    nullptr
-} };
+const QMetaObject QCPItemEllipse::staticMetaObject = {
+    { &QCPAbstractItem::staticMetaObject, qt_meta_stringdata_QCPItemEllipse.data,
+      qt_meta_data_QCPItemEllipse,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
+};
 
 
 const QMetaObject *QCPItemEllipse::metaObject() const
@@ -6301,9 +6132,9 @@ const QMetaObject *QCPItemEllipse::metaObject() const
 
 void *QCPItemEllipse::qt_metacast(const char *_clname)
 {
-    if (!_clname) return nullptr;
+    if (!_clname) return Q_NULLPTR;
     if (!strcmp(_clname, qt_meta_stringdata_QCPItemEllipse.stringdata0))
-        return static_cast<void*>(this);
+        return static_cast<void*>(const_cast< QCPItemEllipse*>(this));
     return QCPAbstractItem::qt_metacast(_clname);
 }
 
@@ -6363,7 +6194,7 @@ QT_MOC_LITERAL(8, 110, 11) // "selectedPen"
 static const uint qt_meta_data_QCPItemPixmap[] = {
 
  // content:
-       8,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
        0,    0, // methods
@@ -6389,7 +6220,7 @@ void QCPItemPixmap::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
 
 #ifndef QT_NO_PROPERTIES
     if (_c == QMetaObject::ReadProperty) {
-        auto *_t = static_cast<QCPItemPixmap *>(_o);
+        QCPItemPixmap *_t = static_cast<QCPItemPixmap *>(_o);
         Q_UNUSED(_t)
         void *_v = _a[0];
         switch (_id) {
@@ -6402,7 +6233,7 @@ void QCPItemPixmap::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
         default: break;
         }
     } else if (_c == QMetaObject::WriteProperty) {
-        auto *_t = static_cast<QCPItemPixmap *>(_o);
+        QCPItemPixmap *_t = static_cast<QCPItemPixmap *>(_o);
         Q_UNUSED(_t)
         void *_v = _a[0];
         switch (_id) {
@@ -6421,14 +6252,10 @@ void QCPItemPixmap::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
     Q_UNUSED(_a);
 }
 
-QT_INIT_METAOBJECT const QMetaObject QCPItemPixmap::staticMetaObject = { {
-    &QCPAbstractItem::staticMetaObject,
-    qt_meta_stringdata_QCPItemPixmap.data,
-    qt_meta_data_QCPItemPixmap,
-    qt_static_metacall,
-    nullptr,
-    nullptr
-} };
+const QMetaObject QCPItemPixmap::staticMetaObject = {
+    { &QCPAbstractItem::staticMetaObject, qt_meta_stringdata_QCPItemPixmap.data,
+      qt_meta_data_QCPItemPixmap,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
+};
 
 
 const QMetaObject *QCPItemPixmap::metaObject() const
@@ -6438,9 +6265,9 @@ const QMetaObject *QCPItemPixmap::metaObject() const
 
 void *QCPItemPixmap::qt_metacast(const char *_clname)
 {
-    if (!_clname) return nullptr;
+    if (!_clname) return Q_NULLPTR;
     if (!strcmp(_clname, qt_meta_stringdata_QCPItemPixmap.stringdata0))
-        return static_cast<void*>(this);
+        return static_cast<void*>(const_cast< QCPItemPixmap*>(this));
     return QCPAbstractItem::qt_metacast(_clname);
 }
 
@@ -6510,7 +6337,7 @@ QT_MOC_LITERAL(16, 147, 8) // "tsSquare"
 static const uint qt_meta_data_QCPItemTracer[] = {
 
  // content:
-       8,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
        0,    0, // methods
@@ -6531,8 +6358,8 @@ static const uint qt_meta_data_QCPItemTracer[] = {
       10, QMetaType::Double, 0x00095103,
       11, QMetaType::Bool, 0x00095103,
 
- // enums: name, alias, flags, count, data
-       7,    7, 0x0,    5,   46,
+ // enums: name, flags, count, data
+       7, 0x0,    5,   45,
 
  // enum data: key, value
       12, uint(QCPItemTracer::tsNone),
@@ -6556,7 +6383,7 @@ void QCPItemTracer::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
 
 #ifndef QT_NO_PROPERTIES
     else if (_c == QMetaObject::ReadProperty) {
-        auto *_t = static_cast<QCPItemTracer *>(_o);
+        QCPItemTracer *_t = static_cast<QCPItemTracer *>(_o);
         Q_UNUSED(_t)
         void *_v = _a[0];
         switch (_id) {
@@ -6572,7 +6399,7 @@ void QCPItemTracer::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
         default: break;
         }
     } else if (_c == QMetaObject::WriteProperty) {
-        auto *_t = static_cast<QCPItemTracer *>(_o);
+        QCPItemTracer *_t = static_cast<QCPItemTracer *>(_o);
         Q_UNUSED(_t)
         void *_v = _a[0];
         switch (_id) {
@@ -6593,14 +6420,10 @@ void QCPItemTracer::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
     Q_UNUSED(_o);
 }
 
-QT_INIT_METAOBJECT const QMetaObject QCPItemTracer::staticMetaObject = { {
-    &QCPAbstractItem::staticMetaObject,
-    qt_meta_stringdata_QCPItemTracer.data,
-    qt_meta_data_QCPItemTracer,
-    qt_static_metacall,
-    nullptr,
-    nullptr
-} };
+const QMetaObject QCPItemTracer::staticMetaObject = {
+    { &QCPAbstractItem::staticMetaObject, qt_meta_stringdata_QCPItemTracer.data,
+      qt_meta_data_QCPItemTracer,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
+};
 
 
 const QMetaObject *QCPItemTracer::metaObject() const
@@ -6610,9 +6433,9 @@ const QMetaObject *QCPItemTracer::metaObject() const
 
 void *QCPItemTracer::qt_metacast(const char *_clname)
 {
-    if (!_clname) return nullptr;
+    if (!_clname) return Q_NULLPTR;
     if (!strcmp(_clname, qt_meta_stringdata_QCPItemTracer.stringdata0))
-        return static_cast<void*>(this);
+        return static_cast<void*>(const_cast< QCPItemTracer*>(this));
     return QCPAbstractItem::qt_metacast(_clname);
 }
 
@@ -6668,7 +6491,7 @@ QT_MOC_LITERAL(5, 44, 12) // "BracketStyle"
 static const uint qt_meta_data_QCPItemBracket[] = {
 
  // content:
-       8,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
        0,    0, // methods
@@ -6692,7 +6515,7 @@ void QCPItemBracket::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
 
 #ifndef QT_NO_PROPERTIES
     if (_c == QMetaObject::ReadProperty) {
-        auto *_t = static_cast<QCPItemBracket *>(_o);
+        QCPItemBracket *_t = static_cast<QCPItemBracket *>(_o);
         Q_UNUSED(_t)
         void *_v = _a[0];
         switch (_id) {
@@ -6703,7 +6526,7 @@ void QCPItemBracket::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
         default: break;
         }
     } else if (_c == QMetaObject::WriteProperty) {
-        auto *_t = static_cast<QCPItemBracket *>(_o);
+        QCPItemBracket *_t = static_cast<QCPItemBracket *>(_o);
         Q_UNUSED(_t)
         void *_v = _a[0];
         switch (_id) {
@@ -6722,14 +6545,10 @@ void QCPItemBracket::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
     Q_UNUSED(_a);
 }
 
-QT_INIT_METAOBJECT const QMetaObject QCPItemBracket::staticMetaObject = { {
-    &QCPAbstractItem::staticMetaObject,
-    qt_meta_stringdata_QCPItemBracket.data,
-    qt_meta_data_QCPItemBracket,
-    qt_static_metacall,
-    nullptr,
-    nullptr
-} };
+const QMetaObject QCPItemBracket::staticMetaObject = {
+    { &QCPAbstractItem::staticMetaObject, qt_meta_stringdata_QCPItemBracket.data,
+      qt_meta_data_QCPItemBracket,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
+};
 
 
 const QMetaObject *QCPItemBracket::metaObject() const
@@ -6739,9 +6558,9 @@ const QMetaObject *QCPItemBracket::metaObject() const
 
 void *QCPItemBracket::qt_metacast(const char *_clname)
 {
-    if (!_clname) return nullptr;
+    if (!_clname) return Q_NULLPTR;
     if (!strcmp(_clname, qt_meta_stringdata_QCPItemBracket.stringdata0))
-        return static_cast<void*>(this);
+        return static_cast<void*>(const_cast< QCPItemBracket*>(this));
     return QCPAbstractItem::qt_metacast(_clname);
 }
 
@@ -6770,5 +6589,4 @@ int QCPItemBracket::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 #endif // QT_NO_PROPERTIES
     return _id;
 }
-QT_WARNING_POP
 QT_END_MOC_NAMESPACE

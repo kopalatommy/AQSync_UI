@@ -26,8 +26,8 @@
     <string/>
    </property>
    <property name="icon">
-    <iconset>
-     <normaloff>../../Buttons/button_home.jpg</normaloff>../../Buttons/button_home.jpg</iconset>
+    <iconset resource="../../resources.qrc">
+     <normaloff>:/Buttons/button_back.jpg</normaloff>:/Buttons/button_back.jpg</iconset>
    </property>
    <property name="iconSize">
     <size>
@@ -49,8 +49,8 @@
     <string/>
    </property>
    <property name="icon">
-    <iconset>
-     <normaloff>../../Buttons/Left_Carrot.jpg</normaloff>../../Buttons/Left_Carrot.jpg</iconset>
+    <iconset resource="../../resources.qrc">
+     <normaloff>:/Buttons/Left_Carrot.jpg</normaloff>:/Buttons/Left_Carrot.jpg</iconset>
    </property>
    <property name="iconSize">
     <size>
@@ -72,8 +72,8 @@
     <string/>
    </property>
    <property name="icon">
-    <iconset>
-     <normaloff>../../Buttons/button_save-to-usb (1).jpg</normaloff>../../Buttons/button_save-to-usb (1).jpg</iconset>
+    <iconset resource="../../resources.qrc">
+     <normaloff>:/Buttons/button_save-to-usb (1).jpg</normaloff>:/Buttons/button_save-to-usb (1).jpg</iconset>
    </property>
    <property name="iconSize">
     <size>
@@ -95,8 +95,8 @@
     <string/>
    </property>
    <property name="icon">
-    <iconset>
-     <normaloff>../../Buttons/Right_Carrot.jpg</normaloff>../../Buttons/Right_Carrot.jpg</iconset>
+    <iconset resource="../../resources.qrc">
+     <normaloff>:/Buttons/Right_Carrot.jpg</normaloff>:/Buttons/Right_Carrot.jpg</iconset>
    </property>
    <property name="iconSize">
     <size>
@@ -190,8 +190,8 @@
     <string/>
    </property>
    <property name="icon">
-    <iconset>
-     <normaloff>../../Buttons/button_delete.jpg</normaloff>../../Buttons/button_delete.jpg</iconset>
+    <iconset resource="../../resources.qrc">
+     <normaloff>:/Buttons/button_delete.jpg</normaloff>:/Buttons/button_delete.jpg</iconset>
    </property>
    <property name="iconSize">
     <size>
@@ -213,8 +213,8 @@
     <string/>
    </property>
    <property name="icon">
-    <iconset>
-     <normaloff>../../Buttons/button_select-file.jpg</normaloff>../../Buttons/button_select-file.jpg</iconset>
+    <iconset resource="../../resources.qrc">
+     <normaloff>:/Buttons/button_select-file.jpg</normaloff>:/Buttons/button_select-file.jpg</iconset>
    </property>
    <property name="iconSize">
     <size>
@@ -236,8 +236,8 @@
     <string/>
    </property>
    <property name="icon">
-    <iconset>
-     <normaloff>../../Buttons/button_refresh.jpg</normaloff>../../Buttons/button_refresh.jpg</iconset>
+    <iconset resource="../../resources.qrc">
+     <normaloff>:/Buttons/button_refresh.jpg</normaloff>:/Buttons/button_refresh.jpg</iconset>
    </property>
    <property name="iconSize">
     <size>
@@ -247,6 +247,8 @@
    </property>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="../../resources.qrc"/>
+ </resources>
  <connections/>
 </ui>

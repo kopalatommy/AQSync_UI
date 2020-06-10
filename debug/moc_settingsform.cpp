@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'settingsform.h'
 **
-** Created by: The Qt Meta Object Compiler version 67 (Qt 5.12.3)
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.5.1)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
@@ -12,14 +12,12 @@
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'settingsform.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.12.3. It"
+#error "This file was generated using the moc from 5.5.1. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
 
 QT_BEGIN_MOC_NAMESPACE
-QT_WARNING_PUSH
-QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_SettingsForm_t {
     QByteArrayData data[23];
     char stringdata0[464];
@@ -76,7 +74,7 @@ QT_MOC_LITERAL(22, 437, 26) // "on_dataFilesButton_clicked"
 static const uint qt_meta_data_SettingsForm[] = {
 
  // content:
-       8,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
       20,   14, // methods
@@ -140,7 +138,7 @@ static const uint qt_meta_data_SettingsForm[] = {
 void SettingsForm::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        auto *_t = static_cast<SettingsForm *>(_o);
+        SettingsForm *_t = static_cast<SettingsForm *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->MoveLeft(); break;
@@ -167,45 +165,38 @@ void SettingsForm::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
         int *result = reinterpret_cast<int *>(_a[0]);
+        void **func = reinterpret_cast<void **>(_a[1]);
         {
-            using _t = void (SettingsForm::*)();
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&SettingsForm::MoveLeft)) {
+            typedef void (SettingsForm::*_t)();
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&SettingsForm::MoveLeft)) {
                 *result = 0;
-                return;
             }
         }
         {
-            using _t = void (SettingsForm::*)();
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&SettingsForm::MoveRight)) {
+            typedef void (SettingsForm::*_t)();
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&SettingsForm::MoveRight)) {
                 *result = 1;
-                return;
             }
         }
         {
-            using _t = void (SettingsForm::*)();
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&SettingsForm::CloseForms)) {
+            typedef void (SettingsForm::*_t)();
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&SettingsForm::CloseForms)) {
                 *result = 2;
-                return;
             }
         }
         {
-            using _t = void (SettingsForm::*)(int );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&SettingsForm::JumpToIndex)) {
+            typedef void (SettingsForm::*_t)(int );
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&SettingsForm::JumpToIndex)) {
                 *result = 3;
-                return;
             }
         }
     }
 }
 
-QT_INIT_METAOBJECT const QMetaObject SettingsForm::staticMetaObject = { {
-    &QWidget::staticMetaObject,
-    qt_meta_stringdata_SettingsForm.data,
-    qt_meta_data_SettingsForm,
-    qt_static_metacall,
-    nullptr,
-    nullptr
-} };
+const QMetaObject SettingsForm::staticMetaObject = {
+    { &QWidget::staticMetaObject, qt_meta_stringdata_SettingsForm.data,
+      qt_meta_data_SettingsForm,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
+};
 
 
 const QMetaObject *SettingsForm::metaObject() const
@@ -215,9 +206,9 @@ const QMetaObject *SettingsForm::metaObject() const
 
 void *SettingsForm::qt_metacast(const char *_clname)
 {
-    if (!_clname) return nullptr;
+    if (!_clname) return Q_NULLPTR;
     if (!strcmp(_clname, qt_meta_stringdata_SettingsForm.stringdata0))
-        return static_cast<void*>(this);
+        return static_cast<void*>(const_cast< SettingsForm*>(this));
     return QWidget::qt_metacast(_clname);
 }
 
@@ -241,26 +232,25 @@ int SettingsForm::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 // SIGNAL 0
 void SettingsForm::MoveLeft()
 {
-    QMetaObject::activate(this, &staticMetaObject, 0, nullptr);
+    QMetaObject::activate(this, &staticMetaObject, 0, Q_NULLPTR);
 }
 
 // SIGNAL 1
 void SettingsForm::MoveRight()
 {
-    QMetaObject::activate(this, &staticMetaObject, 1, nullptr);
+    QMetaObject::activate(this, &staticMetaObject, 1, Q_NULLPTR);
 }
 
 // SIGNAL 2
 void SettingsForm::CloseForms()
 {
-    QMetaObject::activate(this, &staticMetaObject, 2, nullptr);
+    QMetaObject::activate(this, &staticMetaObject, 2, Q_NULLPTR);
 }
 
 // SIGNAL 3
 void SettingsForm::JumpToIndex(int _t1)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    void *_a[] = { Q_NULLPTR, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
     QMetaObject::activate(this, &staticMetaObject, 3, _a);
 }
-QT_WARNING_POP
 QT_END_MOC_NAMESPACE

@@ -15,6 +15,15 @@ public:
     explicit adaptivefilter405form(QWidget *parent = 0);
     ~adaptivefilter405form();
 
+private slots:
+    void on_Left_clicked();
+
+    void on_pushButton_clicked();
+
+    void on_Right_clicked();
+
+    void on_Home_clicked();
+
 private:
     Ui::adaptivefilter405form *ui;
 };

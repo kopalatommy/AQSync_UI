@@ -182,7 +182,10 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 DISTFILES += \
     Buttons/settings_Home_button.qml \
     Buttons/settings_Home_Button.jpg \
-    Settings/BlackCarbonSettings
+    Settings/BlackCarbonSettings \
+    ../../Downloads/button_graphs.jpg \
+    ../../Downloads/button_parameters.jpg \
+    ../../Downloads/button_settings.jpg
 
 RESOURCES += \
     resources.qrc

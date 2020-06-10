@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'flowcalform.h'
 **
-** Created by: The Qt Meta Object Compiler version 67 (Qt 5.12.3)
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.5.1)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
@@ -12,14 +12,12 @@
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'flowcalform.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.12.3. It"
+#error "This file was generated using the moc from 5.5.1. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
 
 QT_BEGIN_MOC_NAMESPACE
-QT_WARNING_PUSH
-QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_FlowCalForm_t {
     QByteArrayData data[21];
     char stringdata0[308];
@@ -70,7 +68,7 @@ QT_MOC_LITERAL(20, 295, 12) // "NewOzoneFlow"
 static const uint qt_meta_data_FlowCalForm[] = {
 
  // content:
-       8,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
       16,   14, // methods
@@ -126,7 +124,7 @@ static const uint qt_meta_data_FlowCalForm[] = {
 void FlowCalForm::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        auto *_t = static_cast<FlowCalForm *>(_o);
+        FlowCalForm *_t = static_cast<FlowCalForm *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->CloseForms(); break;
@@ -149,38 +147,32 @@ void FlowCalForm::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
         int *result = reinterpret_cast<int *>(_a[0]);
+        void **func = reinterpret_cast<void **>(_a[1]);
         {
-            using _t = void (FlowCalForm::*)();
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&FlowCalForm::CloseForms)) {
+            typedef void (FlowCalForm::*_t)();
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&FlowCalForm::CloseForms)) {
                 *result = 0;
-                return;
             }
         }
         {
-            using _t = void (FlowCalForm::*)();
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&FlowCalForm::MoveLeft)) {
+            typedef void (FlowCalForm::*_t)();
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&FlowCalForm::MoveLeft)) {
                 *result = 1;
-                return;
             }
         }
         {
-            using _t = void (FlowCalForm::*)();
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&FlowCalForm::MoveRight)) {
+            typedef void (FlowCalForm::*_t)();
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&FlowCalForm::MoveRight)) {
                 *result = 2;
-                return;
             }
         }
     }
 }
 
-QT_INIT_METAOBJECT const QMetaObject FlowCalForm::staticMetaObject = { {
-    &QWidget::staticMetaObject,
-    qt_meta_stringdata_FlowCalForm.data,
-    qt_meta_data_FlowCalForm,
-    qt_static_metacall,
-    nullptr,
-    nullptr
-} };
+const QMetaObject FlowCalForm::staticMetaObject = {
+    { &QWidget::staticMetaObject, qt_meta_stringdata_FlowCalForm.data,
+      qt_meta_data_FlowCalForm,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
+};
 
 
 const QMetaObject *FlowCalForm::metaObject() const
@@ -190,9 +182,9 @@ const QMetaObject *FlowCalForm::metaObject() const
 
 void *FlowCalForm::qt_metacast(const char *_clname)
 {
-    if (!_clname) return nullptr;
+    if (!_clname) return Q_NULLPTR;
     if (!strcmp(_clname, qt_meta_stringdata_FlowCalForm.stringdata0))
-        return static_cast<void*>(this);
+        return static_cast<void*>(const_cast< FlowCalForm*>(this));
     return QWidget::qt_metacast(_clname);
 }
 
@@ -216,19 +208,18 @@ int FlowCalForm::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 // SIGNAL 0
 void FlowCalForm::CloseForms()
 {
-    QMetaObject::activate(this, &staticMetaObject, 0, nullptr);
+    QMetaObject::activate(this, &staticMetaObject, 0, Q_NULLPTR);
 }
 
 // SIGNAL 1
 void FlowCalForm::MoveLeft()
 {
-    QMetaObject::activate(this, &staticMetaObject, 1, nullptr);
+    QMetaObject::activate(this, &staticMetaObject, 1, Q_NULLPTR);
 }
 
 // SIGNAL 2
 void FlowCalForm::MoveRight()
 {
-    QMetaObject::activate(this, &staticMetaObject, 2, nullptr);
+    QMetaObject::activate(this, &staticMetaObject, 2, Q_NULLPTR);
 }
-QT_WARNING_POP
 QT_END_MOC_NAMESPACE

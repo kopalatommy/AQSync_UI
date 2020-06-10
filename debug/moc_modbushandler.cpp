@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'modbushandler.h'
 **
-** Created by: The Qt Meta Object Compiler version 67 (Qt 5.12.3)
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.5.1)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
@@ -13,14 +13,12 @@
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'modbushandler.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.12.3. It"
+#error "This file was generated using the moc from 5.5.1. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
 
 QT_BEGIN_MOC_NAMESPACE
-QT_WARNING_PUSH
-QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_ModbusHandler_t {
     QByteArrayData data[40];
     char stringdata0[509];
@@ -94,7 +92,7 @@ QT_MOC_LITERAL(39, 492, 16) // "SetLongRegisters"
 static const uint qt_meta_data_ModbusHandler[] = {
 
  // content:
-       8,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
       26,   14, // methods
@@ -170,7 +168,7 @@ static const uint qt_meta_data_ModbusHandler[] = {
 void ModbusHandler::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        auto *_t = static_cast<ModbusHandler *>(_o);
+        ModbusHandler *_t = static_cast<ModbusHandler *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->ConnectedAsMaster(); break;
@@ -221,66 +219,56 @@ void ModbusHandler::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
         int *result = reinterpret_cast<int *>(_a[0]);
+        void **func = reinterpret_cast<void **>(_a[1]);
         {
-            using _t = void (ModbusHandler::*)();
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&ModbusHandler::ConnectedAsMaster)) {
+            typedef void (ModbusHandler::*_t)();
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&ModbusHandler::ConnectedAsMaster)) {
                 *result = 0;
-                return;
             }
         }
         {
-            using _t = void (ModbusHandler::*)();
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&ModbusHandler::MasterDisconnect)) {
+            typedef void (ModbusHandler::*_t)();
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&ModbusHandler::MasterDisconnect)) {
                 *result = 1;
-                return;
             }
         }
         {
-            using _t = void (ModbusHandler::*)();
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&ModbusHandler::ConnectedAsSlave)) {
+            typedef void (ModbusHandler::*_t)();
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&ModbusHandler::ConnectedAsSlave)) {
                 *result = 2;
-                return;
             }
         }
         {
-            using _t = void (ModbusHandler::*)();
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&ModbusHandler::SlaveDisconnected)) {
+            typedef void (ModbusHandler::*_t)();
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&ModbusHandler::SlaveDisconnected)) {
                 *result = 3;
-                return;
             }
         }
         {
-            using _t = void (ModbusHandler::*)();
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&ModbusHandler::NewDataLine)) {
+            typedef void (ModbusHandler::*_t)();
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&ModbusHandler::NewDataLine)) {
                 *result = 4;
-                return;
             }
         }
         {
-            using _t = void (ModbusHandler::*)();
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&ModbusHandler::NewSettings)) {
+            typedef void (ModbusHandler::*_t)();
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&ModbusHandler::NewSettings)) {
                 *result = 5;
-                return;
             }
         }
         {
-            using _t = void (ModbusHandler::*)(int );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&ModbusHandler::TriggerOutputFunction)) {
+            typedef void (ModbusHandler::*_t)(int );
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&ModbusHandler::TriggerOutputFunction)) {
                 *result = 6;
-                return;
             }
         }
     }
 }
 
-QT_INIT_METAOBJECT const QMetaObject ModbusHandler::staticMetaObject = { {
-    &QObject::staticMetaObject,
-    qt_meta_stringdata_ModbusHandler.data,
-    qt_meta_data_ModbusHandler,
-    qt_static_metacall,
-    nullptr,
-    nullptr
-} };
+const QMetaObject ModbusHandler::staticMetaObject = {
+    { &QObject::staticMetaObject, qt_meta_stringdata_ModbusHandler.data,
+      qt_meta_data_ModbusHandler,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
+};
 
 
 const QMetaObject *ModbusHandler::metaObject() const
@@ -290,9 +278,9 @@ const QMetaObject *ModbusHandler::metaObject() const
 
 void *ModbusHandler::qt_metacast(const char *_clname)
 {
-    if (!_clname) return nullptr;
+    if (!_clname) return Q_NULLPTR;
     if (!strcmp(_clname, qt_meta_stringdata_ModbusHandler.stringdata0))
-        return static_cast<void*>(this);
+        return static_cast<void*>(const_cast< ModbusHandler*>(this));
     return QObject::qt_metacast(_clname);
 }
 
@@ -316,44 +304,43 @@ int ModbusHandler::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 // SIGNAL 0
 void ModbusHandler::ConnectedAsMaster()
 {
-    QMetaObject::activate(this, &staticMetaObject, 0, nullptr);
+    QMetaObject::activate(this, &staticMetaObject, 0, Q_NULLPTR);
 }
 
 // SIGNAL 1
 void ModbusHandler::MasterDisconnect()
 {
-    QMetaObject::activate(this, &staticMetaObject, 1, nullptr);
+    QMetaObject::activate(this, &staticMetaObject, 1, Q_NULLPTR);
 }
 
 // SIGNAL 2
 void ModbusHandler::ConnectedAsSlave()
 {
-    QMetaObject::activate(this, &staticMetaObject, 2, nullptr);
+    QMetaObject::activate(this, &staticMetaObject, 2, Q_NULLPTR);
 }
 
 // SIGNAL 3
 void ModbusHandler::SlaveDisconnected()
 {
-    QMetaObject::activate(this, &staticMetaObject, 3, nullptr);
+    QMetaObject::activate(this, &staticMetaObject, 3, Q_NULLPTR);
 }
 
 // SIGNAL 4
 void ModbusHandler::NewDataLine()
 {
-    QMetaObject::activate(this, &staticMetaObject, 4, nullptr);
+    QMetaObject::activate(this, &staticMetaObject, 4, Q_NULLPTR);
 }
 
 // SIGNAL 5
 void ModbusHandler::NewSettings()
 {
-    QMetaObject::activate(this, &staticMetaObject, 5, nullptr);
+    QMetaObject::activate(this, &staticMetaObject, 5, Q_NULLPTR);
 }
 
 // SIGNAL 6
 void ModbusHandler::TriggerOutputFunction(int _t1)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    void *_a[] = { Q_NULLPTR, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
     QMetaObject::activate(this, &staticMetaObject, 6, _a);
 }
-QT_WARNING_POP
 QT_END_MOC_NAMESPACE

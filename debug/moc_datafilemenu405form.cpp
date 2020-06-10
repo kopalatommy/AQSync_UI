@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'datafilemenu405form.h'
 **
-** Created by: The Qt Meta Object Compiler version 67 (Qt 5.12.3)
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.5.1)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
@@ -12,14 +12,12 @@
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'datafilemenu405form.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.12.3. It"
+#error "This file was generated using the moc from 5.5.1. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
 
 QT_BEGIN_MOC_NAMESPACE
-QT_WARNING_PUSH
-QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_datafilemenu405form_t {
     QByteArrayData data[1];
     char stringdata0[20];
@@ -41,7 +39,7 @@ QT_MOC_LITERAL(0, 0, 19) // "datafilemenu405form"
 static const uint qt_meta_data_datafilemenu405form[] = {
 
  // content:
-       8,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
        0,    0, // methods
@@ -62,14 +60,10 @@ void datafilemenu405form::qt_static_metacall(QObject *_o, QMetaObject::Call _c, 
     Q_UNUSED(_a);
 }
 
-QT_INIT_METAOBJECT const QMetaObject datafilemenu405form::staticMetaObject = { {
-    &QDialog::staticMetaObject,
-    qt_meta_stringdata_datafilemenu405form.data,
-    qt_meta_data_datafilemenu405form,
-    qt_static_metacall,
-    nullptr,
-    nullptr
-} };
+const QMetaObject datafilemenu405form::staticMetaObject = {
+    { &QDialog::staticMetaObject, qt_meta_stringdata_datafilemenu405form.data,
+      qt_meta_data_datafilemenu405form,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
+};
 
 
 const QMetaObject *datafilemenu405form::metaObject() const
@@ -79,16 +73,17 @@ const QMetaObject *datafilemenu405form::metaObject() const
 
 void *datafilemenu405form::qt_metacast(const char *_clname)
 {
-    if (!_clname) return nullptr;
+    if (!_clname) return Q_NULLPTR;
     if (!strcmp(_clname, qt_meta_stringdata_datafilemenu405form.stringdata0))
-        return static_cast<void*>(this);
+        return static_cast<void*>(const_cast< datafilemenu405form*>(this));
     return QDialog::qt_metacast(_clname);
 }
 
 int datafilemenu405form::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
     _id = QDialog::qt_metacall(_c, _id, _a);
+    if (_id < 0)
+        return _id;
     return _id;
 }
-QT_WARNING_POP
 QT_END_MOC_NAMESPACE

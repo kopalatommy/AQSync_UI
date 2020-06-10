@@ -15,6 +15,13 @@ public:
     explicit adaptivefilterBCPform(QWidget *parent = 0);
     ~adaptivefilterBCPform();
 
+private slots:
+    void on_Left_clicked();
+
+    void on_Right_clicked();
+
+    void on_Home_clicked();
+
 private:
     Ui::adaptivefilterBCPform *ui;
 };
