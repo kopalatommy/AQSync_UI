@@ -20,9 +20,6 @@ class BCPSerialHandler : public QObject
 {
     Q_OBJECT
 public:
-<<<<<<< HEAD
-
-=======
     static BCPSerialHandler * GetInstance();
 
     void SendMessage(QByteArray message);
@@ -39,7 +36,6 @@ private slots:
     void OnAckTimeout(QByteArray message);
 
     void ReadyRead();
->>>>>>> a2a00dc81fe12de8ca7991ccd7b781237858feda
 
 private:
     static BCPSerialHandler * instance;

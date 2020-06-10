@@ -15,6 +15,9 @@ settings405::~settings405()
 
 void settings405::on_AdaptiveFilter_clicked()
 {
+    qDebug() << "Clicked";
+
+
     adaptivefilter405form adaptivefilter;
     adaptivefilter.setModal(true);
     adaptivefilter.exec();

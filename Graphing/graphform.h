@@ -6,7 +6,7 @@
 #include <QDebug>
 
 #include "qcustomplot.h"
-#include "aqsyncdata.h"
+//#include "aqsyncdata.h"
 
 namespace Ui {
 class GraphForm;

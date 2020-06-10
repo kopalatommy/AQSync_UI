@@ -1,10 +1,11 @@
 #include "mainwindow.h"
 #include <QApplication>
+#include "Settings/405Settings/settings405.h"
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    MainWindow w;
+    settings405 w;
     w.show();
 
     return a.exec();
