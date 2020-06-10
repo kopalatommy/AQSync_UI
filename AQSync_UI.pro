@@ -73,7 +73,9 @@ SOURCES += \
     Settings/BCPSettings/adaptivefilterbcpform.cpp \
     Settings/BCPSettings/calibration880nm.cpp \
     Settings/BCPSettings/autozerobcp.cpp \
-    Settings/405Settings/parameters405form.cpp
+    Settings/405Settings/parameters405form.cpp \
+    Settings/BCPSettings/calibration405nm.cpp \
+    Settings/BCPSettings/tpcorrectionsform.cpp
 
 HEADERS += \
         Communication/bcpserialhandler.h \
@@ -123,7 +125,9 @@ HEADERS += \
     Settings/BCPSettings/adaptivefilterbcpform.h \
     Settings/BCPSettings/calibration880nm.h \
     Settings/BCPSettings/autozerobcp.h \
-    Settings/405Settings/parameters405form.h
+    Settings/405Settings/parameters405form.h \
+    Settings/BCPSettings/calibration405nm.h \
+    Settings/BCPSettings/tpcorrectionsform.h
 
 FORMS += \
         DataFiles/datafilemenuform.ui \
@@ -161,7 +165,9 @@ FORMS += \
     Settings/BCPSettings/adaptivefilterbcpform.ui \
     Settings/BCPSettings/calibration880nm.ui \
     Settings/BCPSettings/autozerobcp.ui \
-    Settings/405Settings/parameters405form.ui
+    Settings/405Settings/parameters405form.ui \
+    Settings/BCPSettings/calibration405nm.ui \
+    Settings/BCPSettings/tpcorrectionsform.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

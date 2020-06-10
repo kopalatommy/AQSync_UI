@@ -9,7 +9,7 @@
 class BCPSerialHandler
 {
 public:
-//Hi tommy
+
 
 private:
     BCPSerialHandler();

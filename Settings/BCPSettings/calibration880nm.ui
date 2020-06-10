@@ -179,6 +179,172 @@
     </size>
    </property>
   </widget>
+  <widget class="QPushButton" name="Right_2">
+   <property name="geometry">
+    <rect>
+     <x>790</x>
+     <y>390</y>
+     <width>100</width>
+     <height>340</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../../Buttons/Right_Carrot.jpg</normaloff>../../Buttons/Right_Carrot.jpg</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>100</width>
+     <height>340</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="PushButton_4">
+   <property name="geometry">
+    <rect>
+     <x>274</x>
+     <y>410</y>
+     <width>211</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>PushButton</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Home_2">
+   <property name="geometry">
+    <rect>
+     <x>790</x>
+     <y>280</y>
+     <width>100</width>
+     <height>100</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../../Buttons/button_home.jpg</normaloff>../../Buttons/button_home.jpg</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>100</width>
+     <height>100</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="PushButton_5">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>550</y>
+     <width>211</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>PushButton</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Save_2">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>680</y>
+     <width>120</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../../Buttons/button_save.jpg</normaloff>../../Buttons/button_save.jpg</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>120</width>
+     <height>60</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Left_2">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>390</y>
+     <width>100</width>
+     <height>340</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../../Buttons/Left_Carrot.jpg</normaloff>../../Buttons/Left_Carrot.jpg</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>100</width>
+     <height>340</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="AdaptiveFilter_2">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>290</y>
+     <width>481</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Calibri</family>
+     <pointsize>30</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>880nm Calibration</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="PushButton_6">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>410</y>
+     <width>211</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>PushButton</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="PushButton_7">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>550</y>
+     <width>211</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>PushButton</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>
