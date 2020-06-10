@@ -60,7 +60,7 @@ void BCPSettings::on_TP_clicked()
     //tpcorrectionsform TP;
     //TP.setModal(true);
     //TP.exec();
-    SettingFormsHandler::MoveLeft();
+
 }
 
 void BCPSettings::on_NextLeft_clicked()
@@ -68,10 +68,16 @@ void BCPSettings::on_NextLeft_clicked()
     //settings405 set405;
     //set405.setModal(true);
     //set405.exec();
-    SettingFormsHandler::MoveRight();
+    SettingFormsHandler::MoveLeft();
 }
 
 void BCPSettings::on_Home_Button_clicked()
 {
     //Home Button
+    close();
+}
+
+void BCPSettings::on_NextRight_clicked()
+{
+    SettingFormsHandler::MoveRight();
 }
