@@ -57,7 +57,6 @@ void settings405::on_Parameters_clicked()
 
 void settings405::on_Home_Button_clicked()
 {
-    SettingFormsHandler::JumpToIndex(20);
     close();
 }
 

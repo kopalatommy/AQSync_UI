@@ -81,7 +81,6 @@ SOURCES += \
 
 HEADERS += \
         Communication/bcpserialhandler.h \
-        Communication/communicationhandler.h \
     Communication/serialhandler405.h \
     Communication/syncstatus.h \
         DataFiles/datafilemenuform.h \

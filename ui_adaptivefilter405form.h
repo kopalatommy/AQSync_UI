@@ -31,7 +31,7 @@ public:
     QPushButton *percentMask;
     QPushButton *longMask;
     QPushButton *differenceMask;
-    QPushButton *pushButton;
+    QPushButton *save;
 
     void setupUi(QDialog *adaptivefilter405form)
     {
@@ -79,13 +79,13 @@ public:
         differenceMask = new QPushButton(adaptivefilter405form);
         differenceMask->setObjectName(QStringLiteral("differenceMask"));
         differenceMask->setGeometry(QRect(430, 280, 211, 111));
-        pushButton = new QPushButton(adaptivefilter405form);
-        pushButton->setObjectName(QStringLiteral("pushButton"));
-        pushButton->setGeometry(QRect(330, 410, 120, 60));
+        save = new QPushButton(adaptivefilter405form);
+        save->setObjectName(QStringLiteral("save"));
+        save->setGeometry(QRect(330, 410, 120, 60));
         QIcon icon3;
         icon3.addFile(QStringLiteral(":/Buttons/button_save.jpg"), QSize(), QIcon::Normal, QIcon::Off);
-        pushButton->setIcon(icon3);
-        pushButton->setIconSize(QSize(120, 60));
+        save->setIcon(icon3);
+        save->setIconSize(QSize(120, 60));
 
         retranslateUi(adaptivefilter405form);
 
@@ -103,7 +103,7 @@ public:
         percentMask->setText(QApplication::translate("adaptivefilter405form", "PushButton", 0));
         longMask->setText(QApplication::translate("adaptivefilter405form", "PushButton", 0));
         differenceMask->setText(QApplication::translate("adaptivefilter405form", "PushButton", 0));
-        pushButton->setText(QString());
+        save->setText(QString());
     } // retranslateUi
 
 };
