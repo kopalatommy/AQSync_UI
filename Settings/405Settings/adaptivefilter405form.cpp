@@ -18,9 +18,8 @@ adaptivefilter405form::~adaptivefilter405form()
 
 void adaptivefilter405form::on_Left_clicked()
 {
-    parameters405form param;
-    param.setModal(true);
-    param.exec();
+    SettingFormsHandler::JumpToIndex(7);
+    close();
 }
 
 void adaptivefilter405form::on_pushButton_clicked()
@@ -30,14 +29,12 @@ void adaptivefilter405form::on_pushButton_clicked()
 
 void adaptivefilter405form::on_Right_clicked()
 {
-    Mode405form mode405;
-    mode405.setModal(true);
-    mode405.exec();
+    SettingFormsHandler::JumpToIndex(3);
+    close();
 }
 
 void adaptivefilter405form::on_Home_clicked()
 {
-    settings405 back;
-    back.setModal(true);
-    back.exec();
+    SettingFormsHandler::JumpToIndex(0);
+    close();
 }

@@ -22,56 +22,49 @@ BCPSettings::~BCPSettings()
 
 void BCPSettings::on_AdaptiveFilter_clicked()
 {
-    adaptivefilterBCPform filter;
-    filter.setModal(true);
-    filter.exec();
+    SettingFormsHandler::JumpToIndex(8);
+    close();
 }
 
 void BCPSettings::on_cali880_clicked()
 {
-    Calibration880nm calib880;
-    calib880.setModal(true);
-    calib880.exec();
+    SettingFormsHandler::JumpToIndex(11);
+    close();
 }
 
 void BCPSettings::on_FlowCalibration_clicked()
 {
-    flowcalibrationBCPform flowcali;
-    flowcali.setModal(true);
-    flowcali.exec();
+    SettingFormsHandler::JumpToIndex(12);
+    close();
 }
 
 void BCPSettings::on_Auto_Zero_clicked()
 {
-    AutoZeroBCP zero;
-    zero.setModal(true);
-    zero.exec();
+    SettingFormsHandler::JumpToIndex(9);
+    close();
 }
 
 void BCPSettings::on_cali405_clicked()
 {
-    calibration405nm cali405;
-    cali405.setModal(true);
-    cali405.exec();
+    SettingFormsHandler::JumpToIndex(10);
+    close();
 }
 
 void BCPSettings::on_TP_clicked()
 {
-    //tpcorrectionsform TP;
-    //TP.setModal(true);
-    //TP.exec();
-    SettingFormsHandler::MoveLeft();
+    SettingFormsHandler::JumpToIndex(13);
+    close();
 }
 
 void BCPSettings::on_NextLeft_clicked()
 {
-    //settings405 set405;
-    //set405.setModal(true);
-    //set405.exec();
-    SettingFormsHandler::MoveRight();
+
+    SettingFormsHandler::JumpToIndex(0);
+    close();
 }
 
 void BCPSettings::on_Home_Button_clicked()
 {
-    //Home Button
+    SettingFormsHandler::JumpToIndex(20);
+    close();
 }

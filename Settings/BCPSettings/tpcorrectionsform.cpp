@@ -18,21 +18,18 @@ tpcorrectionsform::~tpcorrectionsform()
 
 void tpcorrectionsform::on_pushButton_clicked()
 {
-    flowcalibrationBCPform left;
-    left.setModal(true);
-    left.exec();
+    SettingFormsHandler::JumpToIndex(12);
+    close();
 }
 
 void tpcorrectionsform::on_pushButton_2_clicked()
 {
-    adaptivefilterBCPform right;
-    right.setModal(true);
-    right.exec();
+    SettingFormsHandler::JumpToIndex(8);
+    close();
 }
 
 void tpcorrectionsform::on_pushButton_3_clicked()
 {
-    BCPSettings back;
-    back.setModal(true);
-    back.exec();
+    SettingFormsHandler::JumpToIndex(1);
+    close();
 }

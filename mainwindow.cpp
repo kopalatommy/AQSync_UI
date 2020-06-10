@@ -121,4 +121,19 @@ void MainWindow::CreateSettingPages()
 
     settings->append(new settings405);
     settings->append(new BCPSettings);
+    settings->append(new adaptivefilter405form);
+    settings->append(new Mode405form);
+    settings->append(new NOCalibration405form);
+    settings->append(new no2calibration405form);
+    settings->append(new flowcalibration405form);
+    settings->append(new parameters405form);
+    settings->append(new adaptivefilterBCPform);
+    settings->append(new AutoZeroBCP);
+    settings->append(new calibration405nm);
+    settings->append(new Calibration880nm);
+    settings->append(new flowcalibrationBCPform);
+    settings->append(new tpcorrectionsform);
+
+
+    //settings->append(new MainWindow);
 }

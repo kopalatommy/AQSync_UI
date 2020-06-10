@@ -18,21 +18,18 @@ flowcalibrationBCPform::~flowcalibrationBCPform()
 
 void flowcalibrationBCPform::on_Left_clicked()
 {
-    calibration405nm left;
-    left.setModal(true);
-    left.exec();
+    SettingFormsHandler::JumpToIndex(10);
+    close();
 }
 
 void flowcalibrationBCPform::on_Right_clicked()
 {
-    tpcorrectionsform right;
-    right.setModal(true);
-    right.exec();
+    SettingFormsHandler::JumpToIndex(13);
+    close();
 }
 
 void flowcalibrationBCPform::on_Home_clicked()
 {
-    BCPSettings back;
-    back.setModal(true);
-    back.exec();
+    SettingFormsHandler::JumpToIndex(1);
+    close();
 }

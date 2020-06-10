@@ -18,21 +18,18 @@ parameters405form::~parameters405form()
 
 void parameters405form::on_right_clicked()
 {
-    settings405 set;
-    set.setModal(true);
-    set.exec();
+    SettingFormsHandler::JumpToIndex(0);
+    close();
 }
 
 void parameters405form::on_pushButton_clicked()
 {
-    flowcalibration405form left;
-    left.setModal(true);
-    left.exec();
+    SettingFormsHandler::JumpToIndex(6);
+    close();
 }
 
 void parameters405form::on_pushButton_2_clicked()
 {
-    adaptivefilter405form right;
-    right.setModal(true);
-    right.exec();
+    SettingFormsHandler::JumpToIndex(2);
+    close();
 }

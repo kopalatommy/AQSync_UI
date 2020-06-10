@@ -18,21 +18,18 @@ AutoZeroBCP::~AutoZeroBCP()
 
 void AutoZeroBCP::on_Left_clicked()
 {
-    adaptivefilterBCPform left;
-    left.setModal(true);
-    left.exec();
+    SettingFormsHandler::JumpToIndex(8);
+    close();
 }
 
 void AutoZeroBCP::on_Right_clicked()
 {
-    Calibration880nm right;
-    right.setModal(true);
-    right.exec();
+    SettingFormsHandler::JumpToIndex(11);
+    close();
 }
 
 void AutoZeroBCP::on_Home_clicked()
 {
-    BCPSettings back;
-    back.setModal(true);
-    back.exec();
+    SettingFormsHandler::JumpToIndex(1);
+    close();
 }

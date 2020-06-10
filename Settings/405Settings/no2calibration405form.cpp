@@ -18,21 +18,18 @@ no2calibration405form::~no2calibration405form()
 
 void no2calibration405form::on_Left_clicked()
 {
-    NOCalibration405form NOcali;
-    NOcali.setModal(true);
-    NOcali.exec();
+    SettingFormsHandler::JumpToIndex(4);
+    close();
 }
 
 void no2calibration405form::on_Right_clicked()
 {
-    flowcalibration405form right;
-    right.setModal(true);
-    right.exec();
+    SettingFormsHandler::JumpToIndex(6);
+    close();
 }
 
 void no2calibration405form::on_Home_clicked()
 {
-    settings405 back;
-    back.setModal(true);
-    back.exec();
+    SettingFormsHandler::JumpToIndex(0);
+    close();
 }

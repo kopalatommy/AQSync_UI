@@ -18,21 +18,18 @@ calibration405nm::~calibration405nm()
 
 void calibration405nm::on_Left_clicked()
 {
-    Calibration880nm left;
-    left.setModal(true);
-    left.exec();
+    SettingFormsHandler::JumpToIndex(11);
+    close();
 }
 
 void calibration405nm::on_Right_clicked()
 {
-    flowcalibrationBCPform right;
-    right.setModal(true);
-    right.exec();
+    SettingFormsHandler::JumpToIndex(12);
+    close();
 }
 
 void calibration405nm::on_Home_clicked()
 {
-    BCPSettings back;
-    back.setModal(true);
-    back.exec();
+    SettingFormsHandler::JumpToIndex(1);
+    close();
 }

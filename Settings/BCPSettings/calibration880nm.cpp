@@ -18,21 +18,18 @@ Calibration880nm::~Calibration880nm()
 
 void Calibration880nm::on_Left_clicked()
 {
-    AutoZeroBCP left;
-    left.setModal(true);
-    left.exec();
+    SettingFormsHandler::JumpToIndex(9);
+    close();
 }
 
 void Calibration880nm::on_Right_clicked()
 {
-    calibration405nm right;
-    right.setModal(true);
-    right.exec();
+    SettingFormsHandler::JumpToIndex(10);
+    close();
 }
 
 void Calibration880nm::on_Home_clicked()
 {
-    BCPSettings back;
-    back.setModal(true);
-    back.exec();
+    SettingFormsHandler::JumpToIndex(1);
+    close();
 }

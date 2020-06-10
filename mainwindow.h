@@ -13,6 +13,18 @@
 //Settings pages
 #include "Settings/405Settings/settings405.h"
 #include "Settings/BCPSettings/bcpsettings.h"
+#include "Settings/405Settings/adaptivefilter405form.h"
+#include "Settings/405Settings/flowcalibration405form.h"
+#include "Settings/405Settings/mode405form.h"
+#include "Settings/405Settings/no2calibration405form.h"
+#include "Settings/405Settings/nocalibration405form.h"
+#include "Settings/405Settings/parameters405form.h"
+#include "Settings/BCPSettings/adaptivefilterbcpform.h"
+#include "Settings/BCPSettings/autozerobcp.h"
+#include "Settings/BCPSettings/calibration405nm.h"
+#include "Settings/BCPSettings/calibration880nm.h"
+#include "Settings/BCPSettings/flowcalibrationbcpform.h"
+#include "Settings/BCPSettings/tpcorrectionsform.h"
 
 namespace Ui {
 class MainWindow;
