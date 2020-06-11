@@ -28,12 +28,14 @@ public:
     QPushButton *Right;
     QPushButton *Home;
     QPushButton *Save;
-    QPushButton *FrequencyMask;
+    QPushButton *zeroingFrequenctMask;
     QLabel *AutoZero;
     QCheckBox *checkBox;
-    QPushButton *ZeroPeriodMask;
+    QPushButton *zeroPeriodMask;
     QPushButton *BCZeroMask;
     QPushButton *PMZeroMask;
+    QLabel *FreqLabel;
+    QLabel *PeriodLabel;
 
     void setupUi(QDialog *AutoZeroBCP)
     {
@@ -68,9 +70,9 @@ public:
         icon3.addFile(QStringLiteral(":/Buttons/button_save.jpg"), QSize(), QIcon::Normal, QIcon::Off);
         Save->setIcon(icon3);
         Save->setIconSize(QSize(120, 60));
-        FrequencyMask = new QPushButton(AutoZeroBCP);
-        FrequencyMask->setObjectName(QStringLiteral("FrequencyMask"));
-        FrequencyMask->setGeometry(QRect(180, 120, 411, 61));
+        zeroingFrequenctMask = new QPushButton(AutoZeroBCP);
+        zeroingFrequenctMask->setObjectName(QStringLiteral("zeroingFrequenctMask"));
+        zeroingFrequenctMask->setGeometry(QRect(180, 120, 411, 61));
         AutoZero = new QLabel(AutoZeroBCP);
         AutoZero->setObjectName(QStringLiteral("AutoZero"));
         AutoZero->setGeometry(QRect(290, 20, 181, 51));
@@ -83,15 +85,21 @@ public:
         QFont font1;
         font1.setPointSize(15);
         checkBox->setFont(font1);
-        ZeroPeriodMask = new QPushButton(AutoZeroBCP);
-        ZeroPeriodMask->setObjectName(QStringLiteral("ZeroPeriodMask"));
-        ZeroPeriodMask->setGeometry(QRect(180, 190, 411, 61));
+        zeroPeriodMask = new QPushButton(AutoZeroBCP);
+        zeroPeriodMask->setObjectName(QStringLiteral("zeroPeriodMask"));
+        zeroPeriodMask->setGeometry(QRect(180, 190, 411, 61));
         BCZeroMask = new QPushButton(AutoZeroBCP);
         BCZeroMask->setObjectName(QStringLiteral("BCZeroMask"));
         BCZeroMask->setGeometry(QRect(180, 260, 411, 61));
         PMZeroMask = new QPushButton(AutoZeroBCP);
         PMZeroMask->setObjectName(QStringLiteral("PMZeroMask"));
         PMZeroMask->setGeometry(QRect(180, 330, 411, 61));
+        FreqLabel = new QLabel(AutoZeroBCP);
+        FreqLabel->setObjectName(QStringLiteral("FreqLabel"));
+        FreqLabel->setGeometry(QRect(180, 110, 351, 71));
+        PeriodLabel = new QLabel(AutoZeroBCP);
+        PeriodLabel->setObjectName(QStringLiteral("PeriodLabel"));
+        PeriodLabel->setGeometry(QRect(186, 189, 401, 61));
 
         retranslateUi(AutoZeroBCP);
 
@@ -105,12 +113,14 @@ public:
         Right->setText(QString());
         Home->setText(QString());
         Save->setText(QString());
-        FrequencyMask->setText(QApplication::translate("AutoZeroBCP", "PushButton", 0));
+        zeroingFrequenctMask->setText(QApplication::translate("AutoZeroBCP", "PushButton", 0));
         AutoZero->setText(QApplication::translate("AutoZeroBCP", "Auto Zero", 0));
         checkBox->setText(QApplication::translate("AutoZeroBCP", "Enable Auto Zeroing", 0));
-        ZeroPeriodMask->setText(QApplication::translate("AutoZeroBCP", "PushButton", 0));
+        zeroPeriodMask->setText(QApplication::translate("AutoZeroBCP", "PushButton", 0));
         BCZeroMask->setText(QApplication::translate("AutoZeroBCP", "PushButton", 0));
         PMZeroMask->setText(QApplication::translate("AutoZeroBCP", "PushButton", 0));
+        FreqLabel->setText(QApplication::translate("AutoZeroBCP", "TextLabel", 0));
+        PeriodLabel->setText(QApplication::translate("AutoZeroBCP", "TextLabel", 0));
     } // retranslateUi
 
 };

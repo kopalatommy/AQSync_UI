@@ -109,7 +109,7 @@ static const uint qt_meta_data_AdaptiveFilter405Form[] = {
 void AdaptiveFilter405Form::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        auto *_t = static_cast<AdaptiveFilter405Form *>(_o);
+        AdaptiveFilter405Form *_t = static_cast<AdaptiveFilter405Form *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->on_shortMask_clicked(); break;
@@ -155,7 +155,6 @@ int AdaptiveFilter405Form::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     _id = QWidget::qt_metacall(_c, _id, _a);
     if (_id < 0)
         return _id;
-<<<<<<< HEAD
     if (_c == QMetaObject::InvokeMetaMethod) {
         if (_id < 14)
             qt_static_metacall(this, _c, _id, _a);
@@ -165,8 +164,6 @@ int AdaptiveFilter405Form::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
             *reinterpret_cast<int*>(_a[0]) = -1;
         _id -= 14;
     }
-=======
->>>>>>> 20d41ea080f90a9268418246a3fb7794f12fddaf
     return _id;
 }
 QT_END_MOC_NAMESPACE

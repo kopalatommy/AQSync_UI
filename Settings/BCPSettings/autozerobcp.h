@@ -28,6 +28,7 @@ private slots:
     void on_Left_clicked();
     void on_Right_clicked();
     void on_Home_clicked();
+    void on_Save_clicked();
 
     void on_zeroingFrequenctMask_clicked();
     void on_zeroPeriodMask_clicked();

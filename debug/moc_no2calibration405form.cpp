@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'no2calibration405form.h'
 **
-** Created by: The Qt Meta Object Compiler version 67 (Qt 5.12.3)
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.5.1)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
@@ -12,14 +12,12 @@
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'no2calibration405form.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.12.3. It"
+#error "This file was generated using the moc from 5.5.1. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
 
 QT_BEGIN_MOC_NAMESPACE
-QT_WARNING_PUSH
-QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_NO2Calibration405Form_t {
     QByteArrayData data[14];
     char stringdata0[207];
@@ -59,7 +57,7 @@ QT_MOC_LITERAL(13, 192, 14) // "GetNewSettings"
 static const uint qt_meta_data_NO2Calibration405Form[] = {
 
  // content:
-       8,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
       12,   14, // methods
@@ -103,7 +101,7 @@ static const uint qt_meta_data_NO2Calibration405Form[] = {
 void NO2Calibration405Form::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        auto *_t = static_cast<NO2Calibration405Form *>(_o);
+        NO2Calibration405Form *_t = static_cast<NO2Calibration405Form *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->on_Left_clicked(); break;
@@ -123,14 +121,10 @@ void NO2Calibration405Form::qt_static_metacall(QObject *_o, QMetaObject::Call _c
     }
 }
 
-QT_INIT_METAOBJECT const QMetaObject NO2Calibration405Form::staticMetaObject = { {
-    &QWidget::staticMetaObject,
-    qt_meta_stringdata_NO2Calibration405Form.data,
-    qt_meta_data_NO2Calibration405Form,
-    qt_static_metacall,
-    nullptr,
-    nullptr
-} };
+const QMetaObject NO2Calibration405Form::staticMetaObject = {
+    { &QWidget::staticMetaObject, qt_meta_stringdata_NO2Calibration405Form.data,
+      qt_meta_data_NO2Calibration405Form,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
+};
 
 
 const QMetaObject *NO2Calibration405Form::metaObject() const
@@ -140,9 +134,9 @@ const QMetaObject *NO2Calibration405Form::metaObject() const
 
 void *NO2Calibration405Form::qt_metacast(const char *_clname)
 {
-    if (!_clname) return nullptr;
+    if (!_clname) return Q_NULLPTR;
     if (!strcmp(_clname, qt_meta_stringdata_NO2Calibration405Form.stringdata0))
-        return static_cast<void*>(this);
+        return static_cast<void*>(const_cast< NO2Calibration405Form*>(this));
     return QWidget::qt_metacast(_clname);
 }
 
@@ -162,5 +156,4 @@ int NO2Calibration405Form::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     }
     return _id;
 }
-QT_WARNING_POP
 QT_END_MOC_NAMESPACE
