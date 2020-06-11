@@ -20,10 +20,10 @@ AdaptiveFilter405Form::AdaptiveFilter405Form(QWidget *parent) :
     ui->differenceMask->setStyleSheet("QPushButton { background-color: rgba(10, 0, 0, 0); }");
     ui->percentMask->setStyleSheet("QPushButton { background-color: rgba(10, 0, 0, 0); }");
 
-    ui->Home->setStyleSheet("QPushButton { background-color: rgba(10, 0, 0, 0); }");
-    ui->Right->setStyleSheet("QPushButton { background-color: rgba(10, 0, 0, 0); }");
-    ui->Left->setStyleSheet("QPushButton { background-color: rgba(10, 0, 0, 0); }");
-    ui->save->setStyleSheet("QPushButton { background-color: rgba(10, 0, 0, 0); }");
+    ui->home->setStyleSheet("QPushButton { background-color: rgba(10, 0, 0, 0); }");
+    ui->Next->setStyleSheet("QPushButton { background-color: rgba(10, 0, 0, 0); }");
+    ui->Previous->setStyleSheet("QPushButton { background-color: rgba(10, 0, 0, 0); }");
+    ui->Save->setStyleSheet("QPushButton { background-color: rgba(10, 0, 0, 0); }");
 
     QPalette pal = palette();
     pal.setColor(QPalette::Background, Qt::white);

@@ -13,7 +13,7 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QPushButton" name="zoneSlopeMask">
+  <widget class="QPushButton" name="OzoneSlopeMask">
    <property name="geometry">
     <rect>
      <x>140</x>
@@ -90,11 +90,11 @@
     </size>
    </property>
   </widget>
-  <widget class="QPushButton" name="Left">
+  <widget class="QPushButton" name="Previous">
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>120</y>
+     <y>80</y>
      <width>100</width>
      <height>340</height>
     </rect>
@@ -113,7 +113,7 @@
     </size>
    </property>
   </widget>
-  <widget class="QPushButton" name="cellSlopeMask">
+  <widget class="QPushButton" name="CellSlopeMask">
    <property name="geometry">
     <rect>
      <x>140</x>
@@ -126,7 +126,7 @@
     <string>PushButton</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="Right">
+  <widget class="QPushButton" name="Next">
    <property name="geometry">
     <rect>
      <x>680</x>
@@ -147,6 +147,32 @@
      <width>100</width>
      <height>340</height>
     </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="cellFlowLabel">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>110</y>
+     <width>521</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="ozoneFlowLabel">
+   <property name="geometry">
+    <rect>
+     <x>146</x>
+     <y>249</y>
+     <width>511</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
    </property>
   </widget>
  </widget>

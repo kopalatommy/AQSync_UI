@@ -39,7 +39,7 @@
     <string/>
    </property>
   </widget>
-  <widget class="QPushButton" name="Home">
+  <widget class="QPushButton" name="home">
    <property name="geometry">
     <rect>
      <x>690</x>
@@ -75,7 +75,7 @@
     <string/>
    </property>
   </widget>
-  <widget class="QPushButton" name="Right">
+  <widget class="QPushButton" name="Next">
    <property name="geometry">
     <rect>
      <x>690</x>
@@ -98,7 +98,7 @@
     </size>
    </property>
   </widget>
-  <widget class="QPushButton" name="save">
+  <widget class="QPushButton" name="Save">
    <property name="geometry">
     <rect>
      <x>330</x>
@@ -156,7 +156,7 @@
     <string/>
    </property>
   </widget>
-  <widget class="QPushButton" name="Left">
+  <widget class="QPushButton" name="Previous">
    <property name="geometry">
     <rect>
      <x>10</x>
@@ -273,13 +273,13 @@
   <zorder>diffLabel</zorder>
   <zorder>longMask</zorder>
   <zorder>differenceMask</zorder>
-  <zorder>Home</zorder>
+  <zorder>home</zorder>
   <zorder>percentMask</zorder>
-  <zorder>Right</zorder>
-  <zorder>save</zorder>
+  <zorder>Next</zorder>
+  <zorder>Save</zorder>
   <zorder>AdaptiveFilter</zorder>
   <zorder>shortMask</zorder>
-  <zorder>Left</zorder>
+  <zorder>Previous</zorder>
  </widget>
  <resources>
   <include location="../../resources.qrc"/>
