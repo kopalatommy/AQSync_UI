@@ -59,7 +59,7 @@
     </size>
    </property>
   </widget>
-  <widget class="QPushButton" name="save">
+  <widget class="QPushButton" name="Save">
    <property name="geometry">
     <rect>
      <x>340</x>
@@ -82,7 +82,7 @@
     </size>
    </property>
   </widget>
-  <widget class="QPushButton" name="slopeMask_2">
+  <widget class="QPushButton" name="zeroMask">
    <property name="geometry">
     <rect>
      <x>140</x>
@@ -108,7 +108,7 @@
     <string>PushButton</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="slopeMask_3">
+  <widget class="QPushButton" name="AnalogMask">
    <property name="geometry">
     <rect>
      <x>140</x>
@@ -165,14 +165,56 @@
     </size>
    </property>
   </widget>
+  <widget class="QLabel" name="SlopeLabel">
+   <property name="geometry">
+    <rect>
+     <x>146</x>
+     <y>122</y>
+     <width>511</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="ZeroLabel">
+   <property name="geometry">
+    <rect>
+     <x>146</x>
+     <y>210</y>
+     <width>511</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="AnalogLabel">
+   <property name="geometry">
+    <rect>
+     <x>146</x>
+     <y>300</y>
+     <width>511</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
   <zorder>NOCalibration</zorder>
   <zorder>Home</zorder>
   <zorder>Right</zorder>
-  <zorder>save</zorder>
-  <zorder>slopeMask_2</zorder>
+  <zorder>Save</zorder>
+  <zorder>zeroMask</zorder>
   <zorder>slopeMask</zorder>
-  <zorder>slopeMask_3</zorder>
+  <zorder>AnalogMask</zorder>
   <zorder>Left</zorder>
+  <zorder>SlopeLabel</zorder>
+  <zorder>ZeroLabel</zorder>
+  <zorder>AnalogLabel</zorder>
  </widget>
  <resources>
   <include location="../../resources.qrc"/>
