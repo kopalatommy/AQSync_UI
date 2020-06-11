@@ -33,12 +33,12 @@ debug/numberpadform.o
 debug/paramtersform.o
 debug/utilities.o
 debug/settings405.o
-debug/nocalibration405form.o
 debug/bcpsettings.o
 debug/calibration880nm.o
 debug/autozerobcp.o
 debug/calibration405nm.o
 debug/tpcorrectionsform.o
+debug/nocalibration405form.o
 debug/qrc_resources.o
 debug/moc_bcpserialhandler.o
 debug/moc_serialhandler405.o
@@ -70,9 +70,9 @@ debug/moc_serialhandler.o
 debug/moc_numberpadform.o
 debug/moc_paramtersform.o
 debug/moc_settings405.o
-debug/moc_nocalibration405form.o
 debug/moc_bcpsettings.o
 debug/moc_calibration880nm.o
 debug/moc_autozerobcp.o
 debug/moc_calibration405nm.o
 debug/moc_tpcorrectionsform.o
+debug/moc_nocalibration405form.o

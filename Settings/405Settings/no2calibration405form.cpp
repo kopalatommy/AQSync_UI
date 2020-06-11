@@ -154,22 +154,23 @@ void NO2Calibration405Form::showEvent(QShowEvent *event)
 void NO2Calibration405Form::closeEvent(QCloseEvent *event)
 {
     QWidget::closeEvent(event);
+    SettingsHandler * settings = SettingsHandler::GetInstance();
 
-    if(fabs(static_cast<double>(SettingsHandler::GetInstance()->GetNO2Slope_405() - slope)) > 0.001 ||
-            analog != SettingsHandler::GetInstance()->GetAnalogNO2_405())
+    if(settings->GetAnalogNO2_405() != analog || settings->GetNO2Slope_405() != slope ||
+       settings->GetNO2Zero_405() != zero)
     {
         QMessageBox msg;
-        msg.setText("Save sunsaved settings?");
+        msg.setText("Save unsaved setting?");
         msg.setStandardButtons(QMessageBox::StandardButton::Yes | QMessageBox::StandardButton::No);
 
-        switch(msg.exec())
+        switch (msg.exec())
         {
-            case QMessageBox::Yes:
-                on_Save_clicked();
-                break;
+        case QMessageBox::StandardButton::Yes:
+            on_Save_clicked();
+            break;
 
-            default:
-                break;
+        default:
+            break;
         }
     }
 }

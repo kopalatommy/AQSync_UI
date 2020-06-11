@@ -60,12 +60,12 @@ SOURCES += \
         paramtersform.cpp \
         utilities.cpp \
     Settings/405Settings/settings405.cpp \
-    Settings/405Settings/nocalibration405form.cpp \
     Settings/BCPSettings/bcpsettings.cpp \
     Settings/BCPSettings/calibration880nm.cpp \
     Settings/BCPSettings/autozerobcp.cpp \
     Settings/BCPSettings/calibration405nm.cpp \
-    Settings/BCPSettings/tpcorrectionsform.cpp
+    Settings/BCPSettings/tpcorrectionsform.cpp \
+    Settings/405Settings/nocalibration405form.cpp
 
 HEADERS += \
         Communication/bcpserialhandler.h \
@@ -103,12 +103,12 @@ HEADERS += \
         paramtersform.h \
         utilities.h \
     Settings/405Settings/settings405.h \
-    Settings/405Settings/nocalibration405form.h \
     Settings/BCPSettings/bcpsettings.h \
     Settings/BCPSettings/calibration880nm.h \
     Settings/BCPSettings/autozerobcp.h \
     Settings/BCPSettings/calibration405nm.h \
-    Settings/BCPSettings/tpcorrectionsform.h
+    Settings/BCPSettings/tpcorrectionsform.h \
+    Settings/405Settings/nocalibration405form.h
 
 FORMS += \
         DataFiles/datafilemenuform.ui \

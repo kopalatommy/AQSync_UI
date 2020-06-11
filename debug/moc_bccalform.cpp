@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'bccalform.h'
 **
-** Created by: The Qt Meta Object Compiler version 67 (Qt 5.12.3)
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.5.1)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
@@ -12,14 +12,12 @@
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'bccalform.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.12.3. It"
+#error "This file was generated using the moc from 5.5.1. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
 
 QT_BEGIN_MOC_NAMESPACE
-QT_WARNING_PUSH
-QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_BCCalForm_t {
     QByteArrayData data[18];
     char stringdata0[257];
@@ -65,7 +63,7 @@ QT_MOC_LITERAL(17, 252, 4) // "code"
 static const uint qt_meta_data_BCCalForm[] = {
 
  // content:
-       8,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
       14,   14, // methods
@@ -117,7 +115,7 @@ static const uint qt_meta_data_BCCalForm[] = {
 void BCCalForm::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        auto *_t = static_cast<BCCalForm *>(_o);
+        BCCalForm *_t = static_cast<BCCalForm *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->CloseForms(); break;
@@ -138,38 +136,32 @@ void BCCalForm::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, v
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
         int *result = reinterpret_cast<int *>(_a[0]);
+        void **func = reinterpret_cast<void **>(_a[1]);
         {
-            using _t = void (BCCalForm::*)();
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&BCCalForm::CloseForms)) {
+            typedef void (BCCalForm::*_t)();
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&BCCalForm::CloseForms)) {
                 *result = 0;
-                return;
             }
         }
         {
-            using _t = void (BCCalForm::*)();
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&BCCalForm::MoveLeft)) {
+            typedef void (BCCalForm::*_t)();
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&BCCalForm::MoveLeft)) {
                 *result = 1;
-                return;
             }
         }
         {
-            using _t = void (BCCalForm::*)();
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&BCCalForm::MoveRight)) {
+            typedef void (BCCalForm::*_t)();
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&BCCalForm::MoveRight)) {
                 *result = 2;
-                return;
             }
         }
     }
 }
 
-QT_INIT_METAOBJECT const QMetaObject BCCalForm::staticMetaObject = { {
-    &QWidget::staticMetaObject,
-    qt_meta_stringdata_BCCalForm.data,
-    qt_meta_data_BCCalForm,
-    qt_static_metacall,
-    nullptr,
-    nullptr
-} };
+const QMetaObject BCCalForm::staticMetaObject = {
+    { &QWidget::staticMetaObject, qt_meta_stringdata_BCCalForm.data,
+      qt_meta_data_BCCalForm,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
+};
 
 
 const QMetaObject *BCCalForm::metaObject() const
@@ -179,9 +171,9 @@ const QMetaObject *BCCalForm::metaObject() const
 
 void *BCCalForm::qt_metacast(const char *_clname)
 {
-    if (!_clname) return nullptr;
+    if (!_clname) return Q_NULLPTR;
     if (!strcmp(_clname, qt_meta_stringdata_BCCalForm.stringdata0))
-        return static_cast<void*>(this);
+        return static_cast<void*>(const_cast< BCCalForm*>(this));
     return QWidget::qt_metacast(_clname);
 }
 
@@ -205,19 +197,18 @@ int BCCalForm::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 // SIGNAL 0
 void BCCalForm::CloseForms()
 {
-    QMetaObject::activate(this, &staticMetaObject, 0, nullptr);
+    QMetaObject::activate(this, &staticMetaObject, 0, Q_NULLPTR);
 }
 
 // SIGNAL 1
 void BCCalForm::MoveLeft()
 {
-    QMetaObject::activate(this, &staticMetaObject, 1, nullptr);
+    QMetaObject::activate(this, &staticMetaObject, 1, Q_NULLPTR);
 }
 
 // SIGNAL 2
 void BCCalForm::MoveRight()
 {
-    QMetaObject::activate(this, &staticMetaObject, 2, nullptr);
+    QMetaObject::activate(this, &staticMetaObject, 2, Q_NULLPTR);
 }
-QT_WARNING_POP
 QT_END_MOC_NAMESPACE

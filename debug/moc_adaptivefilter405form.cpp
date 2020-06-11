@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'adaptivefilter405form.h'
 **
-** Created by: The Qt Meta Object Compiler version 67 (Qt 5.12.3)
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.5.1)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
@@ -12,14 +12,12 @@
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'adaptivefilter405form.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.12.3. It"
+#error "This file was generated using the moc from 5.5.1. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
 
 QT_BEGIN_MOC_NAMESPACE
-QT_WARNING_PUSH
-QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_AdaptiveFilter405Form_t {
     QByteArrayData data[17];
     char stringdata0[256];
@@ -63,7 +61,7 @@ QT_MOC_LITERAL(16, 240, 15) // "on_Save_clicked"
 static const uint qt_meta_data_AdaptiveFilter405Form[] = {
 
  // content:
-       8,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
       14,   14, // methods
@@ -133,14 +131,10 @@ void AdaptiveFilter405Form::qt_static_metacall(QObject *_o, QMetaObject::Call _c
     }
 }
 
-QT_INIT_METAOBJECT const QMetaObject AdaptiveFilter405Form::staticMetaObject = { {
-    &QWidget::staticMetaObject,
-    qt_meta_stringdata_AdaptiveFilter405Form.data,
-    qt_meta_data_AdaptiveFilter405Form,
-    qt_static_metacall,
-    nullptr,
-    nullptr
-} };
+const QMetaObject AdaptiveFilter405Form::staticMetaObject = {
+    { &QWidget::staticMetaObject, qt_meta_stringdata_AdaptiveFilter405Form.data,
+      qt_meta_data_AdaptiveFilter405Form,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
+};
 
 
 const QMetaObject *AdaptiveFilter405Form::metaObject() const
@@ -150,9 +144,9 @@ const QMetaObject *AdaptiveFilter405Form::metaObject() const
 
 void *AdaptiveFilter405Form::qt_metacast(const char *_clname)
 {
-    if (!_clname) return nullptr;
+    if (!_clname) return Q_NULLPTR;
     if (!strcmp(_clname, qt_meta_stringdata_AdaptiveFilter405Form.stringdata0))
-        return static_cast<void*>(this);
+        return static_cast<void*>(const_cast< AdaptiveFilter405Form*>(this));
     return QWidget::qt_metacast(_clname);
 }
 
@@ -161,6 +155,7 @@ int AdaptiveFilter405Form::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     _id = QWidget::qt_metacall(_c, _id, _a);
     if (_id < 0)
         return _id;
+<<<<<<< HEAD
     if (_c == QMetaObject::InvokeMetaMethod) {
         if (_id < 14)
             qt_static_metacall(this, _c, _id, _a);
@@ -170,7 +165,8 @@ int AdaptiveFilter405Form::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
             *reinterpret_cast<int*>(_a[0]) = -1;
         _id -= 14;
     }
+=======
+>>>>>>> 20d41ea080f90a9268418246a3fb7794f12fddaf
     return _id;
 }
-QT_WARNING_POP
 QT_END_MOC_NAMESPACE

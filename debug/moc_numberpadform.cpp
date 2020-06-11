@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'numberpadform.h'
 **
-** Created by: The Qt Meta Object Compiler version 67 (Qt 5.12.3)
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.5.1)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
@@ -12,14 +12,12 @@
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'numberpadform.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.12.3. It"
+#error "This file was generated using the moc from 5.5.1. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
 
 QT_BEGIN_MOC_NAMESPACE
-QT_WARNING_PUSH
-QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_NumberPadForm_t {
     QByteArrayData data[27];
     char stringdata0[367];
@@ -77,7 +75,7 @@ QT_MOC_LITERAL(26, 361, 5) // "event"
 static const uint qt_meta_data_NumberPadForm[] = {
 
  // content:
-       8,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
       23,   14, // methods
@@ -147,7 +145,7 @@ static const uint qt_meta_data_NumberPadForm[] = {
 void NumberPadForm::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        auto *_t = static_cast<NumberPadForm *>(_o);
+        NumberPadForm *_t = static_cast<NumberPadForm *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->NewInt((*reinterpret_cast< int(*)>(_a[1]))); break;
@@ -177,59 +175,50 @@ void NumberPadForm::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
         int *result = reinterpret_cast<int *>(_a[0]);
+        void **func = reinterpret_cast<void **>(_a[1]);
         {
-            using _t = void (NumberPadForm::*)(int );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&NumberPadForm::NewInt)) {
+            typedef void (NumberPadForm::*_t)(int );
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&NumberPadForm::NewInt)) {
                 *result = 0;
-                return;
             }
         }
         {
-            using _t = void (NumberPadForm::*)(long );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&NumberPadForm::NewLong)) {
+            typedef void (NumberPadForm::*_t)(long );
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&NumberPadForm::NewLong)) {
                 *result = 1;
-                return;
             }
         }
         {
-            using _t = void (NumberPadForm::*)(float );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&NumberPadForm::NewFloat)) {
+            typedef void (NumberPadForm::*_t)(float );
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&NumberPadForm::NewFloat)) {
                 *result = 2;
-                return;
             }
         }
         {
-            using _t = void (NumberPadForm::*)(double );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&NumberPadForm::NewDouble)) {
+            typedef void (NumberPadForm::*_t)(double );
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&NumberPadForm::NewDouble)) {
                 *result = 3;
-                return;
             }
         }
         {
-            using _t = void (NumberPadForm::*)(QString );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&NumberPadForm::NewIPAddress)) {
+            typedef void (NumberPadForm::*_t)(QString );
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&NumberPadForm::NewIPAddress)) {
                 *result = 4;
-                return;
             }
         }
         {
-            using _t = void (NumberPadForm::*)(unsigned char );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&NumberPadForm::NewUnsignedChar)) {
+            typedef void (NumberPadForm::*_t)(unsigned char );
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&NumberPadForm::NewUnsignedChar)) {
                 *result = 5;
-                return;
             }
         }
     }
 }
 
-QT_INIT_METAOBJECT const QMetaObject NumberPadForm::staticMetaObject = { {
-    &QWidget::staticMetaObject,
-    qt_meta_stringdata_NumberPadForm.data,
-    qt_meta_data_NumberPadForm,
-    qt_static_metacall,
-    nullptr,
-    nullptr
-} };
+const QMetaObject NumberPadForm::staticMetaObject = {
+    { &QWidget::staticMetaObject, qt_meta_stringdata_NumberPadForm.data,
+      qt_meta_data_NumberPadForm,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
+};
 
 
 const QMetaObject *NumberPadForm::metaObject() const
@@ -239,9 +228,9 @@ const QMetaObject *NumberPadForm::metaObject() const
 
 void *NumberPadForm::qt_metacast(const char *_clname)
 {
-    if (!_clname) return nullptr;
+    if (!_clname) return Q_NULLPTR;
     if (!strcmp(_clname, qt_meta_stringdata_NumberPadForm.stringdata0))
-        return static_cast<void*>(this);
+        return static_cast<void*>(const_cast< NumberPadForm*>(this));
     return QWidget::qt_metacast(_clname);
 }
 
@@ -265,43 +254,42 @@ int NumberPadForm::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 // SIGNAL 0
 void NumberPadForm::NewInt(int _t1)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    void *_a[] = { Q_NULLPTR, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
     QMetaObject::activate(this, &staticMetaObject, 0, _a);
 }
 
 // SIGNAL 1
 void NumberPadForm::NewLong(long _t1)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    void *_a[] = { Q_NULLPTR, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
     QMetaObject::activate(this, &staticMetaObject, 1, _a);
 }
 
 // SIGNAL 2
 void NumberPadForm::NewFloat(float _t1)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    void *_a[] = { Q_NULLPTR, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
     QMetaObject::activate(this, &staticMetaObject, 2, _a);
 }
 
 // SIGNAL 3
 void NumberPadForm::NewDouble(double _t1)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    void *_a[] = { Q_NULLPTR, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
     QMetaObject::activate(this, &staticMetaObject, 3, _a);
 }
 
 // SIGNAL 4
 void NumberPadForm::NewIPAddress(QString _t1)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    void *_a[] = { Q_NULLPTR, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
     QMetaObject::activate(this, &staticMetaObject, 4, _a);
 }
 
 // SIGNAL 5
 void NumberPadForm::NewUnsignedChar(unsigned char _t1)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    void *_a[] = { Q_NULLPTR, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
     QMetaObject::activate(this, &staticMetaObject, 5, _a);
 }
-QT_WARNING_POP
 QT_END_MOC_NAMESPACE

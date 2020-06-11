@@ -212,10 +212,17 @@ public:
         closeButton->setObjectName(QString::fromUtf8("closeButton"));
         closeButton->setGeometry(QRect(740, 10, 50, 50));
         rightButton = new QPushButton(ParamtersForm);
+<<<<<<< HEAD
         rightButton->setObjectName(QString::fromUtf8("rightButton"));
         rightButton->setGeometry(QRect(570, 10, 50, 50));
         leftButton = new QPushButton(ParamtersForm);
         leftButton->setObjectName(QString::fromUtf8("leftButton"));
+=======
+        rightButton->setObjectName(QStringLiteral("rightButton"));
+        rightButton->setGeometry(QRect(570, 10, 50, 50));
+        leftButton = new QPushButton(ParamtersForm);
+        leftButton->setObjectName(QStringLiteral("leftButton"));
+>>>>>>> 20d41ea080f90a9268418246a3fb7794f12fddaf
         leftButton->setGeometry(QRect(160, 10, 50, 50));
 
         retranslateUi(ParamtersForm);
@@ -225,6 +232,7 @@ public:
 
     void retranslateUi(QWidget *ParamtersForm)
     {
+<<<<<<< HEAD
         ParamtersForm->setWindowTitle(QApplication::translate("ParamtersForm", "Form", nullptr));
         title->setText(QApplication::translate("ParamtersForm", "Parameters", nullptr));
         logNumber->setText(QApplication::translate("ParamtersForm", "Log Number: 10000", nullptr));
@@ -249,6 +257,32 @@ public:
         closeButton->setText(QApplication::translate("ParamtersForm", "Close", nullptr));
         rightButton->setText(QApplication::translate("ParamtersForm", "->", nullptr));
         leftButton->setText(QApplication::translate("ParamtersForm", "<-", nullptr));
+=======
+        ParamtersForm->setWindowTitle(QApplication::translate("ParamtersForm", "Form", 0));
+        title->setText(QApplication::translate("ParamtersForm", "Parameters", 0));
+        logNumber->setText(QApplication::translate("ParamtersForm", "Log Number: 10000", 0));
+        blackCarbon->setText(QApplication::translate("ParamtersForm", "Black Carbon: 100", 0));
+        pm->setText(QApplication::translate("ParamtersForm", "Particulate: 100", 0));
+        massExt880->setText(QApplication::translate("ParamtersForm", "Mass Ext 880: 100", 0));
+        massExt405->setText(QApplication::translate("ParamtersForm", "Mass Ext 405: 100", 0));
+        no->setText(QApplication::translate("ParamtersForm", "NO: 100", 0));
+        no2->setText(QApplication::translate("ParamtersForm", "NOx: 100", 0));
+        nox->setText(QApplication::translate("ParamtersForm", "NO2: 100", 0));
+        cellTemp->setText(QApplication::translate("ParamtersForm", "Cell Temp: 100", 0));
+        cellPress->setText(QApplication::translate("ParamtersForm", "Cell Press: 100", 0));
+        cellFlow->setText(QApplication::translate("ParamtersForm", "Cell Flow: 100", 0));
+        ozoneFlow->setText(QApplication::translate("ParamtersForm", "Ozone Flow: 100", 0));
+        pdv1->setText(QApplication::translate("ParamtersForm", "PDV1: 100", 0));
+        pdv2->setText(QApplication::translate("ParamtersForm", "PDV2: 100", 0));
+        scrubberTemp->setText(QApplication::translate("ParamtersForm", "Scrubber Temp: 100", 0));
+        errorByte->setText(QApplication::translate("ParamtersForm", "Error Byte: 100", 0));
+        data->setText(QApplication::translate("ParamtersForm", "Date: 100", 0));
+        time->setText(QApplication::translate("ParamtersForm", "Time: 100", 0));
+        mode->setText(QApplication::translate("ParamtersForm", "Mode: 100", 0));
+        closeButton->setText(QApplication::translate("ParamtersForm", "Close", 0));
+        rightButton->setText(QApplication::translate("ParamtersForm", "->", 0));
+        leftButton->setText(QApplication::translate("ParamtersForm", "<-", 0));
+>>>>>>> 20d41ea080f90a9268418246a3fb7794f12fddaf
     } // retranslateUi
 
 };

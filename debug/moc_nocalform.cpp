@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'nocalform.h'
 **
-** Created by: The Qt Meta Object Compiler version 67 (Qt 5.12.3)
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.5.1)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
@@ -12,14 +12,12 @@
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'nocalform.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.12.3. It"
+#error "This file was generated using the moc from 5.5.1. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
 
 QT_BEGIN_MOC_NAMESPACE
-QT_WARNING_PUSH
-QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_NOCalForm_t {
     QByteArrayData data[16];
     char stringdata0[227];
@@ -63,7 +61,7 @@ QT_MOC_LITERAL(15, 222, 4) // "code"
 static const uint qt_meta_data_NOCalForm[] = {
 
  // content:
-       8,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
       12,   14, // methods
@@ -111,7 +109,7 @@ static const uint qt_meta_data_NOCalForm[] = {
 void NOCalForm::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        auto *_t = static_cast<NOCalForm *>(_o);
+        NOCalForm *_t = static_cast<NOCalForm *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->CloseForms(); break;
@@ -130,38 +128,32 @@ void NOCalForm::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, v
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
         int *result = reinterpret_cast<int *>(_a[0]);
+        void **func = reinterpret_cast<void **>(_a[1]);
         {
-            using _t = void (NOCalForm::*)();
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&NOCalForm::CloseForms)) {
+            typedef void (NOCalForm::*_t)();
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&NOCalForm::CloseForms)) {
                 *result = 0;
-                return;
             }
         }
         {
-            using _t = void (NOCalForm::*)();
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&NOCalForm::MoveLeft)) {
+            typedef void (NOCalForm::*_t)();
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&NOCalForm::MoveLeft)) {
                 *result = 1;
-                return;
             }
         }
         {
-            using _t = void (NOCalForm::*)();
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&NOCalForm::MoveRight)) {
+            typedef void (NOCalForm::*_t)();
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&NOCalForm::MoveRight)) {
                 *result = 2;
-                return;
             }
         }
     }
 }
 
-QT_INIT_METAOBJECT const QMetaObject NOCalForm::staticMetaObject = { {
-    &QWidget::staticMetaObject,
-    qt_meta_stringdata_NOCalForm.data,
-    qt_meta_data_NOCalForm,
-    qt_static_metacall,
-    nullptr,
-    nullptr
-} };
+const QMetaObject NOCalForm::staticMetaObject = {
+    { &QWidget::staticMetaObject, qt_meta_stringdata_NOCalForm.data,
+      qt_meta_data_NOCalForm,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
+};
 
 
 const QMetaObject *NOCalForm::metaObject() const
@@ -171,9 +163,9 @@ const QMetaObject *NOCalForm::metaObject() const
 
 void *NOCalForm::qt_metacast(const char *_clname)
 {
-    if (!_clname) return nullptr;
+    if (!_clname) return Q_NULLPTR;
     if (!strcmp(_clname, qt_meta_stringdata_NOCalForm.stringdata0))
-        return static_cast<void*>(this);
+        return static_cast<void*>(const_cast< NOCalForm*>(this));
     return QWidget::qt_metacast(_clname);
 }
 
@@ -197,19 +189,18 @@ int NOCalForm::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 // SIGNAL 0
 void NOCalForm::CloseForms()
 {
-    QMetaObject::activate(this, &staticMetaObject, 0, nullptr);
+    QMetaObject::activate(this, &staticMetaObject, 0, Q_NULLPTR);
 }
 
 // SIGNAL 1
 void NOCalForm::MoveLeft()
 {
-    QMetaObject::activate(this, &staticMetaObject, 1, nullptr);
+    QMetaObject::activate(this, &staticMetaObject, 1, Q_NULLPTR);
 }
 
 // SIGNAL 2
 void NOCalForm::MoveRight()
 {
-    QMetaObject::activate(this, &staticMetaObject, 2, nullptr);
+    QMetaObject::activate(this, &staticMetaObject, 2, Q_NULLPTR);
 }
-QT_WARNING_POP
 QT_END_MOC_NAMESPACE
