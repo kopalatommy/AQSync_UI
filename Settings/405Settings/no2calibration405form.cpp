@@ -95,24 +95,28 @@ void NO2Calibration405Form::on_Save_clicked(){
 
     //Check to see if the user changed the setting
     //If the difference is greater than 2 point precision, than it is a new value
-    if(fabs(static_cast<double>(s->GetNO2Slope_405() - slope)) > 0.001){
+    if(fabs(static_cast<double>(s->GetNO2Slope_405() - slope)) > 0.001)
+    {
         valueChanged = true;
         s->SetNO2Slope_405(slope);
     }
 
     //Check to see if the user changed the setting
     //If the difference is greater than 2 point precision, than it is a new value
-    if(fabs(static_cast<double>(s->GetNO2Zero_405() - zero)) > 0.01){
+    if(fabs(static_cast<double>(s->GetNO2Zero_405() - zero)) > 0.01)
+    {
         valueChanged = true;
         s->SetNO2Zero_405(zero);
     }
 
-    if(analog != s->GetAnalogNO2_405()){
+    if(analog != s->GetAnalogNO2_405())
+    {
         valueChanged = true;
         s->SetAnalogNO2_405(analog);
     }
 
-    if(valueChanged){
+    if(valueChanged)
+    {
         QMessageBox msg;
         msg.setText("Settings added to queue");
         msg.setStyleSheet("QMessageBox{ border: 1px solid black; }");
@@ -121,15 +125,10 @@ void NO2Calibration405Form::on_Save_clicked(){
     }
 }
 
-
-void NO2Calibration405Form::showEvent(QShowEvent *event){
-    QWidget::showEvent(event);
-    if(!dontGrab) GetNewSettings();
-    dontGrab = false;
-}
-
-void NO2Calibration405Form::GetNewSettings(){
-    if(!dontGrab){
+void NO2Calibration405Form::GetNewSettings()
+{
+    if(!dontGrab)
+    {
         SettingsHandler * s = SettingsHandler::GetInstance();
         analog = s->GetAnalogNO2_405();
         slope = s->GetNO2Slope_405();
@@ -138,8 +137,39 @@ void NO2Calibration405Form::GetNewSettings(){
     }
 }
 
-void NO2Calibration405Form::UpdateLocalUI(){
+void NO2Calibration405Form::UpdateLocalUI()
+{
     ui->SlopeLabel->setText("Slope Mask:\n" + QString::number(static_cast<double>(slope)));
     ui->ZeroLabel->setText("Zero Mask:\n" + QString::number(static_cast<double>(zero)));
     ui->AnalogLabel->setText("Analog Mask:\n" + QString::number(static_cast<double>(analog)));
+}
+
+void NO2Calibration405Form::showEvent(QShowEvent *event)
+{
+    QWidget::showEvent(event);
+    if(!dontGrab) GetNewSettings();
+    dontGrab = false;
+}
+
+void NO2Calibration405Form::closeEvent(QCloseEvent *event)
+{
+    QWidget::closeEvent(event);
+
+    if(fabs(static_cast<double>(SettingsHandler::GetInstance()->GetNO2Slope_405() - slope)) > 0.001 ||
+            analog != SettingsHandler::GetInstance()->GetAnalogNO2_405())
+    {
+        QMessageBox msg;
+        msg.setText("Save sunsaved settings?");
+        msg.setStandardButtons(QMessageBox::StandardButton::Yes | QMessageBox::StandardButton::No);
+
+        switch(msg.exec())
+        {
+            case QMessageBox::Yes:
+                on_Save_clicked();
+                break;
+
+            default:
+                break;
+        }
+    }
 }

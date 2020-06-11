@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include <QMessageBox>
+#include <QtMath>
 
 #include "Settings/settingformshandler.h"
 #include "DataHandlers/settingshandler.h"
@@ -40,7 +41,6 @@ private slots:
     void on_Save_clicked();
 
     void GetNewSettings();
-
 
 private:
     Ui::NO2Calibration405Form *ui;

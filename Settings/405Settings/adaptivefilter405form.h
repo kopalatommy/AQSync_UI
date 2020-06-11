@@ -25,11 +25,6 @@ public:
     static bool isEnabled;
 
 private slots:
-    void on_Left_clicked();
-    void on_Right_clicked();
-    void on_Home_clicked();
-    void on_save_clicked();
-
     void on_shortMask_clicked();
     void NewShort(unsigned char val);
 
@@ -44,6 +39,14 @@ private slots:
 
     void UpdateLocalUI();
     void GetNewSettings();
+
+    void on_home_clicked();
+
+    void on_Next_clicked();
+
+    void on_Previous_clicked();
+
+    void on_Save_clicked();
 
 private:
     Ui::AdaptiveFilter405Form *ui;

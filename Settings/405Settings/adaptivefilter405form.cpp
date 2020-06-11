@@ -9,8 +9,6 @@ AdaptiveFilter405Form::AdaptiveFilter405Form(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    QWidget::setWindowFlags(Qt::CustomizeWindowHint);
-
     ui->longMask->setStyleSheet("QPushButton { background-color: rgba(10, 0, 0, 0); }");
     ui->shortMask->setStyleSheet("QPushButton { background-color: rgba(10, 0, 0, 0); }");
     ui->differenceMask->setStyleSheet("QPushButton { background-color: rgba(10, 0, 0, 0); }");
@@ -35,19 +33,19 @@ AdaptiveFilter405Form::~AdaptiveFilter405Form()
     delete ui;
 }
 
-void AdaptiveFilter405Form::on_Right_clicked()
+void AdaptiveFilter405Form::on_Next_clicked()
 {
     SettingFormsHandler::JumpToIndex(3);
     close();
 }
 
-void AdaptiveFilter405Form::on_Left_clicked()
+void AdaptiveFilter405Form::on_Previous_clicked()
 {
     SettingFormsHandler::JumpToIndex(7);
     close();
 }
 
-void AdaptiveFilter405Form::on_Home_clicked()
+void AdaptiveFilter405Form::on_home_clicked()
 {
     SettingFormsHandler::JumpToIndex(0);
     close();
@@ -102,7 +100,7 @@ void AdaptiveFilter405Form::NewPercent(unsigned char val)
     UpdateLocalUI();
 }
 
-void AdaptiveFilter405Form::on_save_clicked()
+void AdaptiveFilter405Form::on_Save_clicked()
 {
     bool valueChanged = false;
 
@@ -189,7 +187,7 @@ void AdaptiveFilter405Form::closeEvent(QCloseEvent *event)
         switch (msg.exec())
         {
         case QMessageBox::StandardButton::Yes:
-            on_save_clicked();
+            on_Save_clicked();
             break;
 
         default:

@@ -48,15 +48,8 @@ SOURCES += \
     Settings/BCPSettings/adaptivefilterbcpform.cpp \
     Settings/BCPSettings/flowcalibrationbcpform.cpp \
         Settings/aboutform.cpp \
-        Settings/adaptivefilterform.cpp \
         Settings/avgsettingform.cpp \
-        Settings/bccalform.cpp \
         Settings/datafilesform.cpp \
-        Settings/flowcalform.cpp \
-        Settings/modeform.cpp \
-        Settings/no2calform.cpp \
-        Settings/nocalform.cpp \
-        Settings/pmcalform.cpp \
         Settings/settingformshandler.cpp \
         Settings/settingsform.cpp \
         Settings/systemsettingsform.cpp \
@@ -96,19 +89,11 @@ HEADERS += \
     Settings/405Settings/flowcalibration405form.h \
     Settings/405Settings/mode405form.h \
     Settings/405Settings/no2calibration405form.h \
-    Settings/BCPSettings/adaptivefilter405form.h \
     Settings/BCPSettings/adaptivefilterbcpform.h \
     Settings/BCPSettings/flowcalibrationbcpform.h \
         Settings/aboutform.h \
-        Settings/adaptivefilterform.h \
         Settings/avgsettingform.h \
-        Settings/bccalform.h \
         Settings/datafilesform.h \
-        Settings/flowcalform.h \
-        Settings/modeform.h \
-        Settings/no2calform.h \
-        Settings/nocalform.h \
-        Settings/pmcalform.h \
         Settings/settingformshandler.h \
         Settings/settingsform.h \
         Settings/systemsettingsform.h \
@@ -139,15 +124,8 @@ FORMS += \
     Settings/BCPSettings/adaptivefilterbcpform.ui \
     Settings/BCPSettings/flowcalibrationbcpform.ui \
         Settings/aboutform.ui \
-        Settings/adaptivefilterform.ui \
         Settings/avgsettingform.ui \
-        Settings/bccalform.ui \
         Settings/datafilesform.ui \
-        Settings/flowcalform.ui \
-        Settings/modeform.ui \
-        Settings/no2calform.ui \
-        Settings/nocalform.ui \
-        Settings/pmcalform.ui \
         Settings/settingsform.ui \
         Settings/systemsettingsform.ui \
         mainwindow.ui \
