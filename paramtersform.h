@@ -27,6 +27,8 @@ private:
 
     bool viewing = false;
 
+    bool showingBCP = true;
+
     void showEvent(QShowEvent * event);
     void closeEvent(QCloseEvent * event);
 };

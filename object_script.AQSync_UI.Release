@@ -88,6 +88,5 @@ release/moc_nocalibration405form.o
 release/moc_bcpsettings.o
 release/moc_calibration880nm.o
 release/moc_autozerobcp.o
-release/moc_parameters405form.o
 release/moc_calibration405nm.o
 release/moc_tpcorrectionsform.o

@@ -122,7 +122,6 @@ HEADERS += \
     Settings/BCPSettings/bcpsettings.h \
     Settings/BCPSettings/calibration880nm.h \
     Settings/BCPSettings/autozerobcp.h \
-    Settings/405Settings/parameters405form.h \
     Settings/BCPSettings/calibration405nm.h \
     Settings/BCPSettings/tpcorrectionsform.h
 

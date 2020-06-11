@@ -15,6 +15,21 @@ ParamtersForm::~ParamtersForm(){
 }
 
 void ParamtersForm::UpdateUI(){
+    if(viewing == true)
+    {
+        if(showingBCP == true)
+        {
+            ui->title->setText("BCP Parameters");
+        }
+        else
+        {
+            ui->title->setText("405 Parameters");
+        }
+    }
+
+
+
+
     /*if(viewing == true){
         /*char arr[15] = {0, };
         AQSyncData * data = AQSyncData::GetInstance();
@@ -88,17 +103,30 @@ void ParamtersForm::UpdateUI(){
     }*/
 }
 
-void ParamtersForm::showEvent(QShowEvent *event){
+void ParamtersForm::on_closeButton_clicked()
+{
+    close();
+}
+
+void ParamtersForm::showEvent(QShowEvent *event)
+{
     QWidget::showEvent(event);
     viewing = true;
     UpdateUI();
 }
 
-void ParamtersForm::closeEvent(QCloseEvent *event){
+void ParamtersForm::closeEvent(QCloseEvent *event)
+{
     QWidget::closeEvent(event);
     viewing = false;
 }
 
-void ParamtersForm::on_closeButton_clicked(){
-    close();
+void ParamtersForm::on_leftButton_clicked()
+{
+
+}
+
+void ParamtersForm::on_rightButton_clicked()
+{
+
 }
