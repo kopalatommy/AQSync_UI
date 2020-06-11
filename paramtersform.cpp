@@ -22,6 +22,8 @@ void ParamtersForm::UpdateUI(){
             ui->title->setText("BCP Parameters");
 
             BCPData * data = BCPData::GetInstance();
+
+            ui->logNumber->setText("Log Number: " + QString::number(data->GetLogNumber()));
         }
         else
         {

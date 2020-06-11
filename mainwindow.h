@@ -18,7 +18,6 @@
 #include "Settings/405Settings/mode405form.h"
 #include "Settings/405Settings/no2calibration405form.h"
 #include "Settings/405Settings/nocalibration405form.h"
-#include "Settings/405Settings/parameters405form.h"
 #include "Settings/BCPSettings/adaptivefilterbcpform.h"
 #include "Settings/BCPSettings/autozerobcp.h"
 #include "Settings/BCPSettings/calibration405nm.h"

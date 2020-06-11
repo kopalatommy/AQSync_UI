@@ -51,6 +51,8 @@ public:
     QFrame *line_8;
     QFrame *line_9;
     QPushButton *closeButton;
+    QPushButton *rightButton;
+    QPushButton *leftButton;
 
     void setupUi(QWidget *ParamtersForm)
     {
@@ -209,6 +211,12 @@ public:
         closeButton = new QPushButton(ParamtersForm);
         closeButton->setObjectName(QString::fromUtf8("closeButton"));
         closeButton->setGeometry(QRect(740, 10, 50, 50));
+        rightButton = new QPushButton(ParamtersForm);
+        rightButton->setObjectName(QString::fromUtf8("rightButton"));
+        rightButton->setGeometry(QRect(570, 10, 50, 50));
+        leftButton = new QPushButton(ParamtersForm);
+        leftButton->setObjectName(QString::fromUtf8("leftButton"));
+        leftButton->setGeometry(QRect(160, 10, 50, 50));
 
         retranslateUi(ParamtersForm);
 
@@ -239,6 +247,8 @@ public:
         time->setText(QApplication::translate("ParamtersForm", "Time: 100", nullptr));
         mode->setText(QApplication::translate("ParamtersForm", "Mode: 100", nullptr));
         closeButton->setText(QApplication::translate("ParamtersForm", "Close", nullptr));
+        rightButton->setText(QApplication::translate("ParamtersForm", "->", nullptr));
+        leftButton->setText(QApplication::translate("ParamtersForm", "<-", nullptr));
     } // retranslateUi
 
 };
