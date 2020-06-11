@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>no2calibration405form</class>
- <widget class="QDialog" name="no2calibration405form">
+ <class>NO2Calibration405Form</class>
+ <widget class="QWidget" name="NO2Calibration405Form">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -11,12 +11,12 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>Form</string>
   </property>
   <widget class="QPushButton" name="Home">
    <property name="geometry">
     <rect>
-     <x>680</x>
+     <x>690</x>
      <y>10</y>
      <width>100</width>
      <height>100</height>
@@ -36,29 +36,34 @@
     </size>
    </property>
   </widget>
-  <widget class="QLabel" name="NOCalibration">
+  <widget class="QPushButton" name="Right">
    <property name="geometry">
     <rect>
-     <x>220</x>
-     <y>20</y>
-     <width>301</width>
-     <height>81</height>
+     <x>690</x>
+     <y>119</y>
+     <width>100</width>
+     <height>351</height>
     </rect>
    </property>
-   <property name="font">
-    <font>
-     <pointsize>30</pointsize>
-    </font>
-   </property>
    <property name="text">
-    <string>NO2 Calibration</string>
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../../resources.qrc">
+     <normaloff>:/Buttons/Right_Carrot.jpg</normaloff>:/Buttons/Right_Carrot.jpg</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>100</width>
+     <height>340</height>
+    </size>
    </property>
   </widget>
   <widget class="QPushButton" name="save">
    <property name="geometry">
     <rect>
      <x>340</x>
-     <y>400</y>
+     <y>410</y>
      <width>120</width>
      <height>60</height>
     </rect>
@@ -77,57 +82,11 @@
     </size>
    </property>
   </widget>
-  <widget class="QPushButton" name="Left">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>120</y>
-     <width>100</width>
-     <height>340</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="icon">
-    <iconset resource="../../resources.qrc">
-     <normaloff>:/Buttons/Left_Carrot.jpg</normaloff>:/Buttons/Left_Carrot.jpg</iconset>
-   </property>
-   <property name="iconSize">
-    <size>
-     <width>100</width>
-     <height>340</height>
-    </size>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="Right">
-   <property name="geometry">
-    <rect>
-     <x>680</x>
-     <y>120</y>
-     <width>100</width>
-     <height>340</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="icon">
-    <iconset resource="../../resources.qrc">
-     <normaloff>:/Buttons/Right_Carrot.jpg</normaloff>:/Buttons/Right_Carrot.jpg</iconset>
-   </property>
-   <property name="iconSize">
-    <size>
-     <width>100</width>
-     <height>340</height>
-    </size>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="slopeMask">
+  <widget class="QPushButton" name="slopeMask_2">
    <property name="geometry">
     <rect>
      <x>140</x>
-     <y>130</y>
+     <y>210</y>
      <width>521</width>
      <height>71</height>
     </rect>
@@ -136,11 +95,11 @@
     <string>PushButton</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="slopeMask_2">
+  <widget class="QPushButton" name="slopeMask">
    <property name="geometry">
     <rect>
      <x>140</x>
-     <y>220</y>
+     <y>120</y>
      <width>521</width>
      <height>71</height>
     </rect>
@@ -162,6 +121,58 @@
     <string>PushButton</string>
    </property>
   </widget>
+  <widget class="QLabel" name="NOCalibration">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>10</y>
+     <width>801</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>30</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>NO2 Calibration</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Left">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>119</y>
+     <width>100</width>
+     <height>351</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../../resources.qrc">
+     <normaloff>:/Buttons/Left_Carrot.jpg</normaloff>:/Buttons/Left_Carrot.jpg</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>100</width>
+     <height>340</height>
+    </size>
+   </property>
+  </widget>
+  <zorder>NOCalibration</zorder>
+  <zorder>Home</zorder>
+  <zorder>Right</zorder>
+  <zorder>save</zorder>
+  <zorder>slopeMask_2</zorder>
+  <zorder>slopeMask</zorder>
+  <zorder>slopeMask_3</zorder>
+  <zorder>Left</zorder>
  </widget>
  <resources>
   <include location="../../resources.qrc"/>

@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'adaptivefilterbcpform.ui'
 **
-** Created by: Qt User Interface Compiler version 5.5.1
+** Created by: Qt User Interface Compiler version 5.12.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -10,106 +10,151 @@
 #define UI_ADAPTIVEFILTERBCPFORM_H
 
 #include <QtCore/QVariant>
-#include <QtWidgets/QAction>
+#include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QButtonGroup>
-#include <QtWidgets/QDialog>
-#include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
 
-class Ui_adaptivefilterBCPform
+class Ui_AdaptiveFilterBCPForm
 {
 public:
-    QPushButton *Left;
-    QLabel *AdaptiveFilter;
+    QLabel *percentLabel;
     QPushButton *shortMask;
-    QPushButton *differenceMask;
-    QPushButton *Right;
-    QPushButton *percentMask;
+    QPushButton *Previous;
     QPushButton *longMask;
-    QPushButton *Home;
-    QPushButton *pushButton;
+    QLabel *longLabel;
+    QLabel *AdaptiveFilter;
+    QLabel *diffLabel;
+    QPushButton *Save;
+    QLabel *shortLabel;
+    QPushButton *differenceMask;
+    QPushButton *home;
+    QPushButton *Next;
+    QPushButton *percentMask;
 
-    void setupUi(QDialog *adaptivefilterBCPform)
+    void setupUi(QWidget *AdaptiveFilterBCPForm)
     {
-        if (adaptivefilterBCPform->objectName().isEmpty())
-            adaptivefilterBCPform->setObjectName(QStringLiteral("adaptivefilterBCPform"));
-        adaptivefilterBCPform->resize(800, 480);
-        Left = new QPushButton(adaptivefilterBCPform);
-        Left->setObjectName(QStringLiteral("Left"));
-        Left->setGeometry(QRect(20, 120, 100, 340));
-        QIcon icon;
-        icon.addFile(QStringLiteral(":/Buttons/Left_Carrot.jpg"), QSize(), QIcon::Normal, QIcon::Off);
-        Left->setIcon(icon);
-        Left->setIconSize(QSize(100, 340));
-        AdaptiveFilter = new QLabel(adaptivefilterBCPform);
-        AdaptiveFilter->setObjectName(QStringLiteral("AdaptiveFilter"));
-        AdaptiveFilter->setGeometry(QRect(150, 20, 481, 81));
+        if (AdaptiveFilterBCPForm->objectName().isEmpty())
+            AdaptiveFilterBCPForm->setObjectName(QString::fromUtf8("AdaptiveFilterBCPForm"));
+        AdaptiveFilterBCPForm->resize(800, 480);
+        percentLabel = new QLabel(AdaptiveFilterBCPForm);
+        percentLabel->setObjectName(QString::fromUtf8("percentLabel"));
+        percentLabel->setGeometry(QRect(430, 270, 241, 111));
         QFont font;
-        font.setFamily(QStringLiteral("Calibri"));
-        font.setPointSize(30);
-        AdaptiveFilter->setFont(font);
+        font.setPointSize(18);
+        percentLabel->setFont(font);
+        percentLabel->setAlignment(Qt::AlignCenter);
+        shortMask = new QPushButton(AdaptiveFilterBCPForm);
+        shortMask->setObjectName(QString::fromUtf8("shortMask"));
+        shortMask->setGeometry(QRect(130, 120, 241, 111));
+        Previous = new QPushButton(AdaptiveFilterBCPForm);
+        Previous->setObjectName(QString::fromUtf8("Previous"));
+        Previous->setGeometry(QRect(10, 120, 100, 351));
+        QIcon icon;
+        icon.addFile(QString::fromUtf8(":/Buttons/Left_Carrot.jpg"), QSize(), QIcon::Normal, QIcon::Off);
+        Previous->setIcon(icon);
+        Previous->setIconSize(QSize(100, 340));
+        longMask = new QPushButton(AdaptiveFilterBCPForm);
+        longMask->setObjectName(QString::fromUtf8("longMask"));
+        longMask->setGeometry(QRect(430, 120, 241, 111));
+        longLabel = new QLabel(AdaptiveFilterBCPForm);
+        longLabel->setObjectName(QString::fromUtf8("longLabel"));
+        longLabel->setGeometry(QRect(430, 120, 241, 111));
+        longLabel->setFont(font);
+        longLabel->setAlignment(Qt::AlignCenter);
+        AdaptiveFilter = new QLabel(AdaptiveFilterBCPForm);
+        AdaptiveFilter->setObjectName(QString::fromUtf8("AdaptiveFilter"));
+        AdaptiveFilter->setGeometry(QRect(0, 20, 801, 81));
+        QFont font1;
+        font1.setFamily(QString::fromUtf8("Calibri"));
+        font1.setPointSize(30);
+        AdaptiveFilter->setFont(font1);
         AdaptiveFilter->setAlignment(Qt::AlignCenter);
-        shortMask = new QPushButton(adaptivefilterBCPform);
-        shortMask->setObjectName(QStringLiteral("shortMask"));
-        shortMask->setGeometry(QRect(154, 140, 211, 111));
-        differenceMask = new QPushButton(adaptivefilterBCPform);
-        differenceMask->setObjectName(QStringLiteral("differenceMask"));
-        differenceMask->setGeometry(QRect(430, 280, 211, 111));
-        Right = new QPushButton(adaptivefilterBCPform);
-        Right->setObjectName(QStringLiteral("Right"));
-        Right->setGeometry(QRect(670, 120, 100, 340));
+        diffLabel = new QLabel(AdaptiveFilterBCPForm);
+        diffLabel->setObjectName(QString::fromUtf8("diffLabel"));
+        diffLabel->setGeometry(QRect(134, 275, 231, 101));
+        diffLabel->setFont(font);
+        diffLabel->setAlignment(Qt::AlignCenter);
+        Save = new QPushButton(AdaptiveFilterBCPForm);
+        Save->setObjectName(QString::fromUtf8("Save"));
+        Save->setGeometry(QRect(330, 410, 120, 60));
         QIcon icon1;
-        icon1.addFile(QStringLiteral(":/Buttons/Right_Carrot.jpg"), QSize(), QIcon::Normal, QIcon::Off);
-        Right->setIcon(icon1);
-        Right->setIconSize(QSize(100, 340));
-        percentMask = new QPushButton(adaptivefilterBCPform);
-        percentMask->setObjectName(QStringLiteral("percentMask"));
-        percentMask->setGeometry(QRect(150, 280, 211, 111));
-        longMask = new QPushButton(adaptivefilterBCPform);
-        longMask->setObjectName(QStringLiteral("longMask"));
-        longMask->setGeometry(QRect(430, 140, 211, 111));
-        Home = new QPushButton(adaptivefilterBCPform);
-        Home->setObjectName(QStringLiteral("Home"));
-        Home->setGeometry(QRect(670, 10, 100, 100));
+        icon1.addFile(QString::fromUtf8(":/Buttons/button_save.jpg"), QSize(), QIcon::Normal, QIcon::Off);
+        Save->setIcon(icon1);
+        Save->setIconSize(QSize(120, 60));
+        shortLabel = new QLabel(AdaptiveFilterBCPForm);
+        shortLabel->setObjectName(QString::fromUtf8("shortLabel"));
+        shortLabel->setGeometry(QRect(130, 120, 241, 111));
+        shortLabel->setFont(font);
+        shortLabel->setAlignment(Qt::AlignCenter);
+        differenceMask = new QPushButton(AdaptiveFilterBCPForm);
+        differenceMask->setObjectName(QString::fromUtf8("differenceMask"));
+        differenceMask->setGeometry(QRect(430, 270, 241, 111));
+        home = new QPushButton(AdaptiveFilterBCPForm);
+        home->setObjectName(QString::fromUtf8("home"));
+        home->setGeometry(QRect(690, 10, 100, 100));
         QIcon icon2;
-        icon2.addFile(QStringLiteral(":/Buttons/button_back.jpg"), QSize(), QIcon::Normal, QIcon::Off);
-        Home->setIcon(icon2);
-        Home->setIconSize(QSize(100, 100));
-        pushButton = new QPushButton(adaptivefilterBCPform);
-        pushButton->setObjectName(QStringLiteral("pushButton"));
-        pushButton->setGeometry(QRect(330, 410, 120, 60));
+        icon2.addFile(QString::fromUtf8(":/Buttons/button_back.jpg"), QSize(), QIcon::Normal, QIcon::Off);
+        home->setIcon(icon2);
+        home->setIconSize(QSize(100, 100));
+        Next = new QPushButton(AdaptiveFilterBCPForm);
+        Next->setObjectName(QString::fromUtf8("Next"));
+        Next->setGeometry(QRect(690, 120, 100, 351));
         QIcon icon3;
-        icon3.addFile(QStringLiteral(":/Buttons/button_save.jpg"), QSize(), QIcon::Normal, QIcon::Off);
-        pushButton->setIcon(icon3);
-        pushButton->setIconSize(QSize(120, 60));
+        icon3.addFile(QString::fromUtf8(":/Buttons/Right_Carrot.jpg"), QSize(), QIcon::Normal, QIcon::Off);
+        Next->setIcon(icon3);
+        Next->setIconSize(QSize(100, 340));
+        percentMask = new QPushButton(AdaptiveFilterBCPForm);
+        percentMask->setObjectName(QString::fromUtf8("percentMask"));
+        percentMask->setGeometry(QRect(130, 270, 241, 111));
+        longLabel->raise();
+        shortLabel->raise();
+        AdaptiveFilter->raise();
+        percentLabel->raise();
+        shortMask->raise();
+        Previous->raise();
+        longMask->raise();
+        diffLabel->raise();
+        Save->raise();
+        differenceMask->raise();
+        home->raise();
+        Next->raise();
+        percentMask->raise();
 
-        retranslateUi(adaptivefilterBCPform);
+        retranslateUi(AdaptiveFilterBCPForm);
 
-        QMetaObject::connectSlotsByName(adaptivefilterBCPform);
+        QMetaObject::connectSlotsByName(AdaptiveFilterBCPForm);
     } // setupUi
 
-    void retranslateUi(QDialog *adaptivefilterBCPform)
+    void retranslateUi(QWidget *AdaptiveFilterBCPForm)
     {
-        adaptivefilterBCPform->setWindowTitle(QApplication::translate("adaptivefilterBCPform", "Dialog", 0));
-        Left->setText(QString());
-        AdaptiveFilter->setText(QApplication::translate("adaptivefilterBCPform", "Adaptive Filter", 0));
-        shortMask->setText(QApplication::translate("adaptivefilterBCPform", "PushButton", 0));
-        differenceMask->setText(QApplication::translate("adaptivefilterBCPform", "PushButton", 0));
-        Right->setText(QString());
-        percentMask->setText(QApplication::translate("adaptivefilterBCPform", "PushButton", 0));
-        longMask->setText(QApplication::translate("adaptivefilterBCPform", "PushButton", 0));
-        Home->setText(QString());
-        pushButton->setText(QString());
+        AdaptiveFilterBCPForm->setWindowTitle(QApplication::translate("AdaptiveFilterBCPForm", "Form", nullptr));
+        percentLabel->setText(QApplication::translate("AdaptiveFilterBCPForm", "Percent:\n"
+"10", nullptr));
+        shortMask->setText(QString());
+        Previous->setText(QString());
+        longMask->setText(QString());
+        longLabel->setText(QApplication::translate("AdaptiveFilterBCPForm", "Long Length:\n"
+"10", nullptr));
+        AdaptiveFilter->setText(QApplication::translate("AdaptiveFilterBCPForm", "Adaptive Filter", nullptr));
+        diffLabel->setText(QApplication::translate("AdaptiveFilterBCPForm", "Difference:\n"
+"10", nullptr));
+        Save->setText(QString());
+        shortLabel->setText(QApplication::translate("AdaptiveFilterBCPForm", "Short Length:\n"
+"5", nullptr));
+        differenceMask->setText(QString());
+        home->setText(QString());
+        Next->setText(QString());
+        percentMask->setText(QString());
     } // retranslateUi
 
 };
 
 namespace Ui {
-    class adaptivefilterBCPform: public Ui_adaptivefilterBCPform {};
+    class AdaptiveFilterBCPForm: public Ui_AdaptiveFilterBCPForm {};
 } // namespace Ui
 
 QT_END_NAMESPACE

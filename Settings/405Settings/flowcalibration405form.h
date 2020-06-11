@@ -1,25 +1,26 @@
 #ifndef FLOWCALIBRATION405FORM_H
 #define FLOWCALIBRATION405FORM_H
 
+#include <QWidget>
 #include <QMessageBox>
-#include <QDialog>
-#include "Settings/settingformshandler.h"
-#include "DataHandlers/settingshandler.h"
-#include "numberpadform.h"
-#include "Communication/serialhandler405.h"
+#include <QDebug>
+#include <QtMath>
 
+#include "Communication/serialhandler405.h"
+#include "Settings/settingformshandler.h"
+#include "numberpadform.h"
 
 namespace Ui {
-class flowcalibration405form;
+class FlowCalibration405Form;
 }
 
-class flowcalibration405form : public QWidget
+class FlowCalibration405Form : public QWidget
 {
     Q_OBJECT
 
 public:
-    explicit flowcalibration405form(QWidget *parent = 0);
-    ~flowcalibration405form();
+    explicit FlowCalibration405Form(QWidget *parent = nullptr);
+    ~FlowCalibration405Form();
 
     static bool isEnabled;
 
@@ -39,7 +40,7 @@ private slots:
     void on_Save_clicked();
 
 private:
-    Ui::flowcalibration405form *ui;
+    Ui::FlowCalibration405Form *ui;
 
     float cellFlowSlope = 0;
     float ozoneFlowSlope = 0;

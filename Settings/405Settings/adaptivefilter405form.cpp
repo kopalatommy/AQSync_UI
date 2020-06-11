@@ -1,9 +1,5 @@
 #include "adaptivefilter405form.h"
 #include "ui_adaptivefilter405form.h"
-#include "parameters405form.h"
-#include "mode405form.h"
-#include "settings405.h"
-
 
 bool AdaptiveFilter405Form::isEnabled = false;
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>flowcalibration405form</class>
- <widget class="QDialog" name="flowcalibration405form">
+ <class>FlowCalibration405Form</class>
+ <widget class="QWidget" name="FlowCalibration405Form">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -11,13 +11,13 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>Form</string>
   </property>
   <widget class="QPushButton" name="OzoneSlopeMask">
    <property name="geometry">
     <rect>
-     <x>140</x>
-     <y>250</y>
+     <x>150</x>
+     <y>260</y>
      <width>521</width>
      <height>121</height>
     </rect>
@@ -29,7 +29,7 @@
   <widget class="QPushButton" name="Home">
    <property name="geometry">
     <rect>
-     <x>680</x>
+     <x>690</x>
      <y>10</y>
      <width>100</width>
      <height>100</height>
@@ -49,29 +49,11 @@
     </size>
    </property>
   </widget>
-  <widget class="QLabel" name="FlowCalibration">
-   <property name="geometry">
-    <rect>
-     <x>230</x>
-     <y>10</y>
-     <width>351</width>
-     <height>71</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>30</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>Flow Calibration</string>
-   </property>
-  </widget>
   <widget class="QPushButton" name="Save">
    <property name="geometry">
     <rect>
-     <x>330</x>
-     <y>390</y>
+     <x>340</x>
+     <y>400</y>
      <width>120</width>
      <height>60</height>
     </rect>
@@ -90,49 +72,26 @@
     </size>
    </property>
   </widget>
-  <widget class="QPushButton" name="Previous">
+  <widget class="QLabel" name="cellFlowLabel">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>80</y>
-     <width>100</width>
-     <height>340</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="icon">
-    <iconset resource="../../resources.qrc">
-     <normaloff>:/Buttons/Left_Carrot.jpg</normaloff>:/Buttons/Left_Carrot.jpg</iconset>
-   </property>
-   <property name="iconSize">
-    <size>
-     <width>100</width>
-     <height>340</height>
-    </size>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="CellSlopeMask">
-   <property name="geometry">
-    <rect>
-     <x>140</x>
-     <y>110</y>
+     <x>150</x>
+     <y>120</y>
      <width>521</width>
      <height>121</height>
     </rect>
    </property>
    <property name="text">
-    <string>PushButton</string>
+    <string/>
    </property>
   </widget>
   <widget class="QPushButton" name="Next">
    <property name="geometry">
     <rect>
-     <x>680</x>
-     <y>120</y>
+     <x>690</x>
+     <y>119</y>
      <width>100</width>
-     <height>340</height>
+     <height>351</height>
     </rect>
    </property>
    <property name="text">
@@ -149,24 +108,34 @@
     </size>
    </property>
   </widget>
-  <widget class="QLabel" name="cellFlowLabel">
+  <widget class="QPushButton" name="Previous">
    <property name="geometry">
     <rect>
-     <x>140</x>
-     <y>110</y>
-     <width>521</width>
-     <height>121</height>
+     <x>10</x>
+     <y>119</y>
+     <width>100</width>
+     <height>351</height>
     </rect>
    </property>
    <property name="text">
     <string/>
    </property>
+   <property name="icon">
+    <iconset resource="../../resources.qrc">
+     <normaloff>:/Buttons/Left_Carrot.jpg</normaloff>:/Buttons/Left_Carrot.jpg</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>100</width>
+     <height>340</height>
+    </size>
+   </property>
   </widget>
   <widget class="QLabel" name="ozoneFlowLabel">
    <property name="geometry">
     <rect>
-     <x>146</x>
-     <y>249</y>
+     <x>156</x>
+     <y>259</y>
      <width>511</width>
      <height>121</height>
     </rect>
@@ -175,6 +144,49 @@
     <string/>
    </property>
   </widget>
+  <widget class="QPushButton" name="CellSlopeMask">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>120</y>
+     <width>521</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>PushButton</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="FlowCalibration">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>20</y>
+     <width>801</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>30</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Flow Calibration</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <zorder>FlowCalibration</zorder>
+  <zorder>OzoneSlopeMask</zorder>
+  <zorder>Home</zorder>
+  <zorder>Save</zorder>
+  <zorder>cellFlowLabel</zorder>
+  <zorder>Next</zorder>
+  <zorder>Previous</zorder>
+  <zorder>ozoneFlowLabel</zorder>
+  <zorder>CellSlopeMask</zorder>
  </widget>
  <resources>
   <include location="../../resources.qrc"/>

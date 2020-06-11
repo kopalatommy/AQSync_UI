@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'filebrowserform.ui'
 **
-** Created by: Qt User Interface Compiler version 5.5.1
+** Created by: Qt User Interface Compiler version 5.12.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -10,10 +10,7 @@
 #define UI_FILEBROWSERFORM_H
 
 #include <QtCore/QVariant>
-#include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QButtonGroup>
-#include <QtWidgets/QHeaderView>
 #include <QtWidgets/QListWidget>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QWidget>
@@ -30,20 +27,20 @@ public:
     void setupUi(QWidget *FileBrowserForm)
     {
         if (FileBrowserForm->objectName().isEmpty())
-            FileBrowserForm->setObjectName(QStringLiteral("FileBrowserForm"));
+            FileBrowserForm->setObjectName(QString::fromUtf8("FileBrowserForm"));
         FileBrowserForm->resize(800, 480);
         FileBrowserForm->setMinimumSize(QSize(800, 480));
         FileBrowserForm->setMaximumSize(QSize(800, 480));
         Confirm = new QPushButton(FileBrowserForm);
-        Confirm->setObjectName(QStringLiteral("Confirm"));
+        Confirm->setObjectName(QString::fromUtf8("Confirm"));
         Confirm->setGeometry(QRect(420, 440, 100, 30));
         Confirm->setIconSize(QSize(100, 30));
         Cancel = new QPushButton(FileBrowserForm);
-        Cancel->setObjectName(QStringLiteral("Cancel"));
+        Cancel->setObjectName(QString::fromUtf8("Cancel"));
         Cancel->setGeometry(QRect(270, 440, 100, 30));
         Cancel->setIconSize(QSize(100, 30));
         listWidget = new QListWidget(FileBrowserForm);
-        listWidget->setObjectName(QStringLiteral("listWidget"));
+        listWidget->setObjectName(QString::fromUtf8("listWidget"));
         listWidget->setGeometry(QRect(5, 11, 791, 411));
 
         retranslateUi(FileBrowserForm);
@@ -53,9 +50,9 @@ public:
 
     void retranslateUi(QWidget *FileBrowserForm)
     {
-        FileBrowserForm->setWindowTitle(QApplication::translate("FileBrowserForm", "Form", 0));
-        Confirm->setText(QApplication::translate("FileBrowserForm", "Confirm", 0));
-        Cancel->setText(QApplication::translate("FileBrowserForm", "Cancel", 0));
+        FileBrowserForm->setWindowTitle(QApplication::translate("FileBrowserForm", "Form", nullptr));
+        Confirm->setText(QApplication::translate("FileBrowserForm", "Confirm", nullptr));
+        Cancel->setText(QApplication::translate("FileBrowserForm", "Cancel", nullptr));
     } // retranslateUi
 
 };

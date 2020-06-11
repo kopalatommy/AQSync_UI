@@ -42,7 +42,11 @@ SOURCES += \
         Modbus/modbustestform.cpp \
         Modbus/staticipform.cpp \
     Settings/405Settings/adaptivefilter405form.cpp \
+    Settings/405Settings/flowcalibration405form.cpp \
     Settings/405Settings/mode405form.cpp \
+    Settings/405Settings/no2calibration405form.cpp \
+    Settings/BCPSettings/adaptivefilterbcpform.cpp \
+    Settings/BCPSettings/flowcalibrationbcpform.cpp \
         Settings/aboutform.cpp \
         Settings/adaptivefilterform.cpp \
         Settings/avgsettingform.cpp \
@@ -64,17 +68,9 @@ SOURCES += \
         utilities.cpp \
     Settings/405Settings/settings405.cpp \
     Settings/405Settings/nocalibration405form.cpp \
-    Settings/405Settings/flowcalibration405form.cpp \
-    Settings/405Settings/no2calibration405form.cpp \
-    Settings/405Settings/datafilemenu405form.cpp \
-    Settings/405Settings/datafile405form.cpp \
-    Settings/405Settings/dataselection405form.cpp \
     Settings/BCPSettings/bcpsettings.cpp \
-    Settings/BCPSettings/flowcalibrationbcpform.cpp \
-    Settings/BCPSettings/adaptivefilterbcpform.cpp \
     Settings/BCPSettings/calibration880nm.cpp \
     Settings/BCPSettings/autozerobcp.cpp \
-    Settings/405Settings/parameters405form.cpp \
     Settings/BCPSettings/calibration405nm.cpp \
     Settings/BCPSettings/tpcorrectionsform.cpp
 
@@ -97,7 +93,12 @@ HEADERS += \
         Modbus/modbustestform.h \
         Modbus/staticipform.h \
     Settings/405Settings/adaptivefilter405form.h \
+    Settings/405Settings/flowcalibration405form.h \
     Settings/405Settings/mode405form.h \
+    Settings/405Settings/no2calibration405form.h \
+    Settings/BCPSettings/adaptivefilter405form.h \
+    Settings/BCPSettings/adaptivefilterbcpform.h \
+    Settings/BCPSettings/flowcalibrationbcpform.h \
         Settings/aboutform.h \
         Settings/adaptivefilterform.h \
         Settings/avgsettingform.h \
@@ -118,14 +119,7 @@ HEADERS += \
         utilities.h \
     Settings/405Settings/settings405.h \
     Settings/405Settings/nocalibration405form.h \
-    Settings/405Settings/flowcalibration405form.h \
-    Settings/405Settings/no2calibration405form.h \
-    Settings/405Settings/datafilemenu405form.h \
-    Settings/405Settings/datafile405form.h \
-    Settings/405Settings/dataselection405form.h \
     Settings/BCPSettings/bcpsettings.h \
-    Settings/BCPSettings/flowcalibrationbcpform.h \
-    Settings/BCPSettings/adaptivefilterbcpform.h \
     Settings/BCPSettings/calibration880nm.h \
     Settings/BCPSettings/autozerobcp.h \
     Settings/405Settings/parameters405form.h \
@@ -140,7 +134,11 @@ FORMS += \
         Modbus/modbustestform.ui \
         Modbus/staticipform.ui \
     Settings/405Settings/adaptivefilter405form.ui \
+    Settings/405Settings/flowcalibration405form.ui \
     Settings/405Settings/mode405form.ui \
+    Settings/405Settings/no2calibration405form.ui \
+    Settings/BCPSettings/adaptivefilterbcpform.ui \
+    Settings/BCPSettings/flowcalibrationbcpform.ui \
         Settings/aboutform.ui \
         Settings/adaptivefilterform.ui \
         Settings/avgsettingform.ui \
@@ -158,14 +156,7 @@ FORMS += \
         paramtersform.ui \
     Settings/405Settings/settings405.ui \
     Settings/405Settings/nocalibration405form.ui \
-    Settings/405Settings/flowcalibration405form.ui \
-    Settings/405Settings/no2calibration405form.ui \
-    Settings/405Settings/datafilemenu405form.ui \
-    Settings/405Settings/datafile405form.ui \
-    Settings/405Settings/dataselection405form.ui \
     Settings/BCPSettings/bcpsettings.ui \
-    Settings/BCPSettings/flowcalibrationbcpform.ui \
-    Settings/BCPSettings/adaptivefilterbcpform.ui \
     Settings/BCPSettings/calibration880nm.ui \
     Settings/BCPSettings/autozerobcp.ui \
     Settings/405Settings/parameters405form.ui \

@@ -1,19 +1,21 @@
 #ifndef ADAPTIVEFILTERBCPFORM_H
 #define ADAPTIVEFILTERBCPFORM_H
 
-#include <QDialog>
+#include <QWidget>
+
+#include "Settings/settingformshandler.h"
 
 namespace Ui {
-class adaptivefilterBCPform;
+class AdaptiveFilterBCPForm;
 }
 
-class adaptivefilterBCPform : public QDialog
+class AdaptiveFilterBCPForm : public QWidget
 {
     Q_OBJECT
 
 public:
-    explicit adaptivefilterBCPform(QWidget *parent = 0);
-    ~adaptivefilterBCPform();
+    explicit AdaptiveFilterBCPForm(QWidget *parent = nullptr);
+    ~AdaptiveFilterBCPForm();
 
 private slots:
     void on_Left_clicked();
@@ -23,7 +25,7 @@ private slots:
     void on_Home_clicked();
 
 private:
-    Ui::adaptivefilterBCPform *ui;
+    Ui::AdaptiveFilterBCPForm *ui;
 };
 
 #endif // ADAPTIVEFILTERBCPFORM_H

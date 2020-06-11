@@ -13,19 +13,6 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QPushButton" name="longMask">
-   <property name="geometry">
-    <rect>
-     <x>430</x>
-     <y>120</y>
-     <width>241</width>
-     <height>111</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
   <widget class="QPushButton" name="differenceMask">
    <property name="geometry">
     <rect>
@@ -39,34 +26,33 @@
     <string/>
    </property>
   </widget>
-  <widget class="QPushButton" name="home">
-   <property name="geometry">
-    <rect>
-     <x>690</x>
-     <y>10</y>
-     <width>100</width>
-     <height>100</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="icon">
-    <iconset resource="../../resources.qrc">
-     <normaloff>:/Buttons/button_back.jpg</normaloff>:/Buttons/button_back.jpg</iconset>
-   </property>
-   <property name="iconSize">
-    <size>
-     <width>100</width>
-     <height>100</height>
-    </size>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="percentMask">
+  <widget class="QLabel" name="shortLabel">
    <property name="geometry">
     <rect>
      <x>130</x>
-     <y>270</y>
+     <y>120</y>
+     <width>241</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Short Length:
+5</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="shortMask">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>120</y>
      <width>241</width>
      <height>111</height>
     </rect>
@@ -98,27 +84,48 @@
     </size>
    </property>
   </widget>
-  <widget class="QPushButton" name="Save">
+  <widget class="QLabel" name="diffLabel">
    <property name="geometry">
     <rect>
-     <x>330</x>
-     <y>410</y>
-     <width>120</width>
-     <height>60</height>
+     <x>134</x>
+     <y>275</y>
+     <width>231</width>
+     <height>101</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
    <property name="text">
-    <string/>
+    <string>Difference:
+10</string>
    </property>
-   <property name="icon">
-    <iconset resource="../../resources.qrc">
-     <normaloff>:/Buttons/button_save.jpg</normaloff>:/Buttons/button_save.jpg</iconset>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
    </property>
-   <property name="iconSize">
-    <size>
-     <width>120</width>
-     <height>60</height>
-    </size>
+  </widget>
+  <widget class="QLabel" name="longLabel">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>120</y>
+     <width>241</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Long Length:
+10</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
   <widget class="QLabel" name="AdaptiveFilter">
@@ -143,10 +150,68 @@
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QPushButton" name="shortMask">
+  <widget class="QPushButton" name="percentMask">
    <property name="geometry">
     <rect>
      <x>130</x>
+     <y>270</y>
+     <width>241</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Save">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>410</y>
+     <width>120</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../../resources.qrc">
+     <normaloff>:/Buttons/button_save.jpg</normaloff>:/Buttons/button_save.jpg</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>120</width>
+     <height>60</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="percentLabel">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>270</y>
+     <width>241</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Percent:
+10</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="longMask">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
      <y>120</y>
      <width>241</width>
      <height>111</height>
@@ -179,107 +244,42 @@
     </size>
    </property>
   </widget>
-  <widget class="QLabel" name="diffLabel">
+  <widget class="QPushButton" name="home">
    <property name="geometry">
     <rect>
-     <x>134</x>
-     <y>275</y>
-     <width>231</width>
-     <height>101</height>
+     <x>690</x>
+     <y>10</y>
+     <width>100</width>
+     <height>100</height>
     </rect>
    </property>
-   <property name="font">
-    <font>
-     <pointsize>18</pointsize>
-    </font>
-   </property>
    <property name="text">
-    <string>Difference:
-10</string>
+    <string/>
    </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
+   <property name="icon">
+    <iconset resource="../../resources.qrc">
+     <normaloff>:/Buttons/button_back.jpg</normaloff>:/Buttons/button_back.jpg</iconset>
    </property>
-  </widget>
-  <widget class="QLabel" name="shortLabel">
-   <property name="geometry">
-    <rect>
-     <x>130</x>
-     <y>120</y>
-     <width>241</width>
-     <height>111</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>18</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>Short Length:
-5</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
-  <widget class="QLabel" name="longLabel">
-   <property name="geometry">
-    <rect>
-     <x>430</x>
-     <y>120</y>
-     <width>241</width>
-     <height>111</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>18</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>Long Length:
-10</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
-  <widget class="QLabel" name="percentLabel">
-   <property name="geometry">
-    <rect>
-     <x>430</x>
-     <y>270</y>
-     <width>241</width>
-     <height>111</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>18</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>Percent:
-10</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
+   <property name="iconSize">
+    <size>
+     <width>100</width>
+     <height>100</height>
+    </size>
    </property>
   </widget>
   <zorder>percentLabel</zorder>
-  <zorder>longLabel</zorder>
-  <zorder>shortLabel</zorder>
-  <zorder>diffLabel</zorder>
-  <zorder>longMask</zorder>
   <zorder>differenceMask</zorder>
-  <zorder>home</zorder>
-  <zorder>percentMask</zorder>
-  <zorder>Next</zorder>
-  <zorder>Save</zorder>
-  <zorder>AdaptiveFilter</zorder>
+  <zorder>shortLabel</zorder>
   <zorder>shortMask</zorder>
+  <zorder>Next</zorder>
+  <zorder>diffLabel</zorder>
+  <zorder>longLabel</zorder>
+  <zorder>AdaptiveFilter</zorder>
+  <zorder>percentMask</zorder>
+  <zorder>Save</zorder>
+  <zorder>longMask</zorder>
   <zorder>Previous</zorder>
+  <zorder>home</zorder>
  </widget>
  <resources>
   <include location="../../resources.qrc"/>

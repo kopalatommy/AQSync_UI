@@ -1,19 +1,21 @@
 #ifndef FLOWCALIBRATIONBCPFORM_H
 #define FLOWCALIBRATIONBCPFORM_H
 
-#include <QDialog>
+#include <QWidget>
+
+#include "Settings/settingformshandler.h"
 
 namespace Ui {
-class flowcalibrationBCPform;
+class FlowCalibrationBCPForm;
 }
 
-class flowcalibrationBCPform : public QDialog
+class FlowCalibrationBCPForm : public QWidget
 {
     Q_OBJECT
 
 public:
-    explicit flowcalibrationBCPform(QWidget *parent = 0);
-    ~flowcalibrationBCPform();
+    explicit FlowCalibrationBCPForm(QWidget *parent = nullptr);
+    ~FlowCalibrationBCPForm();
 
 private slots:
     void on_Left_clicked();
@@ -23,7 +25,7 @@ private slots:
     void on_Home_clicked();
 
 private:
-    Ui::flowcalibrationBCPform *ui;
+    Ui::FlowCalibrationBCPForm *ui;
 };
 
 #endif // FLOWCALIBRATIONBCPFORM_H
