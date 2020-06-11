@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'flowcalibration405form.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.3
+** Created by: Qt User Interface Compiler version 5.5.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -10,8 +10,10 @@
 #define UI_FLOWCALIBRATION405FORM_H
 
 #include <QtCore/QVariant>
-#include <QtGui/QIcon>
+#include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QButtonGroup>
+#include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QWidget>
@@ -34,50 +36,50 @@ public:
     void setupUi(QWidget *FlowCalibration405Form)
     {
         if (FlowCalibration405Form->objectName().isEmpty())
-            FlowCalibration405Form->setObjectName(QString::fromUtf8("FlowCalibration405Form"));
+            FlowCalibration405Form->setObjectName(QStringLiteral("FlowCalibration405Form"));
         FlowCalibration405Form->resize(800, 480);
         OzoneSlopeMask = new QPushButton(FlowCalibration405Form);
-        OzoneSlopeMask->setObjectName(QString::fromUtf8("OzoneSlopeMask"));
+        OzoneSlopeMask->setObjectName(QStringLiteral("OzoneSlopeMask"));
         OzoneSlopeMask->setGeometry(QRect(150, 260, 521, 121));
         Home = new QPushButton(FlowCalibration405Form);
-        Home->setObjectName(QString::fromUtf8("Home"));
+        Home->setObjectName(QStringLiteral("Home"));
         Home->setGeometry(QRect(690, 10, 100, 100));
         QIcon icon;
-        icon.addFile(QString::fromUtf8(":/Buttons/button_back.jpg"), QSize(), QIcon::Normal, QIcon::Off);
+        icon.addFile(QStringLiteral(":/Buttons/button_back.jpg"), QSize(), QIcon::Normal, QIcon::Off);
         Home->setIcon(icon);
         Home->setIconSize(QSize(100, 100));
         Save = new QPushButton(FlowCalibration405Form);
-        Save->setObjectName(QString::fromUtf8("Save"));
+        Save->setObjectName(QStringLiteral("Save"));
         Save->setGeometry(QRect(340, 400, 120, 60));
         QIcon icon1;
-        icon1.addFile(QString::fromUtf8(":/Buttons/button_save.jpg"), QSize(), QIcon::Normal, QIcon::Off);
+        icon1.addFile(QStringLiteral(":/Buttons/button_save.jpg"), QSize(), QIcon::Normal, QIcon::Off);
         Save->setIcon(icon1);
         Save->setIconSize(QSize(120, 60));
         cellFlowLabel = new QLabel(FlowCalibration405Form);
-        cellFlowLabel->setObjectName(QString::fromUtf8("cellFlowLabel"));
+        cellFlowLabel->setObjectName(QStringLiteral("cellFlowLabel"));
         cellFlowLabel->setGeometry(QRect(150, 120, 521, 121));
         Next = new QPushButton(FlowCalibration405Form);
-        Next->setObjectName(QString::fromUtf8("Next"));
+        Next->setObjectName(QStringLiteral("Next"));
         Next->setGeometry(QRect(690, 119, 100, 351));
         QIcon icon2;
-        icon2.addFile(QString::fromUtf8(":/Buttons/Right_Carrot.jpg"), QSize(), QIcon::Normal, QIcon::Off);
+        icon2.addFile(QStringLiteral(":/Buttons/Right_Carrot.jpg"), QSize(), QIcon::Normal, QIcon::Off);
         Next->setIcon(icon2);
         Next->setIconSize(QSize(100, 340));
         Previous = new QPushButton(FlowCalibration405Form);
-        Previous->setObjectName(QString::fromUtf8("Previous"));
+        Previous->setObjectName(QStringLiteral("Previous"));
         Previous->setGeometry(QRect(10, 119, 100, 351));
         QIcon icon3;
-        icon3.addFile(QString::fromUtf8(":/Buttons/Left_Carrot.jpg"), QSize(), QIcon::Normal, QIcon::Off);
+        icon3.addFile(QStringLiteral(":/Buttons/Left_Carrot.jpg"), QSize(), QIcon::Normal, QIcon::Off);
         Previous->setIcon(icon3);
         Previous->setIconSize(QSize(100, 340));
         ozoneFlowLabel = new QLabel(FlowCalibration405Form);
-        ozoneFlowLabel->setObjectName(QString::fromUtf8("ozoneFlowLabel"));
+        ozoneFlowLabel->setObjectName(QStringLiteral("ozoneFlowLabel"));
         ozoneFlowLabel->setGeometry(QRect(156, 259, 511, 121));
         CellSlopeMask = new QPushButton(FlowCalibration405Form);
-        CellSlopeMask->setObjectName(QString::fromUtf8("CellSlopeMask"));
+        CellSlopeMask->setObjectName(QStringLiteral("CellSlopeMask"));
         CellSlopeMask->setGeometry(QRect(150, 120, 521, 121));
         FlowCalibration = new QLabel(FlowCalibration405Form);
-        FlowCalibration->setObjectName(QString::fromUtf8("FlowCalibration"));
+        FlowCalibration->setObjectName(QStringLiteral("FlowCalibration"));
         FlowCalibration->setGeometry(QRect(0, 20, 801, 71));
         QFont font;
         font.setPointSize(30);
@@ -100,16 +102,16 @@ public:
 
     void retranslateUi(QWidget *FlowCalibration405Form)
     {
-        FlowCalibration405Form->setWindowTitle(QApplication::translate("FlowCalibration405Form", "Form", nullptr));
-        OzoneSlopeMask->setText(QApplication::translate("FlowCalibration405Form", "PushButton", nullptr));
+        FlowCalibration405Form->setWindowTitle(QApplication::translate("FlowCalibration405Form", "Form", 0));
+        OzoneSlopeMask->setText(QApplication::translate("FlowCalibration405Form", "PushButton", 0));
         Home->setText(QString());
         Save->setText(QString());
         cellFlowLabel->setText(QString());
         Next->setText(QString());
         Previous->setText(QString());
         ozoneFlowLabel->setText(QString());
-        CellSlopeMask->setText(QApplication::translate("FlowCalibration405Form", "PushButton", nullptr));
-        FlowCalibration->setText(QApplication::translate("FlowCalibration405Form", "Flow Calibration", nullptr));
+        CellSlopeMask->setText(QApplication::translate("FlowCalibration405Form", "PushButton", 0));
+        FlowCalibration->setText(QApplication::translate("FlowCalibration405Form", "Flow Calibration", 0));
     } // retranslateUi
 
 };

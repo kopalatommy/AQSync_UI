@@ -82,7 +82,7 @@
     </size>
    </property>
   </widget>
-  <widget class="QPushButton" name="save">
+  <widget class="QPushButton" name="Save">
    <property name="geometry">
     <rect>
      <x>350</x>
@@ -105,7 +105,7 @@
     </size>
    </property>
   </widget>
-  <widget class="QPushButton" name="analogMask">
+  <widget class="QPushButton" name="AnalogMask">
    <property name="geometry">
     <rect>
      <x>150</x>
@@ -160,6 +160,45 @@
    </property>
    <property name="text">
     <string>PushButton</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="SlopeLabel">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>130</y>
+     <width>521</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="ZeroLabel">
+   <property name="geometry">
+    <rect>
+     <x>156</x>
+     <y>219</y>
+     <width>511</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="AnalogLabel">
+   <property name="geometry">
+    <rect>
+     <x>156</x>
+     <y>319</y>
+     <width>511</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
    </property>
   </widget>
  </widget>

@@ -55,6 +55,7 @@ void AdaptiveFilter405Form::on_Home_clicked()
 
 void AdaptiveFilter405Form::on_shortMask_clicked()
 {
+    qDebug() << "Presed Button";
     connect(NumberPadForm::GetInstance(), &NumberPadForm::NewUnsignedChar, this, &AdaptiveFilter405Form::NewShort);
     NumberPadForm::GetInstance()->SetInitialValues(NumberPadForm::Types::UChar, 0, 5, this);
     NumberPadForm::GetInstance()->show();

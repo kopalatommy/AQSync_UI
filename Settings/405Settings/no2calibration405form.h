@@ -53,7 +53,7 @@ private:
 
     int OnExit();
     void showEvent(QShowEvent * event);
-    void closeEvent(QCloseEvent * event);
+    void closeEvent(QCloseEvent *event);
 };
 
 #endif // NO2CALIBRATION405FORM_H

@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'staticipform.h'
 **
-** Created by: The Qt Meta Object Compiler version 67 (Qt 5.12.3)
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.5.1)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
@@ -12,14 +12,12 @@
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'staticipform.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.12.3. It"
+#error "This file was generated using the moc from 5.5.1. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
 
 QT_BEGIN_MOC_NAMESPACE
-QT_WARNING_PUSH
-QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_StaticIPForm_t {
     QByteArrayData data[20];
     char stringdata0[287];
@@ -68,7 +66,7 @@ QT_MOC_LITERAL(19, 261, 25) // "on_moveLeftButton_clicked"
 static const uint qt_meta_data_StaticIPForm[] = {
 
  // content:
-       8,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
       14,   14, // methods
@@ -120,7 +118,7 @@ static const uint qt_meta_data_StaticIPForm[] = {
 void StaticIPForm::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        auto *_t = static_cast<StaticIPForm *>(_o);
+        StaticIPForm *_t = static_cast<StaticIPForm *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->CloseForms(); break;
@@ -141,38 +139,32 @@ void StaticIPForm::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
         int *result = reinterpret_cast<int *>(_a[0]);
+        void **func = reinterpret_cast<void **>(_a[1]);
         {
-            using _t = void (StaticIPForm::*)();
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&StaticIPForm::CloseForms)) {
+            typedef void (StaticIPForm::*_t)();
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&StaticIPForm::CloseForms)) {
                 *result = 0;
-                return;
             }
         }
         {
-            using _t = void (StaticIPForm::*)();
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&StaticIPForm::MoveLeft)) {
+            typedef void (StaticIPForm::*_t)();
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&StaticIPForm::MoveLeft)) {
                 *result = 1;
-                return;
             }
         }
         {
-            using _t = void (StaticIPForm::*)();
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&StaticIPForm::MoveRight)) {
+            typedef void (StaticIPForm::*_t)();
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&StaticIPForm::MoveRight)) {
                 *result = 2;
-                return;
             }
         }
     }
 }
 
-QT_INIT_METAOBJECT const QMetaObject StaticIPForm::staticMetaObject = { {
-    &QWidget::staticMetaObject,
-    qt_meta_stringdata_StaticIPForm.data,
-    qt_meta_data_StaticIPForm,
-    qt_static_metacall,
-    nullptr,
-    nullptr
-} };
+const QMetaObject StaticIPForm::staticMetaObject = {
+    { &QWidget::staticMetaObject, qt_meta_stringdata_StaticIPForm.data,
+      qt_meta_data_StaticIPForm,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
+};
 
 
 const QMetaObject *StaticIPForm::metaObject() const
@@ -182,9 +174,9 @@ const QMetaObject *StaticIPForm::metaObject() const
 
 void *StaticIPForm::qt_metacast(const char *_clname)
 {
-    if (!_clname) return nullptr;
+    if (!_clname) return Q_NULLPTR;
     if (!strcmp(_clname, qt_meta_stringdata_StaticIPForm.stringdata0))
-        return static_cast<void*>(this);
+        return static_cast<void*>(const_cast< StaticIPForm*>(this));
     return QWidget::qt_metacast(_clname);
 }
 
@@ -208,19 +200,18 @@ int StaticIPForm::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 // SIGNAL 0
 void StaticIPForm::CloseForms()
 {
-    QMetaObject::activate(this, &staticMetaObject, 0, nullptr);
+    QMetaObject::activate(this, &staticMetaObject, 0, Q_NULLPTR);
 }
 
 // SIGNAL 1
 void StaticIPForm::MoveLeft()
 {
-    QMetaObject::activate(this, &staticMetaObject, 1, nullptr);
+    QMetaObject::activate(this, &staticMetaObject, 1, Q_NULLPTR);
 }
 
 // SIGNAL 2
 void StaticIPForm::MoveRight()
 {
-    QMetaObject::activate(this, &staticMetaObject, 2, nullptr);
+    QMetaObject::activate(this, &staticMetaObject, 2, Q_NULLPTR);
 }
-QT_WARNING_POP
 QT_END_MOC_NAMESPACE

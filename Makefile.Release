@@ -85,12 +85,12 @@ SOURCES       = Communication\bcpserialhandler.cpp \
 		paramtersform.cpp \
 		utilities.cpp \
 		Settings\405Settings\settings405.cpp \
-		Settings\405Settings\nocalibration405form.cpp \
 		Settings\BCPSettings\bcpsettings.cpp \
 		Settings\BCPSettings\calibration880nm.cpp \
 		Settings\BCPSettings\autozerobcp.cpp \
 		Settings\BCPSettings\calibration405nm.cpp \
-		Settings\BCPSettings\tpcorrectionsform.cpp release\qrc_resources.cpp \
+		Settings\BCPSettings\tpcorrectionsform.cpp \
+		Settings\405Settings\nocalibration405form.cpp release\qrc_resources.cpp \
 		release\moc_bcpserialhandler.cpp \
 		release\moc_serialhandler405.cpp \
 		release\moc_datafilemenuform.cpp \
@@ -128,12 +128,12 @@ SOURCES       = Communication\bcpserialhandler.cpp \
 		release\moc_numberpadform.cpp \
 		release\moc_paramtersform.cpp \
 		release\moc_settings405.cpp \
-		release\moc_nocalibration405form.cpp \
 		release\moc_bcpsettings.cpp \
 		release\moc_calibration880nm.cpp \
 		release\moc_autozerobcp.cpp \
 		release\moc_calibration405nm.cpp \
-		release\moc_tpcorrectionsform.cpp
+		release\moc_tpcorrectionsform.cpp \
+		release\moc_nocalibration405form.cpp
 OBJECTS       = release/bcpserialhandler.o \
 		release/serialhandler405.o \
 		release/datafilemenuform.o \
@@ -176,12 +176,12 @@ OBJECTS       = release/bcpserialhandler.o \
 		release/paramtersform.o \
 		release/utilities.o \
 		release/settings405.o \
-		release/nocalibration405form.o \
 		release/bcpsettings.o \
 		release/calibration880nm.o \
 		release/autozerobcp.o \
 		release/calibration405nm.o \
 		release/tpcorrectionsform.o \
+		release/nocalibration405form.o \
 		release/qrc_resources.o \
 		release/moc_bcpserialhandler.o \
 		release/moc_serialhandler405.o \
@@ -220,12 +220,12 @@ OBJECTS       = release/bcpserialhandler.o \
 		release/moc_numberpadform.o \
 		release/moc_paramtersform.o \
 		release/moc_settings405.o \
-		release/moc_nocalibration405form.o \
 		release/moc_bcpsettings.o \
 		release/moc_calibration880nm.o \
 		release/moc_autozerobcp.o \
 		release/moc_calibration405nm.o \
-		release/moc_tpcorrectionsform.o
+		release/moc_tpcorrectionsform.o \
+		release/moc_nocalibration405form.o
 
 DIST          = Buttons/settings_Home_button.qml \
 		Buttons/settings_Home_Button.jpg \
@@ -253,7 +253,6 @@ DIST          = Buttons/settings_Home_button.qml \
 		Settings\405Settings\flowcalibration405form.h \
 		Settings\405Settings\mode405form.h \
 		Settings\405Settings\no2calibration405form.h \
-		Settings\BCPSettings\adaptivefilter405form.h \
 		Settings\BCPSettings\adaptivefilterbcpform.h \
 		Settings\BCPSettings\flowcalibrationbcpform.h \
 		Settings\aboutform.h \
@@ -275,12 +274,12 @@ DIST          = Buttons/settings_Home_button.qml \
 		paramtersform.h \
 		utilities.h \
 		Settings\405Settings\settings405.h \
-		Settings\405Settings\nocalibration405form.h \
 		Settings\BCPSettings\bcpsettings.h \
 		Settings\BCPSettings\calibration880nm.h \
 		Settings\BCPSettings\autozerobcp.h \
 		Settings\BCPSettings\calibration405nm.h \
-		Settings\BCPSettings\tpcorrectionsform.h Communication\bcpserialhandler.cpp \
+		Settings\BCPSettings\tpcorrectionsform.h \
+		Settings\405Settings\nocalibration405form.h Communication\bcpserialhandler.cpp \
 		Communication\serialhandler405.cpp \
 		DataFiles\datafilemenuform.cpp \
 		DataFiles\filebrowserform.cpp \
@@ -322,12 +321,12 @@ DIST          = Buttons/settings_Home_button.qml \
 		paramtersform.cpp \
 		utilities.cpp \
 		Settings\405Settings\settings405.cpp \
-		Settings\405Settings\nocalibration405form.cpp \
 		Settings\BCPSettings\bcpsettings.cpp \
 		Settings\BCPSettings\calibration880nm.cpp \
 		Settings\BCPSettings\autozerobcp.cpp \
 		Settings\BCPSettings\calibration405nm.cpp \
-		Settings\BCPSettings\tpcorrectionsform.cpp
+		Settings\BCPSettings\tpcorrectionsform.cpp \
+		Settings\405Settings\nocalibration405form.cpp
 QMAKE_TARGET  = AQSync_UI
 DESTDIR        = release\ #avoid trailing-slash linebreak
 TARGET         = AQSync_UI.exe
@@ -366,8 +365,8 @@ dist:
 	$(ZIP) AQSync_UI.zip $(SOURCES) $(DIST) AQSync_UI.pro ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\features\spec_pre.prf ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\qdevice.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\features\device_config.prf ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\qconfig.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_3dcollision.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_3dcollision_private.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_3dcore.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_3dcore_private.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_3dinput.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_3dinput_private.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_3dlogic.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_3dlogic_private.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_3dquick.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_3dquick_private.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_3dquickrenderer.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_3dquickrenderer_private.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_3drenderer.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_3drenderer_private.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_axbase.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_axbase_private.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_axcontainer.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_axcontainer_private.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_axserver.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_axserver_private.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_bluetooth.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_bluetooth_private.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_bootstrap_private.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_clucene_private.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_concurrent.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_concurrent_private.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_core.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_core_private.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_dbus.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_dbus_private.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_declarative.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_declarative_private.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_designer.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_designer_private.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_designercomponents_private.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_enginio.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_enginio_private.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_gui.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_gui_private.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_help.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_help_private.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_location.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_location_private.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_multimedia.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_multimedia_private.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_multimediawidgets.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_multimediawidgets_private.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_network.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_network_private.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_nfc.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_nfc_private.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_opengl.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_opengl_private.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_openglextensions.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_openglextensions_private.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_platformsupport_private.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_positioning.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_positioning_private.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_printsupport.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_printsupport_private.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_qml.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_qml_private.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_qmldevtools_private.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_qmltest.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_qmltest_private.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_qtmultimediaquicktools_private.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_quick.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_quick_private.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_quickparticles_private.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_quickwidgets.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_quickwidgets_private.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_script.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_script_private.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_scripttools.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_scripttools_private.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_sensors.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_sensors_private.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_serialport.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_serialport_private.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_sql.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_sql_private.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_svg.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_svg_private.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_testlib.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_testlib_private.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_uiplugin.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_uitools.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_uitools_private.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_webchannel.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_webchannel_private.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_webkit.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_webkit_private.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_webkitwidgets.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_webkitwidgets_private.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_websockets.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_websockets_private.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_widgets.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_widgets_private.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_winextras.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_winextras_private.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_xml.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_xml_private.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_xmlpatterns.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_xmlpatterns_private.pri ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\features\qt_functions.prf ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\features\qt_config.prf ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\features\win32\qt_config.prf ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\win32-g++\qmake.conf ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\features\spec_post.prf .qmake.stash ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\features\exclusive_builds.prf ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\features\default_pre.prf ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\features\win32\default_pre.prf ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\features\resolve_config.prf ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\features\exclusive_builds_post.prf ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\features\default_post.prf ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\features\build_pass.prf ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\features\c++11.prf ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\features\qml_debug.prf ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\features\win32\rtti.prf ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\features\precompile_header.prf ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\features\warn_on.prf ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\features\qt.prf ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\features\resources.prf ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\features\moc.prf ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\features\win32\opengl.prf ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\features\uic.prf ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\features\win32\windows.prf ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\features\testcase_targets.prf ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\features\exceptions.prf ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\features\yacc.prf ..\..\..\..\Qt\5.5\mingw492_32\mkspecs\features\lex.prf AQSync_UI.pro resources.qrc C:/Qt/5.5/mingw492_32/lib/qtmain.prl C:/Qt/5.5/mingw492_32/lib/Qt5PrintSupport.prl C:/Qt/5.5/mingw492_32/lib/Qt5Widgets.prl C:/Qt/5.5/mingw492_32/lib/Qt5Gui.prl C:/Qt/5.5/mingw492_32/lib/Qt5SerialPort.prl C:/Qt/5.5/mingw492_32/lib/Qt5Network.prl C:/Qt/5.5/mingw492_32/lib/Qt5Core.prl  NO_PCH_SOURCES RESOURCES HEADERS SOURCES OBJECTIVE_SOURCES FORMS YACCSOURCES YACCSOURCES LEXSOURCES 
 
 clean: compiler_clean 
-	-$(DEL_FILE) release\bcpserialhandler.o release\serialhandler405.o release\datafilemenuform.o release\filebrowserform.o release\bcpdata.o release\datahandler405.o release\settingshandler.o release\graphform.o release\qcustomplot.o release\modbusdatatable.o release\modbusform.o release\modbushandler.o release\modbusmaster.o release\modbusslave.o release\modbustestform.o release\staticipform.o release\adaptivefilter405form.o release\flowcalibration405form.o release\mode405form.o release\no2calibration405form.o release\adaptivefilterbcpform.o release\flowcalibrationbcpform.o release\aboutform.o release\adaptivefilterform.o release\avgsettingform.o release\bccalform.o release\datafilesform.o release\flowcalform.o release\modeform.o release\no2calform.o release\nocalform.o release\pmcalform.o release\settingformshandler.o release\settingsform.o release\systemsettingsform.o release\main.o release\mainwindow.o release\serialhandler.o release\numberpadform.o release\paramtersform.o release\utilities.o release\settings405.o release\nocalibration405form.o release\bcpsettings.o release\calibration880nm.o release\autozerobcp.o release\calibration405nm.o release\tpcorrectionsform.o release\qrc_resources.o release\moc_bcpserialhandler.o release\moc_serialhandler405.o release\moc_datafilemenuform.o release\moc_filebrowserform.o release\moc_datahandler405.o release\moc_graphform.o release\moc_qcustomplot.o release\moc_modbusdatatable.o release\moc_modbusform.o release\moc_modbushandler.o release\moc_modbusmaster.o release\moc_modbusslave.o release\moc_modbustestform.o release\moc_staticipform.o release\moc_adaptivefilter405form.o release\moc_flowcalibration405form.o release\moc_mode405form.o release\moc_no2calibration405form.o release\moc_adaptivefilterbcpform.o release\moc_flowcalibrationbcpform.o release\moc_aboutform.o release\moc_adaptivefilterform.o release\moc_avgsettingform.o release\moc_bccalform.o release\moc_datafilesform.o release\moc_flowcalform.o release\moc_modeform.o release\moc_no2calform.o
-	-$(DEL_FILE) release\moc_nocalform.o release\moc_pmcalform.o release\moc_settingsform.o release\moc_systemsettingsform.o release\moc_mainwindow.o release\moc_serialhandler.o release\moc_numberpadform.o release\moc_paramtersform.o release\moc_settings405.o release\moc_nocalibration405form.o release\moc_bcpsettings.o release\moc_calibration880nm.o release\moc_autozerobcp.o release\moc_calibration405nm.o release\moc_tpcorrectionsform.o
+	-$(DEL_FILE) release\bcpserialhandler.o release\serialhandler405.o release\datafilemenuform.o release\filebrowserform.o release\bcpdata.o release\datahandler405.o release\settingshandler.o release\graphform.o release\qcustomplot.o release\modbusdatatable.o release\modbusform.o release\modbushandler.o release\modbusmaster.o release\modbusslave.o release\modbustestform.o release\staticipform.o release\adaptivefilter405form.o release\flowcalibration405form.o release\mode405form.o release\no2calibration405form.o release\adaptivefilterbcpform.o release\flowcalibrationbcpform.o release\aboutform.o release\adaptivefilterform.o release\avgsettingform.o release\bccalform.o release\datafilesform.o release\flowcalform.o release\modeform.o release\no2calform.o release\nocalform.o release\pmcalform.o release\settingformshandler.o release\settingsform.o release\systemsettingsform.o release\main.o release\mainwindow.o release\serialhandler.o release\numberpadform.o release\paramtersform.o release\utilities.o release\settings405.o release\bcpsettings.o release\calibration880nm.o release\autozerobcp.o release\calibration405nm.o release\tpcorrectionsform.o release\nocalibration405form.o release\qrc_resources.o release\moc_bcpserialhandler.o release\moc_serialhandler405.o release\moc_datafilemenuform.o release\moc_filebrowserform.o release\moc_datahandler405.o release\moc_graphform.o release\moc_qcustomplot.o release\moc_modbusdatatable.o release\moc_modbusform.o release\moc_modbushandler.o release\moc_modbusmaster.o release\moc_modbusslave.o release\moc_modbustestform.o release\moc_staticipform.o release\moc_adaptivefilter405form.o release\moc_flowcalibration405form.o release\moc_mode405form.o release\moc_no2calibration405form.o release\moc_adaptivefilterbcpform.o release\moc_flowcalibrationbcpform.o release\moc_aboutform.o release\moc_adaptivefilterform.o release\moc_avgsettingform.o release\moc_bccalform.o release\moc_datafilesform.o release\moc_flowcalform.o release\moc_modeform.o release\moc_no2calform.o
+	-$(DEL_FILE) release\moc_nocalform.o release\moc_pmcalform.o release\moc_settingsform.o release\moc_systemsettingsform.o release\moc_mainwindow.o release\moc_serialhandler.o release\moc_numberpadform.o release\moc_paramtersform.o release\moc_settings405.o release\moc_bcpsettings.o release\moc_calibration880nm.o release\moc_autozerobcp.o release\moc_calibration405nm.o release\moc_tpcorrectionsform.o release\moc_nocalibration405form.o
 
 distclean: clean 
 	-$(DEL_FILE) .qmake.stash
@@ -421,9 +420,9 @@ release/qrc_resources.cpp: resources.qrc \
 		Buttons/Right_Carrot.jpg
 	C:\Qt\5.5\mingw492_32\bin\rcc.exe -name resources resources.qrc -o release\qrc_resources.cpp
 
-compiler_moc_header_make_all: release/moc_bcpserialhandler.cpp release/moc_serialhandler405.cpp release/moc_datafilemenuform.cpp release/moc_filebrowserform.cpp release/moc_datahandler405.cpp release/moc_graphform.cpp release/moc_qcustomplot.cpp release/moc_modbusdatatable.cpp release/moc_modbusform.cpp release/moc_modbushandler.cpp release/moc_modbusmaster.cpp release/moc_modbusslave.cpp release/moc_modbustestform.cpp release/moc_staticipform.cpp release/moc_adaptivefilter405form.cpp release/moc_flowcalibration405form.cpp release/moc_mode405form.cpp release/moc_no2calibration405form.cpp release/moc_adaptivefilter405form.cpp release/moc_adaptivefilterbcpform.cpp release/moc_flowcalibrationbcpform.cpp release/moc_aboutform.cpp release/moc_adaptivefilterform.cpp release/moc_avgsettingform.cpp release/moc_bccalform.cpp release/moc_datafilesform.cpp release/moc_flowcalform.cpp release/moc_modeform.cpp release/moc_no2calform.cpp release/moc_nocalform.cpp release/moc_pmcalform.cpp release/moc_settingsform.cpp release/moc_systemsettingsform.cpp release/moc_mainwindow.cpp release/moc_serialhandler.cpp release/moc_numberpadform.cpp release/moc_paramtersform.cpp release/moc_settings405.cpp release/moc_nocalibration405form.cpp release/moc_bcpsettings.cpp release/moc_calibration880nm.cpp release/moc_autozerobcp.cpp release/moc_calibration405nm.cpp release/moc_tpcorrectionsform.cpp
+compiler_moc_header_make_all: release/moc_bcpserialhandler.cpp release/moc_serialhandler405.cpp release/moc_datafilemenuform.cpp release/moc_filebrowserform.cpp release/moc_datahandler405.cpp release/moc_graphform.cpp release/moc_qcustomplot.cpp release/moc_modbusdatatable.cpp release/moc_modbusform.cpp release/moc_modbushandler.cpp release/moc_modbusmaster.cpp release/moc_modbusslave.cpp release/moc_modbustestform.cpp release/moc_staticipform.cpp release/moc_adaptivefilter405form.cpp release/moc_flowcalibration405form.cpp release/moc_mode405form.cpp release/moc_no2calibration405form.cpp release/moc_adaptivefilterbcpform.cpp release/moc_flowcalibrationbcpform.cpp release/moc_aboutform.cpp release/moc_adaptivefilterform.cpp release/moc_avgsettingform.cpp release/moc_bccalform.cpp release/moc_datafilesform.cpp release/moc_flowcalform.cpp release/moc_modeform.cpp release/moc_no2calform.cpp release/moc_nocalform.cpp release/moc_pmcalform.cpp release/moc_settingsform.cpp release/moc_systemsettingsform.cpp release/moc_mainwindow.cpp release/moc_serialhandler.cpp release/moc_numberpadform.cpp release/moc_paramtersform.cpp release/moc_settings405.cpp release/moc_bcpsettings.cpp release/moc_calibration880nm.cpp release/moc_autozerobcp.cpp release/moc_calibration405nm.cpp release/moc_tpcorrectionsform.cpp release/moc_nocalibration405form.cpp
 compiler_moc_header_clean:
-	-$(DEL_FILE) release\moc_bcpserialhandler.cpp release\moc_serialhandler405.cpp release\moc_datafilemenuform.cpp release\moc_filebrowserform.cpp release\moc_datahandler405.cpp release\moc_graphform.cpp release\moc_qcustomplot.cpp release\moc_modbusdatatable.cpp release\moc_modbusform.cpp release\moc_modbushandler.cpp release\moc_modbusmaster.cpp release\moc_modbusslave.cpp release\moc_modbustestform.cpp release\moc_staticipform.cpp release\moc_adaptivefilter405form.cpp release\moc_flowcalibration405form.cpp release\moc_mode405form.cpp release\moc_no2calibration405form.cpp release\moc_adaptivefilter405form.cpp release\moc_adaptivefilterbcpform.cpp release\moc_flowcalibrationbcpform.cpp release\moc_aboutform.cpp release\moc_adaptivefilterform.cpp release\moc_avgsettingform.cpp release\moc_bccalform.cpp release\moc_datafilesform.cpp release\moc_flowcalform.cpp release\moc_modeform.cpp release\moc_no2calform.cpp release\moc_nocalform.cpp release\moc_pmcalform.cpp release\moc_settingsform.cpp release\moc_systemsettingsform.cpp release\moc_mainwindow.cpp release\moc_serialhandler.cpp release\moc_numberpadform.cpp release\moc_paramtersform.cpp release\moc_settings405.cpp release\moc_nocalibration405form.cpp release\moc_bcpsettings.cpp release\moc_calibration880nm.cpp release\moc_autozerobcp.cpp release\moc_calibration405nm.cpp release\moc_tpcorrectionsform.cpp
+	-$(DEL_FILE) release\moc_bcpserialhandler.cpp release\moc_serialhandler405.cpp release\moc_datafilemenuform.cpp release\moc_filebrowserform.cpp release\moc_datahandler405.cpp release\moc_graphform.cpp release\moc_qcustomplot.cpp release\moc_modbusdatatable.cpp release\moc_modbusform.cpp release\moc_modbushandler.cpp release\moc_modbusmaster.cpp release\moc_modbusslave.cpp release\moc_modbustestform.cpp release\moc_staticipform.cpp release\moc_adaptivefilter405form.cpp release\moc_flowcalibration405form.cpp release\moc_mode405form.cpp release\moc_no2calibration405form.cpp release\moc_adaptivefilterbcpform.cpp release\moc_flowcalibrationbcpform.cpp release\moc_aboutform.cpp release\moc_adaptivefilterform.cpp release\moc_avgsettingform.cpp release\moc_bccalform.cpp release\moc_datafilesform.cpp release\moc_flowcalform.cpp release\moc_modeform.cpp release\moc_no2calform.cpp release\moc_nocalform.cpp release\moc_pmcalform.cpp release\moc_settingsform.cpp release\moc_systemsettingsform.cpp release\moc_mainwindow.cpp release\moc_serialhandler.cpp release\moc_numberpadform.cpp release\moc_paramtersform.cpp release\moc_settings405.cpp release\moc_bcpsettings.cpp release\moc_calibration880nm.cpp release\moc_autozerobcp.cpp release\moc_calibration405nm.cpp release\moc_tpcorrectionsform.cpp release\moc_nocalibration405form.cpp
 release/moc_bcpserialhandler.cpp: ../../../../Qt/5.5/mingw492_32/include/QtCore/QObject \
 		../../../../Qt/5.5/mingw492_32/include/QtCore/qobject.h \
 		../../../../Qt/5.5/mingw492_32/include/QtCore/qobjectdefs.h \
@@ -3635,8 +3634,15 @@ release/moc_no2calibration405form.cpp: ../../../../Qt/5.5/mingw492_32/include/Qt
 		../../../../Qt/5.5/mingw492_32/include/QtCore/qfiledevice.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qvector2d.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qtouchdevice.h \
-		numberpadform.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QMessageBox \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qmessagebox.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qdialog.h \
+		Settings/settingformshandler.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/QObject \
 		../../../../Qt/5.5/mingw492_32/include/QtCore/QDebug \
+		DataHandlers/settingshandler.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/QFile \
+		numberpadform.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QGraphicsView \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qgraphicsview.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qpainter.h \
@@ -3647,12 +3653,24 @@ release/moc_no2calibration405form.cpp: ../../../../Qt/5.5/mingw492_32/include/Qt
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qframe.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qgraphicsscene.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/QKeyEvent \
-		Settings/settingformshandler.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/QObject \
+		Communication/serialhandler405.h \
+		../../../../Qt/5.5/mingw492_32/include/QtSerialPort/QSerialPort \
+		../../../../Qt/5.5/mingw492_32/include/QtSerialPort/qserialport.h \
+		../../../../Qt/5.5/mingw492_32/include/QtSerialPort/qserialportglobal.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/QQueue \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qqueue.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/QTimer \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qtimer.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qbasictimer.h \
+		DataHandlers/datahandler405.h \
+		utilities.h \
+		Communication/syncstatus.h \
 		Settings/405Settings/no2calibration405form.h
 	C:\Qt\5.5\mingw492_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -IC:/Qt/5.5/mingw492_32/mkspecs/win32-g++ -IC:/Users/2btech/Documents/AQSync_UI -IC:/Qt/5.5/mingw492_32/include -IC:/Qt/5.5/mingw492_32/include/QtPrintSupport -IC:/Qt/5.5/mingw492_32/include/QtWidgets -IC:/Qt/5.5/mingw492_32/include/QtGui -IC:/Qt/5.5/mingw492_32/include/QtANGLE -IC:/Qt/5.5/mingw492_32/include/QtSerialPort -IC:/Qt/5.5/mingw492_32/include/QtNetwork -IC:/Qt/5.5/mingw492_32/include/QtCore Settings\405Settings\no2calibration405form.h -o release\moc_no2calibration405form.cpp
 
-release/moc_adaptivefilter405form.cpp: ../../../../Qt/5.5/mingw492_32/include/QtWidgets/QWidget \
+release/moc_adaptivefilterbcpform.cpp: ../../../../Qt/5.5/mingw492_32/include/QtWidgets/QMessageBox \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qmessagebox.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qdialog.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qwidget.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qwindowdefs.h \
 		../../../../Qt/5.5/mingw492_32/include/QtCore/qglobal.h \
@@ -3754,114 +3772,35 @@ release/moc_adaptivefilter405form.cpp: ../../../../Qt/5.5/mingw492_32/include/Qt
 		../../../../Qt/5.5/mingw492_32/include/QtCore/qfiledevice.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qvector2d.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qtouchdevice.h \
-		Settings/BCPSettings/adaptivefilter405form.h
-	C:\Qt\5.5\mingw492_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -IC:/Qt/5.5/mingw492_32/mkspecs/win32-g++ -IC:/Users/2btech/Documents/AQSync_UI -IC:/Qt/5.5/mingw492_32/include -IC:/Qt/5.5/mingw492_32/include/QtPrintSupport -IC:/Qt/5.5/mingw492_32/include/QtWidgets -IC:/Qt/5.5/mingw492_32/include/QtGui -IC:/Qt/5.5/mingw492_32/include/QtANGLE -IC:/Qt/5.5/mingw492_32/include/QtSerialPort -IC:/Qt/5.5/mingw492_32/include/QtNetwork -IC:/Qt/5.5/mingw492_32/include/QtCore Settings\BCPSettings\adaptivefilter405form.h -o release\moc_adaptivefilter405form.cpp
-
-release/moc_adaptivefilterbcpform.cpp: ../../../../Qt/5.5/mingw492_32/include/QtWidgets/QWidget \
-		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qwidget.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qwindowdefs.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qglobal.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qconfig.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qfeatures.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qsystemdetection.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qprocessordetection.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qcompilerdetection.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qtypeinfo.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qtypetraits.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qsysinfo.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qlogging.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qflags.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qatomic.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qbasicatomic.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qatomic_bootstrap.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qgenericatomic.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qatomic_cxx11.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qatomic_gcc.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qatomic_msvc.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qatomic_armv7.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qatomic_armv6.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qatomic_armv5.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qatomic_ia64.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qatomic_mips.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qatomic_x86.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qatomic_unix.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qglobalstatic.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qmutex.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qnumeric.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qobjectdefs.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qnamespace.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qobjectdefs_impl.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qwindowdefs_win.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qobject.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qstring.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qchar.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qbytearray.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qrefcount.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qarraydata.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qstringbuilder.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qlist.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qalgorithms.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qiterator.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qbytearraylist.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qstringlist.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qregexp.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qstringmatcher.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qcoreevent.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qscopedpointer.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qmetatype.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qvarlengtharray.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qcontainerfwd.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qisenum.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qobject_impl.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qmargins.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qpaintdevice.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qrect.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qsize.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qpoint.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qpalette.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qcolor.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qrgb.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qbrush.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qpair.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qvector.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qmatrix.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qpolygon.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qregion.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qdatastream.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qiodevice.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qline.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qtransform.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qpainterpath.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qimage.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qpixelformat.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qpixmap.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qsharedpointer.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qshareddata.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qhash.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qsharedpointer_impl.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qfont.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qfontmetrics.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qfontinfo.h \
-		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qsizepolicy.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qcursor.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qkeysequence.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qevent.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qvariant.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qmap.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qdebug.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qtextstream.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qlocale.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qset.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qcontiguouscache.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qurl.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qurlquery.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qfile.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qfiledevice.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qvector2d.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qtouchdevice.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QWidget \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/QDebug \
 		Settings/settingformshandler.h \
 		../../../../Qt/5.5/mingw492_32/include/QtCore/QObject \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/QDebug \
+		DataHandlers/settingshandler.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/QFile \
+		numberpadform.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QGraphicsView \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qgraphicsview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qpainter.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qtextoption.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qpen.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qscrollarea.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractscrollarea.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qframe.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qgraphicsscene.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/QKeyEvent \
+		Communication/serialhandler405.h \
+		../../../../Qt/5.5/mingw492_32/include/QtSerialPort/QSerialPort \
+		../../../../Qt/5.5/mingw492_32/include/QtSerialPort/qserialport.h \
+		../../../../Qt/5.5/mingw492_32/include/QtSerialPort/qserialportglobal.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/QQueue \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qqueue.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/QTimer \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qtimer.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qbasictimer.h \
+		DataHandlers/datahandler405.h \
+		utilities.h \
+		Communication/syncstatus.h \
 		Settings/BCPSettings/adaptivefilterbcpform.h
 	C:\Qt\5.5\mingw492_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -IC:/Qt/5.5/mingw492_32/mkspecs/win32-g++ -IC:/Users/2btech/Documents/AQSync_UI -IC:/Qt/5.5/mingw492_32/include -IC:/Qt/5.5/mingw492_32/include/QtPrintSupport -IC:/Qt/5.5/mingw492_32/include/QtWidgets -IC:/Qt/5.5/mingw492_32/include/QtGui -IC:/Qt/5.5/mingw492_32/include/QtANGLE -IC:/Qt/5.5/mingw492_32/include/QtSerialPort -IC:/Qt/5.5/mingw492_32/include/QtNetwork -IC:/Qt/5.5/mingw492_32/include/QtCore Settings\BCPSettings\adaptivefilterbcpform.h -o release\moc_adaptivefilterbcpform.cpp
 
@@ -7436,6 +7375,10 @@ release/moc_paramtersform.cpp: ../../../../Qt/5.5/mingw492_32/include/QtWidgets/
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qvector2d.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qtouchdevice.h \
 		../../../../Qt/5.5/mingw492_32/include/QtCore/QDebug \
+		DataHandlers/datahandler405.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/QObject \
+		DataHandlers/bcpdata.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/QFile \
 		paramtersform.h
 	C:\Qt\5.5\mingw492_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -IC:/Qt/5.5/mingw492_32/mkspecs/win32-g++ -IC:/Users/2btech/Documents/AQSync_UI -IC:/Qt/5.5/mingw492_32/include -IC:/Qt/5.5/mingw492_32/include/QtPrintSupport -IC:/Qt/5.5/mingw492_32/include/QtWidgets -IC:/Qt/5.5/mingw492_32/include/QtGui -IC:/Qt/5.5/mingw492_32/include/QtANGLE -IC:/Qt/5.5/mingw492_32/include/QtSerialPort -IC:/Qt/5.5/mingw492_32/include/QtNetwork -IC:/Qt/5.5/mingw492_32/include/QtCore paramtersform.h -o release\moc_paramtersform.cpp
 
@@ -7548,112 +7491,6 @@ release/moc_settings405.cpp: ../../../../Qt/5.5/mingw492_32/include/QtWidgets/QD
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QWidget \
 		Settings/405Settings/settings405.h
 	C:\Qt\5.5\mingw492_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -IC:/Qt/5.5/mingw492_32/mkspecs/win32-g++ -IC:/Users/2btech/Documents/AQSync_UI -IC:/Qt/5.5/mingw492_32/include -IC:/Qt/5.5/mingw492_32/include/QtPrintSupport -IC:/Qt/5.5/mingw492_32/include/QtWidgets -IC:/Qt/5.5/mingw492_32/include/QtGui -IC:/Qt/5.5/mingw492_32/include/QtANGLE -IC:/Qt/5.5/mingw492_32/include/QtSerialPort -IC:/Qt/5.5/mingw492_32/include/QtNetwork -IC:/Qt/5.5/mingw492_32/include/QtCore Settings\405Settings\settings405.h -o release\moc_settings405.cpp
-
-release/moc_nocalibration405form.cpp: ../../../../Qt/5.5/mingw492_32/include/QtWidgets/QDialog \
-		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qdialog.h \
-		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qwidget.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qwindowdefs.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qglobal.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qconfig.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qfeatures.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qsystemdetection.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qprocessordetection.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qcompilerdetection.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qtypeinfo.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qtypetraits.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qsysinfo.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qlogging.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qflags.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qatomic.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qbasicatomic.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qatomic_bootstrap.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qgenericatomic.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qatomic_cxx11.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qatomic_gcc.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qatomic_msvc.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qatomic_armv7.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qatomic_armv6.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qatomic_armv5.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qatomic_ia64.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qatomic_mips.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qatomic_x86.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qatomic_unix.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qglobalstatic.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qmutex.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qnumeric.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qobjectdefs.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qnamespace.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qobjectdefs_impl.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qwindowdefs_win.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qobject.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qstring.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qchar.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qbytearray.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qrefcount.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qarraydata.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qstringbuilder.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qlist.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qalgorithms.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qiterator.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qbytearraylist.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qstringlist.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qregexp.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qstringmatcher.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qcoreevent.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qscopedpointer.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qmetatype.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qvarlengtharray.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qcontainerfwd.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qisenum.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qobject_impl.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qmargins.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qpaintdevice.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qrect.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qsize.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qpoint.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qpalette.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qcolor.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qrgb.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qbrush.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qpair.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qvector.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qmatrix.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qpolygon.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qregion.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qdatastream.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qiodevice.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qline.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qtransform.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qpainterpath.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qimage.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qpixelformat.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qpixmap.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qsharedpointer.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qshareddata.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qhash.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qsharedpointer_impl.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qfont.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qfontmetrics.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qfontinfo.h \
-		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qsizepolicy.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qcursor.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qkeysequence.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qevent.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qvariant.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qmap.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qdebug.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qtextstream.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qlocale.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qset.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qcontiguouscache.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qurl.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qurlquery.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qfile.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qfiledevice.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qvector2d.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qtouchdevice.h \
-		Settings/405Settings/nocalibration405form.h
-	C:\Qt\5.5\mingw492_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -IC:/Qt/5.5/mingw492_32/mkspecs/win32-g++ -IC:/Users/2btech/Documents/AQSync_UI -IC:/Qt/5.5/mingw492_32/include -IC:/Qt/5.5/mingw492_32/include/QtPrintSupport -IC:/Qt/5.5/mingw492_32/include/QtWidgets -IC:/Qt/5.5/mingw492_32/include/QtGui -IC:/Qt/5.5/mingw492_32/include/QtANGLE -IC:/Qt/5.5/mingw492_32/include/QtSerialPort -IC:/Qt/5.5/mingw492_32/include/QtNetwork -IC:/Qt/5.5/mingw492_32/include/QtCore Settings\405Settings\nocalibration405form.h -o release\moc_nocalibration405form.cpp
 
 release/moc_bcpsettings.cpp: ../../../../Qt/5.5/mingw492_32/include/QtWidgets/QDialog \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qdialog.h \
@@ -8189,6 +8026,142 @@ release/moc_tpcorrectionsform.cpp: ../../../../Qt/5.5/mingw492_32/include/QtWidg
 		Settings/BCPSettings/tpcorrectionsform.h
 	C:\Qt\5.5\mingw492_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -IC:/Qt/5.5/mingw492_32/mkspecs/win32-g++ -IC:/Users/2btech/Documents/AQSync_UI -IC:/Qt/5.5/mingw492_32/include -IC:/Qt/5.5/mingw492_32/include/QtPrintSupport -IC:/Qt/5.5/mingw492_32/include/QtWidgets -IC:/Qt/5.5/mingw492_32/include/QtGui -IC:/Qt/5.5/mingw492_32/include/QtANGLE -IC:/Qt/5.5/mingw492_32/include/QtSerialPort -IC:/Qt/5.5/mingw492_32/include/QtNetwork -IC:/Qt/5.5/mingw492_32/include/QtCore Settings\BCPSettings\tpcorrectionsform.h -o release\moc_tpcorrectionsform.cpp
 
+release/moc_nocalibration405form.cpp: ../../../../Qt/5.5/mingw492_32/include/QtWidgets/QWidget \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qwidget.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qwindowdefs.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qglobal.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qconfig.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qfeatures.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qsystemdetection.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qprocessordetection.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qcompilerdetection.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qtypeinfo.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qtypetraits.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qsysinfo.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qlogging.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qflags.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qatomic.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qbasicatomic.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qatomic_bootstrap.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qgenericatomic.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qatomic_cxx11.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qatomic_gcc.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qatomic_msvc.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qatomic_armv7.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qatomic_armv6.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qatomic_armv5.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qatomic_ia64.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qatomic_mips.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qatomic_x86.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qatomic_unix.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qglobalstatic.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qmutex.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qnumeric.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qobjectdefs.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qnamespace.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qobjectdefs_impl.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qwindowdefs_win.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qobject.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qstring.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qchar.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qbytearray.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qrefcount.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qarraydata.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qstringbuilder.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qlist.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qalgorithms.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qiterator.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qbytearraylist.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qstringlist.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qregexp.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qstringmatcher.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qcoreevent.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qscopedpointer.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qmetatype.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qvarlengtharray.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qcontainerfwd.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qisenum.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qobject_impl.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qmargins.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qpaintdevice.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qrect.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qsize.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qpoint.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qpalette.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qcolor.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qrgb.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qbrush.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qpair.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qvector.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qmatrix.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qpolygon.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qregion.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qdatastream.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qiodevice.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qline.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qtransform.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qpainterpath.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qimage.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qpixelformat.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qpixmap.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qsharedpointer.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qshareddata.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qhash.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qsharedpointer_impl.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qfont.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qfontmetrics.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qfontinfo.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qsizepolicy.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qcursor.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qkeysequence.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qevent.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qvariant.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qmap.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qdebug.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qtextstream.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qlocale.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qset.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qcontiguouscache.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qurl.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qurlquery.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qfile.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qfiledevice.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qvector2d.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qtouchdevice.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QMessageBox \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qmessagebox.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qdialog.h \
+		Settings/settingformshandler.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/QObject \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/QDebug \
+		DataHandlers/settingshandler.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/QFile \
+		numberpadform.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QGraphicsView \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qgraphicsview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qpainter.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qtextoption.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qpen.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qscrollarea.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractscrollarea.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qframe.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qgraphicsscene.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/QKeyEvent \
+		Communication/serialhandler405.h \
+		../../../../Qt/5.5/mingw492_32/include/QtSerialPort/QSerialPort \
+		../../../../Qt/5.5/mingw492_32/include/QtSerialPort/qserialport.h \
+		../../../../Qt/5.5/mingw492_32/include/QtSerialPort/qserialportglobal.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/QQueue \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qqueue.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/QTimer \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qtimer.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qbasictimer.h \
+		DataHandlers/datahandler405.h \
+		utilities.h \
+		Communication/syncstatus.h \
+		Settings/405Settings/nocalibration405form.h
+	C:\Qt\5.5\mingw492_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -IC:/Qt/5.5/mingw492_32/mkspecs/win32-g++ -IC:/Users/2btech/Documents/AQSync_UI -IC:/Qt/5.5/mingw492_32/include -IC:/Qt/5.5/mingw492_32/include/QtPrintSupport -IC:/Qt/5.5/mingw492_32/include/QtWidgets -IC:/Qt/5.5/mingw492_32/include/QtGui -IC:/Qt/5.5/mingw492_32/include/QtANGLE -IC:/Qt/5.5/mingw492_32/include/QtSerialPort -IC:/Qt/5.5/mingw492_32/include/QtNetwork -IC:/Qt/5.5/mingw492_32/include/QtCore Settings\405Settings\nocalibration405form.h -o release\moc_nocalibration405form.cpp
+
 compiler_moc_source_make_all:
 compiler_moc_source_clean:
 compiler_uic_make_all: ui_datafilemenuform.h ui_filebrowserform.h ui_graphform.h ui_modbusform.h ui_modbustestform.h ui_staticipform.h ui_adaptivefilter405form.h ui_flowcalibration405form.h ui_mode405form.h ui_no2calibration405form.h ui_adaptivefilterbcpform.h ui_flowcalibrationbcpform.h ui_aboutform.h ui_adaptivefilterform.h ui_avgsettingform.h ui_bccalform.h ui_datafilesform.h ui_flowcalform.h ui_modeform.h ui_no2calform.h ui_nocalform.h ui_pmcalform.h ui_settingsform.h ui_systemsettingsform.h ui_mainwindow.h ui_numberpadform.h ui_paramtersform.h ui_settings405.h ui_nocalibration405form.h ui_bcpsettings.h ui_calibration880nm.h ui_autozerobcp.h ui_parameters405form.h ui_calibration405nm.h ui_tpcorrectionsform.h
@@ -8586,8 +8559,10 @@ release/datafilemenuform.o: DataFiles/datafilemenuform.cpp DataFiles/datafilemen
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qtouchdevice.h \
 		ui_datafilemenuform.h \
 		../../../../Qt/5.5/mingw492_32/include/QtCore/QVariant \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/QIcon \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QAction \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qaction.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qicon.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qactiongroup.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QApplication \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qapplication.h \
 		../../../../Qt/5.5/mingw492_32/include/QtCore/qcoreapplication.h \
@@ -8595,6 +8570,26 @@ release/datafilemenuform.o: DataFiles/datafilemenuform.cpp DataFiles/datafilemen
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qdesktopwidget.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qguiapplication.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qinputmethod.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QButtonGroup \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qbuttongroup.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QHeaderView \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qheaderview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractscrollarea.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qframe.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qabstractitemmodel.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qitemselectionmodel.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemdelegate.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qstyleoption.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractspinbox.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qvalidator.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qregularexpression.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qslider.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractslider.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qstyle.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qtabbar.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qtabwidget.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qrubberband.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QPushButton \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qpushbutton.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractbutton.h
@@ -8710,6 +8705,10 @@ release/filebrowserform.o: DataFiles/filebrowserform.cpp DataFiles/filebrowserfo
 		../../../../Qt/5.5/mingw492_32/include/QtCore/QDebug \
 		ui_filebrowserform.h \
 		../../../../Qt/5.5/mingw492_32/include/QtCore/QVariant \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QAction \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qaction.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qicon.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qactiongroup.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QApplication \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qapplication.h \
 		../../../../Qt/5.5/mingw492_32/include/QtCore/qcoreapplication.h \
@@ -8717,9 +8716,10 @@ release/filebrowserform.o: DataFiles/filebrowserform.cpp DataFiles/filebrowserfo
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qdesktopwidget.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qguiapplication.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qinputmethod.h \
-		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QListWidget \
-		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qlistwidget.h \
-		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qlistview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QButtonGroup \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qbuttongroup.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QHeaderView \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qheaderview.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemview.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractscrollarea.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qframe.h \
@@ -8730,13 +8730,15 @@ release/filebrowserform.o: DataFiles/filebrowserform.cpp DataFiles/filebrowserfo
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractspinbox.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qvalidator.h \
 		../../../../Qt/5.5/mingw492_32/include/QtCore/qregularexpression.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qicon.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qslider.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractslider.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qstyle.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qtabbar.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qtabwidget.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qrubberband.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QListWidget \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qlistwidget.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qlistview.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QPushButton \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qpushbutton.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractbutton.h
@@ -9411,8 +9413,10 @@ release/graphform.o: Graphing/graphform.cpp Graphing/graphform.h \
 		../../../../Qt/5.5/mingw492_32/include/QtPrintSupport/qprintpreviewwidget.h \
 		../../../../Qt/5.5/mingw492_32/include/QtPrintSupport/qtprintsupportversion.h \
 		ui_graphform.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/QIcon \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QAction \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QApplication \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QButtonGroup \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QHeaderView \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QLabel \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QPushButton
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\graphform.o Graphing\graphform.cpp
@@ -10253,18 +10257,36 @@ release/modbusform.o: Modbus/modbusform.cpp Modbus/modbusform.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qgraphicsscene.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/QKeyEvent \
 		ui_modbusform.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QAction \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qaction.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qicon.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qactiongroup.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QApplication \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qapplication.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qdesktopwidget.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qguiapplication.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qinputmethod.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QButtonGroup \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qbuttongroup.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QFrame \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QHeaderView \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qheaderview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemdelegate.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qstyleoption.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractspinbox.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qvalidator.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qslider.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractslider.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qstyle.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qtabbar.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qtabwidget.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qrubberband.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QLabel \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qlabel.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QPushButton \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qpushbutton.h \
-		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractbutton.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qicon.h
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractbutton.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\modbusform.o Modbus\modbusform.cpp
 
 release/modbushandler.o: Modbus/modbushandler.cpp Modbus/modbushandler.h \
@@ -11098,19 +11120,38 @@ release/modbustestform.o: Modbus/modbustestform.cpp Modbus/modbustestform.h \
 		Modbus/modbusdatatable.h \
 		Modbus/modbusslave.h \
 		ui_modbustestform.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QAction \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qaction.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qicon.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qactiongroup.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QApplication \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qapplication.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qdesktopwidget.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qguiapplication.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qinputmethod.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QButtonGroup \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qbuttongroup.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QFrame \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qframe.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QHeaderView \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qheaderview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractscrollarea.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemdelegate.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qstyleoption.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractspinbox.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qvalidator.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qslider.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractslider.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qstyle.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qtabbar.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qtabwidget.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qrubberband.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QLabel \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qlabel.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QPushButton \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qpushbutton.h \
-		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractbutton.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qicon.h
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractbutton.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\modbustestform.o Modbus\modbustestform.cpp
 
 release/staticipform.o: Modbus/staticipform.cpp Modbus/staticipform.h \
@@ -11232,6 +11273,10 @@ release/staticipform.o: Modbus/staticipform.cpp Modbus/staticipform.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/QKeyEvent \
 		ui_staticipform.h \
 		../../../../Qt/5.5/mingw492_32/include/QtCore/QVariant \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QAction \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qaction.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qicon.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qactiongroup.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QApplication \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qapplication.h \
 		../../../../Qt/5.5/mingw492_32/include/QtCore/qcoreapplication.h \
@@ -11239,12 +11284,29 @@ release/staticipform.o: Modbus/staticipform.cpp Modbus/staticipform.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qdesktopwidget.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qguiapplication.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qinputmethod.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QButtonGroup \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qbuttongroup.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QHeaderView \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qheaderview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qabstractitemmodel.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qitemselectionmodel.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemdelegate.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qstyleoption.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractspinbox.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qvalidator.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qregularexpression.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qslider.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractslider.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qstyle.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qtabbar.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qtabwidget.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qrubberband.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QLabel \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qlabel.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QPushButton \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qpushbutton.h \
-		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractbutton.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qicon.h
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractbutton.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\staticipform.o Modbus\staticipform.cpp
 
 release/adaptivefilter405form.o: Settings/405Settings/adaptivefilter405form.cpp Settings/405Settings/adaptivefilter405form.h \
@@ -11383,8 +11445,10 @@ release/adaptivefilter405form.o: Settings/405Settings/adaptivefilter405form.cpp 
 		Communication/syncstatus.h \
 		ui_adaptivefilter405form.h \
 		../../../../Qt/5.5/mingw492_32/include/QtCore/QVariant \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/QIcon \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QAction \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qaction.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qicon.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qactiongroup.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QApplication \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qapplication.h \
 		../../../../Qt/5.5/mingw492_32/include/QtCore/qcoreapplication.h \
@@ -11392,6 +11456,24 @@ release/adaptivefilter405form.o: Settings/405Settings/adaptivefilter405form.cpp 
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qdesktopwidget.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qguiapplication.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qinputmethod.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QButtonGroup \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qbuttongroup.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QHeaderView \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qheaderview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qabstractitemmodel.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qitemselectionmodel.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemdelegate.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qstyleoption.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractspinbox.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qvalidator.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qregularexpression.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qslider.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractslider.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qstyle.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qtabbar.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qtabwidget.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qrubberband.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QLabel \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qlabel.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QPushButton \
@@ -11537,8 +11619,10 @@ release/flowcalibration405form.o: Settings/405Settings/flowcalibration405form.cp
 		../../../../Qt/5.5/mingw492_32/include/QtGui/QKeyEvent \
 		ui_flowcalibration405form.h \
 		../../../../Qt/5.5/mingw492_32/include/QtCore/QVariant \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/QIcon \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QAction \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qaction.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qicon.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qactiongroup.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QApplication \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qapplication.h \
 		../../../../Qt/5.5/mingw492_32/include/QtCore/qcoreapplication.h \
@@ -11546,6 +11630,24 @@ release/flowcalibration405form.o: Settings/405Settings/flowcalibration405form.cp
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qdesktopwidget.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qguiapplication.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qinputmethod.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QButtonGroup \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qbuttongroup.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QHeaderView \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qheaderview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qabstractitemmodel.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qitemselectionmodel.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemdelegate.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qstyleoption.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractspinbox.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qvalidator.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qregularexpression.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qslider.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractslider.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qstyle.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qtabbar.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qtabwidget.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qrubberband.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QLabel \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qlabel.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QPushButton \
@@ -11678,8 +11780,10 @@ release/mode405form.o: Settings/405Settings/mode405form.cpp Settings/405Settings
 		Communication/syncstatus.h \
 		ui_mode405form.h \
 		../../../../Qt/5.5/mingw492_32/include/QtCore/QVariant \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/QIcon \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QAction \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qaction.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qicon.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qactiongroup.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QApplication \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qapplication.h \
 		../../../../Qt/5.5/mingw492_32/include/QtCore/qcoreapplication.h \
@@ -11687,6 +11791,8 @@ release/mode405form.o: Settings/405Settings/mode405form.cpp Settings/405Settings
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qdesktopwidget.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qguiapplication.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qinputmethod.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QButtonGroup \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qbuttongroup.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QComboBox \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qcombobox.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemdelegate.h \
@@ -11702,6 +11808,11 @@ release/mode405form.o: Settings/405Settings/mode405form.cpp Settings/405Settings
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qrubberband.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qframe.h \
 		../../../../Qt/5.5/mingw492_32/include/QtCore/qabstractitemmodel.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QHeaderView \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qheaderview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractscrollarea.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qitemselectionmodel.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QLabel \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qlabel.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QPushButton \
@@ -11812,8 +11923,15 @@ release/no2calibration405form.o: Settings/405Settings/no2calibration405form.cpp 
 		../../../../Qt/5.5/mingw492_32/include/QtCore/qfiledevice.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qvector2d.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qtouchdevice.h \
-		numberpadform.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QMessageBox \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qmessagebox.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qdialog.h \
+		Settings/settingformshandler.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/QObject \
 		../../../../Qt/5.5/mingw492_32/include/QtCore/QDebug \
+		DataHandlers/settingshandler.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/QFile \
+		numberpadform.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QGraphicsView \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qgraphicsview.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qpainter.h \
@@ -11824,12 +11942,24 @@ release/no2calibration405form.o: Settings/405Settings/no2calibration405form.cpp 
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qframe.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qgraphicsscene.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/QKeyEvent \
-		Settings/settingformshandler.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/QObject \
+		Communication/serialhandler405.h \
+		../../../../Qt/5.5/mingw492_32/include/QtSerialPort/QSerialPort \
+		../../../../Qt/5.5/mingw492_32/include/QtSerialPort/qserialport.h \
+		../../../../Qt/5.5/mingw492_32/include/QtSerialPort/qserialportglobal.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/QQueue \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qqueue.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/QTimer \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qtimer.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qbasictimer.h \
+		DataHandlers/datahandler405.h \
+		utilities.h \
+		Communication/syncstatus.h \
 		ui_no2calibration405form.h \
 		../../../../Qt/5.5/mingw492_32/include/QtCore/QVariant \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/QIcon \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QAction \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qaction.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qicon.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qactiongroup.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QApplication \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qapplication.h \
 		../../../../Qt/5.5/mingw492_32/include/QtCore/qcoreapplication.h \
@@ -11837,6 +11967,24 @@ release/no2calibration405form.o: Settings/405Settings/no2calibration405form.cpp 
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qdesktopwidget.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qguiapplication.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qinputmethod.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QButtonGroup \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qbuttongroup.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QHeaderView \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qheaderview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qabstractitemmodel.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qitemselectionmodel.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemdelegate.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qstyleoption.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractspinbox.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qvalidator.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qregularexpression.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qslider.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractslider.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qstyle.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qtabbar.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qtabwidget.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qrubberband.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QLabel \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qlabel.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QPushButton \
@@ -11845,7 +11993,9 @@ release/no2calibration405form.o: Settings/405Settings/no2calibration405form.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\no2calibration405form.o Settings\405Settings\no2calibration405form.cpp
 
 release/adaptivefilterbcpform.o: Settings/BCPSettings/adaptivefilterbcpform.cpp Settings/BCPSettings/adaptivefilterbcpform.h \
-		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QWidget \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QMessageBox \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qmessagebox.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qdialog.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qwidget.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qwindowdefs.h \
 		../../../../Qt/5.5/mingw492_32/include/QtCore/qglobal.h \
@@ -11947,13 +12097,41 @@ release/adaptivefilterbcpform.o: Settings/BCPSettings/adaptivefilterbcpform.cpp 
 		../../../../Qt/5.5/mingw492_32/include/QtCore/qfiledevice.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qvector2d.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qtouchdevice.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QWidget \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/QDebug \
 		Settings/settingformshandler.h \
 		../../../../Qt/5.5/mingw492_32/include/QtCore/QObject \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/QDebug \
+		DataHandlers/settingshandler.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/QFile \
+		numberpadform.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QGraphicsView \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qgraphicsview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qpainter.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qtextoption.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qpen.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qscrollarea.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractscrollarea.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qframe.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qgraphicsscene.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/QKeyEvent \
+		Communication/serialhandler405.h \
+		../../../../Qt/5.5/mingw492_32/include/QtSerialPort/QSerialPort \
+		../../../../Qt/5.5/mingw492_32/include/QtSerialPort/qserialport.h \
+		../../../../Qt/5.5/mingw492_32/include/QtSerialPort/qserialportglobal.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/QQueue \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qqueue.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/QTimer \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qtimer.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qbasictimer.h \
+		DataHandlers/datahandler405.h \
+		utilities.h \
+		Communication/syncstatus.h \
 		ui_adaptivefilterbcpform.h \
 		../../../../Qt/5.5/mingw492_32/include/QtCore/QVariant \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/QIcon \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QAction \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qaction.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qicon.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qactiongroup.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QApplication \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qapplication.h \
 		../../../../Qt/5.5/mingw492_32/include/QtCore/qcoreapplication.h \
@@ -11961,9 +12139,26 @@ release/adaptivefilterbcpform.o: Settings/BCPSettings/adaptivefilterbcpform.cpp 
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qdesktopwidget.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qguiapplication.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qinputmethod.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QButtonGroup \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qbuttongroup.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QHeaderView \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qheaderview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qabstractitemmodel.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qitemselectionmodel.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemdelegate.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qstyleoption.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractspinbox.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qvalidator.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qregularexpression.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qslider.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractslider.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qstyle.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qtabbar.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qtabwidget.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qrubberband.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QLabel \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qlabel.h \
-		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qframe.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QPushButton \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qpushbutton.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractbutton.h
@@ -12077,8 +12272,10 @@ release/flowcalibrationbcpform.o: Settings/BCPSettings/flowcalibrationbcpform.cp
 		../../../../Qt/5.5/mingw492_32/include/QtCore/QDebug \
 		ui_flowcalibrationbcpform.h \
 		../../../../Qt/5.5/mingw492_32/include/QtCore/QVariant \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/QIcon \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QAction \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qaction.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qicon.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qactiongroup.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QApplication \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qapplication.h \
 		../../../../Qt/5.5/mingw492_32/include/QtCore/qcoreapplication.h \
@@ -12086,9 +12283,28 @@ release/flowcalibrationbcpform.o: Settings/BCPSettings/flowcalibrationbcpform.cp
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qdesktopwidget.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qguiapplication.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qinputmethod.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QButtonGroup \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qbuttongroup.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QHeaderView \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qheaderview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractscrollarea.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qframe.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qabstractitemmodel.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qitemselectionmodel.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemdelegate.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qstyleoption.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractspinbox.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qvalidator.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qregularexpression.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qslider.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractslider.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qstyle.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qtabbar.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qtabwidget.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qrubberband.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QLabel \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qlabel.h \
-		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qframe.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QPushButton \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qpushbutton.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractbutton.h
@@ -12200,6 +12416,10 @@ release/aboutform.o: Settings/aboutform.cpp Settings/aboutform.h \
 		../../../../Qt/5.5/mingw492_32/include/QtCore/QDebug \
 		ui_aboutform.h \
 		../../../../Qt/5.5/mingw492_32/include/QtCore/QVariant \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QAction \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qaction.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qicon.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qactiongroup.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QApplication \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qapplication.h \
 		../../../../Qt/5.5/mingw492_32/include/QtCore/qcoreapplication.h \
@@ -12207,13 +12427,31 @@ release/aboutform.o: Settings/aboutform.cpp Settings/aboutform.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qdesktopwidget.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qguiapplication.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qinputmethod.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QButtonGroup \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qbuttongroup.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QHeaderView \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qheaderview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractscrollarea.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qframe.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qabstractitemmodel.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qitemselectionmodel.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemdelegate.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qstyleoption.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractspinbox.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qvalidator.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qregularexpression.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qslider.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractslider.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qstyle.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qtabbar.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qtabwidget.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qrubberband.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QLabel \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qlabel.h \
-		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qframe.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QPushButton \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qpushbutton.h \
-		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractbutton.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qicon.h
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractbutton.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\aboutform.o Settings\aboutform.cpp
 
 release/adaptivefilterform.o: Settings/adaptivefilterform.cpp Settings/adaptivefilterform.h \
@@ -12502,17 +12740,35 @@ release/adaptivefilterform.o: Settings/adaptivefilterform.cpp Settings/adaptivef
 		Modbus/modbusdatatable.h \
 		Modbus/modbusslave.h \
 		ui_adaptivefilterform.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QAction \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qaction.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qicon.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qactiongroup.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QApplication \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qapplication.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qdesktopwidget.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qguiapplication.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qinputmethod.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QButtonGroup \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qbuttongroup.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QHeaderView \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qheaderview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemdelegate.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qstyleoption.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractspinbox.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qvalidator.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qslider.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractslider.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qstyle.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qtabbar.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qtabwidget.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qrubberband.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QLabel \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qlabel.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QPushButton \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qpushbutton.h \
-		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractbutton.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qicon.h
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractbutton.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\adaptivefilterform.o Settings\adaptivefilterform.cpp
 
 release/avgsettingform.o: Settings/avgsettingform.cpp Settings/avgsettingform.h \
@@ -12790,18 +13046,23 @@ release/avgsettingform.o: Settings/avgsettingform.cpp Settings/avgsettingform.h 
 		Modbus/modbusdatatable.h \
 		Modbus/modbusslave.h \
 		ui_avgsettingform.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QAction \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qaction.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qicon.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qactiongroup.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QApplication \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qapplication.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qdesktopwidget.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qguiapplication.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qinputmethod.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QButtonGroup \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qbuttongroup.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QComboBox \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qcombobox.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemdelegate.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qstyleoption.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractspinbox.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qvalidator.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qicon.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qslider.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractslider.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qstyle.h \
@@ -12809,6 +13070,10 @@ release/avgsettingform.o: Settings/avgsettingform.cpp Settings/avgsettingform.h 
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qtabwidget.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qrubberband.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qframe.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QHeaderView \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qheaderview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractscrollarea.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QLabel \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qlabel.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QPushButton \
@@ -13102,17 +13367,35 @@ release/bccalform.o: Settings/bccalform.cpp Settings/bccalform.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qgraphicsscene.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/QKeyEvent \
 		ui_bccalform.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QAction \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qaction.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qicon.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qactiongroup.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QApplication \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qapplication.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qdesktopwidget.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qguiapplication.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qinputmethod.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QButtonGroup \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qbuttongroup.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QHeaderView \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qheaderview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemdelegate.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qstyleoption.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractspinbox.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qvalidator.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qslider.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractslider.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qstyle.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qtabbar.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qtabwidget.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qrubberband.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QLabel \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qlabel.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QPushButton \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qpushbutton.h \
-		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractbutton.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qicon.h
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractbutton.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\bccalform.o Settings\bccalform.cpp
 
 release/datafilesform.o: Settings/datafilesform.cpp Settings/datafilesform.h \
@@ -13243,18 +13526,40 @@ release/datafilesform.o: Settings/datafilesform.cpp Settings/datafilesform.h \
 		DataFiles/filebrowserform.h \
 		ui_datafilesform.h \
 		../../../../Qt/5.5/mingw492_32/include/QtCore/QVariant \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QAction \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qaction.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qicon.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qactiongroup.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QApplication \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qapplication.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qdesktopwidget.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qguiapplication.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qinputmethod.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QButtonGroup \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qbuttongroup.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QHeaderView \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qheaderview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractscrollarea.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qframe.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qabstractitemmodel.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qitemselectionmodel.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemdelegate.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qstyleoption.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractspinbox.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qvalidator.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qregularexpression.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qslider.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractslider.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qstyle.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qtabbar.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qtabwidget.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qrubberband.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QLabel \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qlabel.h \
-		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qframe.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QPushButton \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qpushbutton.h \
-		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractbutton.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qicon.h
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractbutton.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\datafilesform.o Settings\datafilesform.cpp
 
 release/flowcalform.o: Settings/flowcalform.cpp Settings/flowcalform.h \
@@ -13543,17 +13848,35 @@ release/flowcalform.o: Settings/flowcalform.cpp Settings/flowcalform.h \
 		Modbus/modbusdatatable.h \
 		Modbus/modbusslave.h \
 		ui_flowcalform.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QAction \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qaction.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qicon.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qactiongroup.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QApplication \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qapplication.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qdesktopwidget.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qguiapplication.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qinputmethod.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QButtonGroup \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qbuttongroup.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QHeaderView \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qheaderview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemdelegate.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qstyleoption.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractspinbox.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qvalidator.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qslider.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractslider.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qstyle.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qtabbar.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qtabwidget.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qrubberband.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QLabel \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qlabel.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QPushButton \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qpushbutton.h \
-		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractbutton.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qicon.h
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractbutton.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\flowcalform.o Settings\flowcalform.cpp
 
 release/modeform.o: Settings/modeform.cpp Settings/modeform.h \
@@ -13831,18 +14154,23 @@ release/modeform.o: Settings/modeform.cpp Settings/modeform.h \
 		Modbus/modbusdatatable.h \
 		Modbus/modbusslave.h \
 		ui_modeform.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QAction \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qaction.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qicon.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qactiongroup.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QApplication \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qapplication.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qdesktopwidget.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qguiapplication.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qinputmethod.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QButtonGroup \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qbuttongroup.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QComboBox \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qcombobox.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemdelegate.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qstyleoption.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractspinbox.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qvalidator.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qicon.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qslider.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractslider.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qstyle.h \
@@ -13850,6 +14178,10 @@ release/modeform.o: Settings/modeform.cpp Settings/modeform.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qtabwidget.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qrubberband.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qframe.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QHeaderView \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qheaderview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractscrollarea.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QLabel \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qlabel.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QPushButton \
@@ -14143,17 +14475,35 @@ release/no2calform.o: Settings/no2calform.cpp Settings/no2calform.h \
 		Modbus/modbusdatatable.h \
 		Modbus/modbusslave.h \
 		ui_no2calform.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QAction \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qaction.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qicon.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qactiongroup.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QApplication \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qapplication.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qdesktopwidget.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qguiapplication.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qinputmethod.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QButtonGroup \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qbuttongroup.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QHeaderView \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qheaderview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemdelegate.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qstyleoption.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractspinbox.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qvalidator.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qslider.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractslider.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qstyle.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qtabbar.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qtabwidget.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qrubberband.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QLabel \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qlabel.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QPushButton \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qpushbutton.h \
-		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractbutton.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qicon.h
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractbutton.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\no2calform.o Settings\no2calform.cpp
 
 release/nocalform.o: Settings/nocalform.cpp Settings/nocalform.h \
@@ -14442,17 +14792,35 @@ release/nocalform.o: Settings/nocalform.cpp Settings/nocalform.h \
 		Modbus/modbusdatatable.h \
 		Modbus/modbusslave.h \
 		ui_nocalform.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QAction \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qaction.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qicon.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qactiongroup.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QApplication \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qapplication.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qdesktopwidget.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qguiapplication.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qinputmethod.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QButtonGroup \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qbuttongroup.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QHeaderView \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qheaderview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemdelegate.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qstyleoption.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractspinbox.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qvalidator.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qslider.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractslider.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qstyle.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qtabbar.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qtabwidget.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qrubberband.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QLabel \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qlabel.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QPushButton \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qpushbutton.h \
-		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractbutton.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qicon.h
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractbutton.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\nocalform.o Settings\nocalform.cpp
 
 release/pmcalform.o: Settings/pmcalform.cpp Settings/pmcalform.h \
@@ -14741,17 +15109,35 @@ release/pmcalform.o: Settings/pmcalform.cpp Settings/pmcalform.h \
 		Modbus/modbusdatatable.h \
 		Modbus/modbusslave.h \
 		ui_pmcalform.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QAction \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qaction.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qicon.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qactiongroup.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QApplication \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qapplication.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qdesktopwidget.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qguiapplication.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qinputmethod.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QButtonGroup \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qbuttongroup.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QHeaderView \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qheaderview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemdelegate.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qstyleoption.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractspinbox.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qvalidator.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qslider.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractslider.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qstyle.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qtabbar.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qtabwidget.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qrubberband.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QLabel \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qlabel.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QPushButton \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qpushbutton.h \
-		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractbutton.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qicon.h
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractbutton.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\pmcalform.o Settings\pmcalform.cpp
 
 release/settingformshandler.o: Settings/settingformshandler.cpp Settings/settingformshandler.h \
@@ -14966,6 +15352,10 @@ release/settingsform.o: Settings/settingsform.cpp Settings/settingsform.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qtouchdevice.h \
 		ui_settingsform.h \
 		../../../../Qt/5.5/mingw492_32/include/QtCore/QVariant \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QAction \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qaction.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qicon.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qactiongroup.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QApplication \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qapplication.h \
 		../../../../Qt/5.5/mingw492_32/include/QtCore/qcoreapplication.h \
@@ -14973,13 +15363,31 @@ release/settingsform.o: Settings/settingsform.cpp Settings/settingsform.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qdesktopwidget.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qguiapplication.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qinputmethod.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QButtonGroup \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qbuttongroup.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QHeaderView \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qheaderview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractscrollarea.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qframe.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qabstractitemmodel.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qitemselectionmodel.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemdelegate.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qstyleoption.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractspinbox.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qvalidator.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qregularexpression.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qslider.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractslider.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qstyle.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qtabbar.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qtabwidget.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qrubberband.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QLabel \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qlabel.h \
-		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qframe.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QPushButton \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qpushbutton.h \
-		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractbutton.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qicon.h
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractbutton.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\settingsform.o Settings\settingsform.cpp
 
 release/systemsettingsform.o: Settings/systemsettingsform.cpp Settings/systemsettingsform.h \
@@ -15097,8 +15505,10 @@ release/systemsettingsform.o: Settings/systemsettingsform.cpp Settings/systemset
 		../../../../Qt/5.5/mingw492_32/include/QtCore/qfileinfo.h \
 		ui_systemsettingsform.h \
 		../../../../Qt/5.5/mingw492_32/include/QtCore/QVariant \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/QIcon \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QAction \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qaction.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qicon.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qactiongroup.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QApplication \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qapplication.h \
 		../../../../Qt/5.5/mingw492_32/include/QtCore/qcoreapplication.h \
@@ -15106,12 +15516,31 @@ release/systemsettingsform.o: Settings/systemsettingsform.cpp Settings/systemset
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qdesktopwidget.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qguiapplication.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qinputmethod.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QButtonGroup \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qbuttongroup.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QCheckBox \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qcheckbox.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractbutton.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QHeaderView \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qheaderview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractscrollarea.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qframe.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qabstractitemmodel.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qitemselectionmodel.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemdelegate.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qstyleoption.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractspinbox.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qvalidator.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qregularexpression.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qslider.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractslider.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qstyle.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qtabbar.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qtabwidget.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qrubberband.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QLabel \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qlabel.h \
-		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qframe.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QPushButton \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qpushbutton.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\systemsettingsform.o Settings\systemsettingsform.cpp
@@ -15762,13 +16191,29 @@ release/mainwindow.o: mainwindow.cpp mainwindow.h \
 		Settings/BCPSettings/flowcalibrationbcpform.h \
 		Settings/BCPSettings/tpcorrectionsform.h \
 		ui_mainwindow.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/QIcon \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QAction \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qaction.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qactiongroup.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QApplication \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qapplication.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qdesktopwidget.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qguiapplication.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qinputmethod.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QButtonGroup \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qbuttongroup.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QFrame \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QHeaderView \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qheaderview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemdelegate.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qstyleoption.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractspinbox.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qvalidator.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qslider.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractslider.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qstyle.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qtabbar.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qrubberband.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QLabel \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qlabel.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QPushButton \
@@ -16087,6 +16532,10 @@ release/numberpadform.o: numberpadform.cpp numberpadform.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/QKeyEvent \
 		ui_numberpadform.h \
 		../../../../Qt/5.5/mingw492_32/include/QtCore/QVariant \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QAction \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qaction.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qicon.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qactiongroup.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QApplication \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qapplication.h \
 		../../../../Qt/5.5/mingw492_32/include/QtCore/qcoreapplication.h \
@@ -16094,12 +16543,29 @@ release/numberpadform.o: numberpadform.cpp numberpadform.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qdesktopwidget.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qguiapplication.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qinputmethod.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QButtonGroup \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qbuttongroup.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QHeaderView \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qheaderview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qabstractitemmodel.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qitemselectionmodel.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemdelegate.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qstyleoption.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractspinbox.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qvalidator.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qregularexpression.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qslider.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractslider.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qstyle.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qtabbar.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qtabwidget.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qrubberband.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QLabel \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qlabel.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QPushButton \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qpushbutton.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractbutton.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qicon.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QTextEdit \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qtextedit.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qtextdocument.h \
@@ -16211,8 +16677,16 @@ release/paramtersform.o: paramtersform.cpp paramtersform.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qvector2d.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qtouchdevice.h \
 		../../../../Qt/5.5/mingw492_32/include/QtCore/QDebug \
+		DataHandlers/datahandler405.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/QObject \
+		DataHandlers/bcpdata.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/QFile \
 		ui_paramtersform.h \
 		../../../../Qt/5.5/mingw492_32/include/QtCore/QVariant \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QAction \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qaction.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qicon.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qactiongroup.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QApplication \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qapplication.h \
 		../../../../Qt/5.5/mingw492_32/include/QtCore/qcoreapplication.h \
@@ -16220,14 +16694,32 @@ release/paramtersform.o: paramtersform.cpp paramtersform.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qdesktopwidget.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qguiapplication.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qinputmethod.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QButtonGroup \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qbuttongroup.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QFrame \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qframe.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QHeaderView \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qheaderview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractscrollarea.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qabstractitemmodel.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qitemselectionmodel.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemdelegate.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qstyleoption.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractspinbox.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qvalidator.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qregularexpression.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qslider.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractslider.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qstyle.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qtabbar.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qtabwidget.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qrubberband.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QLabel \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qlabel.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QPushButton \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qpushbutton.h \
-		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractbutton.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qicon.h
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractbutton.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\paramtersform.o paramtersform.cpp
 
 release/utilities.o: utilities.cpp utilities.h
@@ -16343,8 +16835,10 @@ release/settings405.o: Settings/405Settings/settings405.cpp Settings/405Settings
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QWidget \
 		ui_settings405.h \
 		../../../../Qt/5.5/mingw492_32/include/QtCore/QVariant \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/QIcon \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QAction \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qaction.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qicon.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qactiongroup.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QApplication \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qapplication.h \
 		../../../../Qt/5.5/mingw492_32/include/QtCore/qcoreapplication.h \
@@ -16352,169 +16846,32 @@ release/settings405.o: Settings/405Settings/settings405.cpp Settings/405Settings
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qdesktopwidget.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qguiapplication.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qinputmethod.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QButtonGroup \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qbuttongroup.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QHeaderView \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qheaderview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractscrollarea.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qframe.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qabstractitemmodel.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qitemselectionmodel.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemdelegate.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qstyleoption.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractspinbox.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qvalidator.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qregularexpression.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qslider.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractslider.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qstyle.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qtabbar.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qtabwidget.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qrubberband.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QLabel \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qlabel.h \
-		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qframe.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QPushButton \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qpushbutton.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractbutton.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\settings405.o Settings\405Settings\settings405.cpp
-
-release/nocalibration405form.o: Settings/405Settings/nocalibration405form.cpp Settings/405Settings/nocalibration405form.h \
-		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QDialog \
-		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qdialog.h \
-		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qwidget.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qwindowdefs.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qglobal.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qconfig.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qfeatures.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qsystemdetection.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qprocessordetection.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qcompilerdetection.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qtypeinfo.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qtypetraits.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qsysinfo.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qlogging.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qflags.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qatomic.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qbasicatomic.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qatomic_bootstrap.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qgenericatomic.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qatomic_cxx11.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qatomic_gcc.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qatomic_msvc.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qatomic_armv7.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qatomic_armv6.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qatomic_armv5.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qatomic_ia64.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qatomic_mips.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qatomic_x86.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qatomic_unix.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qglobalstatic.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qmutex.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qnumeric.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qobjectdefs.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qnamespace.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qobjectdefs_impl.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qwindowdefs_win.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qobject.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qstring.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qchar.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qbytearray.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qrefcount.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qarraydata.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qstringbuilder.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qlist.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qalgorithms.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qiterator.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qbytearraylist.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qstringlist.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qregexp.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qstringmatcher.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qcoreevent.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qscopedpointer.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qmetatype.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qvarlengtharray.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qcontainerfwd.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qisenum.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qobject_impl.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qmargins.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qpaintdevice.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qrect.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qsize.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qpoint.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qpalette.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qcolor.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qrgb.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qbrush.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qpair.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qvector.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qmatrix.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qpolygon.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qregion.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qdatastream.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qiodevice.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qline.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qtransform.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qpainterpath.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qimage.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qpixelformat.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qpixmap.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qsharedpointer.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qshareddata.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qhash.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qsharedpointer_impl.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qfont.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qfontmetrics.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qfontinfo.h \
-		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qsizepolicy.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qcursor.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qkeysequence.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qevent.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qvariant.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qmap.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qdebug.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qtextstream.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qlocale.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qset.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qcontiguouscache.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qurl.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qurlquery.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qfile.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qfiledevice.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qvector2d.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qtouchdevice.h \
-		ui_nocalibration405form.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/QVariant \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/QIcon \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qicon.h \
-		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QApplication \
-		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qapplication.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qcoreapplication.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qeventloop.h \
-		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qdesktopwidget.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qguiapplication.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qinputmethod.h \
-		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QLabel \
-		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qlabel.h \
-		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qframe.h \
-		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QPushButton \
-		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qpushbutton.h \
-		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractbutton.h \
-		Settings/405Settings/mode405form.h \
-		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QWidget \
-		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QMessageBox \
-		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qmessagebox.h \
-		Settings/settingformshandler.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/QObject \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/QDebug \
-		DataHandlers/settingshandler.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/QFile \
-		Communication/serialhandler405.h \
-		../../../../Qt/5.5/mingw492_32/include/QtSerialPort/QSerialPort \
-		../../../../Qt/5.5/mingw492_32/include/QtSerialPort/qserialport.h \
-		../../../../Qt/5.5/mingw492_32/include/QtSerialPort/qserialportglobal.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/QQueue \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qqueue.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/QTimer \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qtimer.h \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/qbasictimer.h \
-		DataHandlers/datahandler405.h \
-		utilities.h \
-		Communication/syncstatus.h \
-		Settings/405Settings/no2calibration405form.h \
-		numberpadform.h \
-		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QGraphicsView \
-		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qgraphicsview.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qpainter.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qtextoption.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qpen.h \
-		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qscrollarea.h \
-		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractscrollarea.h \
-		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qgraphicsscene.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/QKeyEvent \
-		Settings/405Settings/settings405.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\nocalibration405form.o Settings\405Settings\nocalibration405form.cpp
 
 release/bcpsettings.o: Settings/BCPSettings/bcpsettings.cpp Settings/BCPSettings/bcpsettings.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QDialog \
@@ -16626,8 +16983,10 @@ release/bcpsettings.o: Settings/BCPSettings/bcpsettings.cpp Settings/BCPSettings
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QWidget \
 		ui_bcpsettings.h \
 		../../../../Qt/5.5/mingw492_32/include/QtCore/QVariant \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/QIcon \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QAction \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qaction.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qicon.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qactiongroup.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QApplication \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qapplication.h \
 		../../../../Qt/5.5/mingw492_32/include/QtCore/qcoreapplication.h \
@@ -16635,13 +16994,57 @@ release/bcpsettings.o: Settings/BCPSettings/bcpsettings.cpp Settings/BCPSettings
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qdesktopwidget.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qguiapplication.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qinputmethod.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QButtonGroup \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qbuttongroup.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QHeaderView \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qheaderview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractscrollarea.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qframe.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qabstractitemmodel.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qitemselectionmodel.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemdelegate.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qstyleoption.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractspinbox.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qvalidator.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qregularexpression.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qslider.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractslider.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qstyle.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qtabbar.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qtabwidget.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qrubberband.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QLabel \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qlabel.h \
-		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qframe.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QPushButton \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qpushbutton.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractbutton.h \
 		Settings/BCPSettings/adaptivefilterbcpform.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QMessageBox \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qmessagebox.h \
+		DataHandlers/settingshandler.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/QFile \
+		numberpadform.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QGraphicsView \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qgraphicsview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qpainter.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qtextoption.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qpen.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qscrollarea.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qgraphicsscene.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/QKeyEvent \
+		Communication/serialhandler405.h \
+		../../../../Qt/5.5/mingw492_32/include/QtSerialPort/QSerialPort \
+		../../../../Qt/5.5/mingw492_32/include/QtSerialPort/qserialport.h \
+		../../../../Qt/5.5/mingw492_32/include/QtSerialPort/qserialportglobal.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/QQueue \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qqueue.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/QTimer \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qtimer.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qbasictimer.h \
+		DataHandlers/datahandler405.h \
+		utilities.h \
+		Communication/syncstatus.h \
 		Settings/BCPSettings/calibration880nm.h \
 		Settings/BCPSettings/flowcalibrationbcpform.h \
 		Settings/BCPSettings/autozerobcp.h \
@@ -16756,8 +17159,10 @@ release/calibration880nm.o: Settings/BCPSettings/calibration880nm.cpp Settings/B
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qtouchdevice.h \
 		ui_calibration880nm.h \
 		../../../../Qt/5.5/mingw492_32/include/QtCore/QVariant \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/QIcon \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QAction \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qaction.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qicon.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qactiongroup.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QApplication \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qapplication.h \
 		../../../../Qt/5.5/mingw492_32/include/QtCore/qcoreapplication.h \
@@ -16765,9 +17170,28 @@ release/calibration880nm.o: Settings/BCPSettings/calibration880nm.cpp Settings/B
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qdesktopwidget.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qguiapplication.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qinputmethod.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QButtonGroup \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qbuttongroup.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QHeaderView \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qheaderview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractscrollarea.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qframe.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qabstractitemmodel.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qitemselectionmodel.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemdelegate.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qstyleoption.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractspinbox.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qvalidator.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qregularexpression.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qslider.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractslider.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qstyle.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qtabbar.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qtabwidget.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qrubberband.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QLabel \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qlabel.h \
-		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qframe.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QPushButton \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qpushbutton.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractbutton.h \
@@ -16886,8 +17310,10 @@ release/autozerobcp.o: Settings/BCPSettings/autozerobcp.cpp Settings/BCPSettings
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qtouchdevice.h \
 		ui_autozerobcp.h \
 		../../../../Qt/5.5/mingw492_32/include/QtCore/QVariant \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/QIcon \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QAction \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qaction.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qicon.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qactiongroup.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QApplication \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qapplication.h \
 		../../../../Qt/5.5/mingw492_32/include/QtCore/qcoreapplication.h \
@@ -16895,19 +17321,63 @@ release/autozerobcp.o: Settings/BCPSettings/autozerobcp.cpp Settings/BCPSettings
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qdesktopwidget.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qguiapplication.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qinputmethod.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QButtonGroup \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qbuttongroup.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QCheckBox \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qcheckbox.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractbutton.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QHeaderView \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qheaderview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractscrollarea.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qframe.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qabstractitemmodel.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qitemselectionmodel.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemdelegate.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qstyleoption.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractspinbox.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qvalidator.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qregularexpression.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qslider.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractslider.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qstyle.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qtabbar.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qtabwidget.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qrubberband.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QLabel \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qlabel.h \
-		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qframe.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QPushButton \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qpushbutton.h \
 		Settings/BCPSettings/adaptivefilterbcpform.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QMessageBox \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qmessagebox.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QWidget \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/QDebug \
 		Settings/settingformshandler.h \
 		../../../../Qt/5.5/mingw492_32/include/QtCore/QObject \
-		../../../../Qt/5.5/mingw492_32/include/QtCore/QDebug \
+		DataHandlers/settingshandler.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/QFile \
+		numberpadform.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QGraphicsView \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qgraphicsview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qpainter.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qtextoption.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qpen.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qscrollarea.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qgraphicsscene.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/QKeyEvent \
+		Communication/serialhandler405.h \
+		../../../../Qt/5.5/mingw492_32/include/QtSerialPort/QSerialPort \
+		../../../../Qt/5.5/mingw492_32/include/QtSerialPort/qserialport.h \
+		../../../../Qt/5.5/mingw492_32/include/QtSerialPort/qserialportglobal.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/QQueue \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qqueue.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/QTimer \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qtimer.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qbasictimer.h \
+		DataHandlers/datahandler405.h \
+		utilities.h \
+		Communication/syncstatus.h \
 		Settings/BCPSettings/calibration880nm.h \
 		Settings/BCPSettings/bcpsettings.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\autozerobcp.o Settings\BCPSettings\autozerobcp.cpp
@@ -17018,8 +17488,10 @@ release/calibration405nm.o: Settings/BCPSettings/calibration405nm.cpp Settings/B
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qtouchdevice.h \
 		ui_calibration405nm.h \
 		../../../../Qt/5.5/mingw492_32/include/QtCore/QVariant \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/QIcon \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QAction \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qaction.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qicon.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qactiongroup.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QApplication \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qapplication.h \
 		../../../../Qt/5.5/mingw492_32/include/QtCore/qcoreapplication.h \
@@ -17027,9 +17499,28 @@ release/calibration405nm.o: Settings/BCPSettings/calibration405nm.cpp Settings/B
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qdesktopwidget.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qguiapplication.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qinputmethod.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QButtonGroup \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qbuttongroup.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QHeaderView \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qheaderview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractscrollarea.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qframe.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qabstractitemmodel.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qitemselectionmodel.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemdelegate.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qstyleoption.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractspinbox.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qvalidator.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qregularexpression.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qslider.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractslider.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qstyle.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qtabbar.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qtabwidget.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qrubberband.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QLabel \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qlabel.h \
-		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qframe.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QPushButton \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qpushbutton.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractbutton.h \
@@ -17148,8 +17639,10 @@ release/tpcorrectionsform.o: Settings/BCPSettings/tpcorrectionsform.cpp Settings
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qtouchdevice.h \
 		ui_tpcorrectionsform.h \
 		../../../../Qt/5.5/mingw492_32/include/QtCore/QVariant \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/QIcon \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QAction \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qaction.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qicon.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qactiongroup.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QApplication \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qapplication.h \
 		../../../../Qt/5.5/mingw492_32/include/QtCore/qcoreapplication.h \
@@ -17157,12 +17650,31 @@ release/tpcorrectionsform.o: Settings/BCPSettings/tpcorrectionsform.cpp Settings
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qdesktopwidget.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qguiapplication.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qinputmethod.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QButtonGroup \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qbuttongroup.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QCheckBox \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qcheckbox.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractbutton.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QHeaderView \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qheaderview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractscrollarea.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qframe.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qabstractitemmodel.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qitemselectionmodel.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemdelegate.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qstyleoption.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractspinbox.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qvalidator.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qregularexpression.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qslider.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractslider.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qstyle.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qtabbar.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qtabwidget.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qrubberband.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QLabel \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qlabel.h \
-		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qframe.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QPushButton \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qpushbutton.h \
 		Settings/BCPSettings/flowcalibrationbcpform.h \
@@ -17171,8 +17683,209 @@ release/tpcorrectionsform.o: Settings/BCPSettings/tpcorrectionsform.cpp Settings
 		../../../../Qt/5.5/mingw492_32/include/QtCore/QObject \
 		../../../../Qt/5.5/mingw492_32/include/QtCore/QDebug \
 		Settings/BCPSettings/adaptivefilterbcpform.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QMessageBox \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qmessagebox.h \
+		DataHandlers/settingshandler.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/QFile \
+		numberpadform.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QGraphicsView \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qgraphicsview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qpainter.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qtextoption.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qpen.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qscrollarea.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qgraphicsscene.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/QKeyEvent \
+		Communication/serialhandler405.h \
+		../../../../Qt/5.5/mingw492_32/include/QtSerialPort/QSerialPort \
+		../../../../Qt/5.5/mingw492_32/include/QtSerialPort/qserialport.h \
+		../../../../Qt/5.5/mingw492_32/include/QtSerialPort/qserialportglobal.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/QQueue \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qqueue.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/QTimer \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qtimer.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qbasictimer.h \
+		DataHandlers/datahandler405.h \
+		utilities.h \
+		Communication/syncstatus.h \
 		Settings/BCPSettings/bcpsettings.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\tpcorrectionsform.o Settings\BCPSettings\tpcorrectionsform.cpp
+
+release/nocalibration405form.o: Settings/405Settings/nocalibration405form.cpp Settings/405Settings/nocalibration405form.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QWidget \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qwidget.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qwindowdefs.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qglobal.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qconfig.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qfeatures.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qsystemdetection.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qprocessordetection.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qcompilerdetection.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qtypeinfo.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qtypetraits.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qsysinfo.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qlogging.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qflags.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qatomic.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qbasicatomic.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qatomic_bootstrap.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qgenericatomic.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qatomic_cxx11.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qatomic_gcc.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qatomic_msvc.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qatomic_armv7.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qatomic_armv6.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qatomic_armv5.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qatomic_ia64.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qatomic_mips.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qatomic_x86.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qatomic_unix.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qglobalstatic.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qmutex.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qnumeric.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qobjectdefs.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qnamespace.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qobjectdefs_impl.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qwindowdefs_win.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qobject.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qstring.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qchar.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qbytearray.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qrefcount.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qarraydata.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qstringbuilder.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qlist.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qalgorithms.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qiterator.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qbytearraylist.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qstringlist.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qregexp.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qstringmatcher.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qcoreevent.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qscopedpointer.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qmetatype.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qvarlengtharray.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qcontainerfwd.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qisenum.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qobject_impl.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qmargins.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qpaintdevice.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qrect.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qsize.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qpoint.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qpalette.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qcolor.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qrgb.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qbrush.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qpair.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qvector.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qmatrix.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qpolygon.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qregion.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qdatastream.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qiodevice.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qline.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qtransform.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qpainterpath.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qimage.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qpixelformat.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qpixmap.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qsharedpointer.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qshareddata.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qhash.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qsharedpointer_impl.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qfont.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qfontmetrics.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qfontinfo.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qsizepolicy.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qcursor.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qkeysequence.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qevent.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qvariant.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qmap.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qdebug.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qtextstream.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qlocale.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qset.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qcontiguouscache.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qurl.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qurlquery.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qfile.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qfiledevice.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qvector2d.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qtouchdevice.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QMessageBox \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qmessagebox.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qdialog.h \
+		Settings/settingformshandler.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/QObject \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/QDebug \
+		DataHandlers/settingshandler.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/QFile \
+		numberpadform.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QGraphicsView \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qgraphicsview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qpainter.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qtextoption.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qpen.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qscrollarea.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractscrollarea.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qframe.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qgraphicsscene.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/QKeyEvent \
+		Communication/serialhandler405.h \
+		../../../../Qt/5.5/mingw492_32/include/QtSerialPort/QSerialPort \
+		../../../../Qt/5.5/mingw492_32/include/QtSerialPort/qserialport.h \
+		../../../../Qt/5.5/mingw492_32/include/QtSerialPort/qserialportglobal.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/QQueue \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qqueue.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/QTimer \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qtimer.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qbasictimer.h \
+		DataHandlers/datahandler405.h \
+		utilities.h \
+		Communication/syncstatus.h \
+		ui_nocalibration405form.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/QVariant \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QAction \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qaction.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qicon.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qactiongroup.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QApplication \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qapplication.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qcoreapplication.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qeventloop.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qdesktopwidget.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qguiapplication.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qinputmethod.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QButtonGroup \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qbuttongroup.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QDialog \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QHeaderView \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qheaderview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qabstractitemmodel.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qitemselectionmodel.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemdelegate.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qstyleoption.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractspinbox.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qvalidator.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qregularexpression.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qslider.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractslider.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qstyle.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qtabbar.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qtabwidget.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qrubberband.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QLabel \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qlabel.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QPushButton \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qpushbutton.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractbutton.h \
+		Settings/405Settings/mode405form.h \
+		Settings/405Settings/no2calibration405form.h \
+		Settings/405Settings/settings405.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\nocalibration405form.o Settings\405Settings\nocalibration405form.cpp
 
 release/qrc_resources.o: release/qrc_resources.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\qrc_resources.o release\qrc_resources.cpp
@@ -17288,9 +18001,6 @@ release/moc_paramtersform.o: release/moc_paramtersform.cpp
 release/moc_settings405.o: release/moc_settings405.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\moc_settings405.o release\moc_settings405.cpp
 
-release/moc_nocalibration405form.o: release/moc_nocalibration405form.cpp 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\moc_nocalibration405form.o release\moc_nocalibration405form.cpp
-
 release/moc_bcpsettings.o: release/moc_bcpsettings.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\moc_bcpsettings.o release\moc_bcpsettings.cpp
 
@@ -17305,6 +18015,9 @@ release/moc_calibration405nm.o: release/moc_calibration405nm.cpp
 
 release/moc_tpcorrectionsform.o: release/moc_tpcorrectionsform.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\moc_tpcorrectionsform.o release\moc_tpcorrectionsform.cpp
+
+release/moc_nocalibration405form.o: release/moc_nocalibration405form.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\moc_nocalibration405form.o release\moc_nocalibration405form.cpp
 
 ####### Install
 

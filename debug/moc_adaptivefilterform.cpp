@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'adaptivefilterform.h'
 **
-** Created by: The Qt Meta Object Compiler version 67 (Qt 5.12.3)
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.5.1)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
@@ -12,14 +12,12 @@
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'adaptivefilterform.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.12.3. It"
+#error "This file was generated using the moc from 5.5.1. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
 
 QT_BEGIN_MOC_NAMESPACE
-QT_WARNING_PUSH
-QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_AdaptiveFilterForm_t {
     QByteArrayData data[20];
     char stringdata0[300];
@@ -69,7 +67,7 @@ QT_MOC_LITERAL(19, 295, 4) // "code"
 static const uint qt_meta_data_AdaptiveFilterForm[] = {
 
  // content:
-       8,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
       16,   14, // methods
@@ -125,7 +123,7 @@ static const uint qt_meta_data_AdaptiveFilterForm[] = {
 void AdaptiveFilterForm::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        auto *_t = static_cast<AdaptiveFilterForm *>(_o);
+        AdaptiveFilterForm *_t = static_cast<AdaptiveFilterForm *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->CloseForms(); break;
@@ -148,38 +146,32 @@ void AdaptiveFilterForm::qt_static_metacall(QObject *_o, QMetaObject::Call _c, i
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
         int *result = reinterpret_cast<int *>(_a[0]);
+        void **func = reinterpret_cast<void **>(_a[1]);
         {
-            using _t = void (AdaptiveFilterForm::*)();
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&AdaptiveFilterForm::CloseForms)) {
+            typedef void (AdaptiveFilterForm::*_t)();
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&AdaptiveFilterForm::CloseForms)) {
                 *result = 0;
-                return;
             }
         }
         {
-            using _t = void (AdaptiveFilterForm::*)();
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&AdaptiveFilterForm::MoveRight)) {
+            typedef void (AdaptiveFilterForm::*_t)();
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&AdaptiveFilterForm::MoveRight)) {
                 *result = 1;
-                return;
             }
         }
         {
-            using _t = void (AdaptiveFilterForm::*)();
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&AdaptiveFilterForm::MoveLeft)) {
+            typedef void (AdaptiveFilterForm::*_t)();
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&AdaptiveFilterForm::MoveLeft)) {
                 *result = 2;
-                return;
             }
         }
     }
 }
 
-QT_INIT_METAOBJECT const QMetaObject AdaptiveFilterForm::staticMetaObject = { {
-    &QWidget::staticMetaObject,
-    qt_meta_stringdata_AdaptiveFilterForm.data,
-    qt_meta_data_AdaptiveFilterForm,
-    qt_static_metacall,
-    nullptr,
-    nullptr
-} };
+const QMetaObject AdaptiveFilterForm::staticMetaObject = {
+    { &QWidget::staticMetaObject, qt_meta_stringdata_AdaptiveFilterForm.data,
+      qt_meta_data_AdaptiveFilterForm,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
+};
 
 
 const QMetaObject *AdaptiveFilterForm::metaObject() const
@@ -189,9 +181,9 @@ const QMetaObject *AdaptiveFilterForm::metaObject() const
 
 void *AdaptiveFilterForm::qt_metacast(const char *_clname)
 {
-    if (!_clname) return nullptr;
+    if (!_clname) return Q_NULLPTR;
     if (!strcmp(_clname, qt_meta_stringdata_AdaptiveFilterForm.stringdata0))
-        return static_cast<void*>(this);
+        return static_cast<void*>(const_cast< AdaptiveFilterForm*>(this));
     return QWidget::qt_metacast(_clname);
 }
 
@@ -215,19 +207,18 @@ int AdaptiveFilterForm::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 // SIGNAL 0
 void AdaptiveFilterForm::CloseForms()
 {
-    QMetaObject::activate(this, &staticMetaObject, 0, nullptr);
+    QMetaObject::activate(this, &staticMetaObject, 0, Q_NULLPTR);
 }
 
 // SIGNAL 1
 void AdaptiveFilterForm::MoveRight()
 {
-    QMetaObject::activate(this, &staticMetaObject, 1, nullptr);
+    QMetaObject::activate(this, &staticMetaObject, 1, Q_NULLPTR);
 }
 
 // SIGNAL 2
 void AdaptiveFilterForm::MoveLeft()
 {
-    QMetaObject::activate(this, &staticMetaObject, 2, nullptr);
+    QMetaObject::activate(this, &staticMetaObject, 2, Q_NULLPTR);
 }
-QT_WARNING_POP
 QT_END_MOC_NAMESPACE

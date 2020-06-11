@@ -143,3 +143,28 @@ void NO2Calibration405Form::UpdateLocalUI(){
     ui->ZeroLabel->setText("Zero Mask:\n" + QString::number(static_cast<double>(zero)));
     ui->AnalogLabel->setText("Analog Mask:\n" + QString::number(static_cast<double>(analog)));
 }
+
+
+void NO2Calibration405Form::closeEvent(QCloseEvent *event)
+{
+    QWidget::closeEvent(event);
+    SettingsHandler * settings = SettingsHandler::GetInstance();
+
+    if(settings->GetAnalogNO2_405() != analog || settings->GetNO2Slope_405() != slope ||
+       settings->GetNO2Zero_405() != zero)
+    {
+        QMessageBox msg;
+        msg.setText("Save unsaved setting?");
+        msg.setStandardButtons(QMessageBox::StandardButton::Yes | QMessageBox::StandardButton::No);
+
+        switch (msg.exec())
+        {
+        case QMessageBox::StandardButton::Yes:
+            on_Save_clicked();
+            break;
+
+        default:
+            break;
+        }
+    }
+}

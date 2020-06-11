@@ -59,7 +59,7 @@ void settings405::on_Home_Button_clicked()
 
 void settings405::on_NextLeft_clicked()
 {
-    SettingFormsHandler::MoveLeft();
+    SettingFormsHandler::JumpToIndex(SETTINGS_BCP_INDEX);
     close();
 }
 
