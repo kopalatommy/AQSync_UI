@@ -219,6 +219,18 @@
     <string>TextLabel</string>
    </property>
   </widget>
+  <zorder>PeriodLabel</zorder>
+  <zorder>FreqLabel</zorder>
+  <zorder>Left</zorder>
+  <zorder>Right</zorder>
+  <zorder>Home</zorder>
+  <zorder>Save</zorder>
+  <zorder>zeroingFrequenctMask</zorder>
+  <zorder>AutoZero</zorder>
+  <zorder>checkBox</zorder>
+  <zorder>zeroPeriodMask</zorder>
+  <zorder>BCZeroMask</zorder>
+  <zorder>PMZeroMask</zorder>
  </widget>
  <resources>
   <include location="../../resources.qrc"/>

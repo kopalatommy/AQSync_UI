@@ -205,16 +205,16 @@
    </property>
   </widget>
   <zorder>NOCalibration</zorder>
-  <zorder>Home</zorder>
+  <zorder>AnalogLabel</zorder>
+  <zorder>ZeroLabel</zorder>
+  <zorder>SlopeLabel</zorder>
   <zorder>Right</zorder>
   <zorder>Save</zorder>
   <zorder>zeroMask</zorder>
   <zorder>slopeMask</zorder>
   <zorder>AnalogMask</zorder>
   <zorder>Left</zorder>
-  <zorder>SlopeLabel</zorder>
-  <zorder>ZeroLabel</zorder>
-  <zorder>AnalogLabel</zorder>
+  <zorder>Home</zorder>
  </widget>
  <resources>
   <include location="../../resources.qrc"/>

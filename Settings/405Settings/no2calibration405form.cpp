@@ -34,19 +34,19 @@ NO2Calibration405Form::~NO2Calibration405Form()
 
 void NO2Calibration405Form::on_Left_clicked()
 {
-    SettingFormsHandler::JumpToIndex(4);
+    SettingFormsHandler::JumpToIndex(NOCALIBRATION_405_INDEX);
     close();
 }
 
 void NO2Calibration405Form::on_Right_clicked()
 {
-    SettingFormsHandler::JumpToIndex(6);
+    SettingFormsHandler::JumpToIndex(FLOWCALIBRATION_405_INDEX);
     close();
 }
 
 void NO2Calibration405Form::on_Home_clicked()
 {
-    SettingFormsHandler::JumpToIndex(0);
+    SettingFormsHandler::JumpToIndex(SETTINGS_405_INDEX);
     close();
 }
 

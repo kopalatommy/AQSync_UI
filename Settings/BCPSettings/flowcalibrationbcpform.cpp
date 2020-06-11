@@ -15,19 +15,16 @@ FlowCalibrationBCPForm::~FlowCalibrationBCPForm()
 
 void FlowCalibrationBCPForm::on_Left_clicked()
 {
-    SettingFormsHandler::JumpToIndex(10);
-    close();
+    SettingFormsHandler::JumpToIndex(CALIBRATION_405NM_INDEX);
 }
 
 void FlowCalibrationBCPForm::on_Right_clicked()
 {
-    SettingFormsHandler::JumpToIndex(13);
-    close();
+    SettingFormsHandler::JumpToIndex(TPCORRECTION_BCP_INDEX);
 }
 
 void FlowCalibrationBCPForm::on_Home_clicked()
 {
-    SettingFormsHandler::JumpToIndex(1);
-    close();
+    SettingFormsHandler::JumpToIndex(SETTINGS_BCP_INDEX);
 }
 

@@ -132,13 +132,13 @@ FORMS += \
         numberpadform.ui \
         paramtersform.ui \
     Settings/405Settings/settings405.ui \
-    Settings/405Settings/nocalibration405form.ui \
     Settings/BCPSettings/bcpsettings.ui \
     Settings/BCPSettings/calibration880nm.ui \
     Settings/BCPSettings/autozerobcp.ui \
     Settings/405Settings/parameters405form.ui \
     Settings/BCPSettings/calibration405nm.ui \
-    Settings/BCPSettings/tpcorrectionsform.ui
+    Settings/BCPSettings/tpcorrectionsform.ui \
+    Settings/405Settings/nocalibration405form.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

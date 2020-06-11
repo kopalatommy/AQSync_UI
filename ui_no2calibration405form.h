@@ -94,16 +94,16 @@ public:
         AnalogLabel->setObjectName(QStringLiteral("AnalogLabel"));
         AnalogLabel->setGeometry(QRect(146, 300, 511, 71));
         NOCalibration->raise();
-        Home->raise();
+        AnalogLabel->raise();
+        ZeroLabel->raise();
+        SlopeLabel->raise();
         Right->raise();
         Save->raise();
         zeroMask->raise();
         slopeMask->raise();
         AnalogMask->raise();
         Left->raise();
-        SlopeLabel->raise();
-        ZeroLabel->raise();
-        AnalogLabel->raise();
+        Home->raise();
 
         retranslateUi(NO2Calibration405Form);
 

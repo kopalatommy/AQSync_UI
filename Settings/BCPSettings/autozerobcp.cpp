@@ -39,27 +39,18 @@ AutoZeroBCP::~AutoZeroBCP()
 
 void AutoZeroBCP::on_Left_clicked()
 {
-    SettingFormsHandler::JumpToIndex(8);
-    close();
+    SettingFormsHandler::JumpToIndex(ADAPTIVEFILTER_BCP_INDEX);
 }
 
 void AutoZeroBCP::on_Right_clicked()
 {
-    SettingFormsHandler::JumpToIndex(11);
-    close();
+    SettingFormsHandler::JumpToIndex(CALIBRATION_880NM_INDEX);
 }
 
 void AutoZeroBCP::on_Home_clicked()
 {
-    SettingFormsHandler::JumpToIndex(1);
-    close();
+    SettingFormsHandler::JumpToIndex(SETTINGS_BCP_INDEX);
 }
-
-
-
-
-
-
 
 
 void AutoZeroBCP::on_zeroingFrequenctMask_clicked(){

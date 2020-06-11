@@ -101,10 +101,9 @@ void settings405::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
         case 2: _t->on_NOCalibration_clicked(); break;
         case 3: _t->on_FlowCalibration_clicked(); break;
         case 4: _t->on_NO2Calibration_clicked(); break;
-        case 5: _t->on_Parameters_clicked(); break;
-        case 6: _t->on_Home_Button_clicked(); break;
-        case 7: _t->on_NextLeft_clicked(); break;
-        case 8: _t->on_NextRight_clicked(); break;
+        case 5: _t->on_Home_Button_clicked(); break;
+        case 6: _t->on_NextLeft_clicked(); break;
+        case 7: _t->on_NextRight_clicked(); break;
         default: ;
         }
     }

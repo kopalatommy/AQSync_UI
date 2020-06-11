@@ -311,7 +311,7 @@ DESTDIR_TARGET = debug\AQSync_UI.exe
 first: all
 all: Makefile.Debug  $(DESTDIR_TARGET)
 
-$(DESTDIR_TARGET): ui_datafilemenuform.h ui_filebrowserform.h ui_graphform.h ui_modbusform.h ui_modbustestform.h ui_staticipform.h ui_adaptivefilter405form.h ui_flowcalibration405form.h ui_mode405form.h ui_no2calibration405form.h ui_adaptivefilterbcpform.h ui_flowcalibrationbcpform.h ui_aboutform.h ui_avgsettingform.h ui_datafilesform.h ui_settingsform.h ui_systemsettingsform.h ui_mainwindow.h ui_numberpadform.h ui_paramtersform.h ui_settings405.h ui_nocalibration405form.h ui_bcpsettings.h ui_calibration880nm.h ui_autozerobcp.h ui_parameters405form.h ui_calibration405nm.h ui_tpcorrectionsform.h $(OBJECTS) 
+$(DESTDIR_TARGET): ui_datafilemenuform.h ui_filebrowserform.h ui_graphform.h ui_modbusform.h ui_modbustestform.h ui_staticipform.h ui_adaptivefilter405form.h ui_flowcalibration405form.h ui_mode405form.h ui_no2calibration405form.h ui_adaptivefilterbcpform.h ui_flowcalibrationbcpform.h ui_aboutform.h ui_avgsettingform.h ui_datafilesform.h ui_settingsform.h ui_systemsettingsform.h ui_mainwindow.h ui_numberpadform.h ui_paramtersform.h ui_settings405.h ui_bcpsettings.h ui_calibration880nm.h ui_autozerobcp.h ui_parameters405form.h ui_calibration405nm.h ui_tpcorrectionsform.h ui_nocalibration405form.h $(OBJECTS) 
 	$(LINKER) $(LFLAGS) -o $(DESTDIR_TARGET) object_script.AQSync_UI.Debug  $(LIBS)
 
 qmake: FORCE
@@ -6154,9 +6154,9 @@ debug/moc_nocalibration405form.cpp: ../../../../Qt/5.5/mingw492_32/include/QtWid
 
 compiler_moc_source_make_all:
 compiler_moc_source_clean:
-compiler_uic_make_all: ui_datafilemenuform.h ui_filebrowserform.h ui_graphform.h ui_modbusform.h ui_modbustestform.h ui_staticipform.h ui_adaptivefilter405form.h ui_flowcalibration405form.h ui_mode405form.h ui_no2calibration405form.h ui_adaptivefilterbcpform.h ui_flowcalibrationbcpform.h ui_aboutform.h ui_avgsettingform.h ui_datafilesform.h ui_settingsform.h ui_systemsettingsform.h ui_mainwindow.h ui_numberpadform.h ui_paramtersform.h ui_settings405.h ui_nocalibration405form.h ui_bcpsettings.h ui_calibration880nm.h ui_autozerobcp.h ui_parameters405form.h ui_calibration405nm.h ui_tpcorrectionsform.h
+compiler_uic_make_all: ui_datafilemenuform.h ui_filebrowserform.h ui_graphform.h ui_modbusform.h ui_modbustestform.h ui_staticipform.h ui_adaptivefilter405form.h ui_flowcalibration405form.h ui_mode405form.h ui_no2calibration405form.h ui_adaptivefilterbcpform.h ui_flowcalibrationbcpform.h ui_aboutform.h ui_avgsettingform.h ui_datafilesform.h ui_settingsform.h ui_systemsettingsform.h ui_mainwindow.h ui_numberpadform.h ui_paramtersform.h ui_settings405.h ui_bcpsettings.h ui_calibration880nm.h ui_autozerobcp.h ui_parameters405form.h ui_calibration405nm.h ui_tpcorrectionsform.h ui_nocalibration405form.h
 compiler_uic_clean:
-	-$(DEL_FILE) ui_datafilemenuform.h ui_filebrowserform.h ui_graphform.h ui_modbusform.h ui_modbustestform.h ui_staticipform.h ui_adaptivefilter405form.h ui_flowcalibration405form.h ui_mode405form.h ui_no2calibration405form.h ui_adaptivefilterbcpform.h ui_flowcalibrationbcpform.h ui_aboutform.h ui_avgsettingform.h ui_datafilesform.h ui_settingsform.h ui_systemsettingsform.h ui_mainwindow.h ui_numberpadform.h ui_paramtersform.h ui_settings405.h ui_nocalibration405form.h ui_bcpsettings.h ui_calibration880nm.h ui_autozerobcp.h ui_parameters405form.h ui_calibration405nm.h ui_tpcorrectionsform.h
+	-$(DEL_FILE) ui_datafilemenuform.h ui_filebrowserform.h ui_graphform.h ui_modbusform.h ui_modbustestform.h ui_staticipform.h ui_adaptivefilter405form.h ui_flowcalibration405form.h ui_mode405form.h ui_no2calibration405form.h ui_adaptivefilterbcpform.h ui_flowcalibrationbcpform.h ui_aboutform.h ui_avgsettingform.h ui_datafilesform.h ui_settingsform.h ui_systemsettingsform.h ui_mainwindow.h ui_numberpadform.h ui_paramtersform.h ui_settings405.h ui_bcpsettings.h ui_calibration880nm.h ui_autozerobcp.h ui_parameters405form.h ui_calibration405nm.h ui_tpcorrectionsform.h ui_nocalibration405form.h
 ui_datafilemenuform.h: DataFiles/datafilemenuform.ui
 	C:\Qt\5.5\mingw492_32\bin\uic.exe DataFiles\datafilemenuform.ui -o ui_datafilemenuform.h
 
@@ -6220,9 +6220,6 @@ ui_paramtersform.h: paramtersform.ui
 ui_settings405.h: Settings/405Settings/settings405.ui
 	C:\Qt\5.5\mingw492_32\bin\uic.exe Settings\405Settings\settings405.ui -o ui_settings405.h
 
-ui_nocalibration405form.h: Settings/405Settings/nocalibration405form.ui
-	C:\Qt\5.5\mingw492_32\bin\uic.exe Settings\405Settings\nocalibration405form.ui -o ui_nocalibration405form.h
-
 ui_bcpsettings.h: Settings/BCPSettings/bcpsettings.ui
 	C:\Qt\5.5\mingw492_32\bin\uic.exe Settings\BCPSettings\bcpsettings.ui -o ui_bcpsettings.h
 
@@ -6240,6 +6237,9 @@ ui_calibration405nm.h: Settings/BCPSettings/calibration405nm.ui
 
 ui_tpcorrectionsform.h: Settings/BCPSettings/tpcorrectionsform.ui
 	C:\Qt\5.5\mingw492_32\bin\uic.exe Settings\BCPSettings\tpcorrectionsform.ui -o ui_tpcorrectionsform.h
+
+ui_nocalibration405form.h: Settings/405Settings/nocalibration405form.ui
+	C:\Qt\5.5\mingw492_32\bin\uic.exe Settings\405Settings\nocalibration405form.ui -o ui_nocalibration405form.h
 
 compiler_yacc_decl_make_all:
 compiler_yacc_decl_clean:
@@ -9927,8 +9927,10 @@ debug/no2calibration405form.o: Settings/405Settings/no2calibration405form.cpp Se
 		Communication/syncstatus.h \
 		ui_no2calibration405form.h \
 		../../../../Qt/5.5/mingw492_32/include/QtCore/QVariant \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/QIcon \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QAction \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qaction.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qicon.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qactiongroup.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QApplication \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qapplication.h \
 		../../../../Qt/5.5/mingw492_32/include/QtCore/qcoreapplication.h \
@@ -9936,6 +9938,24 @@ debug/no2calibration405form.o: Settings/405Settings/no2calibration405form.cpp Se
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qdesktopwidget.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qguiapplication.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qinputmethod.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QButtonGroup \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qbuttongroup.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QHeaderView \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qheaderview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qabstractitemmodel.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qitemselectionmodel.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemdelegate.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qstyleoption.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractspinbox.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qvalidator.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qregularexpression.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qslider.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractslider.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qstyle.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qtabbar.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qtabwidget.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qrubberband.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QLabel \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qlabel.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QPushButton \
@@ -12420,6 +12440,10 @@ debug/paramtersform.o: paramtersform.cpp paramtersform.h \
 		../../../../Qt/5.5/mingw492_32/include/QtCore/QFile \
 		ui_paramtersform.h \
 		../../../../Qt/5.5/mingw492_32/include/QtCore/QVariant \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QAction \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qaction.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qicon.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qactiongroup.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QApplication \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qapplication.h \
 		../../../../Qt/5.5/mingw492_32/include/QtCore/qcoreapplication.h \
@@ -12427,14 +12451,32 @@ debug/paramtersform.o: paramtersform.cpp paramtersform.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qdesktopwidget.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qguiapplication.h \
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qinputmethod.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QButtonGroup \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qbuttongroup.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QFrame \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qframe.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QHeaderView \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qheaderview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemview.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractscrollarea.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qabstractitemmodel.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qitemselectionmodel.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemdelegate.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qstyleoption.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractspinbox.h \
+		../../../../Qt/5.5/mingw492_32/include/QtGui/qvalidator.h \
+		../../../../Qt/5.5/mingw492_32/include/QtCore/qregularexpression.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qslider.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractslider.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qstyle.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qtabbar.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qtabwidget.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qrubberband.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QLabel \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qlabel.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QPushButton \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qpushbutton.h \
-		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractbutton.h \
-		../../../../Qt/5.5/mingw492_32/include/QtGui/qicon.h
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractbutton.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\paramtersform.o paramtersform.cpp
 
 debug/utilities.o: utilities.cpp utilities.h
@@ -13600,7 +13642,6 @@ debug/nocalibration405form.o: Settings/405Settings/nocalibration405form.cpp Sett
 		../../../../Qt/5.5/mingw492_32/include/QtGui/qinputmethod.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QButtonGroup \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qbuttongroup.h \
-		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QDialog \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QHeaderView \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qheaderview.h \
 		../../../../Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemview.h \
@@ -13626,7 +13667,8 @@ debug/nocalibration405form.o: Settings/405Settings/nocalibration405form.cpp Sett
 		Settings/405Settings/no2calibration405form.h \
 		../../../../Qt/5.5/mingw492_32/include/QtCore/QtMath \
 		../../../../Qt/5.5/mingw492_32/include/QtCore/qmath.h \
-		Settings/405Settings/settings405.h
+		Settings/405Settings/settings405.h \
+		../../../../Qt/5.5/mingw492_32/include/QtWidgets/QDialog
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\nocalibration405form.o Settings\405Settings\nocalibration405form.cpp
 
 debug/qrc_resources.o: debug/qrc_resources.cpp 

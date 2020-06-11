@@ -18,19 +18,16 @@ settings405::~settings405()
 void settings405::on_Mode_2_clicked()
 {
     SettingFormsHandler::JumpToIndex(MODE_405_INDEX);
-    close();
 }
 
 void settings405::on_AdaptiveFilter_clicked()
 {
     SettingFormsHandler::JumpToIndex(ADAPTIVEFILTER_405_Index);
-    close();
 }
 
 void settings405::on_NOCalibration_clicked()
 {
     SettingFormsHandler::JumpToIndex(NOCALIBRATION_405_INDEX);
-    close();
 }
 
 void settings405::on_FlowCalibration_clicked()
@@ -45,12 +42,6 @@ void settings405::on_NO2Calibration_clicked()
     close();
 }
 
-//Review, parameters will be in a different position
-void settings405::on_Parameters_clicked()
-{
-    SettingFormsHandler::JumpToIndex(PARAMETERS_405_INDEX);
-    close();
-}
 
 void settings405::on_Home_Button_clicked()
 {

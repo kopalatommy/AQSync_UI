@@ -15,17 +15,17 @@ Mode405Form::~Mode405Form()
 
 void Mode405Form::on_Left_clicked()
 {
-    SettingFormsHandler::MoveLeft();
+    SettingFormsHandler::JumpToIndex(ADAPTIVEFILTER_405_Index);
 }
 
 void Mode405Form::on_Right_clicked()
 {
-    SettingFormsHandler::MoveRight();
+    SettingFormsHandler::JumpToIndex(NOCALIBRATION_405_INDEX);
 }
 
 void Mode405Form::on_Home_clicked()
 {
-    SettingFormsHandler::CloseForms();
+    SettingFormsHandler::JumpToIndex(SETTINGS_405_INDEX);
 }
 
 void Mode405Form::on_Save_clicked()

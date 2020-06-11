@@ -38,7 +38,7 @@ QT_MOC_LITERAL(5, 61, 13), // "UpdateLocalUI"
 QT_MOC_LITERAL(6, 75, 14), // "GetNewSettings"
 QT_MOC_LITERAL(7, 90, 19), // "on_Previous_clicked"
 QT_MOC_LITERAL(8, 110, 15), // "on_Next_clicked"
-QT_MOC_LITERAL(9, 126, 15), // "on_home_clicked"
+QT_MOC_LITERAL(9, 126, 15), // "on_Home_clicked"
 QT_MOC_LITERAL(10, 142, 24), // "on_CellSlopeMask_clicked"
 QT_MOC_LITERAL(11, 167, 25), // "on_OzoneSlopeMask_clicked"
 QT_MOC_LITERAL(12, 193, 15) // "on_Save_clicked"
@@ -47,7 +47,7 @@ QT_MOC_LITERAL(12, 193, 15) // "on_Save_clicked"
     "FlowCalibration405Form\0NewCellFlowSlope\0"
     "\0s\0NewOzoneFlowSlope\0UpdateLocalUI\0"
     "GetNewSettings\0on_Previous_clicked\0"
-    "on_Next_clicked\0on_home_clicked\0"
+    "on_Next_clicked\0on_Home_clicked\0"
     "on_CellSlopeMask_clicked\0"
     "on_OzoneSlopeMask_clicked\0on_Save_clicked"
 };
@@ -105,7 +105,7 @@ void FlowCalibration405Form::qt_static_metacall(QObject *_o, QMetaObject::Call _
         case 3: _t->GetNewSettings(); break;
         case 4: _t->on_Previous_clicked(); break;
         case 5: _t->on_Next_clicked(); break;
-        case 6: _t->on_home_clicked(); break;
+        case 6: _t->on_Home_clicked(); break;
         case 7: _t->on_CellSlopeMask_clicked(); break;
         case 8: _t->on_OzoneSlopeMask_clicked(); break;
         case 9: _t->on_Save_clicked(); break;

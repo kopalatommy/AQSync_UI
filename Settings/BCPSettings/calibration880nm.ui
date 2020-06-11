@@ -35,7 +35,7 @@
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QPushButton" name="PushButton">
+  <widget class="QPushButton" name="zeroMask">
    <property name="geometry">
     <rect>
      <x>440</x>
@@ -71,7 +71,7 @@
     </size>
    </property>
   </widget>
-  <widget class="QPushButton" name="PushButton_2">
+  <widget class="QPushButton" name="massExtMask">
    <property name="geometry">
     <rect>
      <x>160</x>
@@ -107,7 +107,7 @@
     </size>
    </property>
   </widget>
-  <widget class="QPushButton" name="PushButton_3">
+  <widget class="QPushButton" name="AnalogMask">
    <property name="geometry">
     <rect>
      <x>440</x>
@@ -120,7 +120,7 @@
     <string>PushButton</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="PushButton_1">
+  <widget class="QPushButton" name="slopeMask">
    <property name="geometry">
     <rect>
      <x>164</x>

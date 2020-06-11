@@ -85,6 +85,7 @@ public:
         font.setPointSize(30);
         FlowCalibration->setFont(font);
         FlowCalibration->setAlignment(Qt::AlignCenter);
+        ozoneFlowLabel->raise();
         FlowCalibration->raise();
         OzoneSlopeMask->raise();
         Home->raise();
@@ -92,7 +93,6 @@ public:
         cellFlowLabel->raise();
         Next->raise();
         Previous->raise();
-        ozoneFlowLabel->raise();
         CellSlopeMask->raise();
 
         retranslateUi(FlowCalibration405Form);

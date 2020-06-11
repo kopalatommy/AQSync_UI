@@ -1,7 +1,14 @@
 #ifndef CALIBRATION880NM_H
 #define CALIBRATION880NM_H
 
-#include <QDialog>
+#include <QMessageBox>
+#include <QWidget>
+#include <QDebug>
+
+#include "Settings/settingformshandler.h"
+#include "DataHandlers/settingshandler.h"
+#include "numberpadform.h"
+#include "Communication/serialhandler405.h"
 
 namespace Ui {
 class Calibration880nm;
@@ -17,13 +24,36 @@ public:
 
 private slots:
     void on_Left_clicked();
-
     void on_Right_clicked();
-
     void on_Home_clicked();
+    void on_Save_clicked();
+
+    void on_slopeMask_clicked();
+    void on_zeroMask_clicked();
+    void on_massExtMask_clicked();
+    void on_AnalogMask_clicked();
+
+    void NewSlope(float val);
+    void NewZero(float val);
+    void NewMassExt(float val);
+    void NewAnalog(int val);
+
+    void UpdateLocalUI();
+    void GetNewSettings();
+
 
 private:
     Ui::Calibration880nm *ui;
+
+    float slope = 0;
+    float zero = 0;
+    float massExt = 0;
+    int analog = 0;
+
+    int OnExit();
+
+    void showEvent(QShowEvent * event);
+    void closeEvent(QCloseEvent * event);
 };
 
 #endif // CALIBRATION880NM_H

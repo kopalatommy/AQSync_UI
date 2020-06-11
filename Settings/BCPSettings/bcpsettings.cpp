@@ -22,38 +22,37 @@ BCPSettings::~BCPSettings()
 
 void BCPSettings::on_AdaptiveFilter_clicked()
 {
-    SettingFormsHandler::JumpToIndex(8);
-    close();
+    SettingFormsHandler::JumpToIndex(ADAPTIVEFILTER_BCP_INDEX);
 }
 
 void BCPSettings::on_cali880_clicked()
 {
-    SettingFormsHandler::JumpToIndex(11);
+    SettingFormsHandler::JumpToIndex(CALIBRATION_880NM_INDEX);
     close();
 }
 
 void BCPSettings::on_FlowCalibration_clicked()
 {
-    SettingFormsHandler::JumpToIndex(12);
+    SettingFormsHandler::JumpToIndex(FLOWCALIBRATION_BCP_INDEX);
     close();
 }
 
 void BCPSettings::on_Auto_Zero_clicked()
 {
-    SettingFormsHandler::JumpToIndex(9);
+    SettingFormsHandler::JumpToIndex(AUTOZERO_BCP_INDEX);
     close();
 }
 
 void BCPSettings::on_cali405_clicked()
 {
-    SettingFormsHandler::JumpToIndex(10);
+    SettingFormsHandler::JumpToIndex(CALIBRATION_405NM_INDEX);
     close();
 }
 
 void BCPSettings::on_TP_clicked()
 {
 
-    SettingFormsHandler::JumpToIndex(13);
+    SettingFormsHandler::JumpToIndex(TPCORRECTION_BCP_INDEX);
     close();
 
 }
@@ -71,5 +70,5 @@ void BCPSettings::on_Home_Button_clicked()
 
 void BCPSettings::on_NextRight_clicked()
 {
-    SettingFormsHandler::MoveRight();
+    SettingFormsHandler::JumpToIndex(0);
 }

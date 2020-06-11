@@ -16,20 +16,17 @@ tpcorrectionsform::~tpcorrectionsform()
     delete ui;
 }
 
-void tpcorrectionsform::on_pushButton_clicked()
+void tpcorrectionsform::on_Left_clicked()
 {
-    SettingFormsHandler::JumpToIndex(12);
-    close();
+    SettingFormsHandler::JumpToIndex(FLOWCALIBRATION_BCP_INDEX);
 }
 
-void tpcorrectionsform::on_pushButton_2_clicked()
+void tpcorrectionsform::on_Right_clicked()
 {
-    SettingFormsHandler::JumpToIndex(8);
-    close();
+    SettingFormsHandler::JumpToIndex(ADAPTIVEFILTER_BCP_INDEX);
 }
 
-void tpcorrectionsform::on_pushButton_3_clicked()
+void tpcorrectionsform::on_Home_clicked()
 {
-    SettingFormsHandler::JumpToIndex(1);
-    close();
+    SettingFormsHandler::JumpToIndex(SETTINGS_BCP_INDEX);
 }

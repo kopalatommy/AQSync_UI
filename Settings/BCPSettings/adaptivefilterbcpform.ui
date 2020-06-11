@@ -16,7 +16,7 @@
   <widget class="QLabel" name="percentLabel">
    <property name="geometry">
     <rect>
-     <x>430</x>
+     <x>120</x>
      <y>270</y>
      <width>241</width>
      <height>111</height>
@@ -48,10 +48,10 @@
     <string/>
    </property>
   </widget>
-  <widget class="QPushButton" name="Previous">
+  <widget class="QPushButton" name="Left">
    <property name="geometry">
     <rect>
-     <x>10</x>
+     <x>20</x>
      <y>120</y>
      <width>100</width>
      <height>351</height>
@@ -131,8 +131,8 @@
   <widget class="QLabel" name="diffLabel">
    <property name="geometry">
     <rect>
-     <x>134</x>
-     <y>275</y>
+     <x>440</x>
+     <y>290</y>
      <width>231</width>
      <height>101</height>
     </rect>
@@ -199,7 +199,7 @@
    <property name="geometry">
     <rect>
      <x>430</x>
-     <y>270</y>
+     <y>280</y>
      <width>241</width>
      <height>111</height>
     </rect>
@@ -208,7 +208,7 @@
     <string/>
    </property>
   </widget>
-  <widget class="QPushButton" name="home">
+  <widget class="QPushButton" name="Home">
    <property name="geometry">
     <rect>
      <x>690</x>
@@ -231,7 +231,7 @@
     </size>
    </property>
   </widget>
-  <widget class="QPushButton" name="Next">
+  <widget class="QPushButton" name="Right">
    <property name="geometry">
     <rect>
      <x>690</x>
@@ -258,7 +258,7 @@
    <property name="geometry">
     <rect>
      <x>130</x>
-     <y>270</y>
+     <y>280</y>
      <width>241</width>
      <height>111</height>
     </rect>
@@ -272,13 +272,13 @@
   <zorder>AdaptiveFilter</zorder>
   <zorder>percentLabel</zorder>
   <zorder>shortMask</zorder>
-  <zorder>Previous</zorder>
+  <zorder>Left</zorder>
   <zorder>longMask</zorder>
   <zorder>diffLabel</zorder>
   <zorder>Save</zorder>
   <zorder>differenceMask</zorder>
-  <zorder>home</zorder>
-  <zorder>Next</zorder>
+  <zorder>Home</zorder>
+  <zorder>Right</zorder>
   <zorder>percentMask</zorder>
  </widget>
  <resources>

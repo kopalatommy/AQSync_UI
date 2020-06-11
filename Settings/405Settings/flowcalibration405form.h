@@ -34,7 +34,7 @@ public slots:
 private slots:
     void on_Previous_clicked();
     void on_Next_clicked();
-    void on_home_clicked();
+    void on_Home_clicked();
     void on_CellSlopeMask_clicked();
     void on_OzoneSlopeMask_clicked();
     void on_Save_clicked();

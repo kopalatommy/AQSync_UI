@@ -56,4 +56,4 @@ private:
     void closeEvent(QCloseEvent *event);
 };
 
-#endif // NOCALIBRATION405FORM_H
+#endif // NOCALIBRATION405FORM_HS

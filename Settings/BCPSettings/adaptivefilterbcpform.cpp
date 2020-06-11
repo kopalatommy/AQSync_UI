@@ -14,9 +14,9 @@ AdaptiveFilterBCPForm::AdaptiveFilterBCPForm(QWidget *parent) :
     ui->differenceMask->setStyleSheet("QPushButton { background-color: rgba(10, 0, 0, 0); }");
     ui->percentMask->setStyleSheet("QPushButton { background-color: rgba(10, 0, 0, 0); }");
 
-    ui->home->setStyleSheet("QPushButton { background-color: rgba(10, 0, 0, 0); }");
-    ui->Next->setStyleSheet("QPushButton { background-color: rgba(10, 0, 0, 0); }");
-    ui->Previous->setStyleSheet("QPushButton { background-color: rgba(10, 0, 0, 0); }");
+    ui->Home->setStyleSheet("QPushButton { background-color: rgba(10, 0, 0, 0); }");
+    ui->Left->setStyleSheet("QPushButton { background-color: rgba(10, 0, 0, 0); }");
+    ui->Right->setStyleSheet("QPushButton { background-color: rgba(10, 0, 0, 0); }");
     ui->Save->setStyleSheet("QPushButton { background-color: rgba(10, 0, 0, 0); }");
 
     QPalette pal = palette();
@@ -35,19 +35,19 @@ AdaptiveFilterBCPForm::~AdaptiveFilterBCPForm()
 
 void AdaptiveFilterBCPForm::on_Left_clicked()
 {
-    SettingFormsHandler::JumpToIndex(13);
+    SettingFormsHandler::JumpToIndex(TPCORRECTION_BCP_INDEX);
     close();
 }
 
 void AdaptiveFilterBCPForm::on_Right_clicked()
 {
-    SettingFormsHandler::JumpToIndex(9);
+    SettingFormsHandler::JumpToIndex(AUTOZERO_BCP_INDEX);
     close();
 }
 
 void AdaptiveFilterBCPForm::on_Home_clicked()
 {
-    SettingFormsHandler::JumpToIndex(1);
+    SettingFormsHandler::JumpToIndex(SETTINGS_BCP_INDEX);
     close();
 }
 

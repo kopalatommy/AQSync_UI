@@ -100,6 +100,18 @@ public:
         PeriodLabel = new QLabel(AutoZeroBCP);
         PeriodLabel->setObjectName(QStringLiteral("PeriodLabel"));
         PeriodLabel->setGeometry(QRect(186, 189, 401, 61));
+        PeriodLabel->raise();
+        FreqLabel->raise();
+        Left->raise();
+        Right->raise();
+        Home->raise();
+        Save->raise();
+        zeroingFrequenctMask->raise();
+        AutoZero->raise();
+        checkBox->raise();
+        zeroPeriodMask->raise();
+        BCZeroMask->raise();
+        PMZeroMask->raise();
 
         retranslateUi(AutoZeroBCP);
 

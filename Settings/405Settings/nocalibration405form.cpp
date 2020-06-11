@@ -37,19 +37,19 @@ NOCalibration405form::~NOCalibration405form()
 
 void NOCalibration405form::on_Left_clicked()
 {
-    SettingFormsHandler::JumpToIndex(3);
+    SettingFormsHandler::JumpToIndex(MODE_405_INDEX);
     close();
 }
 
 void NOCalibration405form::on_Right_clicked()
 {
-    SettingFormsHandler::JumpToIndex(5);
+    SettingFormsHandler::JumpToIndex(NO2CALIBRATION_405_INDEX);
     close();
 }
 
 void NOCalibration405form::on_Home_clicked()
 {
-    SettingFormsHandler::JumpToIndex(0);
+    SettingFormsHandler::JumpToIndex(SETTINGS_405_INDEX);
     close();
 }
 
@@ -166,4 +166,3 @@ void NOCalibration405form::closeEvent(QCloseEvent *event)
         }
     }
 }
-

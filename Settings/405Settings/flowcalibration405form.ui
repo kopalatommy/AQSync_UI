@@ -178,6 +178,7 @@
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
+  <zorder>ozoneFlowLabel</zorder>
   <zorder>FlowCalibration</zorder>
   <zorder>OzoneSlopeMask</zorder>
   <zorder>Home</zorder>
@@ -185,7 +186,6 @@
   <zorder>cellFlowLabel</zorder>
   <zorder>Next</zorder>
   <zorder>Previous</zorder>
-  <zorder>ozoneFlowLabel</zorder>
   <zorder>CellSlopeMask</zorder>
  </widget>
  <resources>

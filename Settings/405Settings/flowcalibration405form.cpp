@@ -33,15 +33,15 @@ FlowCalibration405Form::~FlowCalibration405Form()
 
 void FlowCalibration405Form::on_Previous_clicked()
 {
-    SettingFormsHandler::JumpToIndex(ADAPTIVEFILTER_405_Index);
+    SettingFormsHandler::JumpToIndex(NO2CALIBRATION_405_INDEX);
 }
 
 void FlowCalibration405Form::on_Next_clicked()
 {
-    SettingFormsHandler::JumpToIndex(NOCALIBRATION_405_INDEX);
+    SettingFormsHandler::JumpToIndex(ADAPTIVEFILTER_405_Index);
 }
 
-void FlowCalibration405Form::on_home_clicked()
+void FlowCalibration405Form::on_Home_clicked()
 {
     SettingFormsHandler::JumpToIndex(SETTINGS_405_INDEX);
 }
@@ -114,6 +114,7 @@ void FlowCalibration405Form::GetNewSettings()
 
 void FlowCalibration405Form::UpdateLocalUI()
 {
+
     ui->cellFlowLabel->setText("Cell flow slope:\n" + QString::number(static_cast<double>(cellFlowSlope)));
     ui->ozoneFlowLabel->setText("Ozone flow slope:\n" + QString::number(static_cast<double>(ozoneFlowSlope)));
 }

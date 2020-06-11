@@ -18,18 +18,18 @@ calibration405nm::~calibration405nm()
 
 void calibration405nm::on_Left_clicked()
 {
-    SettingFormsHandler::JumpToIndex(11);
+    SettingFormsHandler::JumpToIndex(CALIBRATION_880NM_INDEX);
     close();
 }
 
 void calibration405nm::on_Right_clicked()
 {
-    SettingFormsHandler::JumpToIndex(12);
+    SettingFormsHandler::JumpToIndex(FLOWCALIBRATION_BCP_INDEX);
     close();
 }
 
 void calibration405nm::on_Home_clicked()
 {
-    SettingFormsHandler::JumpToIndex(1);
+    SettingFormsHandler::JumpToIndex(SETTINGS_BCP_INDEX);
     close();
 }

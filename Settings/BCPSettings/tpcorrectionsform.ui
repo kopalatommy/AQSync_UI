@@ -13,7 +13,7 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="Left">
    <property name="geometry">
     <rect>
      <x>30</x>
@@ -36,7 +36,7 @@
     </size>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_2">
+  <widget class="QPushButton" name="Right">
    <property name="geometry">
     <rect>
      <x>650</x>
@@ -59,7 +59,7 @@
     </size>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_3">
+  <widget class="QPushButton" name="Home">
    <property name="geometry">
     <rect>
      <x>650</x>
@@ -82,7 +82,7 @@
     </size>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_4">
+  <widget class="QPushButton" name="Save">
    <property name="geometry">
     <rect>
      <x>310</x>
@@ -105,7 +105,7 @@
     </size>
    </property>
   </widget>
-  <widget class="QLabel" name="label">
+  <widget class="QLabel" name="TPCorections">
    <property name="geometry">
     <rect>
      <x>240</x>
@@ -123,7 +123,7 @@
     <string>T-P Corrections</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_2">
+  <widget class="QLabel" name="PSTD">
    <property name="geometry">
     <rect>
      <x>300</x>
@@ -141,7 +141,7 @@
     <string>PSTD = </string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_3">
+  <widget class="QLabel" name="TSTD">
    <property name="geometry">
     <rect>
      <x>300</x>
@@ -159,7 +159,7 @@
     <string>TSTD = </string>
    </property>
   </widget>
-  <widget class="QCheckBox" name="checkBox">
+  <widget class="QCheckBox" name="Enabled">
    <property name="geometry">
     <rect>
      <x>300</x>
