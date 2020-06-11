@@ -35,19 +35,18 @@ AdaptiveFilter405Form::~AdaptiveFilter405Form()
 
 void AdaptiveFilter405Form::on_Next_clicked()
 {
-    SettingFormsHandler::JumpToIndex(3);
+    SettingFormsHandler::JumpToIndex(MODE_405_INDEX);
     close();
 }
 
 void AdaptiveFilter405Form::on_Previous_clicked()
 {
-    SettingFormsHandler::JumpToIndex(7);
-    close();
+    SettingFormsHandler::JumpToIndex(FLOWCALIBRATION_405_INDEX);
 }
 
 void AdaptiveFilter405Form::on_home_clicked()
 {
-    SettingFormsHandler::JumpToIndex(0);
+    SettingFormsHandler::JumpToIndex(SETTINGS_405_INDEX);
     close();
 }
 

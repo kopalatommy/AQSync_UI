@@ -23,14 +23,14 @@ QT_BEGIN_NAMESPACE
 class Ui_AdaptiveFilter405Form
 {
 public:
-    QPushButton *differenceMask;
+    QPushButton *percentMask;
     QLabel *shortLabel;
     QPushButton *shortMask;
     QPushButton *Next;
     QLabel *diffLabel;
     QLabel *longLabel;
     QLabel *AdaptiveFilter;
-    QPushButton *percentMask;
+    QPushButton *differenceMask;
     QPushButton *Save;
     QLabel *percentLabel;
     QPushButton *longMask;
@@ -42,9 +42,9 @@ public:
         if (AdaptiveFilter405Form->objectName().isEmpty())
             AdaptiveFilter405Form->setObjectName(QStringLiteral("AdaptiveFilter405Form"));
         AdaptiveFilter405Form->resize(800, 480);
-        differenceMask = new QPushButton(AdaptiveFilter405Form);
-        differenceMask->setObjectName(QStringLiteral("differenceMask"));
-        differenceMask->setGeometry(QRect(430, 270, 241, 111));
+        percentMask = new QPushButton(AdaptiveFilter405Form);
+        percentMask->setObjectName(QStringLiteral("percentMask"));
+        percentMask->setGeometry(QRect(430, 270, 241, 111));
         shortLabel = new QLabel(AdaptiveFilter405Form);
         shortLabel->setObjectName(QStringLiteral("shortLabel"));
         shortLabel->setGeometry(QRect(130, 120, 241, 111));
@@ -80,9 +80,9 @@ public:
         font1.setPointSize(30);
         AdaptiveFilter->setFont(font1);
         AdaptiveFilter->setAlignment(Qt::AlignCenter);
-        percentMask = new QPushButton(AdaptiveFilter405Form);
-        percentMask->setObjectName(QStringLiteral("percentMask"));
-        percentMask->setGeometry(QRect(130, 270, 241, 111));
+        differenceMask = new QPushButton(AdaptiveFilter405Form);
+        differenceMask->setObjectName(QStringLiteral("differenceMask"));
+        differenceMask->setGeometry(QRect(130, 270, 241, 111));
         Save = new QPushButton(AdaptiveFilter405Form);
         Save->setObjectName(QStringLiteral("Save"));
         Save->setGeometry(QRect(330, 410, 120, 60));
@@ -113,14 +113,14 @@ public:
         home->setIcon(icon3);
         home->setIconSize(QSize(100, 100));
         percentLabel->raise();
-        differenceMask->raise();
+        percentMask->raise();
         shortLabel->raise();
         shortMask->raise();
         Next->raise();
         diffLabel->raise();
         longLabel->raise();
         AdaptiveFilter->raise();
-        percentMask->raise();
+        differenceMask->raise();
         Save->raise();
         longMask->raise();
         Previous->raise();
@@ -134,7 +134,7 @@ public:
     void retranslateUi(QWidget *AdaptiveFilter405Form)
     {
         AdaptiveFilter405Form->setWindowTitle(QApplication::translate("AdaptiveFilter405Form", "Form", 0));
-        differenceMask->setText(QString());
+        percentMask->setText(QString());
         shortLabel->setText(QApplication::translate("AdaptiveFilter405Form", "Short Length:\n"
 "5", 0));
         shortMask->setText(QString());
@@ -144,7 +144,7 @@ public:
         longLabel->setText(QApplication::translate("AdaptiveFilter405Form", "Long Length:\n"
 "10", 0));
         AdaptiveFilter->setText(QApplication::translate("AdaptiveFilter405Form", "Adaptive Filter", 0));
-        percentMask->setText(QString());
+        differenceMask->setText(QString());
         Save->setText(QString());
         percentLabel->setText(QApplication::translate("AdaptiveFilter405Form", "Percent:\n"
 "10", 0));

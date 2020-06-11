@@ -33,20 +33,17 @@ FlowCalibration405Form::~FlowCalibration405Form()
 
 void FlowCalibration405Form::on_Previous_clicked()
 {
-    SettingFormsHandler::JumpToIndex(5);
-    close();
+    SettingFormsHandler::JumpToIndex(ADAPTIVEFILTER_405_Index);
 }
 
 void FlowCalibration405Form::on_Next_clicked()
 {
-    SettingFormsHandler::JumpToIndex(7);
-    close();
+    SettingFormsHandler::JumpToIndex(NOCALIBRATION_405_INDEX);
 }
 
 void FlowCalibration405Form::on_home_clicked()
 {
-    SettingFormsHandler::JumpToIndex(0);
-    close();
+    SettingFormsHandler::JumpToIndex(SETTINGS_405_INDEX);
 }
 
 void FlowCalibration405Form::on_CellSlopeMask_clicked()
