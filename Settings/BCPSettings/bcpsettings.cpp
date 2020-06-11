@@ -61,16 +61,15 @@ void BCPSettings::on_TP_clicked()
 void BCPSettings::on_NextLeft_clicked()
 {
 
-    SettingFormsHandler::JumpToIndex(0);
-    close();
+    SettingFormsHandler::MoveLeft();
 }
 
 void BCPSettings::on_Home_Button_clicked()
 {
-    close();
+    SettingFormsHandler::CloseForms();
 }
 
 void BCPSettings::on_NextRight_clicked()
 {
-//  SettingFormsHandler::MoveRight();
+    SettingFormsHandler::MoveRight();
 }

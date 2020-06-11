@@ -121,8 +121,8 @@ void MainWindow::CreateSettingPages()
 
     settings->append(new settings405);
     settings->append(new BCPSettings);
-    settings->append(new adaptivefilter405form);
-    settings->append(new Mode405form);
+    settings->append(new AdaptiveFilter405Form);
+    settings->append(new Mode405Form);
     settings->append(new NOCalibration405form);
     settings->append(new no2calibration405form);
     settings->append(new flowcalibration405form);

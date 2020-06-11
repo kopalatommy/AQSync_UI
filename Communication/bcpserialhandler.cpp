@@ -17,8 +17,8 @@ BCPSerialHandler * BCPSerialHandler::GetInstance()
 
 void BCPSerialHandler::SetUpSerialPort()
 {
-    serialPort.setPortName(PORT_NAME);
-    serialPort.setBaudRate(BAUD_RATE);
+    serialPort.setPortName(PORT_NAME_BCP);
+    serialPort.setBaudRate(BAUD_RATE_BCP);
 
     if(serialPort.open(QIODevice::ReadWrite))
     {
@@ -152,6 +152,8 @@ void BCPSerialHandler::ParseData(QByteArray data)
         {
             StartSync();
         }
+
+        emit NewDateSetting();
         break;
 
     case TIME_MARKER_BCP:

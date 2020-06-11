@@ -30,6 +30,12 @@ public:
 signals:
     void ParsedDataLine();
 
+    void NewAdFilterSettings405();
+    void NewModeSettings405();
+    void NewNOCalSetting405();
+    void NewNo2CalSettings405();
+    void NewFlowCalSettings405();
+
 private slots:
     void OnMessageTimerTimeout();
     void OnAckTimeout(QByteArray message);

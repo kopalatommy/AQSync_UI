@@ -1,19 +1,24 @@
 #ifndef MODE405FORM_H
 #define MODE405FORM_H
 
-#include <QDialog>
+#include <QWidget>
+#include <QMessageBox>
+
+#include "Settings/settingformshandler.h"
+#include "DataHandlers/settingshandler.h"
+#include "Communication/serialhandler405.h"
 
 namespace Ui {
-class Mode405form;
+class Mode405Form;
 }
 
-class Mode405form : public QDialog
+class Mode405Form : public QWidget
 {
     Q_OBJECT
 
 public:
-    explicit Mode405form(QWidget *parent = 0);
-    ~Mode405form();
+    explicit Mode405Form(QWidget *parent = nullptr);
+    ~Mode405Form();
 
 private slots:
     void on_Left_clicked();
@@ -22,8 +27,13 @@ private slots:
 
     void on_Home_clicked();
 
+    void on_Save_clicked();
+
 private:
-    Ui::Mode405form *ui;
+    Ui::Mode405Form *ui;
+
+    void showEvent(QShowEvent * event);
+    void closeEvent(QCloseEvent * event);
 };
 
 #endif // MODE405FORM_H

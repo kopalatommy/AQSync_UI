@@ -1,36 +1,64 @@
 #include "mode405form.h"
 #include "ui_mode405form.h"
-#include "adaptivefilter405form.h"
-#include "nocalibration405form.h"
-#include "settings405.h"
 
-
-Mode405form::Mode405form(QWidget *parent) :
-    QDialog(parent),
-    ui(new Ui::Mode405form)
+Mode405Form::Mode405Form(QWidget *parent) :
+    QWidget(parent),
+    ui(new Ui::Mode405Form)
 {
     ui->setupUi(this);
 }
 
-Mode405form::~Mode405form()
+Mode405Form::~Mode405Form()
 {
     delete ui;
 }
 
-void Mode405form::on_Left_clicked()
+void Mode405Form::on_Left_clicked()
 {
-    SettingFormsHandler::JumpToIndex(2);
-    close();
+    SettingFormsHandler::MoveLeft();
 }
 
-void Mode405form::on_Right_clicked()
+void Mode405Form::on_Right_clicked()
 {
-    SettingFormsHandler::JumpToIndex(4);
-    close();
+    SettingFormsHandler::MoveRight();
 }
 
-void Mode405form::on_Home_clicked()
+void Mode405Form::on_Home_clicked()
 {
-    SettingFormsHandler::JumpToIndex(0);
-    close();
+    SettingFormsHandler::CloseForms();
+}
+
+void Mode405Form::on_Save_clicked()
+{
+    if(ui->setMode->currentIndex() != SettingsHandler::GetInstance()->GetMode_405())
+    {
+        SettingsHandler::GetInstance()->SetMode_405(static_cast<unsigned char>(ui->setMode->currentIndex()));
+        SerialHandler405::GetInstance()->SendSetting(MODE_MARKER_405, static_cast<unsigned char>(ui->setMode->currentIndex()));
+    }
+}
+
+void Mode405Form::showEvent(QShowEvent *event)
+{
+    QWidget::showEvent(event);
+    ui->setMode->setCurrentIndex(SettingsHandler::GetInstance()->GetMode_405());
+}
+
+void Mode405Form::closeEvent(QCloseEvent *event)
+{
+    QWidget::closeEvent(event);
+    if(ui->setMode->currentIndex() != SettingsHandler::GetInstance()->GetMode_405())
+    {
+        QMessageBox msg;
+        msg.setText("Save unsaved setting?");
+        msg.setStandardButtons(QMessageBox::StandardButton::Yes | QMessageBox::StandardButton::No);
+        switch (msg.exec())
+        {
+        case QMessageBox::StandardButton::Yes:
+            on_Save_clicked();
+            break;
+
+        default:
+            break;
+        }
+    }
 }

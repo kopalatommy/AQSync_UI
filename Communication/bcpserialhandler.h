@@ -13,8 +13,8 @@
 #include "utilities.h"
 #include "syncstatus.h"
 
-#define PORT_NAME "ttyUSB0"
-#define BAUD_RATE 19200
+#define PORT_NAME_BCP "ttyUSB0"
+#define BAUD_RATE_BCP 19200
 
 class BCPSerialHandler : public QObject
 {
@@ -41,12 +41,6 @@ signals:
     void New405CalSettingsBCP();
     void NewFlowCalSettingsBCP();
     void NewTPCorrSettingsBCP();
-
-    void NewAdFilterSettings405();
-    void NewModeSettings405();
-    void NewNOCalSetting405();
-    void NewNo2CalSettings405();
-    void NewFlowCalSettings405();
 
 private slots:
     void OnMessageTimerTimeout();

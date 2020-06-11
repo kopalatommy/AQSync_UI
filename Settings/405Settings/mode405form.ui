@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Mode405form</class>
- <widget class="QDialog" name="Mode405form">
+ <class>Mode405Form</class>
+ <widget class="QWidget" name="Mode405Form">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -11,30 +11,12 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>Form</string>
   </property>
-  <widget class="QLabel" name="ModeSettings">
-   <property name="geometry">
-    <rect>
-     <x>240</x>
-     <y>10</y>
-     <width>301</width>
-     <height>101</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>35</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>Mode Settings</string>
-   </property>
-  </widget>
   <widget class="QPushButton" name="Home">
    <property name="geometry">
     <rect>
-     <x>660</x>
+     <x>690</x>
      <y>10</y>
      <width>100</width>
      <height>100</height>
@@ -54,34 +36,32 @@
     </size>
    </property>
   </widget>
-  <widget class="QPushButton" name="Left">
+  <widget class="QLabel" name="ModeSettings">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>120</y>
-     <width>100</width>
-     <height>340</height>
+     <x>0</x>
+     <y>20</y>
+     <width>801</width>
+     <height>101</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>35</pointsize>
+    </font>
+   </property>
    <property name="text">
-    <string/>
+    <string>Mode Settings</string>
    </property>
-   <property name="icon">
-    <iconset resource="../../resources.qrc">
-     <normaloff>:/Buttons/Left_Carrot.jpg</normaloff>:/Buttons/Left_Carrot.jpg</iconset>
-   </property>
-   <property name="iconSize">
-    <size>
-     <width>100</width>
-     <height>340</height>
-    </size>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
   <widget class="QPushButton" name="Right">
    <property name="geometry">
     <rect>
-     <x>660</x>
-     <y>120</y>
+     <x>690</x>
+     <y>130</y>
      <width>100</width>
      <height>340</height>
     </rect>
@@ -104,7 +84,7 @@
    <property name="geometry">
     <rect>
      <x>340</x>
-     <y>390</y>
+     <y>400</y>
      <width>120</width>
      <height>60</height>
     </rect>
@@ -123,12 +103,35 @@
     </size>
    </property>
   </widget>
+  <widget class="QPushButton" name="Left">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>130</y>
+     <width>100</width>
+     <height>340</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../../resources.qrc">
+     <normaloff>:/Buttons/Left_Carrot.jpg</normaloff>:/Buttons/Left_Carrot.jpg</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>100</width>
+     <height>340</height>
+    </size>
+   </property>
+  </widget>
   <widget class="QComboBox" name="setMode">
    <property name="geometry">
     <rect>
      <x>280</x>
-     <y>200</y>
-     <width>251</width>
+     <y>170</y>
+     <width>281</width>
      <height>61</height>
     </rect>
    </property>
@@ -158,6 +161,12 @@
     </property>
    </item>
   </widget>
+  <zorder>ModeSettings</zorder>
+  <zorder>Home</zorder>
+  <zorder>Right</zorder>
+  <zorder>Save</zorder>
+  <zorder>Left</zorder>
+  <zorder>setMode</zorder>
  </widget>
  <resources>
   <include location="../../resources.qrc"/>

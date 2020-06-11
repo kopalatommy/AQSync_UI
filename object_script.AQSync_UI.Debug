@@ -1,5 +1,4 @@
 debug/bcpserialhandler.o
-debug/communicationhandler.o
 debug/serialhandler405.o
 debug/datafilemenuform.o
 debug/filebrowserform.o
@@ -15,6 +14,8 @@ debug/modbusmaster.o
 debug/modbusslave.o
 debug/modbustestform.o
 debug/staticipform.o
+debug/adaptivefilter405form.o
+debug/mode405form.o
 debug/aboutform.o
 debug/adaptivefilterform.o
 debug/avgsettingform.o
@@ -35,10 +36,8 @@ debug/numberpadform.o
 debug/paramtersform.o
 debug/utilities.o
 debug/settings405.o
-debug/adaptivefilter405form.o
 debug/nocalibration405form.o
 debug/flowcalibration405form.o
-debug/mode405form.o
 debug/no2calibration405form.o
 debug/datafilemenu405form.o
 debug/datafile405form.o
@@ -53,7 +52,6 @@ debug/calibration405nm.o
 debug/tpcorrectionsform.o
 debug/qrc_resources.o
 debug/moc_bcpserialhandler.o
-debug/moc_communicationhandler.o
 debug/moc_serialhandler405.o
 debug/moc_datafilemenuform.o
 debug/moc_filebrowserform.o
@@ -67,6 +65,8 @@ debug/moc_modbusmaster.o
 debug/moc_modbusslave.o
 debug/moc_modbustestform.o
 debug/moc_staticipform.o
+debug/moc_adaptivefilter405form.o
+debug/moc_mode405form.o
 debug/moc_aboutform.o
 debug/moc_adaptivefilterform.o
 debug/moc_avgsettingform.o
@@ -84,10 +84,8 @@ debug/moc_serialhandler.o
 debug/moc_numberpadform.o
 debug/moc_paramtersform.o
 debug/moc_settings405.o
-debug/moc_adaptivefilter405form.o
 debug/moc_nocalibration405form.o
 debug/moc_flowcalibration405form.o
-debug/moc_mode405form.o
 debug/moc_no2calibration405form.o
 debug/moc_datafilemenu405form.o
 debug/moc_datafile405form.o

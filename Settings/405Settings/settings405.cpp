@@ -1,7 +1,6 @@
 #include "settings405.h"
 #include "ui_settings405.h"
 
-
 settings405::settings405(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::settings405)
@@ -16,58 +15,55 @@ settings405::~settings405()
     delete ui;
 }
 
-
-
 void settings405::on_Mode_2_clicked()
 {
-    SettingFormsHandler::JumpToIndex(3);
+    SettingFormsHandler::JumpToIndex(MODE_405_INDEX);
     close();
 }
 
-
 void settings405::on_AdaptiveFilter_clicked()
 {
-    SettingFormsHandler::JumpToIndex(2);
+    SettingFormsHandler::JumpToIndex(ADAPTIVEFILTER_405_Index);
     close();
 }
 
 void settings405::on_NOCalibration_clicked()
 {
-    SettingFormsHandler::JumpToIndex(4);
+    SettingFormsHandler::JumpToIndex(NOCALIBRATION_405_INDEX);
     close();
 }
 
 void settings405::on_FlowCalibration_clicked()
 {
-    SettingFormsHandler::JumpToIndex(6);
+    SettingFormsHandler::JumpToIndex(FLOWCALIBRATION_405_INDEX);
     close();
 }
 
 void settings405::on_NO2Calibration_clicked()
 {
-    SettingFormsHandler::JumpToIndex(5);
+    SettingFormsHandler::JumpToIndex(NO2CALIBRATION_405_INDEX);
     close();
 }
 
+//Review, parameters will be in a different position
 void settings405::on_Parameters_clicked()
 {
-    SettingFormsHandler::JumpToIndex(7);
+    SettingFormsHandler::JumpToIndex(PARAMETERS_405_INDEX);
     close();
 }
 
 void settings405::on_Home_Button_clicked()
 {
-    SettingFormsHandler::JumpToIndex(20);
     close();
 }
 
 void settings405::on_NextLeft_clicked()
 {
-    SettingFormsHandler::JumpToIndex(1);
+    SettingFormsHandler::MoveLeft();
     close();
 }
 
 void settings405::on_NextRight_clicked()
 {
-    //SettingFormsHandler::MoveRight();
+    SettingFormsHandler::MoveRight();
 }

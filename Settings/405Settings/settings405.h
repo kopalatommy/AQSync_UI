@@ -21,7 +21,6 @@ public:
 private slots:
     void on_Mode_2_clicked();
 
-
     void on_AdaptiveFilter_clicked();
 
     void on_NOCalibration_clicked();

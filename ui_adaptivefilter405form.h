@@ -12,102 +12,149 @@
 #include <QtCore/QVariant>
 #include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QDialog>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
 
-class Ui_adaptivefilter405form
+class Ui_AdaptiveFilter405Form
 {
 public:
-    QLabel *AdaptiveFilter;
-    QPushButton *Home;
-    QPushButton *Left;
-    QPushButton *Right;
-    QPushButton *shortMask;
-    QPushButton *percentMask;
     QPushButton *longMask;
     QPushButton *differenceMask;
-    QPushButton *pushButton;
+    QPushButton *Home;
+    QPushButton *percentMask;
+    QPushButton *Right;
+    QPushButton *save;
+    QLabel *AdaptiveFilter;
+    QPushButton *shortMask;
+    QPushButton *Left;
+    QLabel *diffLabel;
+    QLabel *shortLabel;
+    QLabel *longLabel;
+    QLabel *percentLabel;
 
-    void setupUi(QDialog *adaptivefilter405form)
+    void setupUi(QWidget *AdaptiveFilter405Form)
     {
-        if (adaptivefilter405form->objectName().isEmpty())
-            adaptivefilter405form->setObjectName(QString::fromUtf8("adaptivefilter405form"));
-        adaptivefilter405form->resize(800, 480);
-        AdaptiveFilter = new QLabel(adaptivefilter405form);
+        if (AdaptiveFilter405Form->objectName().isEmpty())
+            AdaptiveFilter405Form->setObjectName(QString::fromUtf8("AdaptiveFilter405Form"));
+        AdaptiveFilter405Form->resize(800, 480);
+        longMask = new QPushButton(AdaptiveFilter405Form);
+        longMask->setObjectName(QString::fromUtf8("longMask"));
+        longMask->setGeometry(QRect(430, 120, 241, 111));
+        differenceMask = new QPushButton(AdaptiveFilter405Form);
+        differenceMask->setObjectName(QString::fromUtf8("differenceMask"));
+        differenceMask->setGeometry(QRect(430, 270, 241, 111));
+        Home = new QPushButton(AdaptiveFilter405Form);
+        Home->setObjectName(QString::fromUtf8("Home"));
+        Home->setGeometry(QRect(690, 10, 100, 100));
+        QIcon icon;
+        icon.addFile(QString::fromUtf8(":/Buttons/button_back.jpg"), QSize(), QIcon::Normal, QIcon::Off);
+        Home->setIcon(icon);
+        Home->setIconSize(QSize(100, 100));
+        percentMask = new QPushButton(AdaptiveFilter405Form);
+        percentMask->setObjectName(QString::fromUtf8("percentMask"));
+        percentMask->setGeometry(QRect(130, 270, 241, 111));
+        Right = new QPushButton(AdaptiveFilter405Form);
+        Right->setObjectName(QString::fromUtf8("Right"));
+        Right->setGeometry(QRect(690, 120, 100, 351));
+        QIcon icon1;
+        icon1.addFile(QString::fromUtf8(":/Buttons/Right_Carrot.jpg"), QSize(), QIcon::Normal, QIcon::Off);
+        Right->setIcon(icon1);
+        Right->setIconSize(QSize(100, 340));
+        save = new QPushButton(AdaptiveFilter405Form);
+        save->setObjectName(QString::fromUtf8("save"));
+        save->setGeometry(QRect(330, 410, 120, 60));
+        QIcon icon2;
+        icon2.addFile(QString::fromUtf8(":/Buttons/button_save.jpg"), QSize(), QIcon::Normal, QIcon::Off);
+        save->setIcon(icon2);
+        save->setIconSize(QSize(120, 60));
+        AdaptiveFilter = new QLabel(AdaptiveFilter405Form);
         AdaptiveFilter->setObjectName(QString::fromUtf8("AdaptiveFilter"));
-        AdaptiveFilter->setGeometry(QRect(110, 20, 481, 81));
+        AdaptiveFilter->setGeometry(QRect(130, 20, 481, 81));
         QFont font;
         font.setFamily(QString::fromUtf8("Calibri"));
         font.setPointSize(30);
         AdaptiveFilter->setFont(font);
         AdaptiveFilter->setAlignment(Qt::AlignCenter);
-        Home = new QPushButton(adaptivefilter405form);
-        Home->setObjectName(QString::fromUtf8("Home"));
-        Home->setGeometry(QRect(670, 10, 100, 100));
-        QIcon icon;
-        icon.addFile(QString::fromUtf8(":/Buttons/button_back.jpg"), QSize(), QIcon::Normal, QIcon::Off);
-        Home->setIcon(icon);
-        Home->setIconSize(QSize(100, 100));
-        Left = new QPushButton(adaptivefilter405form);
-        Left->setObjectName(QString::fromUtf8("Left"));
-        Left->setGeometry(QRect(20, 120, 100, 340));
-        QIcon icon1;
-        icon1.addFile(QString::fromUtf8(":/Buttons/Left_Carrot.jpg"), QSize(), QIcon::Normal, QIcon::Off);
-        Left->setIcon(icon1);
-        Left->setIconSize(QSize(100, 340));
-        Right = new QPushButton(adaptivefilter405form);
-        Right->setObjectName(QString::fromUtf8("Right"));
-        Right->setGeometry(QRect(670, 120, 100, 340));
-        QIcon icon2;
-        icon2.addFile(QString::fromUtf8(":/Buttons/Right_Carrot.jpg"), QSize(), QIcon::Normal, QIcon::Off);
-        Right->setIcon(icon2);
-        Right->setIconSize(QSize(100, 340));
-        shortMask = new QPushButton(adaptivefilter405form);
+        shortMask = new QPushButton(AdaptiveFilter405Form);
         shortMask->setObjectName(QString::fromUtf8("shortMask"));
-        shortMask->setGeometry(QRect(154, 140, 211, 111));
-        percentMask = new QPushButton(adaptivefilter405form);
-        percentMask->setObjectName(QString::fromUtf8("percentMask"));
-        percentMask->setGeometry(QRect(150, 280, 211, 111));
-        longMask = new QPushButton(adaptivefilter405form);
-        longMask->setObjectName(QString::fromUtf8("longMask"));
-        longMask->setGeometry(QRect(430, 140, 211, 111));
-        differenceMask = new QPushButton(adaptivefilter405form);
-        differenceMask->setObjectName(QString::fromUtf8("differenceMask"));
-        differenceMask->setGeometry(QRect(430, 280, 211, 111));
-        pushButton = new QPushButton(adaptivefilter405form);
-        pushButton->setObjectName(QString::fromUtf8("pushButton"));
-        pushButton->setGeometry(QRect(330, 410, 120, 60));
+        shortMask->setGeometry(QRect(130, 120, 241, 111));
+        Left = new QPushButton(AdaptiveFilter405Form);
+        Left->setObjectName(QString::fromUtf8("Left"));
+        Left->setGeometry(QRect(10, 120, 100, 351));
         QIcon icon3;
-        icon3.addFile(QString::fromUtf8(":/Buttons/button_save.jpg"), QSize(), QIcon::Normal, QIcon::Off);
-        pushButton->setIcon(icon3);
-        pushButton->setIconSize(QSize(120, 60));
+        icon3.addFile(QString::fromUtf8(":/Buttons/Left_Carrot.jpg"), QSize(), QIcon::Normal, QIcon::Off);
+        Left->setIcon(icon3);
+        Left->setIconSize(QSize(100, 340));
+        diffLabel = new QLabel(AdaptiveFilter405Form);
+        diffLabel->setObjectName(QString::fromUtf8("diffLabel"));
+        diffLabel->setGeometry(QRect(134, 275, 231, 101));
+        QFont font1;
+        font1.setPointSize(18);
+        diffLabel->setFont(font1);
+        diffLabel->setAlignment(Qt::AlignCenter);
+        shortLabel = new QLabel(AdaptiveFilter405Form);
+        shortLabel->setObjectName(QString::fromUtf8("shortLabel"));
+        shortLabel->setGeometry(QRect(130, 120, 241, 111));
+        shortLabel->setFont(font1);
+        shortLabel->setAlignment(Qt::AlignCenter);
+        longLabel = new QLabel(AdaptiveFilter405Form);
+        longLabel->setObjectName(QString::fromUtf8("longLabel"));
+        longLabel->setGeometry(QRect(430, 120, 241, 111));
+        longLabel->setFont(font1);
+        longLabel->setAlignment(Qt::AlignCenter);
+        percentLabel = new QLabel(AdaptiveFilter405Form);
+        percentLabel->setObjectName(QString::fromUtf8("percentLabel"));
+        percentLabel->setGeometry(QRect(430, 270, 241, 111));
+        percentLabel->setFont(font1);
+        percentLabel->setAlignment(Qt::AlignCenter);
+        percentLabel->raise();
+        longLabel->raise();
+        shortLabel->raise();
+        diffLabel->raise();
+        longMask->raise();
+        differenceMask->raise();
+        Home->raise();
+        percentMask->raise();
+        Right->raise();
+        save->raise();
+        AdaptiveFilter->raise();
+        shortMask->raise();
+        Left->raise();
 
-        retranslateUi(adaptivefilter405form);
+        retranslateUi(AdaptiveFilter405Form);
 
-        QMetaObject::connectSlotsByName(adaptivefilter405form);
+        QMetaObject::connectSlotsByName(AdaptiveFilter405Form);
     } // setupUi
 
-    void retranslateUi(QDialog *adaptivefilter405form)
+    void retranslateUi(QWidget *AdaptiveFilter405Form)
     {
-        adaptivefilter405form->setWindowTitle(QApplication::translate("adaptivefilter405form", "Dialog", nullptr));
-        AdaptiveFilter->setText(QApplication::translate("adaptivefilter405form", "Adaptive Filter", nullptr));
+        AdaptiveFilter405Form->setWindowTitle(QApplication::translate("AdaptiveFilter405Form", "Form", nullptr));
+        longMask->setText(QString());
+        differenceMask->setText(QString());
         Home->setText(QString());
-        Left->setText(QString());
+        percentMask->setText(QString());
         Right->setText(QString());
-        shortMask->setText(QApplication::translate("adaptivefilter405form", "PushButton", nullptr));
-        percentMask->setText(QApplication::translate("adaptivefilter405form", "PushButton", nullptr));
-        longMask->setText(QApplication::translate("adaptivefilter405form", "PushButton", nullptr));
-        differenceMask->setText(QApplication::translate("adaptivefilter405form", "PushButton", nullptr));
-        pushButton->setText(QString());
+        save->setText(QString());
+        AdaptiveFilter->setText(QApplication::translate("AdaptiveFilter405Form", "Adaptive Filter", nullptr));
+        shortMask->setText(QString());
+        Left->setText(QString());
+        diffLabel->setText(QApplication::translate("AdaptiveFilter405Form", "Difference:\n"
+"10", nullptr));
+        shortLabel->setText(QApplication::translate("AdaptiveFilter405Form", "Short Length:\n"
+"5", nullptr));
+        longLabel->setText(QApplication::translate("AdaptiveFilter405Form", "Long Length:\n"
+"10", nullptr));
+        percentLabel->setText(QApplication::translate("AdaptiveFilter405Form", "Percent:\n"
+"10", nullptr));
     } // retranslateUi
 
 };
 
 namespace Ui {
-    class adaptivefilter405form: public Ui_adaptivefilter405form {};
+    class AdaptiveFilter405Form: public Ui_AdaptiveFilter405Form {};
 } // namespace Ui
 
 QT_END_NAMESPACE

@@ -26,7 +26,6 @@ CONFIG += c++11
 
 SOURCES += \
         Communication/bcpserialhandler.cpp \
-        Communication/communicationhandler.cpp \
     Communication/serialhandler405.cpp \
         DataFiles/datafilemenuform.cpp \
         DataFiles/filebrowserform.cpp \
@@ -42,6 +41,8 @@ SOURCES += \
         Modbus/modbusslave.cpp \
         Modbus/modbustestform.cpp \
         Modbus/staticipform.cpp \
+    Settings/405Settings/adaptivefilter405form.cpp \
+    Settings/405Settings/mode405form.cpp \
         Settings/aboutform.cpp \
         Settings/adaptivefilterform.cpp \
         Settings/avgsettingform.cpp \
@@ -62,10 +63,8 @@ SOURCES += \
         paramtersform.cpp \
         utilities.cpp \
     Settings/405Settings/settings405.cpp \
-    Settings/405Settings/adaptivefilter405form.cpp \
     Settings/405Settings/nocalibration405form.cpp \
     Settings/405Settings/flowcalibration405form.cpp \
-    Settings/405Settings/mode405form.cpp \
     Settings/405Settings/no2calibration405form.cpp \
     Settings/405Settings/datafilemenu405form.cpp \
     Settings/405Settings/datafile405form.cpp \
@@ -81,7 +80,6 @@ SOURCES += \
 
 HEADERS += \
         Communication/bcpserialhandler.h \
-        Communication/communicationhandler.h \
     Communication/serialhandler405.h \
     Communication/syncstatus.h \
         DataFiles/datafilemenuform.h \
@@ -98,6 +96,8 @@ HEADERS += \
         Modbus/modbusslave.h \
         Modbus/modbustestform.h \
         Modbus/staticipform.h \
+    Settings/405Settings/adaptivefilter405form.h \
+    Settings/405Settings/mode405form.h \
         Settings/aboutform.h \
         Settings/adaptivefilterform.h \
         Settings/avgsettingform.h \
@@ -117,10 +117,8 @@ HEADERS += \
         paramtersform.h \
         utilities.h \
     Settings/405Settings/settings405.h \
-    Settings/405Settings/adaptivefilter405form.h \
     Settings/405Settings/nocalibration405form.h \
     Settings/405Settings/flowcalibration405form.h \
-    Settings/405Settings/mode405form.h \
     Settings/405Settings/no2calibration405form.h \
     Settings/405Settings/datafilemenu405form.h \
     Settings/405Settings/datafile405form.h \
@@ -141,7 +139,8 @@ FORMS += \
         Modbus/modbusform.ui \
         Modbus/modbustestform.ui \
         Modbus/staticipform.ui \
-        Settings/405Settings/adaptivefilter405form.ui \
+    Settings/405Settings/adaptivefilter405form.ui \
+    Settings/405Settings/mode405form.ui \
         Settings/aboutform.ui \
         Settings/adaptivefilterform.ui \
         Settings/avgsettingform.ui \
@@ -160,7 +159,6 @@ FORMS += \
     Settings/405Settings/settings405.ui \
     Settings/405Settings/nocalibration405form.ui \
     Settings/405Settings/flowcalibration405form.ui \
-    Settings/405Settings/mode405form.ui \
     Settings/405Settings/no2calibration405form.ui \
     Settings/405Settings/datafilemenu405form.ui \
     Settings/405Settings/datafile405form.ui \
