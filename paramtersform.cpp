@@ -20,10 +20,14 @@ void ParamtersForm::UpdateUI(){
         if(showingBCP == true)
         {
             ui->title->setText("BCP Parameters");
+
+            BCPData * data = BCPData::GetInstance();
         }
         else
         {
             ui->title->setText("405 Parameters");
+
+            DataHandler405 * data = DataHandler405::GetInstance();
         }
     }
 
@@ -123,10 +127,12 @@ void ParamtersForm::closeEvent(QCloseEvent *event)
 
 void ParamtersForm::on_leftButton_clicked()
 {
-
+    showingBCP = !showingBCP;
+    UpdateUI();
 }
 
 void ParamtersForm::on_rightButton_clicked()
 {
-
+    showingBCP = !showingBCP;
+    UpdateUI();
 }

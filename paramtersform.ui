@@ -563,7 +563,7 @@
     <string>Close</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="closeButton_2">
+  <widget class="QPushButton" name="rightButton">
    <property name="geometry">
     <rect>
      <x>570</x>
@@ -576,7 +576,7 @@
     <string>-&gt;</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="closeButton_3">
+  <widget class="QPushButton" name="leftButton">
    <property name="geometry">
     <rect>
      <x>160</x>
