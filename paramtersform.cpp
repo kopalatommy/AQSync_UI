@@ -23,7 +23,19 @@ void ParamtersForm::UpdateUI(){
 
             BCPData * data = BCPData::GetInstance();
 
-            ui->logNumber->setText("Log Number: " + QString::number(data->GetLogNumber()));
+            ui->dataLabel_1->setText("Log Number: " + QString::number(data->GetLogNumber()));
+            ui->dataLabel_2->setText("MEC(800nm): " + QString::number(data->GetMEC880()));
+            ui->dataLabel_3->setText("MEC(405nm): " + QString::number(data->GetMEC405()));
+            ui->dataLabel_4->setText("880 Ext: " + QString::number(data->GetMassExt880()));
+            ui->dataLabel_5->setText("405 Ext: " + QString::number(data->GetMassExt405()));
+            ui->dataLabel_6->setText("Cell Temp: " + QString::number(data->GetCellTemp()));
+            ui->dataLabel_7->setText("Cell Press: " + QString::number(data->GetCellPress()));
+            ui->dataLabel_8->setText("Cell Flow: " + QString::number(data->GetCellFlow()));
+            ui->dataLabel_9->setText("Flow Temp: " + QString::number(data->GetSystemTemp()));
+            ui->dataLabel_10->setText("Humidity: " + QString::number(data->GetHumidity()));
+            ui->dataLabel_11->setText("Status: " + QString::number(data->GetStatus()));
+            ui->dataLabel_12->setText("Date: " + QString(data->GetFormattedDate()));
+            ui->dataLabel_13->setText("Time: " + QString(data->GetFormattedTime()));
         }
         else
         {

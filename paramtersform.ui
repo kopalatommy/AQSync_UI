@@ -47,13 +47,13 @@
     <enum>Qt::Horizontal</enum>
    </property>
   </widget>
-  <widget class="QLabel" name="logNumber">
+  <widget class="QLabel" name="dataLabel_1">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>80</y>
-     <width>250</width>
-     <height>50</height>
+     <x>-1</x>
+     <y>69</y>
+     <width>261</width>
+     <height>61</height>
     </rect>
    </property>
    <property name="font">
@@ -68,12 +68,12 @@
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="blackCarbon">
+  <widget class="QLabel" name="dataLabel_4">
    <property name="geometry">
     <rect>
-     <x>10</x>
+     <x>-1</x>
      <y>130</y>
-     <width>250</width>
+     <width>261</width>
      <height>50</height>
     </rect>
    </property>
@@ -89,7 +89,7 @@
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="pm">
+  <widget class="QLabel" name="dataLabel_7">
    <property name="geometry">
     <rect>
      <x>10</x>
@@ -110,12 +110,12 @@
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="massExt880">
+  <widget class="QLabel" name="dataLabel_10">
    <property name="geometry">
     <rect>
-     <x>10</x>
+     <x>-1</x>
      <y>230</y>
-     <width>250</width>
+     <width>261</width>
      <height>50</height>
     </rect>
    </property>
@@ -131,12 +131,12 @@
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="massExt405">
+  <widget class="QLabel" name="dataLabel_13">
    <property name="geometry">
     <rect>
-     <x>10</x>
+     <x>-1</x>
      <y>280</y>
-     <width>250</width>
+     <width>261</width>
      <height>50</height>
     </rect>
    </property>
@@ -152,12 +152,12 @@
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="no">
+  <widget class="QLabel" name="dataLabel_16">
    <property name="geometry">
     <rect>
-     <x>10</x>
+     <x>-1</x>
      <y>331</y>
-     <width>250</width>
+     <width>261</width>
      <height>50</height>
     </rect>
    </property>
@@ -173,13 +173,13 @@
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="no2">
+  <widget class="QLabel" name="dataLabel_2">
    <property name="geometry">
     <rect>
      <x>260</x>
-     <y>80</y>
+     <y>69</y>
      <width>250</width>
-     <height>50</height>
+     <height>61</height>
     </rect>
    </property>
    <property name="font">
@@ -194,7 +194,7 @@
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="nox">
+  <widget class="QLabel" name="dataLabel_5">
    <property name="geometry">
     <rect>
      <x>260</x>
@@ -215,7 +215,7 @@
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="cellTemp">
+  <widget class="QLabel" name="dataLabel_8">
    <property name="geometry">
     <rect>
      <x>260</x>
@@ -236,7 +236,7 @@
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="cellPress">
+  <widget class="QLabel" name="dataLabel_11">
    <property name="geometry">
     <rect>
      <x>260</x>
@@ -257,7 +257,7 @@
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="cellFlow">
+  <widget class="QLabel" name="dataLabel_14">
    <property name="geometry">
     <rect>
      <x>260</x>
@@ -278,7 +278,7 @@
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="ozoneFlow">
+  <widget class="QLabel" name="dataLabel_17">
    <property name="geometry">
     <rect>
      <x>260</x>
@@ -299,7 +299,7 @@
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="pdv1">
+  <widget class="QLabel" name="dataLabel_19">
    <property name="geometry">
     <rect>
      <x>260</x>
@@ -320,13 +320,13 @@
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="pdv2">
+  <widget class="QLabel" name="dataLabel_3">
    <property name="geometry">
     <rect>
      <x>510</x>
-     <y>80</y>
-     <width>250</width>
-     <height>50</height>
+     <y>69</y>
+     <width>291</width>
+     <height>61</height>
     </rect>
    </property>
    <property name="font">
@@ -341,12 +341,12 @@
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="scrubberTemp">
+  <widget class="QLabel" name="dataLabel_6">
    <property name="geometry">
     <rect>
      <x>510</x>
      <y>130</y>
-     <width>250</width>
+     <width>291</width>
      <height>50</height>
     </rect>
    </property>
@@ -362,12 +362,12 @@
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="errorByte">
+  <widget class="QLabel" name="dataLabel_9">
    <property name="geometry">
     <rect>
      <x>510</x>
      <y>180</y>
-     <width>250</width>
+     <width>291</width>
      <height>50</height>
     </rect>
    </property>
@@ -383,12 +383,12 @@
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="data">
+  <widget class="QLabel" name="dataLabel_12">
    <property name="geometry">
     <rect>
      <x>510</x>
      <y>230</y>
-     <width>250</width>
+     <width>291</width>
      <height>50</height>
     </rect>
    </property>
@@ -404,12 +404,12 @@
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="time">
+  <widget class="QLabel" name="dataLabel_15">
    <property name="geometry">
     <rect>
      <x>510</x>
      <y>280</y>
-     <width>250</width>
+     <width>291</width>
      <height>50</height>
     </rect>
    </property>
@@ -425,12 +425,12 @@
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="mode">
+  <widget class="QLabel" name="dataLabel_18">
    <property name="geometry">
     <rect>
      <x>510</x>
      <y>330</y>
-     <width>250</width>
+     <width>291</width>
      <height>50</height>
     </rect>
    </property>
@@ -501,9 +501,9 @@
   <widget class="Line" name="line_6">
    <property name="geometry">
     <rect>
-     <x>10</x>
+     <x>0</x>
      <y>220</y>
-     <width>801</width>
+     <width>811</width>
      <height>20</height>
     </rect>
    </property>

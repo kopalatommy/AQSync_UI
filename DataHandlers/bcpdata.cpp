@@ -176,3 +176,21 @@ void BCPData::SetAutoPMZero(float val)
 {
     autoPMZero = val;
 }
+
+char * BCPData::GetFormattedDate()
+{
+    return formatedDate;
+}
+void BCPData::SetFormattedDate(char * arr)
+{
+    memcpy(formatedDate, arr, 8);
+}
+
+char * BCPData::GetFormattedTime()
+{
+    return formatedTime;
+}
+void BCPData::SetFormattedTime(char * arr)
+{
+    memcpy(formatedTime, arr, 8);
+}
