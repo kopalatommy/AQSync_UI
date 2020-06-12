@@ -12,7 +12,7 @@ Calibration880nm::Calibration880nm(QWidget *parent) :
 
     ui->slopeMask->setStyleSheet("QPushButton { background-color: rgba(10, 0, 0, 0); }");
     ui->zeroMask->setStyleSheet("QPushButton { background-color: rgba(10, 0, 0, 0); }");
-    ui->massExtMask->setStyleSheet("QPushButton { background-color: rgba(10, 0, 0, 0); }");
+    ui->MassExtMask->setStyleSheet("QPushButton { background-color: rgba(10, 0, 0, 0); }");
     ui->AnalogMask->setStyleSheet("QPushButton { background-color: rgba(10, 0, 0, 0); }");
 
     ui->Home->setStyleSheet("QPushButton { background-color: rgba(10, 0, 0, 0); }");
@@ -105,35 +105,28 @@ void Calibration880nm::on_Save_clicked(){
    //still needs to be done
     bool newSetting = false;
 
-    Globals * g = Globals::getInstance();
+    SettingsHandler * g = SettingsHandler::GetInstance();
 
     //Check to see if the user changed the setting
     //If the difference is greater than 2 point precision, than it is a new value
-    if(fabs(static_cast<double>(g->massExt880 - massExt)) > 0.01){
-        g->massExt880 = massExt;
-        CommunicationHandler::getInstance()->ReceiveNewSetting(bcMassExtMarker, g->massExt880);
+    if((g->GetMassExt880_bcp() - massExt) > 0.01){
+        g->SetMassExt880_bcp(massExt);
         newSetting = true;
     }
-    if(fabs(static_cast<double>(g->bcSlope - slope)) > 0.001){
-        g->bcSlope = slope;
-        CommunicationHandler::getInstance()->ReceiveNewSetting(bcSlopeMarker, g->bcSlope);
+    if((g->GetBCSlope_bcp() - slope) > 0.001){
+        g->SetBCSlope_bcp(slope);
         newSetting = true;
     }
-    if(fabs(static_cast<double>(g->bcZero - zero)) > 0.01){
-        g->bcZero = zero;
-        CommunicationHandler::getInstance()->ReceiveNewSetting(bcZeroMarker, g->bcZero);
+    if((g->GetBCZero_bcp() - zero) > 0.01){
+        g->SetBCZero_bcp(zero);
         newSetting = true;
     }
-    if(analog != g->analog880){
-        g->analog880 = analog;
-        CommunicationHandler::getInstance()->ReceiveNewSetting(analog880Marker, g->analog880);
+    if(analog != g->GetAnalog880_bcp()){
+        g->SetAnalog880_bcp(analog);
         newSetting = true;
     }
 
     if(newSetting){
-        //Update the setting txt file
-        Globals::getInstance()->writeSettingsFile();
-
         QMessageBox msg;
         msg.setText("Settings added to queue");
         msg.setStyleSheet("QMessageBox{ border: 1px solid black; }");
@@ -155,18 +148,15 @@ void Calibration880nm::GetNewSettings()
     updateLocalUI();
 }
 
-//Handles setting up and connecting the numberpad form
 
 
 void Calibration880nm::updateLocalUI(){
+    ui->slopeLabel->setText("Slope:\n" + QString::number(slope));
+    ui->zeroLabel->setText("Zero:\n" + QString::number(zero));
+    ui->massExtLabel->setText("Mass Ext:\n" + QString::number(massExt));
+    ui->analogLabel->setText("Analog:\n" + QString::number(analog));
 
-    //need to updateLocalUI and Save_clicked()
- /*   ui->shortLabel->setText("Short Length:\n" + QString::number(shortLength));
-    ui->longLabel->setText("Long Length:\n" + QString::number(longLength));
-    ui->diffLabel->setText("Difference:\n" + QString::number(difference));
-    ui->percentLabel->setText("Percent:\n" + QString::number(percent));
-
-    qDebug() << "Updated UI";    */
+    qDebug() << "Updated UI";
 
 }
 
@@ -205,3 +195,4 @@ void Calibration880nm::closeEvent(QCloseEvent *event)
         }
     }
 }
+
