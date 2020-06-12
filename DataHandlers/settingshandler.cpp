@@ -594,7 +594,6 @@ void SettingsHandler::ReadBCPSettings()
     }
 }
 
-
 void SettingsHandler::WriteAllSettings()
 {
     Write405Settings();
