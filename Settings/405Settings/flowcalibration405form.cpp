@@ -51,6 +51,7 @@ void FlowCalibration405Form::on_CellSlopeMask_clicked()
     connect(NumberPadForm::GetInstance(), &NumberPadForm::NewFloat, this, &FlowCalibration405Form::NewCellFlowSlope);
     NumberPadForm::GetInstance()->SetInitialValues(NumberPadForm::Types::floatV, .5, 1.5, this);
     NumberPadForm::GetInstance()->show();
+    dontGrab = true;
 }
 void FlowCalibration405Form::NewCellFlowSlope(float s)
 {
@@ -63,6 +64,7 @@ void FlowCalibration405Form::on_OzoneSlopeMask_clicked()
     connect(NumberPadForm::GetInstance(), &NumberPadForm::NewFloat, this, &FlowCalibration405Form::NewOzoneFlowSlope);
     NumberPadForm::GetInstance()->SetInitialValues(NumberPadForm::Types::floatV, .5, 1.5, this);
     NumberPadForm::GetInstance()->show();
+    dontGrab = true;
 }
 void FlowCalibration405Form::NewOzoneFlowSlope(float s)
 {
@@ -80,7 +82,7 @@ void FlowCalibration405Form::on_Save_clicked()
 
     //Check to see if the user changed the setting
     //If the difference is greater than 2 point precision, than it is a new value
-    if(fabs(static_cast<double>(cellFlowSlope - s->GetCellFlowSlope_405())) > 0.001)
+    if((cellFlowSlope - s->GetCellFlowSlope_405()) > 0.001)
     {
         valueChanged = true;
         s->SetCellFlowSlope_405(cellFlowSlope);
@@ -88,7 +90,7 @@ void FlowCalibration405Form::on_Save_clicked()
 
     //Check to see if the user changed the setting
     //If the difference is greater than 2 point precision, than it is a new value
-    if(fabs(static_cast<double>(s->GetOzoneFlowSlope_405() - ozoneFlowSlope)) > 0.001)
+    if((s->GetOzoneFlowSlope_405() - ozoneFlowSlope) > 0.001)
     {
         valueChanged = true;
         s->SetOzoneFlowSlope_405(ozoneFlowSlope);
@@ -123,6 +125,10 @@ void FlowCalibration405Form::showEvent(QShowEvent *event)
 {
     QWidget::showEvent(event);
 
+    if (dontGrab == true) {
+        dontGrab = false;
+        return;
+    }
     GetNewSettings();
     UpdateLocalUI();
 }

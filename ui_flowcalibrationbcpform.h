@@ -23,22 +23,24 @@ QT_BEGIN_NAMESPACE
 class Ui_FlowCalibrationBCPForm
 {
 public:
-    QPushButton *zoneSlopeMask;
+    QPushButton *OzoneSlopeMask;
     QPushButton *Left;
     QPushButton *Right;
     QPushButton *Save;
     QLabel *FlowCalibration;
     QPushButton *Home;
-    QPushButton *cellSlopeMask;
+    QPushButton *CellSlopeMask;
+    QLabel *cellFlowLabel;
+    QLabel *ozoneFlowLabel;
 
     void setupUi(QWidget *FlowCalibrationBCPForm)
     {
         if (FlowCalibrationBCPForm->objectName().isEmpty())
             FlowCalibrationBCPForm->setObjectName(QStringLiteral("FlowCalibrationBCPForm"));
         FlowCalibrationBCPForm->resize(800, 480);
-        zoneSlopeMask = new QPushButton(FlowCalibrationBCPForm);
-        zoneSlopeMask->setObjectName(QStringLiteral("zoneSlopeMask"));
-        zoneSlopeMask->setGeometry(QRect(130, 260, 541, 121));
+        OzoneSlopeMask = new QPushButton(FlowCalibrationBCPForm);
+        OzoneSlopeMask->setObjectName(QStringLiteral("OzoneSlopeMask"));
+        OzoneSlopeMask->setGeometry(QRect(130, 260, 541, 121));
         Left = new QPushButton(FlowCalibrationBCPForm);
         Left->setObjectName(QStringLiteral("Left"));
         Left->setGeometry(QRect(10, 119, 100, 351));
@@ -74,16 +76,24 @@ public:
         icon3.addFile(QStringLiteral(":/Buttons/button_back.jpg"), QSize(), QIcon::Normal, QIcon::Off);
         Home->setIcon(icon3);
         Home->setIconSize(QSize(100, 100));
-        cellSlopeMask = new QPushButton(FlowCalibrationBCPForm);
-        cellSlopeMask->setObjectName(QStringLiteral("cellSlopeMask"));
-        cellSlopeMask->setGeometry(QRect(130, 120, 541, 121));
+        CellSlopeMask = new QPushButton(FlowCalibrationBCPForm);
+        CellSlopeMask->setObjectName(QStringLiteral("CellSlopeMask"));
+        CellSlopeMask->setGeometry(QRect(130, 120, 541, 121));
+        cellFlowLabel = new QLabel(FlowCalibrationBCPForm);
+        cellFlowLabel->setObjectName(QStringLiteral("cellFlowLabel"));
+        cellFlowLabel->setGeometry(QRect(130, 120, 541, 121));
+        ozoneFlowLabel = new QLabel(FlowCalibrationBCPForm);
+        ozoneFlowLabel->setObjectName(QStringLiteral("ozoneFlowLabel"));
+        ozoneFlowLabel->setGeometry(QRect(130, 260, 541, 121));
+        ozoneFlowLabel->raise();
+        cellFlowLabel->raise();
         FlowCalibration->raise();
-        zoneSlopeMask->raise();
+        OzoneSlopeMask->raise();
         Left->raise();
         Right->raise();
         Save->raise();
         Home->raise();
-        cellSlopeMask->raise();
+        CellSlopeMask->raise();
 
         retranslateUi(FlowCalibrationBCPForm);
 
@@ -93,13 +103,15 @@ public:
     void retranslateUi(QWidget *FlowCalibrationBCPForm)
     {
         FlowCalibrationBCPForm->setWindowTitle(QApplication::translate("FlowCalibrationBCPForm", "Form", 0));
-        zoneSlopeMask->setText(QApplication::translate("FlowCalibrationBCPForm", "PushButton", 0));
+        OzoneSlopeMask->setText(QApplication::translate("FlowCalibrationBCPForm", "PushButton", 0));
         Left->setText(QString());
         Right->setText(QString());
         Save->setText(QString());
         FlowCalibration->setText(QApplication::translate("FlowCalibrationBCPForm", "Flow Calibration", 0));
         Home->setText(QString());
-        cellSlopeMask->setText(QApplication::translate("FlowCalibrationBCPForm", "PushButton", 0));
+        CellSlopeMask->setText(QApplication::translate("FlowCalibrationBCPForm", "PushButton", 0));
+        cellFlowLabel->setText(QApplication::translate("FlowCalibrationBCPForm", "Cell Flow", 0));
+        ozoneFlowLabel->setText(QApplication::translate("FlowCalibrationBCPForm", "Ozone Flow", 0));
     } // retranslateUi
 
 };

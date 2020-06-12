@@ -60,6 +60,7 @@ void NO2Calibration405Form::on_slopeMask_clicked(){
     connect(NumberPadForm::GetInstance(), &NumberPadForm::NewFloat, this, &NO2Calibration405Form::NewSlope);
     NumberPadForm::GetInstance()->SetInitialValues(NumberPadForm::Types::floatV, .5, 1.5, this);
     NumberPadForm::GetInstance()->show();
+    dontGrab = true;
 }
 void NO2Calibration405Form::NewSlope(float val){
     slope = val;
@@ -70,6 +71,7 @@ void NO2Calibration405Form::on_zeroMask_clicked(){
     connect(NumberPadForm::GetInstance(), &NumberPadForm::NewFloat, this, &NO2Calibration405Form::NewZero);
     NumberPadForm::GetInstance()->SetInitialValues(NumberPadForm::Types::floatV, 0, 5, this);
     NumberPadForm::GetInstance()->show();
+    dontGrab = true;
 }
 void NO2Calibration405Form::NewZero(float val){
     zero = val;
@@ -80,6 +82,7 @@ void NO2Calibration405Form::on_AnalogMask_clicked(){
     connect(NumberPadForm::GetInstance(), &NumberPadForm::NewInt, this, &NO2Calibration405Form::NewAnalog);
     NumberPadForm::GetInstance()->SetInitialValues(NumberPadForm::Types::integer, 25, 1000, this);
     NumberPadForm::GetInstance()->show();
+    dontGrab = true;
 }
 void NO2Calibration405Form::NewAnalog(int val){
     analog = val;
@@ -134,6 +137,10 @@ void NO2Calibration405Form::GetNewSettings()
         slope = s->GetNO2Slope_405();
         zero = s->GetNO2Zero_405();
         UpdateLocalUI();
+    }
+    else {
+        dontGrab = false;
+        return;
     }
 }
 
