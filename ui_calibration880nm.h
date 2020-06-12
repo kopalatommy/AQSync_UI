@@ -26,12 +26,16 @@ public:
     QLabel *AdaptiveFilter;
     QPushButton *zeroMask;
     QPushButton *Home;
-    QPushButton *massExtMask;
+    QPushButton *MassExtMask;
     QPushButton *Left;
     QPushButton *AnalogMask;
     QPushButton *slopeMask;
     QPushButton *Right;
     QPushButton *Save;
+    QLabel *slopeLabel;
+    QLabel *zeroLabel;
+    QLabel *massExtLabel;
+    QLabel *analogLabel;
 
     void setupUi(QDialog *Calibration880nm)
     {
@@ -56,9 +60,9 @@ public:
         icon.addFile(QStringLiteral(":/Buttons/button_back.jpg"), QSize(), QIcon::Normal, QIcon::Off);
         Home->setIcon(icon);
         Home->setIconSize(QSize(100, 100));
-        massExtMask = new QPushButton(Calibration880nm);
-        massExtMask->setObjectName(QStringLiteral("massExtMask"));
-        massExtMask->setGeometry(QRect(160, 280, 211, 111));
+        MassExtMask = new QPushButton(Calibration880nm);
+        MassExtMask->setObjectName(QStringLiteral("MassExtMask"));
+        MassExtMask->setGeometry(QRect(160, 280, 211, 111));
         Left = new QPushButton(Calibration880nm);
         Left->setObjectName(QStringLiteral("Left"));
         Left->setGeometry(QRect(30, 120, 100, 340));
@@ -86,6 +90,32 @@ public:
         icon3.addFile(QStringLiteral(":/Buttons/button_save.jpg"), QSize(), QIcon::Normal, QIcon::Off);
         Save->setIcon(icon3);
         Save->setIconSize(QSize(120, 60));
+        slopeLabel = new QLabel(Calibration880nm);
+        slopeLabel->setObjectName(QStringLiteral("slopeLabel"));
+        slopeLabel->setEnabled(false);
+        slopeLabel->setGeometry(QRect(170, 140, 201, 111));
+        zeroLabel = new QLabel(Calibration880nm);
+        zeroLabel->setObjectName(QStringLiteral("zeroLabel"));
+        zeroLabel->setGeometry(QRect(446, 139, 201, 111));
+        massExtLabel = new QLabel(Calibration880nm);
+        massExtLabel->setObjectName(QStringLiteral("massExtLabel"));
+        massExtLabel->setGeometry(QRect(166, 280, 201, 111));
+        analogLabel = new QLabel(Calibration880nm);
+        analogLabel->setObjectName(QStringLiteral("analogLabel"));
+        analogLabel->setGeometry(QRect(450, 280, 201, 111));
+        analogLabel->raise();
+        massExtLabel->raise();
+        zeroLabel->raise();
+        slopeLabel->raise();
+        AdaptiveFilter->raise();
+        zeroMask->raise();
+        Home->raise();
+        MassExtMask->raise();
+        Left->raise();
+        AnalogMask->raise();
+        slopeMask->raise();
+        Right->raise();
+        Save->raise();
 
         retranslateUi(Calibration880nm);
 
@@ -98,12 +128,16 @@ public:
         AdaptiveFilter->setText(QApplication::translate("Calibration880nm", "880nm Calibration", 0));
         zeroMask->setText(QApplication::translate("Calibration880nm", "PushButton", 0));
         Home->setText(QString());
-        massExtMask->setText(QApplication::translate("Calibration880nm", "PushButton", 0));
+        MassExtMask->setText(QApplication::translate("Calibration880nm", "PushButton", 0));
         Left->setText(QString());
         AnalogMask->setText(QApplication::translate("Calibration880nm", "PushButton", 0));
         slopeMask->setText(QApplication::translate("Calibration880nm", "PushButton", 0));
         Right->setText(QString());
         Save->setText(QString());
+        slopeLabel->setText(QApplication::translate("Calibration880nm", "Slope", 0));
+        zeroLabel->setText(QApplication::translate("Calibration880nm", "Zero:", 0));
+        massExtLabel->setText(QApplication::translate("Calibration880nm", "Mass Ext", 0));
+        analogLabel->setText(QApplication::translate("Calibration880nm", "Analog", 0));
     } // retranslateUi
 
 };

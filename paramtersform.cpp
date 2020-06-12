@@ -34,8 +34,8 @@ void ParamtersForm::UpdateUI(){
             ui->dataLabel_9->setText("Flow Temp: " + QString::number(data->GetSystemTemp()));
             ui->dataLabel_10->setText("Humidity: " + QString::number(data->GetHumidity()));
             ui->dataLabel_11->setText("Status: " + QString::number(data->GetStatus()));
-            ui->dataLabel_12->setText("Date: " + QString::number(data->GetD()));
-            ui->dataLabel_13->setText("Time: " + QString::number(data->GetHumidity()));
+            ui->dataLabel_12->setText("Date: " + QString(data->GetFormattedDate()));
+            ui->dataLabel_13->setText("Time: " + QString(data->GetFormattedTime()));
         }
         else
         {

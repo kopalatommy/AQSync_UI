@@ -21,8 +21,13 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_Calibration880nm_t {
+<<<<<<< HEAD
     QByteArrayData data[17];
     char stringdata0[240];
+=======
+    QByteArrayData data[18];
+    char stringdata0[263];
+>>>>>>> ab98c4548c1c217d61b48e52a1576105cad1e2a8
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -47,7 +52,12 @@ QT_MOC_LITERAL(12, 182, 7), // "newZero"
 QT_MOC_LITERAL(13, 190, 10), // "NewMassExt"
 QT_MOC_LITERAL(14, 201, 9), // "newAnalog"
 QT_MOC_LITERAL(15, 211, 13), // "updateLocalUI"
+<<<<<<< HEAD
 QT_MOC_LITERAL(16, 225, 14) // "GetNewSettings"
+=======
+QT_MOC_LITERAL(16, 225, 14), // "GetNewSettings"
+QT_MOC_LITERAL(17, 240, 22) // "on_massExtMask_clicked"
+>>>>>>> ab98c4548c1c217d61b48e52a1576105cad1e2a8
 
     },
     "Calibration880nm\0on_Left_clicked\0\0"
@@ -56,7 +66,11 @@ QT_MOC_LITERAL(16, 225, 14) // "GetNewSettings"
     "on_zeroMask_clicked\0on_MassExtMask_clicked\0"
     "on_AnalogMask_clicked\0newSlope\0val\0"
     "newZero\0NewMassExt\0newAnalog\0updateLocalUI\0"
+<<<<<<< HEAD
     "GetNewSettings"
+=======
+    "GetNewSettings\0on_massExtMask_clicked"
+>>>>>>> ab98c4548c1c217d61b48e52a1576105cad1e2a8
 };
 #undef QT_MOC_LITERAL
 
@@ -66,7 +80,11 @@ static const uint qt_meta_data_Calibration880nm[] = {
        8,       // revision
        0,       // classname
        0,    0, // classinfo
+<<<<<<< HEAD
       14,   14, // methods
+=======
+      15,   14, // methods
+>>>>>>> ab98c4548c1c217d61b48e52a1576105cad1e2a8
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -74,6 +92,7 @@ static const uint qt_meta_data_Calibration880nm[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
+<<<<<<< HEAD
        1,    0,   84,    2, 0x08 /* Private */,
        3,    0,   85,    2, 0x08 /* Private */,
        4,    0,   86,    2, 0x08 /* Private */,
@@ -88,6 +107,23 @@ static const uint qt_meta_data_Calibration880nm[] = {
       14,    1,  101,    2, 0x08 /* Private */,
       15,    0,  104,    2, 0x08 /* Private */,
       16,    0,  105,    2, 0x08 /* Private */,
+=======
+       1,    0,   89,    2, 0x08 /* Private */,
+       3,    0,   90,    2, 0x08 /* Private */,
+       4,    0,   91,    2, 0x08 /* Private */,
+       5,    0,   92,    2, 0x08 /* Private */,
+       6,    0,   93,    2, 0x08 /* Private */,
+       7,    0,   94,    2, 0x08 /* Private */,
+       8,    0,   95,    2, 0x08 /* Private */,
+       9,    0,   96,    2, 0x08 /* Private */,
+      10,    1,   97,    2, 0x08 /* Private */,
+      12,    1,  100,    2, 0x08 /* Private */,
+      13,    1,  103,    2, 0x08 /* Private */,
+      14,    1,  106,    2, 0x08 /* Private */,
+      15,    0,  109,    2, 0x08 /* Private */,
+      16,    0,  110,    2, 0x08 /* Private */,
+      17,    0,  111,    2, 0x08 /* Private */,
+>>>>>>> ab98c4548c1c217d61b48e52a1576105cad1e2a8
 
  // slots: parameters
     QMetaType::Void,
@@ -104,6 +140,10 @@ static const uint qt_meta_data_Calibration880nm[] = {
     QMetaType::Void, QMetaType::Int,   11,
     QMetaType::Void,
     QMetaType::Void,
+<<<<<<< HEAD
+=======
+    QMetaType::Void,
+>>>>>>> ab98c4548c1c217d61b48e52a1576105cad1e2a8
 
        0        // eod
 };
@@ -128,6 +168,10 @@ void Calibration880nm::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int
         case 11: _t->newAnalog((*reinterpret_cast< int(*)>(_a[1]))); break;
         case 12: _t->updateLocalUI(); break;
         case 13: _t->GetNewSettings(); break;
+<<<<<<< HEAD
+=======
+        case 14: _t->on_MassExtMask_clicked(); break;
+>>>>>>> ab98c4548c1c217d61b48e52a1576105cad1e2a8
         default: ;
         }
     }
@@ -162,6 +206,7 @@ int Calibration880nm::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
+<<<<<<< HEAD
         if (_id < 14)
             qt_static_metacall(this, _c, _id, _a);
         _id -= 14;
@@ -169,6 +214,15 @@ int Calibration880nm::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
         if (_id < 14)
             *reinterpret_cast<int*>(_a[0]) = -1;
         _id -= 14;
+=======
+        if (_id < 15)
+            qt_static_metacall(this, _c, _id, _a);
+        _id -= 15;
+    } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
+        if (_id < 15)
+            *reinterpret_cast<int*>(_a[0]) = -1;
+        _id -= 15;
+>>>>>>> ab98c4548c1c217d61b48e52a1576105cad1e2a8
     }
     return _id;
 }

@@ -71,7 +71,7 @@
     </size>
    </property>
   </widget>
-  <widget class="QPushButton" name="massExtMask">
+  <widget class="QPushButton" name="MassExtMask">
    <property name="geometry">
     <rect>
      <x>160</x>
@@ -179,6 +179,74 @@
     </size>
    </property>
   </widget>
+  <widget class="QLabel" name="slopeLabel">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>140</y>
+     <width>201</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Slope</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="zeroLabel">
+   <property name="geometry">
+    <rect>
+     <x>446</x>
+     <y>139</y>
+     <width>201</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Zero:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="massExtLabel">
+   <property name="geometry">
+    <rect>
+     <x>166</x>
+     <y>280</y>
+     <width>201</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Mass Ext</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="analogLabel">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>280</y>
+     <width>201</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Analog</string>
+   </property>
+  </widget>
+  <zorder>analogLabel</zorder>
+  <zorder>massExtLabel</zorder>
+  <zorder>zeroLabel</zorder>
+  <zorder>slopeLabel</zorder>
+  <zorder>AdaptiveFilter</zorder>
+  <zorder>zeroMask</zorder>
+  <zorder>Home</zorder>
+  <zorder>MassExtMask</zorder>
+  <zorder>Left</zorder>
+  <zorder>AnalogMask</zorder>
+  <zorder>slopeMask</zorder>
+  <zorder>Right</zorder>
+  <zorder>Save</zorder>
  </widget>
  <resources>
   <include location="../../resources.qrc"/>

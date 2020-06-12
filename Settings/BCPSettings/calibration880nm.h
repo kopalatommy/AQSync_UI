@@ -42,6 +42,8 @@ private slots:
     void GetNewSettings();
 
 
+    void on_massExtMask_clicked();
+
 private:
     Ui::Calibration880nm *ui;
 
