@@ -25,7 +25,7 @@ Calibration880nm::Calibration880nm(QWidget *parent) :
     setAutoFillBackground(true);
     setPalette(pal);
 
-    connect(SerialHandler405::GetInstance(), &SerialHandler405::NewAdFilterSettings405, this, &Calibration880nm::GetNewSettings);
+    connect(BCPSerialHandler::GetInstance(), &BCPSerialHandler::NewAdFilterSettingsBCP, this, &Calibration880nm::GetNewSettings);
     GetNewSettings();
 }
 
@@ -152,10 +152,10 @@ void Calibration880nm::GetNewSettings()
 }
 
 void Calibration880nm::updateLocalUI(){
-    ui->slopeLabel->setText("Slope:\n" + QString::number(static_cast<double>(slope)));
-    ui->zeroLabel->setText("Zero:\n" + QString::number(static_cast<double>(zero)));
-    ui->massExtLabel->setText("Mass Ext:\n" + QString::number(static_cast<double>(massExt)));
-    ui->analogLabel->setText("Analog:\n" + QString::number(analog));
+    ui->slopeLabel->setText("Slope: " + QString::number(static_cast<double>(slope)));
+    ui->zeroLabel->setText("Zero: " + QString::number(static_cast<double>(zero)));
+    ui->massExtLabel->setText("Mass Ext: " + QString::number(static_cast<double>(massExt)));
+    ui->analogLabel->setText("Analog: " + QString::number(analog));
 }
 
 void Calibration880nm::showEvent(QShowEvent *event)

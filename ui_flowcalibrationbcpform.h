@@ -40,7 +40,7 @@ public:
         FlowCalibrationBCPForm->resize(800, 480);
         OzoneSlopeMask = new QPushButton(FlowCalibrationBCPForm);
         OzoneSlopeMask->setObjectName(QStringLiteral("OzoneSlopeMask"));
-        OzoneSlopeMask->setGeometry(QRect(130, 260, 541, 121));
+        OzoneSlopeMask->setGeometry(QRect(140, 260, 541, 121));
         Left = new QPushButton(FlowCalibrationBCPForm);
         Left->setObjectName(QStringLiteral("Left"));
         Left->setGeometry(QRect(10, 119, 100, 351));
@@ -81,19 +81,23 @@ public:
         CellSlopeMask->setGeometry(QRect(130, 120, 541, 121));
         cellFlowLabel = new QLabel(FlowCalibrationBCPForm);
         cellFlowLabel->setObjectName(QStringLiteral("cellFlowLabel"));
-        cellFlowLabel->setGeometry(QRect(130, 120, 541, 121));
+        cellFlowLabel->setGeometry(QRect(260, 120, 541, 121));
+        QFont font1;
+        font1.setPointSize(25);
+        cellFlowLabel->setFont(font1);
         ozoneFlowLabel = new QLabel(FlowCalibrationBCPForm);
         ozoneFlowLabel->setObjectName(QStringLiteral("ozoneFlowLabel"));
-        ozoneFlowLabel->setGeometry(QRect(130, 260, 541, 121));
+        ozoneFlowLabel->setGeometry(QRect(260, 260, 541, 121));
+        ozoneFlowLabel->setFont(font1);
+        CellSlopeMask->raise();
+        OzoneSlopeMask->raise();
         ozoneFlowLabel->raise();
         cellFlowLabel->raise();
         FlowCalibration->raise();
-        OzoneSlopeMask->raise();
         Left->raise();
         Right->raise();
         Save->raise();
         Home->raise();
-        CellSlopeMask->raise();
 
         retranslateUi(FlowCalibrationBCPForm);
 
@@ -103,13 +107,13 @@ public:
     void retranslateUi(QWidget *FlowCalibrationBCPForm)
     {
         FlowCalibrationBCPForm->setWindowTitle(QApplication::translate("FlowCalibrationBCPForm", "Form", 0));
-        OzoneSlopeMask->setText(QApplication::translate("FlowCalibrationBCPForm", "PushButton", 0));
+        OzoneSlopeMask->setText(QString());
         Left->setText(QString());
         Right->setText(QString());
         Save->setText(QString());
         FlowCalibration->setText(QApplication::translate("FlowCalibrationBCPForm", "Flow Calibration", 0));
         Home->setText(QString());
-        CellSlopeMask->setText(QApplication::translate("FlowCalibrationBCPForm", "PushButton", 0));
+        CellSlopeMask->setText(QString());
         cellFlowLabel->setText(QApplication::translate("FlowCalibrationBCPForm", "Cell Flow", 0));
         ozoneFlowLabel->setText(QApplication::translate("FlowCalibrationBCPForm", "Ozone Flow", 0));
     } // retranslateUi

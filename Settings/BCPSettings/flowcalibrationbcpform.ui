@@ -16,14 +16,14 @@
   <widget class="QPushButton" name="OzoneSlopeMask">
    <property name="geometry">
     <rect>
-     <x>130</x>
+     <x>140</x>
      <y>260</y>
      <width>541</width>
      <height>121</height>
     </rect>
    </property>
    <property name="text">
-    <string>PushButton</string>
+    <string/>
    </property>
   </widget>
   <widget class="QPushButton" name="Left">
@@ -149,17 +149,22 @@
     </rect>
    </property>
    <property name="text">
-    <string>PushButton</string>
+    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="cellFlowLabel">
    <property name="geometry">
     <rect>
-     <x>130</x>
+     <x>260</x>
      <y>120</y>
      <width>541</width>
      <height>121</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>25</pointsize>
+    </font>
    </property>
    <property name="text">
     <string>Cell Flow</string>
@@ -168,25 +173,30 @@
   <widget class="QLabel" name="ozoneFlowLabel">
    <property name="geometry">
     <rect>
-     <x>130</x>
+     <x>260</x>
      <y>260</y>
      <width>541</width>
      <height>121</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>25</pointsize>
+    </font>
+   </property>
    <property name="text">
     <string>Ozone Flow</string>
    </property>
   </widget>
+  <zorder>CellSlopeMask</zorder>
+  <zorder>OzoneSlopeMask</zorder>
   <zorder>ozoneFlowLabel</zorder>
   <zorder>cellFlowLabel</zorder>
   <zorder>FlowCalibration</zorder>
-  <zorder>OzoneSlopeMask</zorder>
   <zorder>Left</zorder>
   <zorder>Right</zorder>
   <zorder>Save</zorder>
   <zorder>Home</zorder>
-  <zorder>CellSlopeMask</zorder>
  </widget>
  <resources>
   <include location="../../resources.qrc"/>

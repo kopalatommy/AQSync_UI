@@ -8,7 +8,7 @@
 #include "Settings/settingformshandler.h"
 #include "DataHandlers/settingshandler.h"
 #include "numberpadform.h"
-#include "Communication/serialhandler405.h"
+#include "Communication/bcpserialhandler.h"
 
 namespace Ui {
 class AutoZeroBCP;

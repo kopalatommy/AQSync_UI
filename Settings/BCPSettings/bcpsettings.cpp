@@ -6,7 +6,7 @@
 #include "autozerobcp.h"
 #include "calibration405nm.h"
 #include "tpcorrectionsform.h"
-#include "Settings/405Settings/settings405.h"
+#include "Settings/BCPSettings/bcpsettings.h"
 
 BCPSettings::BCPSettings(QWidget *parent) :
     QDialog(parent),
@@ -28,33 +28,27 @@ void BCPSettings::on_AdaptiveFilter_clicked()
 void BCPSettings::on_cali880_clicked()
 {
     SettingFormsHandler::JumpToIndex(CALIBRATION_880NM_INDEX);
-    close();
 }
 
 void BCPSettings::on_FlowCalibration_clicked()
 {
     SettingFormsHandler::JumpToIndex(FLOWCALIBRATION_BCP_INDEX);
-    close();
 }
 
 void BCPSettings::on_Auto_Zero_clicked()
 {
     SettingFormsHandler::JumpToIndex(AUTOZERO_BCP_INDEX);
-    close();
 }
 
 void BCPSettings::on_cali405_clicked()
 {
     SettingFormsHandler::JumpToIndex(CALIBRATION_405NM_INDEX);
-    close();
 }
 
 void BCPSettings::on_TP_clicked()
 {
 
     SettingFormsHandler::JumpToIndex(TPCORRECTION_BCP_INDEX);
-    close();
-
 }
 
 void BCPSettings::on_NextLeft_clicked()

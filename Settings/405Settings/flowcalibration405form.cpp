@@ -117,8 +117,8 @@ void FlowCalibration405Form::GetNewSettings()
 void FlowCalibration405Form::UpdateLocalUI()
 {
 
-    ui->cellFlowLabel->setText("Cell flow slope:\n" + QString::number(static_cast<double>(cellFlowSlope)));
-    ui->ozoneFlowLabel->setText("Ozone flow slope:\n" + QString::number(static_cast<double>(ozoneFlowSlope)));
+    ui->cellFlowLabel->setText("Cell flow slope: " + QString::number(static_cast<double>(cellFlowSlope)));
+    ui->ozoneFlowLabel->setText("Ozone flow slope: " + QString::number(static_cast<double>(ozoneFlowSlope)));
 }
 
 void FlowCalibration405Form::showEvent(QShowEvent *event)

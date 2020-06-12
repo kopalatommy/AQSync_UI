@@ -25,7 +25,7 @@ calibration405nm::calibration405nm(QWidget *parent) :
     setAutoFillBackground(true);
     setPalette(pal);
 
-    connect(SerialHandler405::GetInstance(), &SerialHandler405::NewAdFilterSettings405, this, &calibration405nm::GetNewSettings);
+    connect(BCPSerialHandler::GetInstance(), &BCPSerialHandler::NewAdFilterSettingsBCP, this, &calibration405nm::GetNewSettings);
     GetNewSettings();
 }
 
@@ -37,19 +37,16 @@ calibration405nm::~calibration405nm()
 void calibration405nm::on_Left_clicked()
 {
     SettingFormsHandler::JumpToIndex(CALIBRATION_880NM_INDEX);
-    close();
 }
 
 void calibration405nm::on_Right_clicked()
 {
     SettingFormsHandler::JumpToIndex(FLOWCALIBRATION_BCP_INDEX);
-    close();
 }
 
 void calibration405nm::on_Home_clicked()
 {
     SettingFormsHandler::JumpToIndex(SETTINGS_BCP_INDEX);
-    close();
 }
 
 void calibration405nm::on_slopeMask_clicked(){
@@ -157,10 +154,10 @@ void calibration405nm::GetNewSettings()
 
 
 void calibration405nm::updateLocalUI(){
-    ui->slopeLabel->setText("Slope:\n" + QString::number(static_cast<double>(slope)));
-    ui->zeroLabel->setText("Zero:\n" + QString::number(static_cast<double>(zero)));
-    ui->massExtLabel->setText("Mass Ext:\n" + QString::number(static_cast<double>(massExt)));
-    ui->analogLabel->setText("Analog:\n" + QString::number(analog));
+    ui->slopeLabel->setText("Slope: " + QString::number(static_cast<double>(slope)));
+    ui->zeroLabel->setText("Zero: " + QString::number(static_cast<double>(zero)));
+    ui->massExtLabel->setText("Mass Ext: " + QString::number(static_cast<double>(massExt)));
+    ui->analogLabel->setText("Analog: " + QString::number(analog));
 
     qDebug() << "Updated UI";
 

@@ -241,11 +241,11 @@
     </size>
    </property>
   </widget>
+  <zorder>Main_Settings</zorder>
   <zorder>NextRight</zorder>
   <zorder>NextLeft</zorder>
   <zorder>Home_Button</zorder>
   <zorder>Mode_2</zorder>
-  <zorder>Main_Settings</zorder>
   <zorder>FlowCalibration</zorder>
   <zorder>NO2Calibration</zorder>
   <zorder>Parameters</zorder>

@@ -24,7 +24,7 @@ AdaptiveFilterBCPForm::AdaptiveFilterBCPForm(QWidget *parent) :
     setAutoFillBackground(true);
     setPalette(pal);
 
-    connect(SerialHandler405::GetInstance(), &SerialHandler405::NewAdFilterSettings405, this, &AdaptiveFilterBCPForm::GetNewSettings);
+    connect(BCPSerialHandler::GetInstance(), &BCPSerialHandler::NewAdFilterSettingsBCP, this, &AdaptiveFilterBCPForm::GetNewSettings);
     GetNewSettings();
 }
 

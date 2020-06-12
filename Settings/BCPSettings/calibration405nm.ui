@@ -46,7 +46,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>PushButton</string>
+    <string/>
    </property>
   </widget>
   <widget class="QPushButton" name="Home">
@@ -82,7 +82,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>PushButton</string>
+    <string/>
    </property>
   </widget>
   <widget class="QPushButton" name="Save">
@@ -163,7 +163,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>PushButton</string>
+    <string/>
    </property>
   </widget>
   <widget class="QPushButton" name="AnalogMask">
@@ -175,8 +175,13 @@
      <height>111</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
    <property name="text">
-    <string>PushButton</string>
+    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="slopeLabel">
@@ -188,6 +193,11 @@
      <height>111</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
    <property name="text">
     <string>Slope</string>
    </property>
@@ -195,11 +205,16 @@
   <widget class="QLabel" name="zeroLabel">
    <property name="geometry">
     <rect>
-     <x>440</x>
-     <y>145</y>
+     <x>450</x>
+     <y>150</y>
      <width>211</width>
      <height>101</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+    </font>
    </property>
    <property name="text">
     <string>Zero</string>
@@ -214,6 +229,11 @@
      <height>111</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
    <property name="text">
     <string>Mass Ext</string>
    </property>
@@ -227,6 +247,11 @@
      <height>101</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
    <property name="text">
     <string>Analog</string>
    </property>
@@ -235,15 +260,15 @@
   <zorder>massExtLabel</zorder>
   <zorder>zeroLabel</zorder>
   <zorder>slopeLabel</zorder>
-  <zorder>Right</zorder>
-  <zorder>slopeMask</zorder>
-  <zorder>Home</zorder>
+  <zorder>AnalogMask</zorder>
   <zorder>MassExtMask</zorder>
+  <zorder>zeroMask</zorder>
+  <zorder>slopeMask</zorder>
+  <zorder>AdaptiveFilter</zorder>
+  <zorder>Right</zorder>
+  <zorder>Home</zorder>
   <zorder>Save</zorder>
   <zorder>Left</zorder>
-  <zorder>AdaptiveFilter</zorder>
-  <zorder>zeroMask</zorder>
-  <zorder>AnalogMask</zorder>
  </widget>
  <resources>
   <include location="../../resources.qrc"/>

@@ -199,11 +199,16 @@
   <widget class="QLabel" name="FreqLabel">
    <property name="geometry">
     <rect>
-     <x>180</x>
+     <x>310</x>
      <y>110</y>
      <width>351</width>
      <height>71</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>25</pointsize>
+    </font>
    </property>
    <property name="text">
     <string>TextLabel</string>
@@ -212,27 +217,32 @@
   <widget class="QLabel" name="PeriodLabel">
    <property name="geometry">
     <rect>
-     <x>186</x>
-     <y>189</y>
+     <x>310</x>
+     <y>190</y>
      <width>401</width>
      <height>61</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>25</pointsize>
+    </font>
    </property>
    <property name="text">
     <string>TextLabel</string>
    </property>
   </widget>
-  <zorder>AutoZero</zorder>
-  <zorder>PeriodLabel</zorder>
+  <zorder>BCZeroMask</zorder>
   <zorder>FreqLabel</zorder>
+  <zorder>PeriodLabel</zorder>
+  <zorder>zeroPeriodMask</zorder>
+  <zorder>zeroingFrequenctMask</zorder>
+  <zorder>AutoZero</zorder>
   <zorder>Left</zorder>
   <zorder>Right</zorder>
   <zorder>Home</zorder>
   <zorder>Save</zorder>
-  <zorder>zeroingFrequenctMask</zorder>
   <zorder>checkBox</zorder>
-  <zorder>zeroPeriodMask</zorder>
-  <zorder>BCZeroMask</zorder>
   <zorder>PMZeroMask</zorder>
  </widget>
  <resources>

@@ -75,14 +75,19 @@
   <widget class="QLabel" name="cellFlowLabel">
    <property name="geometry">
     <rect>
-     <x>150</x>
+     <x>280</x>
      <y>120</y>
-     <width>521</width>
+     <width>331</width>
      <height>121</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>25</pointsize>
+    </font>
+   </property>
    <property name="text">
-    <string/>
+    <string>Slope: </string>
    </property>
   </widget>
   <widget class="QPushButton" name="Next">
@@ -134,14 +139,19 @@
   <widget class="QLabel" name="ozoneFlowLabel">
    <property name="geometry">
     <rect>
-     <x>156</x>
-     <y>259</y>
+     <x>270</x>
+     <y>260</y>
      <width>511</width>
      <height>121</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>25</pointsize>
+    </font>
+   </property>
    <property name="text">
-    <string/>
+    <string>Ozone:</string>
    </property>
   </widget>
   <widget class="QPushButton" name="CellSlopeMask">
@@ -178,15 +188,15 @@
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
+  <zorder>cellFlowLabel</zorder>
   <zorder>ozoneFlowLabel</zorder>
-  <zorder>FlowCalibration</zorder>
   <zorder>OzoneSlopeMask</zorder>
+  <zorder>CellSlopeMask</zorder>
+  <zorder>FlowCalibration</zorder>
   <zorder>Home</zorder>
   <zorder>Save</zorder>
-  <zorder>cellFlowLabel</zorder>
   <zorder>Next</zorder>
   <zorder>Previous</zorder>
-  <zorder>CellSlopeMask</zorder>
  </widget>
  <resources>
   <include location="../../resources.qrc"/>

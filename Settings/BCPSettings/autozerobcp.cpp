@@ -28,7 +28,7 @@ AutoZeroBCP::AutoZeroBCP(QWidget *parent) :
     setAutoFillBackground(true);
     setPalette(pal);
 
-    connect(SerialHandler405::GetInstance(), &SerialHandler405::NewAdFilterSettings405, this, &AutoZeroBCP::GetNewSettings);
+    connect(BCPSerialHandler::GetInstance(), &BCPSerialHandler::NewAdFilterSettingsBCP, this, &AutoZeroBCP::GetNewSettings);
     GetNewSettings();
 }
 
@@ -120,35 +120,6 @@ void AutoZeroBCP::on_Save_clicked(){
     }
 }
 
-//This checks to see if the used has unsaved settings when thay are leaving.  If there are unsaved settings,
-//than it creates a message box asking the user if they want to save or discard settings or cancel leaving.
-//It returns a one if the widget can close or a zero if the user clicked cancel
-/* int AutoZeroBCP::onExit(){
-    Globals * g = Globals::getInstance();
-    if(freq != g->zeroingFreq || per != g->zeroPeriod || (Utilities::CheckForBit(g->bitMask, 1) != (ui->status->checkState() == Qt::CheckState::Checked)) || (Utilities::CheckForBit(g->bitMask, 2) != ui->useCalculatedZeroes->isChecked())){
-        QMessageBox msg;
-        msg.setStyleSheet("QMessageBox{ border: 1px solid black; }");
-        msg.setText("Unsaved changes");
-        msg.setStandardButtons(QMessageBox::Save | QMessageBox::Discard | QMessageBox::Cancel);
-        msg.setDefaultButton(QMessageBox::Save);
-        int ret = msg.exec();
-
-        switch (ret) {
-        case QMessageBox::Save:
-            on_save_clicked();
-            return 1;
-        case QMessageBox::Discard:
-            per = g->zeroPeriod;
-            freq = g->zeroingFreq;
-            ui->status->setChecked(Utilities::CheckForBit(g->bitMask, 1));
-            //ui->useCalculatedZeroes->setChecked(Utilities::CheckForBit(g->bitMask, 2));
-            return 1;
-        case QMessageBox::Cancel:
-            return 0;
-        }
-    }
-    return 1;
-}  */
 
 //Update the info shown on the form
 void AutoZeroBCP::GetNewSettings(){
@@ -159,8 +130,8 @@ void AutoZeroBCP::GetNewSettings(){
 }
 
 void AutoZeroBCP::UpdateUI(){
-    ui->FreqLabel->setText("Frequency:\n" + QString::number(freq));
-    ui->PeriodLabel->setText("Period:\n" + QString::number(per));
+    ui->FreqLabel->setText("Frequency: " + QString::number(freq));
+    ui->PeriodLabel->setText("Period: " + QString::number(per));
 }
 
 void AutoZeroBCP::showEvent(QShowEvent *event)

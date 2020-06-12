@@ -145,9 +145,9 @@ void NOCalibration405form::GetNewSettings(){
 }
 
 void NOCalibration405form::UpdateLocalUI(){
-    ui->SlopeLabel->setText("Slope Mask:\n" + QString::number(static_cast<double>(slope)));
-    ui->ZeroLabel->setText("Zero Mask:\n" + QString::number(static_cast<double>(zero)));
-    ui->AnalogLabel->setText("Analog Mask:\n" + QString::number(static_cast<double>(analog)));
+    ui->SlopeLabel->setText("Slope Mask: " + QString::number(static_cast<double>(slope)));
+    ui->ZeroLabel->setText("Zero Mask: " + QString::number(static_cast<double>(zero)));
+    ui->AnalogLabel->setText("Analog Mask: " + QString::number(static_cast<double>(analog)));
 }
 
 void NOCalibration405form::closeEvent(QCloseEvent *event)

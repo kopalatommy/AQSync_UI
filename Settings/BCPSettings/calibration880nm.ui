@@ -45,7 +45,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>PushButton</string>
+    <string/>
    </property>
   </widget>
   <widget class="QPushButton" name="Home">
@@ -81,7 +81,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>PushButton</string>
+    <string/>
    </property>
   </widget>
   <widget class="QPushButton" name="Left">
@@ -117,7 +117,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>PushButton</string>
+    <string/>
    </property>
   </widget>
   <widget class="QPushButton" name="slopeMask">
@@ -130,7 +130,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>PushButton</string>
+    <string/>
    </property>
   </widget>
   <widget class="QPushButton" name="Right">
@@ -179,22 +179,6 @@
     </size>
    </property>
   </widget>
-  <widget class="QLabel" name="slopeLabel">
-   <property name="enabled">
-    <bool>false</bool>
-   </property>
-   <property name="geometry">
-    <rect>
-     <x>170</x>
-     <y>140</y>
-     <width>201</width>
-     <height>111</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Slope</string>
-   </property>
-  </widget>
   <widget class="QLabel" name="zeroLabel">
    <property name="geometry">
     <rect>
@@ -203,6 +187,11 @@
      <width>201</width>
      <height>111</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+    </font>
    </property>
    <property name="text">
     <string>Zero:</string>
@@ -217,6 +206,11 @@
      <height>111</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
    <property name="text">
     <string>Mass Ext</string>
    </property>
@@ -230,21 +224,44 @@
      <height>111</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
    <property name="text">
     <string>Analog</string>
    </property>
   </widget>
-  <zorder>AdaptiveFilter</zorder>
+  <widget class="QLabel" name="slopeLabel">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>140</y>
+     <width>201</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Slope:</string>
+   </property>
+  </widget>
   <zorder>analogLabel</zorder>
   <zorder>massExtLabel</zorder>
   <zorder>zeroLabel</zorder>
   <zorder>slopeLabel</zorder>
-  <zorder>zeroMask</zorder>
-  <zorder>Home</zorder>
-  <zorder>MassExtMask</zorder>
-  <zorder>Left</zorder>
   <zorder>AnalogMask</zorder>
+  <zorder>MassExtMask</zorder>
+  <zorder>zeroMask</zorder>
   <zorder>slopeMask</zorder>
+  <zorder>AdaptiveFilter</zorder>
+  <zorder>Home</zorder>
+  <zorder>Left</zorder>
   <zorder>Right</zorder>
   <zorder>Save</zorder>
  </widget>
