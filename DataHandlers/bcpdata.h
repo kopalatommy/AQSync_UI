@@ -63,6 +63,12 @@ public:
     float GetAutoPMZero();
     void SetAutoPMZero(float val);
 
+    char * GetFormattedDate();
+    void SetFormattedDate(char * arr);
+
+    char * GetFormattedTime();
+    void SetFormattedTime(char * arr);
+
 private:
     static BCPData * instance;
     BCPData();
@@ -85,6 +91,8 @@ private:
     int status = 0;
     float autoBCZero = 0;
     float autoPMZero = 0;
+    char formatedDate[9] = { 'D', 'D', '-', 'M', 'M', '-', 'Y', 'Y', 0 };
+    char formatedTime[9] = { 'H', 'H', '-', 'M', 'M', '-', 'S', 'S', 0 };
 };
 
 #endif // BCPDATA_H
