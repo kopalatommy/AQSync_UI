@@ -24,12 +24,12 @@ class Ui_Calibration880nm
 {
 public:
     QLabel *AdaptiveFilter;
-    QPushButton *PushButton;
+    QPushButton *zeroMask;
     QPushButton *Home;
-    QPushButton *PushButton_2;
+    QPushButton *massExtMask;
     QPushButton *Left;
-    QPushButton *PushButton_3;
-    QPushButton *PushButton_1;
+    QPushButton *AnalogMask;
+    QPushButton *slopeMask;
     QPushButton *Right;
     QPushButton *Save;
 
@@ -46,9 +46,9 @@ public:
         font.setPointSize(30);
         AdaptiveFilter->setFont(font);
         AdaptiveFilter->setAlignment(Qt::AlignCenter);
-        PushButton = new QPushButton(Calibration880nm);
-        PushButton->setObjectName(QStringLiteral("PushButton"));
-        PushButton->setGeometry(QRect(440, 140, 211, 111));
+        zeroMask = new QPushButton(Calibration880nm);
+        zeroMask->setObjectName(QStringLiteral("zeroMask"));
+        zeroMask->setGeometry(QRect(440, 140, 211, 111));
         Home = new QPushButton(Calibration880nm);
         Home->setObjectName(QStringLiteral("Home"));
         Home->setGeometry(QRect(680, 10, 100, 100));
@@ -56,9 +56,9 @@ public:
         icon.addFile(QStringLiteral(":/Buttons/button_back.jpg"), QSize(), QIcon::Normal, QIcon::Off);
         Home->setIcon(icon);
         Home->setIconSize(QSize(100, 100));
-        PushButton_2 = new QPushButton(Calibration880nm);
-        PushButton_2->setObjectName(QStringLiteral("PushButton_2"));
-        PushButton_2->setGeometry(QRect(160, 280, 211, 111));
+        massExtMask = new QPushButton(Calibration880nm);
+        massExtMask->setObjectName(QStringLiteral("massExtMask"));
+        massExtMask->setGeometry(QRect(160, 280, 211, 111));
         Left = new QPushButton(Calibration880nm);
         Left->setObjectName(QStringLiteral("Left"));
         Left->setGeometry(QRect(30, 120, 100, 340));
@@ -66,12 +66,12 @@ public:
         icon1.addFile(QStringLiteral(":/Buttons/Left_Carrot.jpg"), QSize(), QIcon::Normal, QIcon::Off);
         Left->setIcon(icon1);
         Left->setIconSize(QSize(100, 340));
-        PushButton_3 = new QPushButton(Calibration880nm);
-        PushButton_3->setObjectName(QStringLiteral("PushButton_3"));
-        PushButton_3->setGeometry(QRect(440, 280, 211, 111));
-        PushButton_1 = new QPushButton(Calibration880nm);
-        PushButton_1->setObjectName(QStringLiteral("PushButton_1"));
-        PushButton_1->setGeometry(QRect(164, 140, 211, 111));
+        AnalogMask = new QPushButton(Calibration880nm);
+        AnalogMask->setObjectName(QStringLiteral("AnalogMask"));
+        AnalogMask->setGeometry(QRect(440, 280, 211, 111));
+        slopeMask = new QPushButton(Calibration880nm);
+        slopeMask->setObjectName(QStringLiteral("slopeMask"));
+        slopeMask->setGeometry(QRect(164, 140, 211, 111));
         Right = new QPushButton(Calibration880nm);
         Right->setObjectName(QStringLiteral("Right"));
         Right->setGeometry(QRect(680, 120, 100, 340));
@@ -96,12 +96,12 @@ public:
     {
         Calibration880nm->setWindowTitle(QApplication::translate("Calibration880nm", "Dialog", 0));
         AdaptiveFilter->setText(QApplication::translate("Calibration880nm", "880nm Calibration", 0));
-        PushButton->setText(QApplication::translate("Calibration880nm", "PushButton", 0));
+        zeroMask->setText(QApplication::translate("Calibration880nm", "PushButton", 0));
         Home->setText(QString());
-        PushButton_2->setText(QApplication::translate("Calibration880nm", "PushButton", 0));
+        massExtMask->setText(QApplication::translate("Calibration880nm", "PushButton", 0));
         Left->setText(QString());
-        PushButton_3->setText(QApplication::translate("Calibration880nm", "PushButton", 0));
-        PushButton_1->setText(QApplication::translate("Calibration880nm", "PushButton", 0));
+        AnalogMask->setText(QApplication::translate("Calibration880nm", "PushButton", 0));
+        slopeMask->setText(QApplication::translate("Calibration880nm", "PushButton", 0));
         Right->setText(QString());
         Save->setText(QString());
     } // retranslateUi

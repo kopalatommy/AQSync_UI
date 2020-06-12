@@ -30,15 +30,15 @@ private slots:
 
     void on_slopeMask_clicked();
     void on_zeroMask_clicked();
-    void on_massExtMask_clicked();
+    void on_MassExtMask_clicked();
     void on_AnalogMask_clicked();
 
-    void NewSlope(float val);
-    void NewZero(float val);
+    void newSlope(float val);
+    void newZero(float val);
     void NewMassExt(float val);
-    void NewAnalog(int val);
+    void newAnalog(int val);
 
-    void UpdateLocalUI();
+    void updateLocalUI();
     void GetNewSettings();
 
 
