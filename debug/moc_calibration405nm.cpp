@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'calibration405nm.h'
 **
-** Created by: The Qt Meta Object Compiler version 67 (Qt 5.5.1)
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.12.3)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
@@ -12,15 +12,17 @@
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'calibration405nm.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.5.1. It"
+#error "This file was generated using the moc from 5.12.3. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
 
 QT_BEGIN_MOC_NAMESPACE
+QT_WARNING_PUSH
+QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_calibration405nm_t {
-    QByteArrayData data[18];
-    char stringdata0[263];
+    QByteArrayData data[17];
+    char stringdata0[240];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -45,8 +47,7 @@ QT_MOC_LITERAL(12, 182, 7), // "newZero"
 QT_MOC_LITERAL(13, 190, 10), // "NewMassExt"
 QT_MOC_LITERAL(14, 201, 9), // "newAnalog"
 QT_MOC_LITERAL(15, 211, 13), // "updateLocalUI"
-QT_MOC_LITERAL(16, 225, 14), // "GetNewSettings"
-QT_MOC_LITERAL(17, 240, 22) // "on_massExtMask_clicked"
+QT_MOC_LITERAL(16, 225, 14) // "GetNewSettings"
 
     },
     "calibration405nm\0on_Left_clicked\0\0"
@@ -55,17 +56,17 @@ QT_MOC_LITERAL(17, 240, 22) // "on_massExtMask_clicked"
     "on_zeroMask_clicked\0on_MassExtMask_clicked\0"
     "on_AnalogMask_clicked\0newSlope\0val\0"
     "newZero\0NewMassExt\0newAnalog\0updateLocalUI\0"
-    "GetNewSettings\0on_massExtMask_clicked"
+    "GetNewSettings"
 };
 #undef QT_MOC_LITERAL
 
 static const uint qt_meta_data_calibration405nm[] = {
 
  // content:
-       7,       // revision
+       8,       // revision
        0,       // classname
        0,    0, // classinfo
-      15,   14, // methods
+      14,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -73,21 +74,20 @@ static const uint qt_meta_data_calibration405nm[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    0,   89,    2, 0x08 /* Private */,
-       3,    0,   90,    2, 0x08 /* Private */,
-       4,    0,   91,    2, 0x08 /* Private */,
-       5,    0,   92,    2, 0x08 /* Private */,
-       6,    0,   93,    2, 0x08 /* Private */,
-       7,    0,   94,    2, 0x08 /* Private */,
-       8,    0,   95,    2, 0x08 /* Private */,
-       9,    0,   96,    2, 0x08 /* Private */,
-      10,    1,   97,    2, 0x08 /* Private */,
-      12,    1,  100,    2, 0x08 /* Private */,
-      13,    1,  103,    2, 0x08 /* Private */,
-      14,    1,  106,    2, 0x08 /* Private */,
-      15,    0,  109,    2, 0x08 /* Private */,
-      16,    0,  110,    2, 0x08 /* Private */,
-      17,    0,  111,    2, 0x08 /* Private */,
+       1,    0,   84,    2, 0x08 /* Private */,
+       3,    0,   85,    2, 0x08 /* Private */,
+       4,    0,   86,    2, 0x08 /* Private */,
+       5,    0,   87,    2, 0x08 /* Private */,
+       6,    0,   88,    2, 0x08 /* Private */,
+       7,    0,   89,    2, 0x08 /* Private */,
+       8,    0,   90,    2, 0x08 /* Private */,
+       9,    0,   91,    2, 0x08 /* Private */,
+      10,    1,   92,    2, 0x08 /* Private */,
+      12,    1,   95,    2, 0x08 /* Private */,
+      13,    1,   98,    2, 0x08 /* Private */,
+      14,    1,  101,    2, 0x08 /* Private */,
+      15,    0,  104,    2, 0x08 /* Private */,
+      16,    0,  105,    2, 0x08 /* Private */,
 
  // slots: parameters
     QMetaType::Void,
@@ -104,7 +104,6 @@ static const uint qt_meta_data_calibration405nm[] = {
     QMetaType::Void, QMetaType::Int,   11,
     QMetaType::Void,
     QMetaType::Void,
-    QMetaType::Void,
 
        0        // eod
 };
@@ -112,7 +111,7 @@ static const uint qt_meta_data_calibration405nm[] = {
 void calibration405nm::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        calibration405nm *_t = static_cast<calibration405nm *>(_o);
+        auto *_t = static_cast<calibration405nm *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->on_Left_clicked(); break;
@@ -129,16 +128,19 @@ void calibration405nm::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int
         case 11: _t->newAnalog((*reinterpret_cast< int(*)>(_a[1]))); break;
         case 12: _t->updateLocalUI(); break;
         case 13: _t->GetNewSettings(); break;
-        case 14: _t->on_MassExtMask_clicked(); break;
         default: ;
         }
     }
 }
 
-const QMetaObject calibration405nm::staticMetaObject = {
-    { &QDialog::staticMetaObject, qt_meta_stringdata_calibration405nm.data,
-      qt_meta_data_calibration405nm,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
-};
+QT_INIT_METAOBJECT const QMetaObject calibration405nm::staticMetaObject = { {
+    &QDialog::staticMetaObject,
+    qt_meta_stringdata_calibration405nm.data,
+    qt_meta_data_calibration405nm,
+    qt_static_metacall,
+    nullptr,
+    nullptr
+} };
 
 
 const QMetaObject *calibration405nm::metaObject() const
@@ -148,9 +150,9 @@ const QMetaObject *calibration405nm::metaObject() const
 
 void *calibration405nm::qt_metacast(const char *_clname)
 {
-    if (!_clname) return Q_NULLPTR;
+    if (!_clname) return nullptr;
     if (!strcmp(_clname, qt_meta_stringdata_calibration405nm.stringdata0))
-        return static_cast<void*>(const_cast< calibration405nm*>(this));
+        return static_cast<void*>(this);
     return QDialog::qt_metacast(_clname);
 }
 
@@ -160,14 +162,15 @@ int calibration405nm::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 15)
+        if (_id < 14)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 15;
+        _id -= 14;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 15)
+        if (_id < 14)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 15;
+        _id -= 14;
     }
     return _id;
 }
+QT_WARNING_POP
 QT_END_MOC_NAMESPACE

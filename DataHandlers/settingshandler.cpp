@@ -3,6 +3,9 @@
 SettingsHandler::SettingsHandler()
 {
     ReadAllSettings();
+
+    SetUp405SettingsFile();
+    SetUpBCPSettingsFile();
 }
 
 SettingsHandler * SettingsHandler::instance = nullptr;
@@ -14,6 +17,64 @@ SettingsHandler * SettingsHandler::GetInstance()
         instance = new SettingsHandler();
     }
     return instance;
+}
+
+void SettingsHandler::SetUp405SettingsFile()
+{
+    //Default filename is the one used on the touchscreen
+    settingsFile_405.setFileName(DEFAULT_SETTINGS_405_FILE_NAME);
+    if(settingsFile_405.open(QIODevice::ReadOnly) == false)
+    {
+        //BAckup filename is used when the file is created inside of the same folder as the executable, should be used on computers
+        settingsFile_405.setFileName(BACKUP_SETTINGS_405_FILE_NAME);
+        if(settingsFile_405.open(QIODevice::ReadOnly) == false)
+        {
+            //Files are not present, try creating them starting with default
+            settingsFile_405.setFileName(DEFAULT_SETTINGS_405_FILE_NAME);
+            if(settingsFile_405.open(QIODevice::WriteOnly) == true)
+            {
+                settingsFile_405.write("CREATING");
+            }
+            else
+            {
+                settingsFile_405.setFileName(BACKUP_SETTINGS_405_FILE_NAME);
+                if(settingsFile_405.open(QIODevice::WriteOnly) == true)
+                {
+                    settingsFile_405.write("CREATING");
+                }
+            }
+        }
+    }
+    settingsFile_405.close();
+}
+
+void SettingsHandler::SetUpBCPSettingsFile()
+{
+    //Default filename is the one used on the touchscreen
+    settingsFile_bcp.setFileName(DEFAULT_SETTINGS_BCP_FILE_NAME);
+    if(settingsFile_bcp.open(QIODevice::ReadOnly) == false)
+    {
+        //BAckup filename is used when the file is created inside of the same folder as the executable, should be used on computers
+        settingsFile_bcp.setFileName(BACKUP_SETTINGS_BCP_FILE_NAME);
+        if(settingsFile_bcp.open(QIODevice::ReadOnly) == false)
+        {
+            //Files are not present, try creating them starting with default
+            settingsFile_bcp.setFileName(DEFAULT_SETTINGS_BCP_FILE_NAME);
+            if(settingsFile_bcp.open(QIODevice::WriteOnly) == true)
+            {
+                settingsFile_bcp.write("CREATING");
+            }
+            else
+            {
+                settingsFile_bcp.setFileName(BACKUP_SETTINGS_BCP_FILE_NAME);
+                if(settingsFile_bcp.open(QIODevice::WriteOnly) == true)
+                {
+                    settingsFile_bcp.write("CREATING");
+                }
+            }
+        }
+    }
+    settingsFile_bcp.close();
 }
 
 unsigned char SettingsHandler::GetAvgTime()
@@ -360,15 +421,13 @@ void SettingsHandler::ReadAllSettings()
 
 void SettingsHandler::Read405Settings()
 {
-    QFile file("/home/2b/405Settings.txt");
-
-    if(file.open(QIODevice::ReadOnly))
+    if(settingsFile_405.open(QIODevice::ReadOnly))
     {
         char line[64];
         long long length;
-        while (file.atEnd() == false)
+        while (settingsFile_405.atEnd() == false)
         {
-            length = file.readLine(line, 64);
+            length = settingsFile_405.readLine(line, 64);
             line[length] = 0;
 
             switch (line[0])
@@ -434,7 +493,7 @@ void SettingsHandler::Read405Settings()
                 break;
             }
         }
-        file.close();
+        settingsFile_405.close();
     }
     else
     {
@@ -444,15 +503,13 @@ void SettingsHandler::Read405Settings()
 
 void SettingsHandler::ReadBCPSettings()
 {
-    QFile file("/home/2b/BCPSettings.txt");
-
-    if(file.open(QIODevice::ReadOnly))
+    if(settingsFile_bcp.open(QIODevice::ReadOnly))
     {
         char line[64];
         long long length;
-        while (file.atEnd() == false)
+        while (settingsFile_bcp.atEnd() == false)
         {
-            length = file.readLine(line, 64);
+            length = settingsFile_bcp.readLine(line, 64);
             line[length] = 0;
 
             switch (line[0])
@@ -529,7 +586,7 @@ void SettingsHandler::ReadBCPSettings()
                 qDebug() << "BCP settings read in bad marker: " << QString(line);
             }
         }
-        file.close();
+        settingsFile_bcp.close();
     }
     else
     {
@@ -546,70 +603,68 @@ void SettingsHandler::WriteAllSettings()
 
 void SettingsHandler::Write405Settings()
 {
-    QFile file("/home/2b/405Settings.txt");
-
-    if(file.open(QIODevice::WriteOnly))
+    if(settingsFile_405.open(QIODevice::WriteOnly))
     {
         char line[64];
         long long length = 0;
 
         length = sprintf(line, "%c%i\n", BIT_MASK_MARKER_405, bitMask_405);
         line[length] = 0;
-        file.write(line, length);
+        settingsFile_405.write(line, length);
 
         length = sprintf(line, "%c%i\n", AD_SHORT_MARKER_405, adShort_405);
         line[length] = 0;
-        file.write(line, length);
+        settingsFile_405.write(line, length);
 
         length = sprintf(line, "%c%i\n", AD_LONG_MARKER_405, adLong_405);
         line[length] = 0;
-        file.write(line, length);
+        settingsFile_405.write(line, length);
 
         length = sprintf(line, "%c%i\n", AD_DIFF_MARKER_405, adDiff_405);
         line[length] = 0;
-        file.write(line, length);
+        settingsFile_405.write(line, length);
 
         length = sprintf(line, "%c%i\n", AD_PER_MARKER_405, adPercent_405);
         line[length] = 0;
-        file.write(line, length);
+        settingsFile_405.write(line, length);
 
         length = sprintf(line, "%c%1.2f\n", NO_SLOPE_MARKER_405, static_cast<double>(noSlope_405));
         line[length] = 0;
-        file.write(line, length);
+        settingsFile_405.write(line, length);
 
         length = sprintf(line, "%c%1.2f\n", NO_ZERO_MARKER_405, static_cast<double>(noZero_405));
         line[length] = 0;
-        file.write(line, length);
+        settingsFile_405.write(line, length);
 
         length = sprintf(line, "%c%i\n", NO_ANALOG_MARKER_405, analogNO_405);
         line[length] = 0;
-        file.write(line, length);
+        settingsFile_405.write(line, length);
 
         length = sprintf(line, "%c%1.2f\n", NO2_SLOPE_MARKER_405, static_cast<double>(no2Slope_405));
         line[length] = 0;
-        file.write(line, length);
+        settingsFile_405.write(line, length);
 
         length = sprintf(line, "%c%1.2f\n", NO2_ZERO_MARKER_405, static_cast<double>(no2Zero_405));
         line[length] = 0;
-        file.write(line, length);
+        settingsFile_405.write(line, length);
 
         length = sprintf(line, "%c%i\n", NO2_ANALOG_MARKER_405, analogNO2_405);
         line[length] = 0;
-        file.write(line, length);
+        settingsFile_405.write(line, length);
 
         length = sprintf(line, "%c%1.2f\n", OZONE_FLOW_SLOPE_MARKER_405, static_cast<double>(ozoneFlowSlope_405));
         line[length] = 0;
-        file.write(line, length);
+        settingsFile_405.write(line, length);
 
         length = sprintf(line, "%c%1.2f\n", CELL_FLOW_SLOPE_MARKER_405, static_cast<double>(cellFlowSlope_405));
         line[length] = 0;
-        file.write(line, length);
+        settingsFile_405.write(line, length);
 
         length = sprintf(line, "%c%i\n", MODE_MARKER_405, mode_405);
         line[length] = 0;
-        file.write(line, length);
+        settingsFile_405.write(line, length);
 
-        file.close();
+        settingsFile_405.close();
     }
     else
     {
@@ -619,78 +674,76 @@ void SettingsHandler::Write405Settings()
 
 void SettingsHandler::WriteBCPSettings()
 {
-    QFile file("/home/2b/BCPSettings.txt");
-
-    if(file.open(QIODevice::WriteOnly))
+    if(settingsFile_bcp.open(QIODevice::WriteOnly))
     {
         char line[64];
         long long length = 0;
 
         length = sprintf(line, "%c%i\n", ZERO_PERIOD_MARKER_BCP, zeroPeriod_bcp);
         line[length] = 0;
-        file.write(line, length);
+        settingsFile_bcp.write(line, length);
 
         length = sprintf(line, "%c%i\n", ZERO_FREQUENCY_MARKER_BCP, zeroFreq_bcp);
         line[length] = 0;
-        file.write(line, length);
+        settingsFile_bcp.write(line, length);
 
         length = sprintf(line, "%c%i\n", AD_SHORT_MARKER_BCP, adShort_bcp);
         line[length] = 0;
-        file.write(line, length);
+        settingsFile_bcp.write(line, length);
 
         length = sprintf(line, "%c%i\n", AD_LONG_MARKER_BCP, adLong_bcp);
         line[length] = 0;
-        file.write(line, length);
+        settingsFile_bcp.write(line, length);
 
         length = sprintf(line, "%c%i\n", AD_DIFF_MARKER_BCP, adDiff_bcp);
         line[length] = 0;
-        file.write(line, length);
+        settingsFile_bcp.write(line, length);
 
         length = sprintf(line, "%c%i\n", AD_PER_MARKER_BCP, adPercent_bcp);
         line[length] = 0;
-        file.write(line, length);
+        settingsFile_bcp.write(line, length);
 
         length = sprintf(line, "%c%i\n", BIT_MASK_MARKER_BCP, bitMask_bcp);
         line[length] = 0;
-        file.write(line, length);
+        settingsFile_bcp.write(line, length);
 
         length = sprintf(line, "%c%i\n", ANALOG_405_MARKER_BCP, analog405_bcp);
         line[length] = 0;
-        file.write(line, length);
+        settingsFile_bcp.write(line, length);
 
         length = sprintf(line, "%c%i\n", ANALOG_880_MARKER_BCP, analog880_bcp);
         line[length] = 0;
-        file.write(line, length);
+        settingsFile_bcp.write(line, length);
 
         length = sprintf(line, "%c%1.2f\n", PM_MASS_EXT_MARKER_BCP, static_cast<double>(massExt405_bcp));
         line[length] = 0;
-        file.write(line, length);
+        settingsFile_bcp.write(line, length);
 
         length = sprintf(line, "%c%1.2f\n", PM_SLOPE_MARKER_BCP, static_cast<double>(pmSlope_bcp));
         line[length] = 0;
-        file.write(line, length);
+        settingsFile_bcp.write(line, length);
 
         length = sprintf(line, "%c%1.2f\n", PM_ZERO_MARKER_BCP, static_cast<double>(pmZero_bcp));
         line[length] = 0;
-        file.write(line, length);
+        settingsFile_bcp.write(line, length);
 
         length = sprintf(line, "%c%1.2f\n", BC_SLOPE_MARKER_BCP, static_cast<double>(bcSlope_bcp));
         line[length] = 0;
-        file.write(line, length);
+        settingsFile_bcp.write(line, length);
 
         length = sprintf(line, "%c%1.2f\n", BC_ZERO_MARKER_BCP, static_cast<double>(bcZero_bcp));
         line[length] = 0;
-        file.write(line, length);
+        settingsFile_bcp.write(line, length);
 
         length = sprintf(line, "%c%1.2f\n", FLOW_SLOPE_MARKER_BCP, static_cast<double>(flowSlope_bcp));
         line[length] = 0;
-        file.write(line, length);
+        settingsFile_bcp.write(line, length);
 
         length = sprintf(line, "%c%1.2f", FLOW_ZERO_MARKER_BCP, static_cast<double>(flowZero_bcp));
         line[length] = 0;
-        file.write(line, length);
+        settingsFile_bcp.write(line, length);
 
-        file.close();
+        settingsFile_bcp.close();
     }
     else
     {

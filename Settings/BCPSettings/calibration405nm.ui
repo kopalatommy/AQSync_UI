@@ -179,17 +179,6 @@
     <string>PushButton</string>
    </property>
   </widget>
-<<<<<<< HEAD
-  <zorder>AdaptiveFilter</zorder>
-  <zorder>Right</zorder>
-  <zorder>PushButton_1</zorder>
-  <zorder>Home</zorder>
-  <zorder>PushButton_2</zorder>
-  <zorder>Save</zorder>
-  <zorder>Left</zorder>
-  <zorder>PushButton</zorder>
-  <zorder>PushButton_3</zorder>
-=======
   <widget class="QLabel" name="slopeLabel">
    <property name="geometry">
     <rect>
@@ -255,7 +244,6 @@
   <zorder>AdaptiveFilter</zorder>
   <zorder>zeroMask</zorder>
   <zorder>AnalogMask</zorder>
->>>>>>> a8bdd0ddc0fa6fc1c1e85d7f4e073a7c1685e042
  </widget>
  <resources>
   <include location="../../resources.qrc"/>

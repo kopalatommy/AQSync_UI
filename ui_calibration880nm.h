@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'calibration880nm.ui'
 **
-** Created by: Qt User Interface Compiler version 5.5.1
+** Created by: Qt User Interface Compiler version 5.12.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -10,11 +10,9 @@
 #define UI_CALIBRATION880NM_H
 
 #include <QtCore/QVariant>
-#include <QtWidgets/QAction>
+#include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QDialog>
-#include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QPushButton>
 
@@ -40,74 +38,74 @@ public:
     void setupUi(QDialog *Calibration880nm)
     {
         if (Calibration880nm->objectName().isEmpty())
-            Calibration880nm->setObjectName(QStringLiteral("Calibration880nm"));
+            Calibration880nm->setObjectName(QString::fromUtf8("Calibration880nm"));
         Calibration880nm->resize(800, 480);
         AdaptiveFilter = new QLabel(Calibration880nm);
-        AdaptiveFilter->setObjectName(QStringLiteral("AdaptiveFilter"));
-        AdaptiveFilter->setGeometry(QRect(120, 20, 481, 81));
+        AdaptiveFilter->setObjectName(QString::fromUtf8("AdaptiveFilter"));
+        AdaptiveFilter->setGeometry(QRect(0, 20, 801, 81));
         QFont font;
-        font.setFamily(QStringLiteral("Calibri"));
+        font.setFamily(QString::fromUtf8("Calibri"));
         font.setPointSize(30);
         AdaptiveFilter->setFont(font);
         AdaptiveFilter->setAlignment(Qt::AlignCenter);
         zeroMask = new QPushButton(Calibration880nm);
-        zeroMask->setObjectName(QStringLiteral("zeroMask"));
+        zeroMask->setObjectName(QString::fromUtf8("zeroMask"));
         zeroMask->setGeometry(QRect(440, 140, 211, 111));
         Home = new QPushButton(Calibration880nm);
-        Home->setObjectName(QStringLiteral("Home"));
+        Home->setObjectName(QString::fromUtf8("Home"));
         Home->setGeometry(QRect(680, 10, 100, 100));
         QIcon icon;
-        icon.addFile(QStringLiteral(":/Buttons/button_back.jpg"), QSize(), QIcon::Normal, QIcon::Off);
+        icon.addFile(QString::fromUtf8(":/Buttons/button_back.jpg"), QSize(), QIcon::Normal, QIcon::Off);
         Home->setIcon(icon);
         Home->setIconSize(QSize(100, 100));
         MassExtMask = new QPushButton(Calibration880nm);
-        MassExtMask->setObjectName(QStringLiteral("MassExtMask"));
+        MassExtMask->setObjectName(QString::fromUtf8("MassExtMask"));
         MassExtMask->setGeometry(QRect(160, 280, 211, 111));
         Left = new QPushButton(Calibration880nm);
-        Left->setObjectName(QStringLiteral("Left"));
+        Left->setObjectName(QString::fromUtf8("Left"));
         Left->setGeometry(QRect(30, 120, 100, 340));
         QIcon icon1;
-        icon1.addFile(QStringLiteral(":/Buttons/Left_Carrot.jpg"), QSize(), QIcon::Normal, QIcon::Off);
+        icon1.addFile(QString::fromUtf8(":/Buttons/Left_Carrot.jpg"), QSize(), QIcon::Normal, QIcon::Off);
         Left->setIcon(icon1);
         Left->setIconSize(QSize(100, 340));
         AnalogMask = new QPushButton(Calibration880nm);
-        AnalogMask->setObjectName(QStringLiteral("AnalogMask"));
+        AnalogMask->setObjectName(QString::fromUtf8("AnalogMask"));
         AnalogMask->setGeometry(QRect(440, 280, 211, 111));
         slopeMask = new QPushButton(Calibration880nm);
-        slopeMask->setObjectName(QStringLiteral("slopeMask"));
+        slopeMask->setObjectName(QString::fromUtf8("slopeMask"));
         slopeMask->setGeometry(QRect(164, 140, 211, 111));
         Right = new QPushButton(Calibration880nm);
-        Right->setObjectName(QStringLiteral("Right"));
+        Right->setObjectName(QString::fromUtf8("Right"));
         Right->setGeometry(QRect(680, 120, 100, 340));
         QIcon icon2;
-        icon2.addFile(QStringLiteral(":/Buttons/Right_Carrot.jpg"), QSize(), QIcon::Normal, QIcon::Off);
+        icon2.addFile(QString::fromUtf8(":/Buttons/Right_Carrot.jpg"), QSize(), QIcon::Normal, QIcon::Off);
         Right->setIcon(icon2);
         Right->setIconSize(QSize(100, 340));
         Save = new QPushButton(Calibration880nm);
-        Save->setObjectName(QStringLiteral("Save"));
+        Save->setObjectName(QString::fromUtf8("Save"));
         Save->setGeometry(QRect(340, 410, 120, 60));
         QIcon icon3;
-        icon3.addFile(QStringLiteral(":/Buttons/button_save.jpg"), QSize(), QIcon::Normal, QIcon::Off);
+        icon3.addFile(QString::fromUtf8(":/Buttons/button_save.jpg"), QSize(), QIcon::Normal, QIcon::Off);
         Save->setIcon(icon3);
         Save->setIconSize(QSize(120, 60));
         slopeLabel = new QLabel(Calibration880nm);
-        slopeLabel->setObjectName(QStringLiteral("slopeLabel"));
+        slopeLabel->setObjectName(QString::fromUtf8("slopeLabel"));
         slopeLabel->setEnabled(false);
         slopeLabel->setGeometry(QRect(170, 140, 201, 111));
         zeroLabel = new QLabel(Calibration880nm);
-        zeroLabel->setObjectName(QStringLiteral("zeroLabel"));
+        zeroLabel->setObjectName(QString::fromUtf8("zeroLabel"));
         zeroLabel->setGeometry(QRect(446, 139, 201, 111));
         massExtLabel = new QLabel(Calibration880nm);
-        massExtLabel->setObjectName(QStringLiteral("massExtLabel"));
+        massExtLabel->setObjectName(QString::fromUtf8("massExtLabel"));
         massExtLabel->setGeometry(QRect(166, 280, 201, 111));
         analogLabel = new QLabel(Calibration880nm);
-        analogLabel->setObjectName(QStringLiteral("analogLabel"));
+        analogLabel->setObjectName(QString::fromUtf8("analogLabel"));
         analogLabel->setGeometry(QRect(450, 280, 201, 111));
+        AdaptiveFilter->raise();
         analogLabel->raise();
         massExtLabel->raise();
         zeroLabel->raise();
         slopeLabel->raise();
-        AdaptiveFilter->raise();
         zeroMask->raise();
         Home->raise();
         MassExtMask->raise();
@@ -124,20 +122,20 @@ public:
 
     void retranslateUi(QDialog *Calibration880nm)
     {
-        Calibration880nm->setWindowTitle(QApplication::translate("Calibration880nm", "Dialog", 0));
-        AdaptiveFilter->setText(QApplication::translate("Calibration880nm", "880nm Calibration", 0));
-        zeroMask->setText(QApplication::translate("Calibration880nm", "PushButton", 0));
+        Calibration880nm->setWindowTitle(QApplication::translate("Calibration880nm", "Dialog", nullptr));
+        AdaptiveFilter->setText(QApplication::translate("Calibration880nm", "880nm Calibration", nullptr));
+        zeroMask->setText(QApplication::translate("Calibration880nm", "PushButton", nullptr));
         Home->setText(QString());
-        MassExtMask->setText(QApplication::translate("Calibration880nm", "PushButton", 0));
+        MassExtMask->setText(QApplication::translate("Calibration880nm", "PushButton", nullptr));
         Left->setText(QString());
-        AnalogMask->setText(QApplication::translate("Calibration880nm", "PushButton", 0));
-        slopeMask->setText(QApplication::translate("Calibration880nm", "PushButton", 0));
+        AnalogMask->setText(QApplication::translate("Calibration880nm", "PushButton", nullptr));
+        slopeMask->setText(QApplication::translate("Calibration880nm", "PushButton", nullptr));
         Right->setText(QString());
         Save->setText(QString());
-        slopeLabel->setText(QApplication::translate("Calibration880nm", "Slope", 0));
-        zeroLabel->setText(QApplication::translate("Calibration880nm", "Zero:", 0));
-        massExtLabel->setText(QApplication::translate("Calibration880nm", "Mass Ext", 0));
-        analogLabel->setText(QApplication::translate("Calibration880nm", "Analog", 0));
+        slopeLabel->setText(QApplication::translate("Calibration880nm", "Slope", nullptr));
+        zeroLabel->setText(QApplication::translate("Calibration880nm", "Zero:", nullptr));
+        massExtLabel->setText(QApplication::translate("Calibration880nm", "Mass Ext", nullptr));
+        analogLabel->setText(QApplication::translate("Calibration880nm", "Analog", nullptr));
     } // retranslateUi
 
 };

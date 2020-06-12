@@ -4,6 +4,7 @@
 #include <QObject>
 #include <QDebug>
 #include <QFile>
+#include <QString>
 
 //BCP definitions
 #define ZERO_PERIOD_MARKER_BCP 'A'
@@ -45,6 +46,12 @@
 #define MODE_MARKER_405 'O'
 #define DATE_MARKER_405 'P'
 #define TIME_MARKER_405 'Q'
+
+#define DEFAULT_SETTINGS_405_FILE_NAME "/home/2b/405Settings.txt"
+#define BACKUP_SETTINGS_405_FILE_NAME "405Settings.txt"
+
+#define DEFAULT_SETTINGS_BCP_FILE_NAME "/home/2b/BCPSettings.txt"
+#define BACKUP_SETTINGS_BCP_FILE_NAME "BCPSettings.txt"
 
 class SettingsHandler
 {
@@ -199,6 +206,9 @@ private:
     float cellFlowSlope_405 = 0;
     unsigned char mode_405 = 0;
 
+    QFile settingsFile_405;
+    QFile settingsFile_bcp;
+
     //System settings
     char dateFormat = 0;
 
@@ -213,6 +223,9 @@ private:
     void WriteAllSettings();
     void Write405Settings();
     void WriteBCPSettings();
+
+    void SetUp405SettingsFile();
+    void SetUpBCPSettingsFile();
 };
 
 #endif // SETTINGSHANDLER_H

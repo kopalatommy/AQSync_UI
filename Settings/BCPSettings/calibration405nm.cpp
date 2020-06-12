@@ -110,24 +110,29 @@ void calibration405nm::on_Save_clicked(){
 
     //Check to see if the user changed the setting
     //If the difference is greater than 2 point precision, than it is a new value
-    if((g->GetMassExt405_bcp() - massExt) > 0.01){
+    if(fabs(static_cast<double>(g->GetMassExt405_bcp() - massExt)) > 0.01)
+    {
         g->SetMassExt405_bcp(massExt);
         newSetting = true;
     }
-    if((g->GetPMSlope_bcp() - slope) > 0.001){
+    if(fabs(static_cast<double>((g->GetPMSlope_bcp() - slope))) > 0.001)
+    {
         g->SetPMSlope_bcp(slope);
         newSetting = true;
     }
-    if((g->GetPMZero_bcp() - zero) > 0.01){
+    if(fabs(static_cast<double>(g->GetPMZero_bcp() - zero)) > 0.01)
+    {
         g->SetPMZero_bcp(zero);
         newSetting = true;
     }
-    if(analog != g->GetAnalog405_bcp()){
+    if(analog != g->GetAnalog405_bcp())
+    {
         g->SetAnalog405_bcp(analog);
         newSetting = true;
     }
 
-    if(newSetting){
+    if(newSetting)
+    {
         QMessageBox msg;
         msg.setText("Settings added to queue");
         msg.setStyleSheet("QMessageBox{ border: 1px solid black; }");
@@ -152,9 +157,9 @@ void calibration405nm::GetNewSettings()
 
 
 void calibration405nm::updateLocalUI(){
-    ui->slopeLabel->setText("Slope:\n" + QString::number(slope));
-    ui->zeroLabel->setText("Zero:\n" + QString::number(zero));
-    ui->massExtLabel->setText("Mass Ext:\n" + QString::number(massExt));
+    ui->slopeLabel->setText("Slope:\n" + QString::number(static_cast<double>(slope)));
+    ui->zeroLabel->setText("Zero:\n" + QString::number(static_cast<double>(zero)));
+    ui->massExtLabel->setText("Mass Ext:\n" + QString::number(static_cast<double>(massExt)));
     ui->analogLabel->setText("Analog:\n" + QString::number(analog));
 
     qDebug() << "Updated UI";
@@ -178,8 +183,10 @@ void calibration405nm::closeEvent(QCloseEvent *event)
     QWidget::closeEvent(event);
     SettingsHandler * settings = SettingsHandler::GetInstance();
 
-    if(settings->GetAnalog405_bcp() != analog || settings->GetMassExt405_bcp() != massExt ||
-       settings->GetPMZero_bcp() != zero || settings->GetPMSlope_bcp() != slope)
+    if(settings->GetAnalog405_bcp() != analog
+    || fabs(static_cast<double>(settings->GetMassExt405_bcp() - massExt)) > 0.001
+    || fabs(static_cast<double>(settings->GetPMZero_bcp() - zero)) > 0.001
+    || fabs(static_cast<double>(settings->GetPMSlope_bcp() - slope)) > 0.001)
     {
         QMessageBox msg;
         msg.setText("Save unsaved setting?");

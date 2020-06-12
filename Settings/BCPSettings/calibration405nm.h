@@ -5,6 +5,7 @@
 #include <QMessageBox>
 #include <QWidget>
 #include <QDebug>
+#include <QtMath>
 
 #include "Settings/settingformshandler.h"
 #include "DataHandlers/settingshandler.h"
@@ -20,7 +21,7 @@ class calibration405nm : public QDialog
     Q_OBJECT
 
 public:
-    explicit calibration405nm(QWidget *parent = 0);
+    explicit calibration405nm(QWidget *parent = nullptr);
     ~calibration405nm();
 
 private slots:
@@ -42,8 +43,7 @@ private slots:
     void updateLocalUI();
     void GetNewSettings();
 
-
-    void on_massExtMask_clicked();
+    //void on_massExtMask_clicked();
 
 private:
     Ui::calibration405nm *ui;

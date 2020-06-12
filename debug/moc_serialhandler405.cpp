@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'serialhandler405.h'
 **
-** Created by: The Qt Meta Object Compiler version 67 (Qt 5.5.1)
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.12.3)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
@@ -12,12 +12,14 @@
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'serialhandler405.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.5.1. It"
+#error "This file was generated using the moc from 5.12.3. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
 
 QT_BEGIN_MOC_NAMESPACE
+QT_WARNING_PUSH
+QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_SerialHandler405_t {
     QByteArrayData data[12];
     char stringdata0[190];
@@ -54,7 +56,7 @@ QT_MOC_LITERAL(11, 180, 9) // "ReadyRead"
 static const uint qt_meta_data_SerialHandler405[] = {
 
  // content:
-       7,       // revision
+       8,       // revision
        0,       // classname
        0,    0, // classinfo
        9,   14, // methods
@@ -96,7 +98,7 @@ static const uint qt_meta_data_SerialHandler405[] = {
 void SerialHandler405::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        SerialHandler405 *_t = static_cast<SerialHandler405 *>(_o);
+        auto *_t = static_cast<SerialHandler405 *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->ParsedDataLine(); break;
@@ -112,50 +114,59 @@ void SerialHandler405::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
         int *result = reinterpret_cast<int *>(_a[0]);
-        void **func = reinterpret_cast<void **>(_a[1]);
         {
-            typedef void (SerialHandler405::*_t)();
-            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&SerialHandler405::ParsedDataLine)) {
+            using _t = void (SerialHandler405::*)();
+            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&SerialHandler405::ParsedDataLine)) {
                 *result = 0;
+                return;
             }
         }
         {
-            typedef void (SerialHandler405::*_t)();
-            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&SerialHandler405::NewAdFilterSettings405)) {
+            using _t = void (SerialHandler405::*)();
+            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&SerialHandler405::NewAdFilterSettings405)) {
                 *result = 1;
+                return;
             }
         }
         {
-            typedef void (SerialHandler405::*_t)();
-            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&SerialHandler405::NewModeSettings405)) {
+            using _t = void (SerialHandler405::*)();
+            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&SerialHandler405::NewModeSettings405)) {
                 *result = 2;
+                return;
             }
         }
         {
-            typedef void (SerialHandler405::*_t)();
-            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&SerialHandler405::NewNOCalSetting405)) {
+            using _t = void (SerialHandler405::*)();
+            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&SerialHandler405::NewNOCalSetting405)) {
                 *result = 3;
+                return;
             }
         }
         {
-            typedef void (SerialHandler405::*_t)();
-            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&SerialHandler405::NewNo2CalSettings405)) {
+            using _t = void (SerialHandler405::*)();
+            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&SerialHandler405::NewNo2CalSettings405)) {
                 *result = 4;
+                return;
             }
         }
         {
-            typedef void (SerialHandler405::*_t)();
-            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&SerialHandler405::NewFlowCalSettings405)) {
+            using _t = void (SerialHandler405::*)();
+            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&SerialHandler405::NewFlowCalSettings405)) {
                 *result = 5;
+                return;
             }
         }
     }
 }
 
-const QMetaObject SerialHandler405::staticMetaObject = {
-    { &QObject::staticMetaObject, qt_meta_stringdata_SerialHandler405.data,
-      qt_meta_data_SerialHandler405,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
-};
+QT_INIT_METAOBJECT const QMetaObject SerialHandler405::staticMetaObject = { {
+    &QObject::staticMetaObject,
+    qt_meta_stringdata_SerialHandler405.data,
+    qt_meta_data_SerialHandler405,
+    qt_static_metacall,
+    nullptr,
+    nullptr
+} };
 
 
 const QMetaObject *SerialHandler405::metaObject() const
@@ -165,9 +176,9 @@ const QMetaObject *SerialHandler405::metaObject() const
 
 void *SerialHandler405::qt_metacast(const char *_clname)
 {
-    if (!_clname) return Q_NULLPTR;
+    if (!_clname) return nullptr;
     if (!strcmp(_clname, qt_meta_stringdata_SerialHandler405.stringdata0))
-        return static_cast<void*>(const_cast< SerialHandler405*>(this));
+        return static_cast<void*>(this);
     return QObject::qt_metacast(_clname);
 }
 
@@ -191,36 +202,37 @@ int SerialHandler405::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 // SIGNAL 0
 void SerialHandler405::ParsedDataLine()
 {
-    QMetaObject::activate(this, &staticMetaObject, 0, Q_NULLPTR);
+    QMetaObject::activate(this, &staticMetaObject, 0, nullptr);
 }
 
 // SIGNAL 1
 void SerialHandler405::NewAdFilterSettings405()
 {
-    QMetaObject::activate(this, &staticMetaObject, 1, Q_NULLPTR);
+    QMetaObject::activate(this, &staticMetaObject, 1, nullptr);
 }
 
 // SIGNAL 2
 void SerialHandler405::NewModeSettings405()
 {
-    QMetaObject::activate(this, &staticMetaObject, 2, Q_NULLPTR);
+    QMetaObject::activate(this, &staticMetaObject, 2, nullptr);
 }
 
 // SIGNAL 3
 void SerialHandler405::NewNOCalSetting405()
 {
-    QMetaObject::activate(this, &staticMetaObject, 3, Q_NULLPTR);
+    QMetaObject::activate(this, &staticMetaObject, 3, nullptr);
 }
 
 // SIGNAL 4
 void SerialHandler405::NewNo2CalSettings405()
 {
-    QMetaObject::activate(this, &staticMetaObject, 4, Q_NULLPTR);
+    QMetaObject::activate(this, &staticMetaObject, 4, nullptr);
 }
 
 // SIGNAL 5
 void SerialHandler405::NewFlowCalSettings405()
 {
-    QMetaObject::activate(this, &staticMetaObject, 5, Q_NULLPTR);
+    QMetaObject::activate(this, &staticMetaObject, 5, nullptr);
 }
+QT_WARNING_POP
 QT_END_MOC_NAMESPACE

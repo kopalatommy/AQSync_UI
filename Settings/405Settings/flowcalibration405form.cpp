@@ -82,7 +82,7 @@ void FlowCalibration405Form::on_Save_clicked()
 
     //Check to see if the user changed the setting
     //If the difference is greater than 2 point precision, than it is a new value
-    if((cellFlowSlope - s->GetCellFlowSlope_405()) > 0.001)
+    if(fabs(static_cast<double>(cellFlowSlope - s->GetCellFlowSlope_405())) > 0.001)
     {
         valueChanged = true;
         s->SetCellFlowSlope_405(cellFlowSlope);
@@ -90,7 +90,7 @@ void FlowCalibration405Form::on_Save_clicked()
 
     //Check to see if the user changed the setting
     //If the difference is greater than 2 point precision, than it is a new value
-    if((s->GetOzoneFlowSlope_405() - ozoneFlowSlope) > 0.001)
+    if(fabs(static_cast<double>(s->GetOzoneFlowSlope_405() - ozoneFlowSlope)) > 0.001)
     {
         valueChanged = true;
         s->SetOzoneFlowSlope_405(ozoneFlowSlope);
