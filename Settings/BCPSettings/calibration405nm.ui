@@ -134,10 +134,10 @@
   <widget class="QLabel" name="AdaptiveFilter">
    <property name="geometry">
     <rect>
-     <x>120</x>
-     <y>20</y>
-     <width>481</width>
-     <height>81</height>
+     <x>0</x>
+     <y>10</y>
+     <width>801</width>
+     <height>91</height>
     </rect>
    </property>
    <property name="font">
@@ -179,6 +179,15 @@
     <string>PushButton</string>
    </property>
   </widget>
+  <zorder>AdaptiveFilter</zorder>
+  <zorder>Right</zorder>
+  <zorder>PushButton_1</zorder>
+  <zorder>Home</zorder>
+  <zorder>PushButton_2</zorder>
+  <zorder>Save</zorder>
+  <zorder>Left</zorder>
+  <zorder>PushButton</zorder>
+  <zorder>PushButton_3</zorder>
  </widget>
  <resources>
   <include location="../../resources.qrc"/>

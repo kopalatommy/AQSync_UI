@@ -157,8 +157,6 @@ void AdaptiveFilter405Form::UpdateLocalUI()
     ui->longLabel->setText("Long Length:\n" + QString::number(longLength));
     ui->diffLabel->setText("Difference:\n" + QString::number(difference));
     ui->percentLabel->setText("Percent:\n" + QString::number(percent));
-
-    qDebug() << "Updated UI";
 }
 
 void AdaptiveFilter405Form::showEvent(QShowEvent *event)

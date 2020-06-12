@@ -29,8 +29,6 @@ private slots:
 
     void on_NO2Calibration_clicked();
 
-    void on_Parameters_clicked();
-
     void on_Home_Button_clicked();
 
     void on_NextLeft_clicked();

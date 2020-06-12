@@ -161,9 +161,6 @@ void AutoZeroBCP::GetNewSettings(){
 void AutoZeroBCP::UpdateUI(){
     ui->FreqLabel->setText("Frequency:\n" + QString::number(freq));
     ui->PeriodLabel->setText("Period:\n" + QString::number(per));
-
-
-    qDebug() << "Updated UI";
 }
 
 void AutoZeroBCP::showEvent(QShowEvent *event)

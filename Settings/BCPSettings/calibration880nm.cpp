@@ -109,24 +109,29 @@ void Calibration880nm::on_Save_clicked(){
 
     //Check to see if the user changed the setting
     //If the difference is greater than 2 point precision, than it is a new value
-    if((g->GetMassExt880_bcp() - massExt) > 0.01){
+    if(fabs(static_cast<double>(g->GetMassExt880_bcp() - massExt)) > 0.01)
+    {
         g->SetMassExt880_bcp(massExt);
         newSetting = true;
     }
-    if((g->GetBCSlope_bcp() - slope) > 0.001){
+    if(fabs(static_cast<double>(g->GetBCSlope_bcp() - slope)) > 0.001)
+    {
         g->SetBCSlope_bcp(slope);
         newSetting = true;
     }
-    if((g->GetBCZero_bcp() - zero) > 0.01){
+    if(fabs(static_cast<double>(g->GetBCZero_bcp() - zero)) > 0.01)
+    {
         g->SetBCZero_bcp(zero);
         newSetting = true;
     }
-    if(analog != g->GetAnalog880_bcp()){
+    if(analog != g->GetAnalog880_bcp())
+    {
         g->SetAnalog880_bcp(analog);
         newSetting = true;
     }
 
-    if(newSetting){
+    if(newSetting)
+    {
         QMessageBox msg;
         msg.setText("Settings added to queue");
         msg.setStyleSheet("QMessageBox{ border: 1px solid black; }");
@@ -134,8 +139,6 @@ void Calibration880nm::on_Save_clicked(){
         msg.exec();
     }
 }
-
-
 
 void Calibration880nm::GetNewSettings()
 {
@@ -148,18 +151,12 @@ void Calibration880nm::GetNewSettings()
     updateLocalUI();
 }
 
-
-
 void Calibration880nm::updateLocalUI(){
-    ui->slopeLabel->setText("Slope:\n" + QString::number(slope));
-    ui->zeroLabel->setText("Zero:\n" + QString::number(zero));
-    ui->massExtLabel->setText("Mass Ext:\n" + QString::number(massExt));
+    ui->slopeLabel->setText("Slope:\n" + QString::number(static_cast<double>(slope)));
+    ui->zeroLabel->setText("Zero:\n" + QString::number(static_cast<double>(zero)));
+    ui->massExtLabel->setText("Mass Ext:\n" + QString::number(static_cast<double>(massExt)));
     ui->analogLabel->setText("Analog:\n" + QString::number(analog));
-
-    qDebug() << "Updated UI";
-
 }
-
 
 void Calibration880nm::showEvent(QShowEvent *event)
 {
@@ -177,8 +174,10 @@ void Calibration880nm::closeEvent(QCloseEvent *event)
     QWidget::closeEvent(event);
     SettingsHandler * settings = SettingsHandler::GetInstance();
 
-    if(settings->GetAnalog880_bcp() != analog || settings->GetMassExt880_bcp() != massExt ||
-       settings->GetBCZero_bcp() != zero || settings->GetBCSlope_bcp() != slope)
+    if(settings->GetAnalog880_bcp() != analog ||
+       fabs(static_cast<double>(settings->GetMassExt880_bcp() - massExt)) > 0.001 ||
+       fabs(static_cast<double>(settings->GetBCZero_bcp() - zero)) > 0.001 ||
+       fabs(static_cast<double>(settings->GetBCSlope_bcp() - slope)) > 0.001)
     {
         QMessageBox msg;
         msg.setText("Save unsaved setting?");
@@ -195,4 +194,3 @@ void Calibration880nm::closeEvent(QCloseEvent *event)
         }
     }
 }
-

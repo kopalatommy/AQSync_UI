@@ -160,8 +160,6 @@ void AdaptiveFilterBCPForm::UpdateLocalUI()
     ui->longLabel->setText("Long Length:\n" + QString::number(longLength));
     ui->diffLabel->setText("Difference:\n" + QString::number(difference));
     ui->percentLabel->setText("Percent:\n" + QString::number(percent));
-
-    qDebug() << "Updated UI";
 }
 
 void AdaptiveFilterBCPForm::showEvent(QShowEvent *event)

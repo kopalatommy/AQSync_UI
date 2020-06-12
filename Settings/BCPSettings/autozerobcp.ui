@@ -115,16 +115,16 @@
     </rect>
    </property>
    <property name="text">
-    <string>PushButton</string>
+    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="AutoZero">
    <property name="geometry">
     <rect>
-     <x>290</x>
-     <y>20</y>
-     <width>181</width>
-     <height>51</height>
+     <x>0</x>
+     <y>10</y>
+     <width>801</width>
+     <height>81</height>
     </rect>
    </property>
    <property name="font">
@@ -134,6 +134,9 @@
    </property>
    <property name="text">
     <string>Auto Zero</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
   <widget class="QCheckBox" name="checkBox">
@@ -164,7 +167,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>PushButton</string>
+    <string/>
    </property>
   </widget>
   <widget class="QPushButton" name="BCZeroMask">
@@ -177,7 +180,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>PushButton</string>
+    <string/>
    </property>
   </widget>
   <widget class="QPushButton" name="PMZeroMask">
@@ -190,7 +193,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>PushButton</string>
+    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="FreqLabel">
@@ -219,6 +222,7 @@
     <string>TextLabel</string>
    </property>
   </widget>
+  <zorder>AutoZero</zorder>
   <zorder>PeriodLabel</zorder>
   <zorder>FreqLabel</zorder>
   <zorder>Left</zorder>
@@ -226,7 +230,6 @@
   <zorder>Home</zorder>
   <zorder>Save</zorder>
   <zorder>zeroingFrequenctMask</zorder>
-  <zorder>AutoZero</zorder>
   <zorder>checkBox</zorder>
   <zorder>zeroPeriodMask</zorder>
   <zorder>BCZeroMask</zorder>

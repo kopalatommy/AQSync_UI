@@ -10,115 +10,108 @@ ParamtersForm::ParamtersForm(QWidget *parent) :
     //connect(AQSyncData::GetInstance(), &AQSyncData::FinshedReadingLine, this, &ParamtersForm::UpdateUI);
 }
 
-ParamtersForm::~ParamtersForm(){
+ParamtersForm::~ParamtersForm()
+{
     delete ui;
 }
 
-void ParamtersForm::UpdateUI(){
+void ParamtersForm::UpdateUI()
+{
     if(viewing == true)
     {
-        if(showingBCP == true)
+        if(showingIndex == PARAMETERS_BCP_INDEX)
         {
             ui->title->setText("BCP Parameters");
 
             BCPData * data = BCPData::GetInstance();
 
             ui->dataLabel_1->setText("Log Number: " + QString::number(data->GetLogNumber()));
-            ui->dataLabel_2->setText("MEC(800nm): " + QString::number(data->GetMEC880()));
-            ui->dataLabel_3->setText("MEC(405nm): " + QString::number(data->GetMEC405()));
-            ui->dataLabel_4->setText("880 Ext: " + QString::number(data->GetMassExt880()));
-            ui->dataLabel_5->setText("405 Ext: " + QString::number(data->GetMassExt405()));
-            ui->dataLabel_6->setText("Cell Temp: " + QString::number(data->GetCellTemp()));
-            ui->dataLabel_7->setText("Cell Press: " + QString::number(data->GetCellPress()));
-            ui->dataLabel_8->setText("Cell Flow: " + QString::number(data->GetCellFlow()));
-            ui->dataLabel_9->setText("Flow Temp: " + QString::number(data->GetSystemTemp()));
-            ui->dataLabel_10->setText("Humidity: " + QString::number(data->GetHumidity()));
+            ui->dataLabel_2->setText("MEC(800nm): " + QString::number(static_cast<double>(data->GetMEC880()), 'g', 2));
+            ui->dataLabel_3->setText("MEC(405nm): " + QString::number(static_cast<double>(data->GetMEC405()), 'g', 2));
+            ui->dataLabel_4->setText("880 Ext: " + QString::number(static_cast<double>(data->GetMassExt880()), 'g', 2));
+            ui->dataLabel_5->setText("405 Ext: " + QString::number(static_cast<double>(data->GetMassExt405()), 'g', 2));
+            ui->dataLabel_6->setText("Cell Temp: " + QString::number(static_cast<double>(data->GetCellTemp()), 'g', 2));
+            ui->dataLabel_7->setText("Cell Press: " + QString::number(static_cast<double>(data->GetCellPress()), 'g', 2));
+            ui->dataLabel_8->setText("Cell Flow: " + QString::number(static_cast<double>(data->GetCellFlow()), 'g', 2));
+            ui->dataLabel_9->setText("Flow Temp: " + QString::number(static_cast<double>(data->GetSystemTemp()), 'g', 2));
+            ui->dataLabel_10->setText("Humidity: " + QString::number(static_cast<double>(data->GetHumidity()), 'g', 2));
             ui->dataLabel_11->setText("Status: " + QString::number(data->GetStatus()));
             ui->dataLabel_12->setText("Date: " + QString(data->GetFormattedDate()));
             ui->dataLabel_13->setText("Time: " + QString(data->GetFormattedTime()));
+
+            //Clear all other data labels
+            ui->dataLabel_14->setText("");
+            ui->dataLabel_15->setText("");
+            ui->dataLabel_16->setText("");
+            ui->dataLabel_17->setText("");
+            ui->dataLabel_18->setText("");
+            ui->dataLabel_19->setText("");
         }
-        else
+        else if(showingIndex == PARAMETERS_405_INDEX)
         {
             ui->title->setText("405 Parameters");
 
             DataHandler405 * data = DataHandler405::GetInstance();
+
+            ui->dataLabel_1->setText("Log Number: " + QString::number(data->GetLogNumber()));
+            ui->dataLabel_2->setText("NO: " + QString::number(static_cast<double>(data->GetNO()), 'g', 2));
+            ui->dataLabel_3->setText("NO2: " + QString::number(static_cast<double>(data->GetNO2()), 'g', 2));
+            ui->dataLabel_4->setText("NOx: " + QString::number(static_cast<double>(data->GetNOX()), 'g', 2));
+            ui->dataLabel_5->setText("Cell Temp: " + QString::number(static_cast<double>(data->GetCellTemp()), 'g', 2));
+            ui->dataLabel_6->setText("Cell Press: " + QString::number(static_cast<double>(data->GetCellPress()), 'g', 2));
+            ui->dataLabel_7->setText("Cell Flow: " + QString::number(static_cast<double>(data->GetCellFlow()), 'g', 2));
+            ui->dataLabel_8->setText("PDV1: " + QString::number(static_cast<double>(data->GetPDV1()), 'g', 4));
+            ui->dataLabel_9->setText("PDV2: " + QString::number(static_cast<double>(data->GetPDV2()), 'g', 4));
+            ui->dataLabel_10->setText("Ozone Flow: " + QString::number(static_cast<double>(data->GetOzoneFlow()), 'g', 2));
+            ui->dataLabel_11->setText("Scrubber Temp: " + QString::number(static_cast<double>(data->GetScrubberTemp()), 'g', 2));
+            ui->dataLabel_11->setText("Status: " + QString::number(data->GetErrorByte()));
+            ui->dataLabel_12->setText("Date: " + QString(data->GetDate()));
+            ui->dataLabel_13->setText("Time: " + QString(data->GetTime()));
+
+            //Clear all other data labels
+            ui->dataLabel_14->setText("");
+            ui->dataLabel_15->setText("");
+            ui->dataLabel_16->setText("");
+            ui->dataLabel_17->setText("");
+            ui->dataLabel_18->setText("");
+            ui->dataLabel_19->setText("");
+        }
+        else if(showingIndex == PARAMETERS_108_INDEX)
+        {
+            ui->dataLabel_1->setText("Log Number: ");
+            ui->dataLabel_2->setText("NO: ");
+            ui->dataLabel_3->setText("NO2: ");
+            ui->dataLabel_4->setText("NOx: ");
+            ui->dataLabel_5->setText("Cell Temp: ");
+
+            //Clear all other data labels
+            ui->dataLabel_6->setText("");
+            ui->dataLabel_7->setText("");
+            ui->dataLabel_8->setText("");
+            ui->dataLabel_9->setText("");
+            ui->dataLabel_4->setText("");
+            ui->dataLabel_5->setText("");
+            ui->dataLabel_6->setText("");
+            ui->dataLabel_7->setText("");
+            ui->dataLabel_8->setText("");
+            ui->dataLabel_9->setText("");
+            ui->dataLabel_10->setText("");
+            ui->dataLabel_11->setText("");
+            ui->dataLabel_12->setText("");
+            ui->dataLabel_13->setText("");
+            ui->dataLabel_14->setText("");
+            ui->dataLabel_15->setText("");
+            ui->dataLabel_16->setText("");
+            ui->dataLabel_17->setText("");
+            ui->dataLabel_18->setText("");
+            ui->dataLabel_19->setText("");
+        }
+        else
+        {
+            showingIndex = PARAMETERS_BCP_INDEX;
+            UpdateUI();
         }
     }
-
-
-
-
-    /*if(viewing == true){
-        /*char arr[15] = {0, };
-        AQSyncData * data = AQSyncData::GetInstance();
-
-        ui->logNumber->setText("Log Number: " + QString::number(data->GetLogNumber()));
-
-        sprintf(arr, "%1.1f", static_cast<double>(data->GetBlackCarbon()));
-        ui->blackCarbon->setText("Black Carbon: " + QString(arr));
-
-        memset(arr, 0, 15);
-        sprintf(arr, "%1.1f", static_cast<double>(data->GetPM()));
-        ui->pm->setText("PM: " + QString(arr));
-
-        memset(arr, 0, 15);
-        sprintf(arr, "%1.1f", static_cast<double>(data->GetMassExt880()));
-        ui->massExt880->setText("Mass Ext 880: " + QString(arr));
-
-        memset(arr, 0, 15);
-        sprintf(arr, "%1.1f", static_cast<double>(data->GetMassExt405()));
-        ui->massExt405->setText("Mass Ext 405: " + QString(arr));
-
-        memset(arr, 0, 15);
-        sprintf(arr, "%1.1f", static_cast<double>(data->GetNO()));
-        ui->no->setText("NO: " + QString(arr));
-
-        memset(arr, 0, 15);
-        sprintf(arr, "%1.1f", static_cast<double>(data->GetNO2()));
-        ui->no2->setText("NO2: " + QString(arr));
-
-        memset(arr, 0, 15);
-        sprintf(arr, "%1.1f", static_cast<double>(data->GetNOx()));
-        ui->nox->setText("NOx: " + QString(arr));
-
-        memset(arr, 0, 15);
-        sprintf(arr, "%1.1f", static_cast<double>(data->GetCellTemp()));
-        ui->cellTemp->setText("Cell Temp: " + QString(arr));
-
-        memset(arr, 0, 15);
-        sprintf(arr, "%1.1f", static_cast<double>(data->GetCellPress()));
-        ui->cellPress->setText("Cell Press: " + QString(arr));
-
-        memset(arr, 0, 15);
-        sprintf(arr, "%1.1f", static_cast<double>(data->GetCellFlow()));
-        ui->cellFlow->setText("Cell Flow: " + QString(arr));
-
-        memset(arr, 0, 15);
-        sprintf(arr, "%1.1f", static_cast<double>(data->GetOzoneFlow()));
-        ui->ozoneFlow->setText("Ozone Flow: " + QString(arr));
-
-        memset(arr, 0, 15);
-        sprintf(arr, "%1.6f", static_cast<double>(data->GetPDV1()));
-        ui->pdv1->setText("PDV 1: " + QString(arr));
-
-        memset(arr, 0, 15);
-        sprintf(arr, "%1.6f", static_cast<double>(data->GetPDV2()));
-        ui->pdv2->setText("PDV2: " + QString(arr));
-
-        memset(arr, 0, 15);
-        sprintf(arr, "%1.1f", static_cast<double>(data->GetScrubberTemp()));
-        ui->scrubberTemp->setText("Scrubber Temp: " + QString(arr));
-
-        memset(arr, 0, 15);
-        sprintf(arr, "%X", data->GetErrorByte());
-        ui->errorByte->setText("Error Byte: " + QString(arr));
-
-        ui->data->setText("Date: " + QString(data->GetDate()));
-
-        ui->time->setText("Time: " + QString(data->GetTime()));
-
-        ui->mode->setText("Mode: " + QString::number(data->GetMode()));
-    }*/
 }
 
 void ParamtersForm::on_closeButton_clicked()
@@ -141,12 +134,12 @@ void ParamtersForm::closeEvent(QCloseEvent *event)
 
 void ParamtersForm::on_leftButton_clicked()
 {
-    showingBCP = !showingBCP;
+    showingIndex = showingIndex - 1 > 0 ? showingIndex - 1 : PARAMETERS_PAGES - 1;
     UpdateUI();
 }
 
 void ParamtersForm::on_rightButton_clicked()
 {
-    showingBCP = !showingBCP;
+    showingIndex = showingIndex + 1 < PARAMETERS_PAGES ? showingIndex + 1 : 1;
     UpdateUI();
 }

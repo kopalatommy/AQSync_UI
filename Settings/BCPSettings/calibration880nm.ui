@@ -16,9 +16,9 @@
   <widget class="QLabel" name="AdaptiveFilter">
    <property name="geometry">
     <rect>
-     <x>120</x>
+     <x>0</x>
      <y>20</y>
-     <width>481</width>
+     <width>801</width>
      <height>81</height>
     </rect>
    </property>
@@ -234,11 +234,11 @@
     <string>Analog</string>
    </property>
   </widget>
+  <zorder>AdaptiveFilter</zorder>
   <zorder>analogLabel</zorder>
   <zorder>massExtLabel</zorder>
   <zorder>zeroLabel</zorder>
   <zorder>slopeLabel</zorder>
-  <zorder>AdaptiveFilter</zorder>
   <zorder>zeroMask</zorder>
   <zorder>Home</zorder>
   <zorder>MassExtMask</zorder>

@@ -131,9 +131,9 @@
   <widget class="QLabel" name="AdaptiveFilter">
    <property name="geometry">
     <rect>
-     <x>130</x>
+     <x>0</x>
      <y>20</y>
-     <width>481</width>
+     <width>801</width>
      <height>81</height>
     </rect>
    </property>
@@ -267,6 +267,7 @@
     </size>
    </property>
   </widget>
+  <zorder>AdaptiveFilter</zorder>
   <zorder>percentLabel</zorder>
   <zorder>percentMask</zorder>
   <zorder>shortLabel</zorder>
@@ -274,7 +275,6 @@
   <zorder>Next</zorder>
   <zorder>diffLabel</zorder>
   <zorder>longLabel</zorder>
-  <zorder>AdaptiveFilter</zorder>
   <zorder>differenceMask</zorder>
   <zorder>Save</zorder>
   <zorder>longMask</zorder>

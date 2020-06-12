@@ -5,6 +5,9 @@
 
 #include "Communication/serialhandler405.h"
 #include "Communication/bcpserialhandler.h"
+#include "DataHandlers/bcpdata.h"
+#include "DataHandlers/datahandler405.h"
+
 #include "Modbus/modbustestform.h"
 #include "Settings/settingformshandler.h"
 #include "paramtersform.h"
@@ -39,9 +42,7 @@ public:
 
 private slots:
     void on_settingsButton_clicked();
-
     void on_parametersButton_clicked();
-
     void on_graphButton_clicked();
 
     void on_modbusTestButton_clicked();
@@ -62,7 +63,12 @@ private:
     bool startingUp = true;
     int uiIndex = 0;
 
+    bool isViewing = false;
+
     void CreateSettingPages();
+
+    void showEvent(QShowEvent * event);
+    void closeEvent(QCloseEvent * event);
 };
 
 #endif // MAINWINDOW_H

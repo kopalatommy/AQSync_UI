@@ -44,7 +44,46 @@ void MainWindow::on_modbusTestButton_clicked(){
     modbusTestForm.show();
 }
 
-void MainWindow::UpdateUI(){
+void MainWindow::UpdateUI()
+{
+    if(isViewing == true)
+    {
+        BCPData * dataBCP = BCPData::GetInstance();
+        DataHandler405 * data405 = DataHandler405::GetInstance();
+        char arr[15] = {0, };
+        long long len = 0;
+
+        len = sprintf(arr, "%1.1f", static_cast<double>(dataBCP->GetBC()));
+        arr[len] = 0;
+        ui->bcLabel->setText("BC: <font color='blue'>" + QString(arr).append("</font> ppb"));
+
+        len = sprintf(arr, "%1.1f", static_cast<double>(dataBCP->GetPM()));
+        arr[len] = 0;
+        ui->pmLabel->setText("PM: <font color='blue'>" + QString(arr).append("</font> ppb"));
+
+        len = sprintf(arr, "%1.1f", static_cast<double>(dataBCP->GetMassExt880()));
+        arr[len] = 0;
+        ui->massExt880Label->setText("Mass Ext 880: <font color='blue'>" + QString(arr).append("</font> ppb"));
+
+        len = sprintf(arr, "%1.1f", static_cast<double>(dataBCP->GetMassExt405()));
+        arr[len] = 0;
+        ui->massExtLabel->setText("Mass Ext 405: <font color='blue'>" + QString(arr).append("</font> ppb"));
+
+        len = sprintf(arr, "%1.1f", static_cast<double>(data405->GetNO()));
+        arr[len] = 0;
+        ui->noLabel->setText("NO: <font color='blue'>" + QString(arr).append("</font> ppb"));
+
+        len = sprintf(arr, "%1.1f", static_cast<double>(data405->GetNO2()));
+        arr[len] = 0;
+        ui->no2Label->setText("NO2: <font color='blue'>" + QString(arr).append("</font> ppb"));
+
+        len = sprintf(arr, "%1.1f", static_cast<double>(data405->GetNOX()));
+        arr[len] = 0;
+        ui->noxLabel->setText("NOx: <font color='blue'>" + QString(arr).append("</font> ppb"));
+
+        ui->dateTimeLabel->setText(QDateTime::currentDateTime().toString("hh:mm:ss dd/MM/yy"));
+    }
+
     /*AQSyncData * data = AQSyncData::GetInstance();
     char arr[15] = {0, };
 
@@ -135,4 +174,19 @@ void MainWindow::CreateSettingPages()
 
 
     //settings->append(new MainWindow);
+}
+
+void MainWindow::showEvent(QShowEvent *event)
+{
+    QWidget::showEvent(event);
+
+    isViewing = true;
+    QTimer::singleShot(500, this, SLOT(UpdateUI()));
+}
+
+void MainWindow::closeEvent(QCloseEvent *event)
+{
+    QWidget::closeEvent(event);
+
+    isViewing = false;
 }

@@ -7,6 +7,12 @@
 #include "DataHandlers/datahandler405.h"
 #include "DataHandlers/bcpdata.h"
 
+#define PARAMETERS_BCP_INDEX 0
+#define PARAMETERS_405_INDEX 1
+#define PARAMETERS_108_INDEX 2
+
+#define PARAMETERS_PAGES 3
+
 namespace Ui {
 class ParamtersForm;
 }
@@ -34,7 +40,7 @@ private:
 
     bool viewing = false;
 
-    bool showingBCP = true;
+    char showingIndex = 0;
 
     void showEvent(QShowEvent * event);
     void closeEvent(QCloseEvent * event);

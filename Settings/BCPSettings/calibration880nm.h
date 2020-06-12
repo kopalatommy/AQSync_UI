@@ -4,6 +4,7 @@
 #include <QMessageBox>
 #include <QWidget>
 #include <QDebug>
+#include <QtMath>
 
 #include "Settings/settingformshandler.h"
 #include "DataHandlers/settingshandler.h"
@@ -41,8 +42,7 @@ private slots:
     void updateLocalUI();
     void GetNewSettings();
 
-
-    void on_massExtMask_clicked();
+    //void on_massExtMask_clicked();
 
 private:
     Ui::Calibration880nm *ui;

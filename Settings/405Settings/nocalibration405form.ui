@@ -59,7 +59,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>PushButton</string>
+    <string/>
    </property>
   </widget>
   <widget class="QPushButton" name="Right">
@@ -118,15 +118,15 @@
     </rect>
    </property>
    <property name="text">
-    <string>PushButton</string>
+    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="NOCalibration">
    <property name="geometry">
     <rect>
-     <x>80</x>
+     <x>0</x>
      <y>10</y>
-     <width>600</width>
+     <width>801</width>
      <height>101</height>
     </rect>
    </property>
@@ -188,7 +188,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>PushButton</string>
+    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="ZeroLabel">
@@ -204,6 +204,7 @@
     <string>TextLabel</string>
    </property>
   </widget>
+  <zorder>NOCalibration</zorder>
   <zorder>ZeroLabel</zorder>
   <zorder>SlopeLabel</zorder>
   <zorder>AnalogLabel</zorder>
@@ -211,7 +212,6 @@
   <zorder>slopeMask</zorder>
   <zorder>Right</zorder>
   <zorder>AnalogMask</zorder>
-  <zorder>NOCalibration</zorder>
   <zorder>Save</zorder>
   <zorder>zeroMask</zorder>
   <zorder>Home</zorder>
