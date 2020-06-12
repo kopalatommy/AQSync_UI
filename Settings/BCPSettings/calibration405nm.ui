@@ -36,7 +36,7 @@
     </size>
    </property>
   </widget>
-  <widget class="QPushButton" name="PushButton_1">
+  <widget class="QPushButton" name="slopeMask">
    <property name="geometry">
     <rect>
      <x>164</x>
@@ -72,7 +72,7 @@
     </size>
    </property>
   </widget>
-  <widget class="QPushButton" name="PushButton_2">
+  <widget class="QPushButton" name="MassExtMask">
    <property name="geometry">
     <rect>
      <x>160</x>
@@ -153,7 +153,7 @@
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QPushButton" name="PushButton">
+  <widget class="QPushButton" name="zeroMask">
    <property name="geometry">
     <rect>
      <x>440</x>
@@ -166,7 +166,7 @@
     <string>PushButton</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="PushButton_3">
+  <widget class="QPushButton" name="AnalogMask">
    <property name="geometry">
     <rect>
      <x>440</x>
@@ -179,6 +179,71 @@
     <string>PushButton</string>
    </property>
   </widget>
+  <widget class="QLabel" name="slopeLabel">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>140</y>
+     <width>201</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Slope</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="zeroLabel">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>145</y>
+     <width>211</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Zero</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="massExtLabel">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>280</y>
+     <width>201</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Mass Ext</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="analogLabel">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>285</y>
+     <width>201</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Analog</string>
+   </property>
+  </widget>
+  <zorder>analogLabel</zorder>
+  <zorder>massExtLabel</zorder>
+  <zorder>zeroLabel</zorder>
+  <zorder>slopeLabel</zorder>
+  <zorder>Right</zorder>
+  <zorder>slopeMask</zorder>
+  <zorder>Home</zorder>
+  <zorder>MassExtMask</zorder>
+  <zorder>Save</zorder>
+  <zorder>Left</zorder>
+  <zorder>AdaptiveFilter</zorder>
+  <zorder>zeroMask</zorder>
+  <zorder>AnalogMask</zorder>
  </widget>
  <resources>
   <include location="../../resources.qrc"/>
